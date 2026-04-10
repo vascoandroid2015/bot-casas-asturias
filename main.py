@@ -22,51 +22,38 @@ OVIEDO_REF: Tuple[float, float] = (43.3614, -5.8494)
 OVIEDO_REF_LABEL = "Oviedo centro"
 SEEN_FILE = "seen_ads.json"
 TIMEOUT = 25
+MAX_CANDIDATES_PER_SOURCE = 18
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"
 
 KEYWORDS_PRIORITY = [
-    "piedra", "casa de piedra", "casona", "casa rural", "independiente",
-    "finca", "parcela", "terreno", "huerta", "hórreo", "horreo", "jardín", "jardin"
+    "piedra", "casa de piedra", "casona", "casa rural", "independiente", "pareada",
+    "finca", "parcela", "terreno", "huerta", "hórreo", "horreo", "jardín", "jardin",
+    "casa de aldea", "aldea", "quintana", "cuadra", "rehabilitar"
 ]
 KEYWORDS_EXCLUDE = [
-    "piso", "apartamento", "ático", "atico", "estudio", "habitación", "habitacion"
+    "piso", "apartamento", "ático", "atico", "estudio", "habitación", "habitacion", "local"
 ]
 OVIEDO_AREA_HINTS = [
     "oviedo", "siero", "noreña", "norena", "llanera", "las regueras", "ribera de arriba",
-    "mieres", "langreo", "morcín", "morcin", "sariego"
+    "mieres", "langreo", "morcín", "morcin", "sariego", "trubia", "lugones", "posada de llanera"
 ]
 
 SEARCH_SOURCES = [
-    {
-        "name": "Fotocasa",
-        "url": "https://www.fotocasa.es/es/comprar/chalets/asturias-provincia/todas-las-zonas/l",
-        "base": "https://www.fotocasa.es",
-    },
-    {
-        "name": "Pisos.com",
-        "url": "https://www.pisos.com/venta/casas-asturias/",
-        "base": "https://www.pisos.com",
-    },
-    {
-        "name": "Wallapop",
-        "url": "https://es.wallapop.com/inmobiliaria/casas/oviedo",
-        "base": "https://es.wallapop.com",
-    },
-    {
-        "name": "Nortecasa",
-        "url": "https://www.nortecasa.com/inmuebles/todos/",
-        "base": "https://www.nortecasa.com",
-    },
-    {
-        "name": "Aldeasabandonadas",
-        "url": "https://www.aldeasabandonadas.com/venta-de-casas-rurales/62-venta-de-casas-rurales-asturias.html",
-        "base": "https://www.aldeasabandonadas.com",
-    },
-    {
-        "name": "Idealista",
-        "url": "https://www.idealista.com/venta-viviendas/asturias/con-casas-de-piedra,chalets/?ordenado-por=fecha-publicacion-desc",
-        "base": "https://www.idealista.com",
-    },
+    {"name": "Fotocasa chalets", "url": "https://www.fotocasa.es/es/comprar/chalets/asturias-provincia/todas-las-zonas/l", "base": "https://www.fotocasa.es"},
+    {"name": "Fotocasa rústicas", "url": "https://www.fotocasa.es/es/comprar/casas-rurales/asturias-provincia/todas-las-zonas/l", "base": "https://www.fotocasa.es"},
+    {"name": "Pisos.com", "url": "https://www.pisos.com/venta/casas-asturias/", "base": "https://www.pisos.com"},
+    {"name": "Wallapop", "url": "https://es.wallapop.com/inmobiliaria/casas/oviedo", "base": "https://es.wallapop.com"},
+    {"name": "Nortecasa", "url": "https://www.nortecasa.com/inmuebles/todos/", "base": "https://www.nortecasa.com"},
+    {"name": "Aldeasabandonadas", "url": "https://www.aldeasabandonadas.com/venta-de-casas-rurales/62-venta-de-casas-rurales-asturias.html", "base": "https://www.aldeasabandonadas.com"},
+    {"name": "Green Acres", "url": "https://www.green-acres.es/casas-a-la-venta/asturias-provincia", "base": "https://www.green-acres.es"},
+    {"name": "thinkSPAIN", "url": "https://www.thinkspain.com/es/venta-viviendas/asturias/casas-rurales-fincas", "base": "https://www.thinkspain.com"},
+    {"name": "CASASAPO casas", "url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/", "base": "https://casasapo.es"},
+    {"name": "CASASAPO fincas", "url": "https://casasapo.es/fincas/distrito.asturias/", "base": "https://casasapo.es"},
+    {"name": "Habitaclia", "url": "https://www.habitaclia.com/casas-segundamano-provincia-asturias-173.htm", "base": "https://www.habitaclia.com"},
+    {"name": "CoCampo", "url": "https://www.cocampo.com/es/es/explorar/comprar/casas-pueblo-baratas/espana/asturias/", "base": "https://www.cocampo.com"},
+    {"name": "Country Homes", "url": "https://www.grupocountryhomes.com/venta/casas-rurales-en-asturias", "base": "https://www.grupocountryhomes.com"},
+    {"name": "Idealista casas piedra", "url": "https://www.idealista.com/venta-viviendas/asturias/con-casas-de-piedra/", "base": "https://www.idealista.com"},
+    {"name": "Idealista casas pueblo", "url": "https://www.idealista.com/venta-viviendas/asturias/con-casas-de-pueblo/", "base": "https://www.idealista.com"},
 ]
 
 session = requests.Session()
@@ -111,8 +98,15 @@ def normalize_url(url: str, base: str) -> str:
 def parse_price(text: str) -> Optional[int]:
     if not text:
         return None
-    for pattern in [r"([\d\.]{3,})\s*€", r"([\d\.,]{3,})\s*euros?", r"precio[: ]+([\d\.]{3,})"]:
-        m = re.search(pattern, text.lower())
+    patterns = [
+        r"([\d\.]{3,})\s*€",
+        r"([\d\.,]{3,})\s*euros?",
+        r"precio[: ]+([\d\.]{3,})",
+        r"venta[: ]+([\d\.]{3,})",
+    ]
+    low = text.lower()
+    for pattern in patterns:
+        m = re.search(pattern, low)
         if m:
             num = re.sub(r"[^\d]", "", m.group(1))
             if num:
@@ -128,9 +122,10 @@ def parse_parcela(text: str) -> Optional[int]:
         r"parcela(?: de)?\s*([\d\.,]+)\s*m[²2]",
         r"finca(?: de)?\s*([\d\.,]+)\s*m[²2]",
         r"terreno(?: de)?\s*([\d\.,]+)\s*m[²2]",
-        r"([\d\.,]+)\s*m[²2]\s*de\s*(?:parcela|finca|terreno)",
         r"solar(?: de)?\s*([\d\.,]+)\s*m[²2]",
         r"huerta(?: de)?\s*([\d\.,]+)\s*m[²2]",
+        r"jard[ií]n(?: de)?\s*([\d\.,]+)\s*m[²2]",
+        r"([\d\.,]+)\s*m[²2]\s*de\s*(?:parcela|finca|terreno|solar|huerta)",
     ]
     for pattern in patterns:
         m = re.search(pattern, low)
@@ -149,18 +144,18 @@ def keyword_score(text: str) -> int:
             score += 2
     for kw in OVIEDO_AREA_HINTS:
         if kw in low:
-            score += 1
+            score += 2
     for kw in KEYWORDS_EXCLUDE:
         if kw in low:
             score -= 3
+    if "asturias" in low:
+        score += 1
     return score
 
 
 def looks_relevant(text: str) -> bool:
     low = text.lower()
-    has_positive = any(k in low for k in KEYWORDS_PRIORITY)
-    has_oviedo_area = any(k in low for k in OVIEDO_AREA_HINTS)
-    return has_positive or has_oviedo_area
+    return any(k in low for k in KEYWORDS_PRIORITY + OVIEDO_AREA_HINTS)
 
 
 def geocode_location(location_text: str) -> Tuple[Optional[float], Optional[float]]:
@@ -213,7 +208,7 @@ def fetch(url: str) -> str:
 
 def extract_location(text: str) -> str:
     m = re.search(
-        r"(Oviedo|Siero|Noreña|Norena|Llanera|Las Regueras|Ribera de Arriba|Mieres|Langreo|Morcín|Morcin|Sariego|Gijón|Gijon|Avilés|Aviles|Piloña|Pilona)",
+        r"(Oviedo|Siero|Noreña|Norena|Llanera|Las Regueras|Ribera de Arriba|Mieres|Langreo|Morcín|Morcin|Sariego|Gijón|Gijon|Avilés|Aviles|Piloña|Pilona|Trubia|Lugones|Posada de Llanera)",
         text,
         re.I,
     )
@@ -226,7 +221,7 @@ def scrape_listing_detail(url: str, source_name: str) -> Optional[dict]:
     except Exception:
         return None
     soup = BeautifulSoup(html, "html.parser")
-    text = clean_text(soup.get_text(" ", strip=True))[:15000]
+    text = clean_text(soup.get_text(" ", strip=True))[:18000]
     title = ""
     title_el = soup.select_one("h1") or soup.select_one("title")
     if title_el:
@@ -251,7 +246,7 @@ def scrape_candidates(source: Dict[str, str]) -> List[Tuple[str, str, str]]:
     except Exception:
         return results
     soup = BeautifulSoup(html, "html.parser")
-    cards = soup.select("article, .item, .listing, .card, li, .re-CardPack, .property, .result")[:120]
+    cards = soup.select("article, .item, .listing, .card, li, .re-CardPack, .property, .result, .search-result, .property-item")[:180]
     seen = set()
     for card in cards:
         a = card.select_one("a[href]")
@@ -266,44 +261,43 @@ def scrape_candidates(source: Dict[str, str]) -> List[Tuple[str, str, str]]:
         if not looks_relevant(f"{title} {text}"):
             continue
         results.append((url, title, text))
-    return results
+    return results[:MAX_CANDIDATES_PER_SOURCE]
 
 
 def build_listing(source: Dict[str, str], candidate_url: str, candidate_title: str, candidate_text: str) -> Optional[Listing]:
     detail = scrape_listing_detail(candidate_url, source["name"])
-    if not detail:
-        return None
-    merged_text = clean_text(f"{candidate_title} {candidate_text} {detail['title']} {detail['text']}")
+    merged_text = clean_text(f"{candidate_title} {candidate_text} {(detail or {}).get('title','')} {(detail or {}).get('text','')}")
     score = keyword_score(merged_text)
     if score < 1:
         return None
 
-    price = detail["price"] or parse_price(candidate_text)
-    parcela = detail["parcela"] or parse_parcela(candidate_text)
-    location = detail["location"] or extract_location(candidate_text) or extract_location(detail["title"])
+    price = (detail or {}).get("price") or parse_price(candidate_text)
+    parcela = (detail or {}).get("parcela") or parse_parcela(candidate_text)
+    location = (detail or {}).get("location") or extract_location(candidate_text) or extract_location(candidate_title)
+    title = (detail or {}).get("title") or candidate_title
 
-    lat, lon = geocode_location(location or detail["title"] or candidate_title)
+    lat, lon = geocode_location(location or title)
     minutes = estimate_drive_minutes(lat, lon)
 
-    passes_hard = (
+    strict = (
         price is not None and price <= PRECIO_MAXIMO and
         parcela is not None and parcela >= PARCELA_MINIMA and
         minutes is not None and minutes <= MAX_MINUTOS_OVIEDO
     )
 
-    if not passes_hard:
+    if not strict:
         if score < 4:
             return None
-        if price is not None and price > PRECIO_MAXIMO * 1.1:
+        if price is not None and price > PRECIO_MAXIMO * 1.15:
             return None
-        if minutes is not None and minutes > 22:
+        if minutes is not None and minutes > 25:
             return None
 
-    maps = google_maps_url(lat, lon, f"{location or detail['title']} Asturias")
+    maps = google_maps_url(lat, lon, f"{location or title} Asturias")
     return Listing(
         source=source["name"],
         url=candidate_url,
-        title=detail["title"] or candidate_title,
+        title=title,
         location_text=location or "Asturias",
         price=price,
         parcela_m2=parcela,
@@ -311,7 +305,7 @@ def build_listing(source: Dict[str, str], candidate_url: str, candidate_title: s
         lon=lon,
         minutes_to_oviedo=minutes,
         maps_url=maps,
-        summary=merged_text[:700],
+        summary=merged_text[:900],
         score=score,
         seen_at=now_iso(),
     )
@@ -411,7 +405,7 @@ def run() -> None:
     found: List[Listing] = []
     for source in SEARCH_SOURCES:
         print(f"Buscando candidatos en {source['name']}...")
-        candidates = scrape_candidates(source)[:20]
+        candidates = scrape_candidates(source)
         print(f"  candidatos: {len(candidates)}")
         for url, title, text in candidates:
             listing = build_listing(source, url, title, text)
@@ -421,7 +415,7 @@ def run() -> None:
 
     found = dedupe(found)
     found.sort(key=lambda item: (-(item.score or 0), item.price or 999999999))
-    found = found[:15]
+    found = found[:25]
 
     seen = load_seen()
     updated = dict(seen)
