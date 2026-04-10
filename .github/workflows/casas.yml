@@ -1,0 +1,27 @@
+name: Bot Casas de Piedra cerca de Oviedo
+
+on:
+  schedule:
+    - cron: "0 20 * * *"      # Ejecuta todos los días a las 20:00 (hora de España peninsular)
+  workflow_dispatch:          # Permite ejecución manual desde GitHub
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps
+
+      - name: Ejecutar bot
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: python main.py
