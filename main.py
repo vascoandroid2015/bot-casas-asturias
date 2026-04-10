@@ -15,13 +15,13 @@ from bs4 import BeautifulSoup
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "@casaspiedrasenasturias")
 
-PRECIO_MAXIMO_SOFT = 320000
+PRECIO_MAXIMO_SOFT = 450000
 OVIEDO_REF: Tuple[float, float] = (43.3614, -5.8494)
 OVIEDO_REF_LABEL = "Oviedo centro"
 SEEN_FILE = "seen_ads.json"
 TIMEOUT = 25
-MAX_CANDIDATES_PER_SOURCE = 28
-MAX_RESULTS = 35
+MAX_CANDIDATES_PER_SOURCE = 45
+MAX_RESULTS = 70
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"
 
 KEYWORDS_PRIORITY = [
@@ -177,7 +177,7 @@ def keyword_score(text: str) -> int:
 
 def looks_relevant(text: str) -> bool:
     low = text.lower()
-    return any(k in low for k in KEYWORDS_PRIORITY + OVIEDO_AREA_HINTS + ["casa", "chalet", "finca"])
+    return any(k in low for k in KEYWORDS_PRIORITY + OVIEDO_AREA_HINTS + ["casa", "chalet", "finca", "vivienda", "casona", "rural", "parcela", "terreno"])
 
 
 def geocode_location(location_text: str) -> Tuple[Optional[float], Optional[float]]:
@@ -293,7 +293,7 @@ def build_listing(source: Dict[str, str], candidate_url: str, candidate_title: s
     detail = scrape_listing_detail(candidate_url, source["name"])
     merged_text = clean_text(f"{candidate_title} {candidate_text} {(detail or {}).get('title','')} {(detail or {}).get('text','')}")
     score = keyword_score(merged_text)
-    if score < 0:
+    if score < -2:
         return None
 
     price = (detail or {}).get("price") or parse_price(candidate_text)
@@ -304,7 +304,7 @@ def build_listing(source: Dict[str, str], candidate_url: str, candidate_title: s
     lat, lon = geocode_location(location or title)
     minutes = estimate_drive_minutes(lat, lon)
 
-    if price is not None and price > PRECIO_MAXIMO_SOFT * 1.25:
+    if price is not None and price > PRECIO_MAXIMO_SOFT * 1.8:
         return None
     if price is not None and price <= PRECIO_MAXIMO_SOFT:
         score += 2
