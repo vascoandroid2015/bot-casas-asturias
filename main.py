@@ -24,23 +24,22 @@ SEEN_FILE = "seen_ads.json"
 TIMEOUT = 25
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"
 
-KEYWORDS_OK = [
+KEYWORDS_PRIORITY = [
     "piedra", "casa de piedra", "casona", "casa rural", "independiente",
-    "finca", "parcela", "terreno", "huerta", "hórreo", "horreo"
+    "finca", "parcela", "terreno", "huerta", "hórreo", "horreo", "jardín", "jardin"
 ]
-KEYWORDS_BAD = [
+KEYWORDS_EXCLUDE = [
     "piso", "apartamento", "ático", "atico", "estudio", "habitación", "habitacion"
+]
+OVIEDO_AREA_HINTS = [
+    "oviedo", "siero", "noreña", "norena", "llanera", "las regueras", "ribera de arriba",
+    "mieres", "langreo", "morcín", "morcin", "sariego"
 ]
 
 SEARCH_SOURCES = [
     {
-        "name": "Idealista",
-        "url": "https://www.idealista.com/venta-viviendas/asturias/con-casas-de-piedra,chalets/?ordenado-por=fecha-publicacion-desc",
-        "base": "https://www.idealista.com",
-    },
-    {
         "name": "Fotocasa",
-        "url": "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l",
+        "url": "https://www.fotocasa.es/es/comprar/chalets/asturias-provincia/todas-las-zonas/l",
         "base": "https://www.fotocasa.es",
     },
     {
@@ -63,6 +62,11 @@ SEARCH_SOURCES = [
         "url": "https://www.aldeasabandonadas.com/venta-de-casas-rurales/62-venta-de-casas-rurales-asturias.html",
         "base": "https://www.aldeasabandonadas.com",
     },
+    {
+        "name": "Idealista",
+        "url": "https://www.idealista.com/venta-viviendas/asturias/con-casas-de-piedra,chalets/?ordenado-por=fecha-publicacion-desc",
+        "base": "https://www.idealista.com",
+    },
 ]
 
 session = requests.Session()
@@ -82,6 +86,7 @@ class Listing:
     minutes_to_oviedo: Optional[int]
     maps_url: str
     summary: str
+    score: int
     seen_at: str
 
 
@@ -106,47 +111,56 @@ def normalize_url(url: str, base: str) -> str:
 def parse_price(text: str) -> Optional[int]:
     if not text:
         return None
-    match = re.search(r"([\d\.]{3,}|\d{2,6})\s*€", text.replace(",", "."))
-    if not match:
-        match = re.search(r"([\d\.]{3,}|\d{2,6})", text)
-    if not match:
-        return None
-    num = re.sub(r"[^\d]", "", match.group(1))
-    if not num:
-        return None
-    try:
-        return int(num)
-    except ValueError:
-        return None
-
-
-def parse_parcela(text: str) -> Optional[int]:
-    if not text:
-        return None
-    patterns = [
-        r"parcela(?: de)?\s*([\d\.,]+)\s*m[²2]",
-        r"finca(?: de)?\s*([\d\.,]+)\s*m[²2]",
-        r"terreno(?: de)?\s*([\d\.,]+)\s*m[²2]",
-        r"([\d\.,]+)\s*m[²2]\s*de\s*(?:parcela|finca|terreno)",
-    ]
-    lower = text.lower()
-    for pattern in patterns:
-        match = re.search(pattern, lower)
-        if match:
-            num = re.sub(r"[^\d]", "", match.group(1))
+    for pattern in [r"([\d\.]{3,})\s*€", r"([\d\.,]{3,})\s*euros?", r"precio[: ]+([\d\.]{3,})"]:
+        m = re.search(pattern, text.lower())
+        if m:
+            num = re.sub(r"[^\d]", "", m.group(1))
             if num:
                 return int(num)
     return None
 
 
-def contains_good_keywords(text: str) -> bool:
-    lower = text.lower()
-    return any(keyword in lower for keyword in KEYWORDS_OK)
+def parse_parcela(text: str) -> Optional[int]:
+    if not text:
+        return None
+    low = text.lower()
+    patterns = [
+        r"parcela(?: de)?\s*([\d\.,]+)\s*m[²2]",
+        r"finca(?: de)?\s*([\d\.,]+)\s*m[²2]",
+        r"terreno(?: de)?\s*([\d\.,]+)\s*m[²2]",
+        r"([\d\.,]+)\s*m[²2]\s*de\s*(?:parcela|finca|terreno)",
+        r"solar(?: de)?\s*([\d\.,]+)\s*m[²2]",
+        r"huerta(?: de)?\s*([\d\.,]+)\s*m[²2]",
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, low)
+        if m:
+            num = re.sub(r"[^\d]", "", m.group(1))
+            if num:
+                return int(num)
+    return None
 
 
-def contains_bad_keywords(text: str) -> bool:
-    lower = text.lower()
-    return any(keyword in lower for keyword in KEYWORDS_BAD)
+def keyword_score(text: str) -> int:
+    low = text.lower()
+    score = 0
+    for kw in KEYWORDS_PRIORITY:
+        if kw in low:
+            score += 2
+    for kw in OVIEDO_AREA_HINTS:
+        if kw in low:
+            score += 1
+    for kw in KEYWORDS_EXCLUDE:
+        if kw in low:
+            score -= 3
+    return score
+
+
+def looks_relevant(text: str) -> bool:
+    low = text.lower()
+    has_positive = any(k in low for k in KEYWORDS_PRIORITY)
+    has_oviedo_area = any(k in low for k in OVIEDO_AREA_HINTS)
+    return has_positive or has_oviedo_area
 
 
 def geocode_location(location_text: str) -> Tuple[Optional[float], Optional[float]]:
@@ -197,88 +211,110 @@ def fetch(url: str) -> str:
     return response.text
 
 
-def scrape_generic_cards(source: Dict[str, str]) -> List[Listing]:
-    listings: List[Listing] = []
+def extract_location(text: str) -> str:
+    m = re.search(
+        r"(Oviedo|Siero|Noreña|Norena|Llanera|Las Regueras|Ribera de Arriba|Mieres|Langreo|Morcín|Morcin|Sariego|Gijón|Gijon|Avilés|Aviles|Piloña|Pilona)",
+        text,
+        re.I,
+    )
+    return m.group(1) if m else ""
+
+
+def scrape_listing_detail(url: str, source_name: str) -> Optional[dict]:
+    try:
+        html = fetch(url)
+    except Exception:
+        return None
+    soup = BeautifulSoup(html, "html.parser")
+    text = clean_text(soup.get_text(" ", strip=True))[:15000]
+    title = ""
+    title_el = soup.select_one("h1") or soup.select_one("title")
+    if title_el:
+        title = clean_text(title_el.get_text(" ", strip=True))
+    location = extract_location(text)
+    price = parse_price(text)
+    parcela = parse_parcela(text)
+    return {
+        "title": title,
+        "text": text,
+        "location": location,
+        "price": price,
+        "parcela": parcela,
+        "source": source_name,
+    }
+
+
+def scrape_candidates(source: Dict[str, str]) -> List[Tuple[str, str, str]]:
+    results = []
     try:
         html = fetch(source["url"])
     except Exception:
-        return listings
-
+        return results
     soup = BeautifulSoup(html, "html.parser")
-    cards = soup.select("article, .item, .listing, .card, li")[:80]
-    seen_urls = set()
-
+    cards = soup.select("article, .item, .listing, .card, li, .re-CardPack, .property, .result")[:120]
+    seen = set()
     for card in cards:
-        link = card.select_one("a[href]")
-        if not link:
+        a = card.select_one("a[href]")
+        if not a:
             continue
-
-        url = normalize_url(link.get("href", ""), source["base"])
-        if not url or url in seen_urls:
+        url = normalize_url(a.get("href", ""), source["base"])
+        if not url or url in seen:
             continue
-        seen_urls.add(url)
-
+        seen.add(url)
         text = clean_text(card.get_text(" ", strip=True))
-        title_element = card.select_one("h1, h2, h3, h4")
-        title = clean_text(link.get_text(" ", strip=True))
-        if not title and title_element:
-            title = clean_text(title_element.get_text(" ", strip=True))
-        if not title:
-            title = text[:120]
-
-        price = parse_price(text)
-        parcela = parse_parcela(text)
-
-        location = ""
-        location_element = card.select_one('[class*="location"], [class*="district"], address, .item-detail-char, .text-muted')
-        if location_element:
-            location = clean_text(location_element.get_text(" ", strip=True))
-        if not location:
-            match = re.search(
-                r"(Oviedo|Siero|Noreña|Norena|Llanera|Las Regueras|Ribera de Arriba|Mieres|Langreo|Morcín|Morcin|Sariego|Gijón|Gijon|Avilés|Aviles|Piloña|Pilona)",
-                text,
-                re.I,
-            )
-            if match:
-                location = match.group(1)
-
-        blob = f"{title} {text} {location}".lower()
-        if "asturias" not in blob and not location:
+        title = clean_text(a.get_text(" ", strip=True)) or text[:120]
+        if not looks_relevant(f"{title} {text}"):
             continue
-        if contains_bad_keywords(blob) and not contains_good_keywords(blob):
-            continue
-        if not contains_good_keywords(blob):
-            continue
-        if price is None or price > PRECIO_MAXIMO:
-            continue
-        if parcela is None or parcela < PARCELA_MINIMA:
-            continue
+        results.append((url, title, text))
+    return results
 
-        lat, lon = geocode_location(location or title)
-        minutes = estimate_drive_minutes(lat, lon)
-        if minutes is None or minutes > MAX_MINUTOS_OVIEDO:
-            continue
 
-        maps = google_maps_url(lat, lon, f"{location} Asturias")
-        listings.append(
-            Listing(
-                source=source["name"],
-                url=url,
-                title=title,
-                location_text=location or "Asturias",
-                price=price,
-                parcela_m2=parcela,
-                lat=lat,
-                lon=lon,
-                minutes_to_oviedo=minutes,
-                maps_url=maps,
-                summary=text[:500],
-                seen_at=now_iso(),
-            )
-        )
-        time.sleep(1)
+def build_listing(source: Dict[str, str], candidate_url: str, candidate_title: str, candidate_text: str) -> Optional[Listing]:
+    detail = scrape_listing_detail(candidate_url, source["name"])
+    if not detail:
+        return None
+    merged_text = clean_text(f"{candidate_title} {candidate_text} {detail['title']} {detail['text']}")
+    score = keyword_score(merged_text)
+    if score < 1:
+        return None
 
-    return listings
+    price = detail["price"] or parse_price(candidate_text)
+    parcela = detail["parcela"] or parse_parcela(candidate_text)
+    location = detail["location"] or extract_location(candidate_text) or extract_location(detail["title"])
+
+    lat, lon = geocode_location(location or detail["title"] or candidate_title)
+    minutes = estimate_drive_minutes(lat, lon)
+
+    passes_hard = (
+        price is not None and price <= PRECIO_MAXIMO and
+        parcela is not None and parcela >= PARCELA_MINIMA and
+        minutes is not None and minutes <= MAX_MINUTOS_OVIEDO
+    )
+
+    if not passes_hard:
+        if score < 4:
+            return None
+        if price is not None and price > PRECIO_MAXIMO * 1.1:
+            return None
+        if minutes is not None and minutes > 22:
+            return None
+
+    maps = google_maps_url(lat, lon, f"{location or detail['title']} Asturias")
+    return Listing(
+        source=source["name"],
+        url=candidate_url,
+        title=detail["title"] or candidate_title,
+        location_text=location or "Asturias",
+        price=price,
+        parcela_m2=parcela,
+        lat=lat,
+        lon=lon,
+        minutes_to_oviedo=minutes,
+        maps_url=maps,
+        summary=merged_text[:700],
+        score=score,
+        seen_at=now_iso(),
+    )
 
 
 def load_seen() -> Dict[str, dict]:
@@ -318,14 +354,23 @@ def fmt_eur(value: Optional[int]) -> str:
     return f"{value:,.0f} €".replace(",", ".")
 
 
+def fmt_m2(value: Optional[int]) -> str:
+    return f"{value} m²" if value is not None else "N/D"
+
+
+def fmt_min(value: Optional[int]) -> str:
+    return f"{value} min" if value is not None else "N/D"
+
+
 def build_new_message(listing: Listing) -> str:
     return (
-        f"🏡 <b>NUEVO ANUNCIO</b>\n\n"
+        f"🏡 <b>NUEVA OPORTUNIDAD</b>\n\n"
         f"<b>{escape(listing.title)}</b>\n"
         f"💶 Precio: <b>{fmt_eur(listing.price)}</b>\n"
-        f"📐 Parcela: <b>{listing.parcela_m2} m²</b>\n"
+        f"📐 Parcela: <b>{fmt_m2(listing.parcela_m2)}</b>\n"
         f"📍 Zona: {escape(listing.location_text)}\n"
-        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{listing.minutes_to_oviedo} min</b>\n"
+        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{fmt_min(listing.minutes_to_oviedo)}</b>\n"
+        f"⭐ Relevancia: <b>{listing.score}</b>\n"
         f"🗺 <a href=\"{listing.maps_url}\">Ver en Google Maps</a>\n"
         f"🌐 Fuente: {escape(listing.source)}\n"
         f"🔗 <a href=\"{listing.url}\">Ver anuncio</a>"
@@ -343,9 +388,10 @@ def build_price_change_message(listing: Listing, old_price: int) -> str:
         f"💶 Antes: <s>{fmt_eur(old_price)}</s>\n"
         f"💶 Ahora: <b>{fmt_eur(listing.price)}</b>\n"
         f"↕ Diferencia: <b>{diff}</b>\n"
-        f"📐 Parcela: <b>{listing.parcela_m2} m²</b>\n"
+        f"📐 Parcela: <b>{fmt_m2(listing.parcela_m2)}</b>\n"
         f"📍 Zona: {escape(listing.location_text)}\n"
-        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{listing.minutes_to_oviedo} min</b>\n"
+        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{fmt_min(listing.minutes_to_oviedo)}</b>\n"
+        f"⭐ Relevancia: <b>{listing.score}</b>\n"
         f"🗺 <a href=\"{listing.maps_url}\">Ver en Google Maps</a>\n"
         f"🌐 Fuente: {escape(listing.source)}\n"
         f"🔗 <a href=\"{listing.url}\">Ver anuncio</a>"
@@ -356,20 +402,26 @@ def dedupe(listings: List[Listing]) -> List[Listing]:
     best: Dict[str, Listing] = {}
     for listing in listings:
         key = listing.url.split("?")[0].rstrip("/")
-        if key not in best:
+        if key not in best or listing.score > best[key].score:
             best[key] = listing
     return list(best.values())
 
 
 def run() -> None:
     found: List[Listing] = []
-
     for source in SEARCH_SOURCES:
-        print(f"Buscando en {source['name']}...")
-        found.extend(scrape_generic_cards(source))
+        print(f"Buscando candidatos en {source['name']}...")
+        candidates = scrape_candidates(source)[:20]
+        print(f"  candidatos: {len(candidates)}")
+        for url, title, text in candidates:
+            listing = build_listing(source, url, title, text)
+            if listing:
+                found.append(listing)
+            time.sleep(0.6)
 
     found = dedupe(found)
-    found.sort(key=lambda item: (item.price or 999999999, item.minutes_to_oviedo or 999))
+    found.sort(key=lambda item: (-(item.score or 0), item.price or 999999999))
+    found = found[:15]
 
     seen = load_seen()
     updated = dict(seen)
@@ -391,7 +443,7 @@ def run() -> None:
         updated[key] = asdict(listing)
 
     save_seen(updated)
-    print(f"Anuncios válidos: {len(found)} | avisos enviados: {sent}")
+    print(f"Anuncios candidatos finales: {len(found)} | avisos enviados: {sent}")
 
 
 if __name__ == "__main__":
