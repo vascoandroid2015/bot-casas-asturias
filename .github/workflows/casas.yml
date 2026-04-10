@@ -2,8 +2,11 @@ name: Bot Casas de Piedra cerca de Oviedo
 
 on:
   schedule:
-    - cron: "0 20 * * *"      # Ejecuta todos los días a las 20:00 (hora de España peninsular)
-  workflow_dispatch:          # Permite ejecución manual desde GitHub
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run:
@@ -18,10 +21,23 @@ jobs:
 
       - name: Instalar dependencias
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install --with-deps
 
       - name: Ejecutar bot
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
+
+      - name: Guardar histórico
+        run: |
+          if git diff --quiet seen_ads.json; then
+            echo "Sin cambios en seen_ads.json"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add seen_ads.json
+          git commit -m "Actualizar histórico de anuncios"
+          git push
