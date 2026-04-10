@@ -43,6 +43,7 @@ SEARCH_SOURCES = [
     {"name": "Fotocasa rústicas", "url": "https://www.fotocasa.es/es/comprar/casas-rurales/asturias-provincia/todas-las-zonas/l", "base": "https://www.fotocasa.es"},
     {"name": "Pisos.com", "url": "https://www.pisos.com/venta/casas-asturias/", "base": "https://www.pisos.com"},
     {"name": "Wallapop", "url": "https://es.wallapop.com/inmobiliaria/casas/oviedo", "base": "https://es.wallapop.com"},
+    {"name": "Milanuncios", "url": "https://www.milanuncios.com/venta-de-casas-en-asturias/", "base": "https://www.milanuncios.com"},
     {"name": "Nortecasa", "url": "https://www.nortecasa.com/inmuebles/todos/", "base": "https://www.nortecasa.com"},
     {"name": "Aldeasabandonadas", "url": "https://www.aldeasabandonadas.com/venta-de-casas-rurales/62-venta-de-casas-rurales-asturias.html", "base": "https://www.aldeasabandonadas.com"},
     {"name": "Green Acres", "url": "https://www.green-acres.es/casas-a-la-venta/asturias-provincia", "base": "https://www.green-acres.es"},
@@ -51,6 +52,18 @@ SEARCH_SOURCES = [
     {"name": "Habitaclia", "url": "https://www.habitaclia.com/casas-segundamano-provincia-asturias-173.htm", "base": "https://www.habitaclia.com"},
     {"name": "CoCampo", "url": "https://www.cocampo.com/es/es/explorar/comprar/casas-pueblo-baratas/espana/asturias/", "base": "https://www.cocampo.com"},
     {"name": "Country Homes", "url": "https://www.grupocountryhomes.com/venta/casas-rurales-en-asturias", "base": "https://www.grupocountryhomes.com"},
+    {"name": "Properstar", "url": "https://www.properstar.es/espana/asturias/comprar/casa", "base": "https://www.properstar.es"},
+    {"name": "Kyero", "url": "https://www.kyero.com/es/asturias-propiedad-en-venta-0l33", "base": "https://www.kyero.com"},
+    {"name": "Indomio", "url": "https://www.indomio.es/venta-casas/asturias-provincia/", "base": "https://www.indomio.es"},
+    {"name": "Casal Inmobiliaria", "url": "https://www.inmocasal.es", "base": "https://www.inmocasal.es"},
+    {"name": "SAREB Asturias", "url": "https://www.sareb.es/inmuebles/principado-de-asturias/asturias/", "base": "https://www.sareb.es"},
+    {"name": "Aliseda", "url": "https://www.alisedainmobiliaria.com/compra-viviendas-asturias", "base": "https://www.alisedainmobiliaria.com"},
+    {"name": "Servihabitat", "url": "https://www.servihabitat.com/es/comprar/viviendas/asturias", "base": "https://www.servihabitat.com"},
+    {"name": "Solvia", "url": "https://www.solvia.es/es/comprar/viviendas/asturias", "base": "https://www.solvia.es"},
+    {"name": "Altamira", "url": "https://www.altamirainmuebles.com/resultados?operation=sale&province=33&typology=house", "base": "https://www.altamirainmuebles.com"},
+    {"name": "Haya", "url": "https://www.haya.es/es_ES/venta-viviendas/asturias", "base": "https://www.haya.es"},
+    {"name": "BOE subastas", "url": "https://www.subastasdelboe.com/subastas-boe-en-asturias/", "base": "https://www.subastasdelboe.com"},
+    {"name": "AEAT subastas", "url": "https://sede.agenciatributaria.gob.es/Sede/subastas.html", "base": "https://sede.agenciatributaria.gob.es"},
 ]
 
 session = requests.Session()
@@ -384,6 +397,7 @@ def build_new_message(listing: Listing) -> str:
         f"⭐ Relevancia: <b>{listing.score}</b>\n"
         f"🗺 <a href=\"{listing.maps_url}\">Ver en Google Maps</a>\n"
         f"🌐 Fuente: {escape(listing.source)}\n"
+        f"⚠️ Revisar estado jurídico y cargas si es subasta o activo bancario\n"
         f"🔗 <a href=\"{listing.url}\">Ver anuncio</a>"
     )
 
@@ -405,6 +419,7 @@ def build_price_change_message(listing: Listing, old_price: int) -> str:
         f"⭐ Relevancia: <b>{listing.score}</b>\n"
         f"🗺 <a href=\"{listing.maps_url}\">Ver en Google Maps</a>\n"
         f"🌐 Fuente: {escape(listing.source)}\n"
+        f"⚠️ Revisar estado jurídico y cargas si es subasta o activo bancario\n"
         f"🔗 <a href=\"{listing.url}\">Ver anuncio</a>"
     )
 
