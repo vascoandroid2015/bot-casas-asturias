@@ -6,19 +6,19 @@ import time
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from html import escape
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from urllib.parse import quote
 
 import requests
 from bs4 import BeautifulSoup
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "@casaspiedrasenasturias")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "@casaspiedrasenasturias")
 
 PRECIO_MAXIMO = 250000
 PARCELA_MINIMA = 600
 MAX_MINUTOS_OVIEDO = 15
-OVIEDO_REF = (43.3614, -5.8494)
+OVIEDO_REF: Tuple[float, float] = (43.3614, -5.8494)
 OVIEDO_REF_LABEL = "Oviedo centro"
 SEEN_FILE = "seen_ads.json"
 TIMEOUT = 25
@@ -106,17 +106,17 @@ def normalize_url(url: str, base: str) -> str:
 def parse_price(text: str) -> Optional[int]:
     if not text:
         return None
-    m = re.search(r"([\d\.]{3,}|\d{2,6})\s*€", text.replace(",", "."))
-    if not m:
-        m = re.search(r"([\d\.]{3,}|\d{2,6})", text)
-    if not m:
+    match = re.search(r"([\d\.]{3,}|\d{2,6})\s*€", text.replace(",", "."))
+    if not match:
+        match = re.search(r"([\d\.]{3,}|\d{2,6})", text)
+    if not match:
         return None
-    num = re.sub(r"[^\d]", "", m.group(1))
+    num = re.sub(r"[^\d]", "", match.group(1))
     if not num:
         return None
     try:
         return int(num)
-    except Exception:
+    except ValueError:
         return None
 
 
@@ -129,51 +129,53 @@ def parse_parcela(text: str) -> Optional[int]:
         r"terreno(?: de)?\s*([\d\.,]+)\s*m[²2]",
         r"([\d\.,]+)\s*m[²2]\s*de\s*(?:parcela|finca|terreno)",
     ]
-    for p in patterns:
-        m = re.search(p, text.lower())
-        if m:
-            num = re.sub(r"[^\d]", "", m.group(1))
+    lower = text.lower()
+    for pattern in patterns:
+        match = re.search(pattern, lower)
+        if match:
+            num = re.sub(r"[^\d]", "", match.group(1))
             if num:
                 return int(num)
     return None
 
 
 def contains_good_keywords(text: str) -> bool:
-    low = text.lower()
-    return any(k in low for k in KEYWORDS_OK)
+    lower = text.lower()
+    return any(keyword in lower for keyword in KEYWORDS_OK)
 
 
 def contains_bad_keywords(text: str) -> bool:
-    low = text.lower()
-    return any(k in low for k in KEYWORDS_BAD)
+    lower = text.lower()
+    return any(keyword in lower for keyword in KEYWORDS_BAD)
 
 
-def geocode_location(location_text: str) -> tuple[Optional[float], Optional[float]]:
+def geocode_location(location_text: str) -> Tuple[Optional[float], Optional[float]]:
     if not location_text:
         return None, None
     query = f"{location_text}, Asturias, España"
     try:
-        r = session.get(
+        response = session.get(
             "https://nominatim.openstreetmap.org/search",
             params={"q": query, "format": "jsonv2", "limit": 1},
             timeout=TIMEOUT,
         )
-        data = r.json()
+        response.raise_for_status()
+        data = response.json()
         if data:
             return float(data[0]["lat"]), float(data[0]["lon"])
     except Exception:
-        pass
+        return None, None
     return None, None
 
 
 def haversine_km(a_lat: float, a_lon: float, b_lat: float, b_lon: float) -> float:
-    r = 6371.0
+    radius = 6371.0
     p1 = math.radians(a_lat)
     p2 = math.radians(b_lat)
     dp = math.radians(b_lat - a_lat)
     dl = math.radians(b_lon - a_lon)
     x = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
-    return 2 * r * math.atan2(math.sqrt(x), math.sqrt(1 - x))
+    return 2 * radius * math.atan2(math.sqrt(x), math.sqrt(1 - x))
 
 
 def estimate_drive_minutes(lat: Optional[float], lon: Optional[float]) -> Optional[int]:
@@ -183,16 +185,16 @@ def estimate_drive_minutes(lat: Optional[float], lon: Optional[float]) -> Option
     return round((km * 1.35 / 50) * 60)
 
 
-def google_maps_url(lat: Optional[float], lon: Optional[float], q: str) -> str:
+def google_maps_url(lat: Optional[float], lon: Optional[float], query: str) -> str:
     if lat is not None and lon is not None:
         return f"https://www.google.com/maps?q={lat},{lon}"
-    return f"https://www.google.com/maps/search/?api=1&query={quote(q)}"
+    return f"https://www.google.com/maps/search/?api=1&query={quote(query)}"
 
 
 def fetch(url: str) -> str:
-    r = session.get(url, timeout=TIMEOUT)
-    r.raise_for_status()
-    return r.text
+    response = session.get(url, timeout=TIMEOUT)
+    response.raise_for_status()
+    return response.text
 
 
 def scrape_generic_cards(source: Dict[str, str]) -> List[Listing]:
@@ -207,28 +209,39 @@ def scrape_generic_cards(source: Dict[str, str]) -> List[Listing]:
     seen_urls = set()
 
     for card in cards:
-        a = card.select_one('a[href]')
-        if not a:
+        link = card.select_one("a[href]")
+        if not link:
             continue
-        url = normalize_url(a.get('href', ''), source["base"])
+
+        url = normalize_url(link.get("href", ""), source["base"])
         if not url or url in seen_urls:
             continue
         seen_urls.add(url)
 
         text = clean_text(card.get_text(" ", strip=True))
-        title = clean_text(a.get_text(" ", strip=True)) or clean_text(card.select_one("h1,h2,h3,h4").get_text(" ", strip=True) if card.select_one("h1,h2,h3,h4") else "")
+        title_element = card.select_one("h1, h2, h3, h4")
+        title = clean_text(link.get_text(" ", strip=True))
+        if not title and title_element:
+            title = clean_text(title_element.get_text(" ", strip=True))
         if not title:
             title = text[:120]
+
         price = parse_price(text)
         parcela = parse_parcela(text)
+
         location = ""
-        loc_el = card.select_one('[class*="location"], [class*="district"], address, .item-detail-char, .text-muted')
-        if loc_el:
-            location = clean_text(loc_el.get_text(" ", strip=True))
+        location_element = card.select_one('[class*="location"], [class*="district"], address, .item-detail-char, .text-muted')
+        if location_element:
+            location = clean_text(location_element.get_text(" ", strip=True))
         if not location:
-            m = re.search(r"(Oviedo|Siero|Noreña|Llanera|Las Regueras|Ribera de Arriba|Mieres|Langreo|Morcín|Siero|Sariego|Gijón|Avilés|Piloña|Siero)", text, re.I)
-            if m:
-                location = m.group(1)
+            match = re.search(
+                r"(Oviedo|Siero|Noreña|Norena|Llanera|Las Regueras|Ribera de Arriba|Mieres|Langreo|Morcín|Morcin|Sariego|Gijón|Gijon|Avilés|Aviles|Piloña|Pilona)",
+                text,
+                re.I,
+            )
+            if match:
+                location = match.group(1)
+
         blob = f"{title} {text} {location}".lower()
         if "asturias" not in blob and not location:
             continue
@@ -240,26 +253,31 @@ def scrape_generic_cards(source: Dict[str, str]) -> List[Listing]:
             continue
         if parcela is None or parcela < PARCELA_MINIMA:
             continue
+
         lat, lon = geocode_location(location or title)
         minutes = estimate_drive_minutes(lat, lon)
         if minutes is None or minutes > MAX_MINUTOS_OVIEDO:
             continue
+
         maps = google_maps_url(lat, lon, f"{location} Asturias")
-        listings.append(Listing(
-            source=source["name"],
-            url=url,
-            title=title,
-            location_text=location or "Asturias",
-            price=price,
-            parcela_m2=parcela,
-            lat=lat,
-            lon=lon,
-            minutes_to_oviedo=minutes,
-            maps_url=maps,
-            summary=text[:500],
-            seen_at=now_iso(),
-        ))
+        listings.append(
+            Listing(
+                source=source["name"],
+                url=url,
+                title=title,
+                location_text=location or "Asturias",
+                price=price,
+                parcela_m2=parcela,
+                lat=lat,
+                lon=lon,
+                minutes_to_oviedo=minutes,
+                maps_url=maps,
+                summary=text[:500],
+                seen_at=now_iso(),
+            )
+        )
         time.sleep(1)
+
     return listings
 
 
@@ -267,15 +285,15 @@ def load_seen() -> Dict[str, dict]:
     if not os.path.exists(SEEN_FILE):
         return {}
     try:
-        with open(SEEN_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        with open(SEEN_FILE, "r", encoding="utf-8") as file:
+            return json.load(file)
     except Exception:
         return {}
 
 
 def save_seen(data: Dict[str, dict]) -> None:
-    with open(SEEN_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    with open(SEEN_FILE, "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
 
 
 def send_telegram(message: str) -> None:
@@ -284,83 +302,93 @@ def send_telegram(message: str) -> None:
         return
     requests.post(
         f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-        data={"chat_id": CHAT_ID, "text": message, "parse_mode": "HTML", "disable_web_page_preview": False},
+        data={
+            "chat_id": TELEGRAM_CHAT_ID,
+            "text": message,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": False,
+        },
         timeout=TIMEOUT,
     )
 
 
-def fmt_eur(v: Optional[int]) -> str:
-    if v is None:
+def fmt_eur(value: Optional[int]) -> str:
+    if value is None:
         return "N/D"
-    return f"{v:,.0f} €".replace(",", ".")
+    return f"{value:,.0f} €".replace(",", ".")
 
 
-def build_new_message(x: Listing) -> str:
+def build_new_message(listing: Listing) -> str:
     return (
         f"🏡 <b>NUEVO ANUNCIO</b>\n\n"
-        f"<b>{escape(x.title)}</b>\n"
-        f"💶 Precio: <b>{fmt_eur(x.price)}</b>\n"
-        f"📐 Parcela: <b>{x.parcela_m2} m²</b>\n"
-        f"📍 Zona: {escape(x.location_text)}\n"
-        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{x.minutes_to_oviedo} min</b>\n"
-        f"🗺 <a href=\"{x.maps_url}\">Ver en Google Maps</a>\n"
-        f"🌐 Fuente: {escape(x.source)}\n"
-        f"🔗 <a href=\"{x.url}\">Ver anuncio</a>"
+        f"<b>{escape(listing.title)}</b>\n"
+        f"💶 Precio: <b>{fmt_eur(listing.price)}</b>\n"
+        f"📐 Parcela: <b>{listing.parcela_m2} m²</b>\n"
+        f"📍 Zona: {escape(listing.location_text)}\n"
+        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{listing.minutes_to_oviedo} min</b>\n"
+        f"🗺 <a href=\"{listing.maps_url}\">Ver en Google Maps</a>\n"
+        f"🌐 Fuente: {escape(listing.source)}\n"
+        f"🔗 <a href=\"{listing.url}\">Ver anuncio</a>"
     )
 
 
-def build_price_change_message(x: Listing, old_price: int) -> str:
-    icon = "💸" if x.price is not None and x.price < old_price else "📈"
-    label = "BAJADA DE PRECIO" if x.price is not None and x.price < old_price else "CAMBIO DE PRECIO"
-    diff = "N/D" if x.price is None else fmt_eur(abs(x.price - old_price))
+def build_price_change_message(listing: Listing, old_price: int) -> str:
+    is_drop = listing.price is not None and listing.price < old_price
+    icon = "💸" if is_drop else "📈"
+    label = "BAJADA DE PRECIO" if is_drop else "CAMBIO DE PRECIO"
+    diff = "N/D" if listing.price is None else fmt_eur(abs(listing.price - old_price))
     return (
         f"{icon} <b>{label}</b>\n\n"
-        f"<b>{escape(x.title)}</b>\n"
+        f"<b>{escape(listing.title)}</b>\n"
         f"💶 Antes: <s>{fmt_eur(old_price)}</s>\n"
-        f"💶 Ahora: <b>{fmt_eur(x.price)}</b>\n"
+        f"💶 Ahora: <b>{fmt_eur(listing.price)}</b>\n"
         f"↕ Diferencia: <b>{diff}</b>\n"
-        f"📐 Parcela: <b>{x.parcela_m2} m²</b>\n"
-        f"📍 Zona: {escape(x.location_text)}\n"
-        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{x.minutes_to_oviedo} min</b>\n"
-        f"🗺 <a href=\"{x.maps_url}\">Ver en Google Maps</a>\n"
-        f"🌐 Fuente: {escape(x.source)}\n"
-        f"🔗 <a href=\"{x.url}\">Ver anuncio</a>"
+        f"📐 Parcela: <b>{listing.parcela_m2} m²</b>\n"
+        f"📍 Zona: {escape(listing.location_text)}\n"
+        f"🚗 Tiempo a {OVIEDO_REF_LABEL}: <b>{listing.minutes_to_oviedo} min</b>\n"
+        f"🗺 <a href=\"{listing.maps_url}\">Ver en Google Maps</a>\n"
+        f"🌐 Fuente: {escape(listing.source)}\n"
+        f"🔗 <a href=\"{listing.url}\">Ver anuncio</a>"
     )
 
 
 def dedupe(listings: List[Listing]) -> List[Listing]:
     best: Dict[str, Listing] = {}
-    for x in listings:
-        k = x.url.split("?")[0].rstrip("/")
-        if k not in best:
-            best[k] = x
+    for listing in listings:
+        key = listing.url.split("?")[0].rstrip("/")
+        if key not in best:
+            best[key] = listing
     return list(best.values())
 
 
 def run() -> None:
     found: List[Listing] = []
+
     for source in SEARCH_SOURCES:
         print(f"Buscando en {source['name']}...")
         found.extend(scrape_generic_cards(source))
+
     found = dedupe(found)
-    found.sort(key=lambda x: (x.price or 999999999, x.minutes_to_oviedo or 999))
+    found.sort(key=lambda item: (item.price or 999999999, item.minutes_to_oviedo or 999))
 
     seen = load_seen()
     updated = dict(seen)
     sent = 0
 
-    for x in found:
-        key = x.url.split("?")[0].rstrip("/")
-        old = seen.get(key)
-        if old is None:
-            send_telegram(build_new_message(x))
+    for listing in found:
+        key = listing.url.split("?")[0].rstrip("/")
+        previous = seen.get(key)
+
+        if previous is None:
+            send_telegram(build_new_message(listing))
             sent += 1
         else:
-            old_price = old.get("price")
-            if old_price != x.price:
-                send_telegram(build_price_change_message(x, old_price or 0))
+            old_price = previous.get("price")
+            if old_price != listing.price:
+                send_telegram(build_price_change_message(listing, old_price or 0))
                 sent += 1
-        updated[key] = asdict(x)
+
+        updated[key] = asdict(listing)
 
     save_seen(updated)
     print(f"Anuncios válidos: {len(found)} | avisos enviados: {sent}")
