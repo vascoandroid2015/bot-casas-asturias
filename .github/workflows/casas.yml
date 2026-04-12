@@ -2,8 +2,8 @@ name: Bot Inmobiliario Asturias
 
 on:
   schedule:
-    - cron: "0 9 * * *"      # Todos los días a las 10:00 (hora España peninsular)
-  workflow_dispatch:         # Permite ejecución manual
+    - cron: "0 8 * * *"      # Todos los días a las 9:00 hora España
+  workflow_dispatch:
 
 jobs:
   run:
@@ -26,4 +26,4 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
-        timeout-minutes: 15
+        timeout-minutes: 18
