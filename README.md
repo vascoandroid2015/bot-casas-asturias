@@ -1,35 +1,29 @@
-# Bot de casas de piedra en Asturias para Telegram
 
-Este bot busca anuncios inmobiliarios en varios portales y manda avisos a Telegram cuando detecta inmuebles que cumplan estos filtros:
+# Bot Inmobiliario Asturias
 
-- Precio máximo: 250.000 €
-- Parcela/finca mínima: 600 m²
-- Zona: Asturias
-- Tiempo estimado a Oviedo centro: 15 min o menos
-- Si el anuncio ya existía, solo avisa de nuevo si cambia el precio
+Busca casas en Asturias en múltiples fuentes:
 
-## Archivos
+- Idealista
+- Fotocasa
+- Milanuncios
+- BOE
+- Subastas
+- Wallapop (indirecto)
+- Redes sociales
+- Otros portales
 
-- `main.py`: lógica principal
-- `seen_ads.json`: histórico de anuncios ya vistos
-- `.github/workflows/casas.yml`: ejecución automática en GitHub Actions
-- `requirements.txt`: dependencias Python
+## Uso
 
-## Secrets necesarios en GitHub
+Configura en GitHub Secrets:
 
-Crea estos secretos en el repositorio:
-
-- `TELEGRAM_TOKEN`: token del bot creado con BotFather
-- `TELEGRAM_CHAT_ID`: por ejemplo `@casaspiedrasenasturias`
+- TELEGRAM_TOKEN
+- TELEGRAM_CHAT_ID
 
 ## Importante
 
-Esta versión está pensada como base funcional y mantenible. Muchos portales cambian HTML, limitan scraping o usan JavaScript/captcha. Por eso el scraper usa un enfoque genérico y habrá que ajustar selectores por portal según veas resultados reales.
+Añadir en GitHub Actions:
 
-## Mejoras futuras recomendadas
-
-- Añadir Playwright para fuentes que cargan contenido dinámico
-- Ajustar scraper específico por cada portal
-- Sustituir el tiempo estimado por una API real de rutas
-- Añadir aviso de anuncio desaparecido
-- Añadir filtro por concejos concretos
+```yaml
+- name: Install Playwright
+  run: playwright install
+```
