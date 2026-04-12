@@ -133,10 +133,10 @@ def fotocasa(page):
 
 def extraer_desde_soup(items, source, base_url):
     resultados = []
-    for item in items[:150]:
+    for item in items[:300]:
         try:
             txt = limpiar_texto(item.get_text(" "))
-            if len(txt) < 5:
+            if len(txt) < 3:
                 continue
             a = item.find("a")
             link = normalizar_link(a.get("href") if a else "", base_url)
