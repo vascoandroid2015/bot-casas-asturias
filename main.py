@@ -9,7 +9,7 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 MAX_PRECIO = 250000
-CENTRO = "oviedo"
+CENTRO = "Oviedo"
 RADIO_KM_APROX = 50
 SEEN_FILE = "seen_ads.json"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -17,13 +17,17 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 ZONAS_VALIDAS = [
     "oviedo", "siero", "llanera", "noreña", "mieres", "grado",
     "langreo", "laviana", "aller", "ribera de arriba", "las regueras",
-    "bimenes", "sariego", "nava", "lena", "aller", "proaza",
-    "quiros", "quiros", "teverga", "morcin", "tineo", "salas",
-    "aviles", "corvera", "castrillon", "soto del barco", "muros de nalon",
-    "cudillero", "gijon", "carreño", "villaviciosa", "langreo", "san martin del rey aurelio"
+    "bimenes", "sariego", "nava", "lena", "proaza", "quiros",
+    "teverga", "morcin", "salas", "aviles", "corvera", "castrillon",
+    "soto del barco", "muros de nalon", "cudillero", "gijon",
+    "carreño", "villaviciosa", "san martin del rey aurelio"
 ]
 
-TIPOS_VALIDOS = ["casa", "chalet", "piso", "apartamento", "terreno", "finca", "parcela", "solar", "rústica", "rustica", "casa rural", "casería", "caseria"]
+TIPOS_VALIDOS = [
+    "casa", "chalet", "piso", "apartamento", "vivienda",
+    "terreno", "finca", "parcela", "solar", "rústica", "rustica",
+    "casa rural", "casería", "caseria", "casa o chalet"
+]
 
 
 def enviar(msg):
@@ -60,6 +64,10 @@ def normalizar_link(link, base=None):
     if base:
         return base.rstrip("/") + "/" + link.lstrip("/")
     return link
+
+
+def limpiar_texto(texto):
+    return re.sub(r"\s+", " ", (texto or "")).strip()
 
 
 def extraer_precio(texto):
@@ -111,21 +119,17 @@ def cumple_criterios(item):
         str(item.get("fuente", ""))
     ]).lower()
 
-    if not any(z in texto for z in ZONAS_VALIDAS):
+    if not ("oviedo" in texto or "asturias" in texto or any(z in texto for z in ZONAS_VALIDAS)):
         return False
 
     if not any(t in texto for t in TIPOS_VALIDOS):
         return False
 
     precio = item.get("precio", 0) or 0
-    if precio > MAX_PRECIO:
+    if precio and precio > MAX_PRECIO:
         return False
 
     return True
-
-
-def limpiar_texto(texto):
-    return re.sub(r"\s+", " ", (texto or "")).strip()
 
 
 def idealista(page):
@@ -133,29 +137,30 @@ def idealista(page):
     urls = [
         "https://www.idealista.com/venta-viviendas/oviedo-asturias/",
         "https://www.idealista.com/venta-terrenos/oviedo-asturias/",
-        "https://www.idealista.com/venta-fincas-rusticas/oviedo-asturias/"
+        "https://www.idealista.com/venta-fincas-rusticas/oviedo-asturias/",
+        "https://www.idealista.com/venta-viviendas/asturias/",
+        "https://www.idealista.com/venta-terrenos/asturias/",
+        "https://www.idealista.com/venta-fincas-rusticas/asturias/"
     ]
     for url in urls:
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
+            page.wait_for_timeout(5000)
             cards = page.locator("article").all()
-            for card in cards[:30]:
+            for card in cards[:40]:
                 try:
                     txt = limpiar_texto(card.inner_text())
                     a = card.locator("a").first
                     link = a.get_attribute("href") if a.count() else ""
                     titulo = limpiar_texto(card.locator("a").first.inner_text()) if a.count() else txt[:140]
-                    precio = extraer_precio(txt)
-                    if link:
-                        resultados.append({
-                            "fuente": "idealista",
-                            "titulo": titulo,
-                            "descripcion": txt,
-                            "precio": precio,
-                            "link": normalizar_link(link, "https://www.idealista.com"),
-                            "parcela_m2": extraer_parcela(txt)
-                        })
+                    resultados.append({
+                        "fuente": "idealista",
+                        "titulo": titulo,
+                        "descripcion": txt,
+                        "precio": extraer_precio(txt),
+                        "link": normalizar_link(link, "https://www.idealista.com"),
+                        "parcela_m2": extraer_parcela(txt)
+                    })
                 except Exception:
                     continue
         except Exception:
@@ -168,27 +173,26 @@ def fotocasa(page):
     urls = [
         "https://www.fotocasa.es/es/comprar/viviendas/oviedo/todas-las-zonas/l",
         "https://www.fotocasa.es/es/comprar/terrenos/oviedo/todas-las-zonas/l",
-        "https://www.fotocasa.es/es/comprar/fincas/oviedo/todas-las-zonas/l"
+        "https://www.fotocasa.es/es/comprar/fincas/oviedo/todas-las-zonas/l",
+        "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l",
+        "https://www.fotocasa.es/es/comprar/terrenos/asturias-provincia/todas-las-zonas/l",
+        "https://www.fotocasa.es/es/comprar/fincas/asturias-provincia/todas-las-zonas/l"
     ]
     for url in urls:
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(4000)
+            page.wait_for_timeout(5000)
             cards = page.locator("article").all()
-            for card in cards[:30]:
+            for card in cards[:40]:
                 try:
                     txt = limpiar_texto(card.inner_text())
-                    link = ""
                     loc = card.locator("a")
-                    if loc.count():
-                        link = loc.first.get_attribute("href") or ""
-                    titulo = txt[:140]
-                    precio = extraer_precio(txt)
+                    link = loc.first.get_attribute("href") if loc.count() else ""
                     resultados.append({
                         "fuente": "fotocasa",
-                        "titulo": titulo,
+                        "titulo": txt[:140],
                         "descripcion": txt,
-                        "precio": precio,
+                        "precio": extraer_precio(txt),
                         "link": normalizar_link(link, "https://www.fotocasa.es"),
                         "parcela_m2": extraer_parcela(txt)
                     })
@@ -204,20 +208,23 @@ def milanuncios():
     urls = [
         "https://www.milanuncios.com/venta-de-casas-en-oviedo/",
         "https://www.milanuncios.com/venta-de-terrenos-en-oviedo/",
-        "https://www.milanuncios.com/venta-de-fincas-rusticas-en-oviedo/"
+        "https://www.milanuncios.com/venta-de-fincas-rusticas-en-oviedo/",
+        "https://www.milanuncios.com/venta-de-casas-en-asturias/",
+        "https://www.milanuncios.com/venta-de-terrenos-en-asturias/",
+        "https://www.milanuncios.com/venta-de-fincas-rusticas-en-asturias/"
     ]
     for url in urls:
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .aditem, .ma-AdCard")[:30]:
+            for item in soup.select("article, .aditem, .ma-AdCard, .item")[:40]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.milanuncios.com")
                     resultados.append({
                         "fuente": "milanuncios",
-                        "titulo": txt[:140],
+                        "titulo": txt[:160],
                         "descripcion": txt,
                         "precio": extraer_precio(txt),
                         "link": link,
@@ -232,23 +239,26 @@ def milanuncios():
 
 def habitaclia():
     resultados = []
-    queries = [
+    urls = [
         "https://www.habitaclia.com/comprar-vivienda-en-oviedo.htm",
         "https://www.habitaclia.com/comprar-terreno-en-oviedo.htm",
-        "https://www.habitaclia.com/comprar-casa-rustica-en-oviedo.htm"
+        "https://www.habitaclia.com/comprar-casa-rustica-en-oviedo.htm",
+        "https://www.habitaclia.com/comprar-vivienda-en-asturias.htm",
+        "https://www.habitaclia.com/comprar-terreno-en-asturias.htm",
+        "https://www.habitaclia.com/comprar-casa-rustica-en-asturias.htm"
     ]
-    for url in queries:
+    for url in urls:
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .advertisement, .listing-item")[:30]:
+            for item in soup.select("article, .advertisement, .listing-item, .listing")[:40]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.habitaclia.com")
                     resultados.append({
                         "fuente": "habitaclia",
-                        "titulo": txt[:140],
+                        "titulo": txt[:160],
                         "descripcion": txt,
                         "precio": extraer_precio(txt),
                         "link": link,
@@ -266,20 +276,23 @@ def yaencontre():
     urls = [
         "https://www.yaencontre.com/venta/viviendas/oviedo",
         "https://www.yaencontre.com/venta/terrenos/oviedo",
-        "https://www.yaencontre.com/venta/fincas/oviedo"
+        "https://www.yaencontre.com/venta/fincas/oviedo",
+        "https://www.yaencontre.com/venta/viviendas/asturias",
+        "https://www.yaencontre.com/venta/terrenos/asturias",
+        "https://www.yaencontre.com/venta/fincas/asturias"
     ]
     for url in urls:
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .listing, .card")[:30]:
+            for item in soup.select("article, .listing, .card, .property")[:40]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.yaencontre.com")
                     resultados.append({
                         "fuente": "yaencontre",
-                        "titulo": txt[:140],
+                        "titulo": txt[:160],
                         "descripcion": txt,
                         "precio": extraer_precio(txt),
                         "link": link,
@@ -297,20 +310,23 @@ def pisos_com():
     urls = [
         "https://www.pisos.com/venta/casas-oviedo/",
         "https://www.pisos.com/venta/terrenos-oviedo/",
-        "https://www.pisos.com/venta/fincas-rusticas-oviedo/"
+        "https://www.pisos.com/venta/fincas-rusticas-oviedo/",
+        "https://www.pisos.com/venta/casas-asturias/",
+        "https://www.pisos.com/venta/terrenos-asturias/",
+        "https://www.pisos.com/venta/fincas-rusticas-asturias/"
     ]
     for url in urls:
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .ad-box, .listing"): 
+            for item in soup.select("article, .ad-box, .listing, .card")[:40]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.pisos.com")
                     resultados.append({
                         "fuente": "pisos.com",
-                        "titulo": txt[:140],
+                        "titulo": txt[:160],
                         "descripcion": txt,
                         "precio": extraer_precio(txt),
                         "link": link,
@@ -356,7 +372,8 @@ def wallapop():
     queries = [
         "site:es.wallapop.com casa oviedo venta",
         "site:es.wallapop.com terreno oviedo venta",
-        "site:es.wallapop.com finca oviedo venta"
+        "site:es.wallapop.com finca oviedo venta",
+        "site:es.wallapop.com solar oviedo venta"
     ]
     resultados = []
     for q in queries:
@@ -370,7 +387,8 @@ def redes_sociales():
         'site:facebook.com oviedo terreno venta',
         'site:facebook.com oviedo finca venta',
         'site:x.com oviedo casa venta',
-        'site:x.com oviedo terreno venta'
+        'site:x.com oviedo terreno venta',
+        'site:x.com oviedo finca venta'
     ]
     resultados = []
     for q in queries:
@@ -385,7 +403,9 @@ def otros_portales():
         'site:milanuncios.com oviedo finca venta',
         'site:habitaclia.com oviedo casa venta',
         'site:yaencontre.com oviedo terreno venta',
-        'site:pisos.com oviedo finca venta'
+        'site:pisos.com oviedo finca venta',
+        'site:segundamano.es oviedo casa venta',
+        'site:vibbo.com oviedo terreno venta'
     ]
     resultados = []
     for q in queries:
@@ -397,27 +417,22 @@ def boe():
     resultados = []
     urls = [
         'https://www.boe.es/buscar/boe.php?dato=subasta+oviedo',
-        'https://www.boe.es/buscar/boe.php?dato=subasta+asturias+inmueble'
+        'https://www.boe.es/buscar/boe.php?dato=subasta+asturias+inmueble',
+        'https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-1765'
     ]
     for url in urls:
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select(".resultado-busqueda, .resultado, li")[:20]:
-                try:
-                    txt = limpiar_texto(item.get_text(" "))
-                    a = item.find("a")
-                    link = normalizar_link(a.get("href") if a else "", "https://www.boe.es")
-                    resultados.append({
-                        "fuente": "boe",
-                        "titulo": txt[:160],
-                        "descripcion": txt,
-                        "precio": 0,
-                        "link": link,
-                        "parcela_m2": extraer_parcela(txt)
-                    })
-                except Exception:
-                    continue
+            txt_total = limpiar_texto(soup.get_text(" "))
+            resultados.append({
+                "fuente": "boe",
+                "titulo": txt_total[:200],
+                "descripcion": txt_total,
+                "precio": 0,
+                "link": url,
+                "parcela_m2": extraer_parcela(txt_total)
+            })
         except Exception:
             continue
     return resultados
@@ -435,28 +450,18 @@ def subastas_boe():
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("tr, .resultado, .fila")[:30]:
-                try:
-                    txt = limpiar_texto(item.get_text(" "))
-                    a = item.find("a")
-                    link = normalizar_link(a.get("href") if a else "", "https://subastas.boe.es")
-                    resultados.append({
-                        "fuente": "subastas_boe",
-                        "titulo": txt[:160],
-                        "descripcion": txt,
-                        "precio": 0,
-                        "link": link,
-                        "parcela_m2": extraer_parcela(txt)
-                    })
-                except Exception:
-                    continue
+            txt_total = limpiar_texto(soup.get_text(" "))
+            resultados.append({
+                "fuente": "subastas_boe",
+                "titulo": txt_total[:200],
+                "descripcion": txt_total,
+                "precio": 0,
+                "link": url,
+                "parcela_m2": extraer_parcela(txt_total)
+            })
         except Exception:
             continue
     return resultados
-
-
-def idealista_directo():
-    return []
 
 
 def recolectar():
@@ -514,7 +519,7 @@ def main():
                 f"{n.get('titulo', '')}\n\n"
                 f"💰 {n.get('precio', 0)}€\n"
                 f"🌳 Parcela: {n.get('parcela', 'No especificado')}\n"
-                f"📍 Radio aproximado: {RADIO_KM_APROX} km desde {CENTRO.title()}\n\n"
+                f"📍 Radio aproximado: {RADIO_KM_APROX} km desde {CENTRO}\n\n"
                 f"🔗 {n.get('link', '')}"
             )
             enviar(msg)
