@@ -1,10 +1,10 @@
-
 import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 import json
 import os
 import re
+import time
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -52,8 +52,6 @@ def cumple_criterios(item):
 # ================= PARCELA =================
 
 def extraer_parcela(texto):
-    texto = texto.lower()
-
     patrones = [
         r'(\d{2,5})\s?m2',
         r'(\d{2,5})\s?metros',
@@ -62,11 +60,42 @@ def extraer_parcela(texto):
     ]
 
     for p in patrones:
-        match = re.search(p, texto)
+        match = re.search(p, texto.lower())
         if match:
             return match.group(1)
 
     return None
+
+# ================= SCRAPERS =================
+
+def scrap_generico(url):
+    resultados = []
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=10)
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        for a in soup.find_all("a", href=True):
+            texto = a.get_text(" ", strip=True)
+            link = a["href"]
+
+            if not texto or len(texto) < 20:
+                continue
+
+            if "€" in texto:
+                precio_match = re.findall(r'(\d{2,3}\.\d{3})', texto)
+                precio = int(precio_match[0].replace(".", "")) if precio_match else 0
+            else:
+                precio = 0
+
+            resultados.append({
+                "titulo": texto[:120],
+                "precio": precio,
+                "link": link if link.startswith("http") else url
+            })
+    except:
+        pass
+
+    return resultados
 
 # ================= IDEALISTA =================
 
@@ -79,7 +108,7 @@ def idealista(page):
 
     items = page.locator("article").all()
 
-    for item in items[:15]:
+    for item in items[:20]:
         try:
             titulo = item.locator("a.item-link").inner_text()
             link = item.locator("a.item-link").get_attribute("href")
@@ -87,185 +116,106 @@ def idealista(page):
 
             precio_num = int(precio.replace("€", "").replace(".", "").strip())
 
-            if precio_num <= MAX_PRECIO:
-                resultados.append({
-                    "titulo": titulo,
-                    "precio": precio_num,
-                    "link": "https://www.idealista.com" + link
-                })
-        except:
-            continue
-
-    return resultados
-
-# ================= FOTOCASA =================
-
-def fotocasa(page):
-    resultados = []
-    url = "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l"
-
-    page.goto(url)
-    page.wait_for_timeout(5000)
-
-    items = page.locator("article").all()
-
-    for item in items[:15]:
-        try:
-            texto = item.inner_text()
-            link = item.locator("a").get_attribute("href")
-
-            if "€" in texto:
-                precio = int(re.findall(r'(\d{2,3}\.\d{3})', texto)[0].replace(".", ""))
-
-                if precio <= MAX_PRECIO:
-                    resultados.append({
-                        "titulo": texto[:100],
-                        "precio": precio,
-                        "link": link
-                    })
-        except:
-            continue
-
-    return resultados
-
-# ================= MILANUNCIOS =================
-
-def milanuncios():
-    resultados = []
-    url = "https://www.milanuncios.com/venta-de-casas-en-asturias/"
-
-    r = requests.get(url, headers=HEADERS)
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    items = soup.select("article")
-
-    for item in items[:15]:
-        try:
-            texto = item.get_text()
-            link = item.find("a")["href"]
-
-            if "€" in texto:
-                precio = int(re.findall(r'(\d{2,3}\.\d{3})', texto)[0].replace(".", ""))
-
-                if precio <= MAX_PRECIO:
-                    resultados.append({
-                        "titulo": texto[:100],
-                        "precio": precio,
-                        "link": link
-                    })
-        except:
-            continue
-
-    return resultados
-
-# ================= BOE =================
-
-def boe():
-    resultados = []
-    url = "https://www.boe.es/buscar/boe.php?dato=subasta+asturias"
-
-    r = requests.get(url, headers=HEADERS)
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    for item in soup.select(".resultado-busqueda")[:10]:
-        try:
-            titulo = item.get_text(strip=True)
-            link = item.find("a")["href"]
-
             resultados.append({
                 "titulo": titulo,
-                "precio": 0,
-                "link": "https://www.boe.es" + link
+                "precio": precio_num,
+                "link": "https://www.idealista.com" + link
             })
         except:
             continue
 
     return resultados
 
-# ================= SUBASTAS =================
+# ================= BÚSQUEDA INTELIGENTE =================
 
-def subastas():
-    resultados = []
-    url = "https://subastas.boe.es/subastas_ava.php?campo%5B0%5D=SUBASTA.OBJETO&dato%5B0%5D=vivienda+asturias"
-
-    r = requests.get(url, headers=HEADERS)
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    for item in soup.select("tr")[:15]:
-        try:
-            texto = item.get_text()
-
-            if "vivienda" in texto.lower():
-                resultados.append({
-                    "titulo": texto[:120],
-                    "precio": 0,
-                    "link": url
-                })
-        except:
-            continue
-
-    return resultados
-
-# ================= BING =================
-
-def bing(query):
+def buscador(query):
     resultados = []
     url = f"https://www.bing.com/search?q={query}"
 
-    r = requests.get(url, headers=HEADERS)
-    soup = BeautifulSoup(r.text, "html.parser")
+    try:
+        r = requests.get(url, headers=HEADERS)
+        soup = BeautifulSoup(r.text, "html.parser")
 
-    for item in soup.select("li.b_algo")[:10]:
-        try:
-            titulo = item.find("h2").get_text()
-            link = item.find("a")["href"]
+        for item in soup.select("li.b_algo")[:15]:
+            try:
+                titulo = item.find("h2").get_text()
+                link = item.find("a")["href"]
 
-            resultados.append({
-                "titulo": titulo,
-                "precio": 0,
-                "link": link
-            })
-        except:
-            continue
+                resultados.append({
+                    "titulo": titulo,
+                    "precio": 0,
+                    "link": link
+                })
+            except:
+                continue
+    except:
+        pass
+
+    return resultados
+
+# ================= PORTALES MASIVOS =================
+
+def portales_extra():
+    queries = [
+        "casa asturias venta",
+        "casa rural asturias barata",
+        "vendo casa asturias particular",
+        "casa con terreno asturias",
+    ]
+
+    resultados = []
+
+    for q in queries:
+        resultados += buscador(q)
+
+    # sitios específicos
+    sites = [
+        "habitaclia.com",
+        "yaencontre.com",
+        "pisos.com",
+        "tucasa.com",
+        "indomio.es",
+        "globaliza.com"
+    ]
+
+    for site in sites:
+        resultados += buscador(f"site:{site} casa asturias venta")
 
     return resultados
 
 # ================= WALLAPOP =================
 
 def wallapop():
-    return bing("casa asturias venta site:wallapop.com")
+    return buscador("site:wallapop.com casa asturias venta")
 
-# ================= REDES =================
+# ================= MILANUNCIOS =================
 
-def redes_sociales():
-    resultados = []
+def milanuncios():
+    return buscador("site:milanuncios.com casa asturias")
 
+# ================= REDES SOCIALES =================
+
+def redes():
     queries = [
         "vendo casa asturias",
-        "casa asturias venta particular",
-        "casa rural asturias venta"
+        "vendo casa rural asturias",
+        "casa asturias particular venta"
     ]
 
-    for q in queries:
-        resultados += bing(f"{q} site:twitter.com OR site:facebook.com")
-
-    return resultados
-
-# ================= OTROS =================
-
-def otros_portales():
     resultados = []
 
-    queries = [
-        "site:habitaclia.com casa asturias venta",
-        "site:yaencontre.com casa asturias",
-        "site:pisos.com asturias casa venta"
-    ]
-
     for q in queries:
-        resultados += bing(q)
+        resultados += buscador(f"{q} site:twitter.com OR site:facebook.com OR site:reddit.com")
 
     return resultados
+
+# ================= BOE Y SUBASTAS =================
+
+def boe():
+    return buscador("site:boe.es subasta vivienda asturias")
+
+def subastas():
+    return buscador("subasta vivienda asturias")
 
 # ================= MAIN =================
 
@@ -279,13 +229,12 @@ def main():
 
         fuentes = (
             idealista(page) +
-            fotocasa(page) +
-            milanuncios() +
-            boe() +
-            subastas() +
+            portales_extra() +
             wallapop() +
-            redes_sociales() +
-            otros_portales()
+            milanuncios() +
+            redes() +
+            boe() +
+            subastas()
         )
 
         browser.close()
@@ -299,6 +248,7 @@ def main():
         if key not in seen:
             texto_total = item.get("titulo", "") + " " + item.get("link", "")
             parcela = extraer_parcela(texto_total)
+
             item["parcela"] = parcela if parcela else "No especificado"
 
             seen[key] = item["precio"]
@@ -307,8 +257,8 @@ def main():
     guardar_seen(seen)
 
     if nuevos:
-        for n in nuevos[:15]:
-            msg = f"""🏠 NUEVO INMUEBLE
+        for n in nuevos[:20]:
+            msg = f"""🏠 NUEVA OPORTUNIDAD
 
 {n['titulo']}
 
@@ -318,6 +268,7 @@ def main():
 🔗 {n['link']}
 """
             enviar(msg)
+            time.sleep(1)
     else:
         enviar("❌ Sin novedades")
 
