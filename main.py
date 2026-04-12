@@ -5,11 +5,28 @@ import os
 import re
 import time
 
+# ================= CONFIG =================
+
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 MAX_PRECIO = 250000
 SEEN_FILE = "seen_ads.json"
+
+ZONAS = [
+    "oviedo", "morcín", "riosa", "proaza", "quirós",
+    "mieres", "langreo", "san martin", "gijon", "aviles"
+]
+
+KEYWORDS_OK = ["casa", "chalet", "finca", "parcela", "terreno"]
+KEYWORDS_BAD = ["piso", "apartamento", "habitacion", "estudio"]
+
+KEYWORDS_INVERSOR = [
+    "reformar", "ruina", "oportunidad",
+    "negociable", "urge", "inversion"
+]
+
+HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 # ================= TELEGRAM =================
 
@@ -32,9 +49,15 @@ def guardar_seen(data):
 # ================= FILTRO =================
 
 def cumple_criterios(item):
-    texto = (item.get("titulo", "")).lower()
+    texto = (item.get("titulo", "") + item.get("link", "")).lower()
 
-    if "casa" not in texto:
+    if not any(k in texto for k in KEYWORDS_OK):
+        return False
+
+    if any(k in texto for k in KEYWORDS_BAD):
+        return False
+
+    if not any(z in texto for z in ZONAS):
         return False
 
     precio = item.get("precio", 0)
@@ -42,6 +65,12 @@ def cumple_criterios(item):
         return False
 
     return True
+
+# ================= INVERSIÓN =================
+
+def es_inversion(item):
+    texto = item.get("titulo", "").lower()
+    return any(k in texto for k in KEYWORDS_INVERSOR)
 
 # ================= PARCELA =================
 
@@ -56,114 +85,114 @@ def extraer_parcela(texto):
         match = re.search(p, texto.lower())
         if match:
             return match.group(1)
-
     return None
 
-# ================= IDEALISTA (FIABLE) =================
+# ================= SCRAPER PLAYWRIGHT =================
 
-def idealista(page):
-    print("Buscando en Idealista...")
+def scrap(page, url):
     resultados = []
 
-    url = "https://www.idealista.com/venta-viviendas/asturias/"
+    try:
+        page.goto(url)
+        page.wait_for_timeout(6000)
 
-    page.goto(url)
-    page.wait_for_timeout(6000)
+        items = page.locator("article")
 
-    items = page.locator("article")
+        for i in range(min(items.count(), 25)):
+            try:
+                item = items.nth(i)
+                texto = item.inner_text()
 
-    count = items.count()
-    print(f"Idealista encontrados: {count}")
+                if "€" not in texto:
+                    continue
 
-    for i in range(min(count, 20)):
-        try:
-            item = items.nth(i)
+                precio_match = re.findall(r'\d{2,3}\.\d{3}', texto)
+                precio = int(precio_match[0].replace(".", "")) if precio_match else 0
 
-            titulo = item.locator("a.item-link").inner_text()
-            link = item.locator("a.item-link").get_attribute("href")
-            precio_txt = item.locator(".item-price").inner_text()
+                link = item.locator("a").get_attribute("href")
 
-            precio = int(precio_txt.replace("€", "").replace(".", "").strip())
+                resultados.append({
+                    "titulo": texto[:120],
+                    "precio": precio,
+                    "link": link if link.startswith("http") else url
+                })
 
-            resultados.append({
-                "titulo": titulo,
-                "precio": precio,
-                "link": "https://www.idealista.com" + link
-            })
-
-        except Exception as e:
-            continue
-
-    return resultados
-
-# ================= WALLAPOP (PLAYWRIGHT REAL) =================
-
-def wallapop(page):
-    print("Buscando en Wallapop...")
-    resultados = []
-
-    url = "https://es.wallapop.com/app/search?keywords=casa&latitude=43.3619&longitude=-5.8494"
-
-    page.goto(url)
-    page.wait_for_timeout(6000)
-
-    items = page.locator("a")
-
-    for i in range(min(items.count(), 30)):
-        try:
-            item = items.nth(i)
-            texto = item.inner_text()
-            link = item.get_attribute("href")
-
-            if not texto or "€" not in texto:
+            except:
                 continue
-
-            precio = int(re.findall(r'\d+', texto.replace(".", ""))[0])
-
-            resultados.append({
-                "titulo": texto[:100],
-                "precio": precio,
-                "link": "https://es.wallapop.com" + link
-            })
-        except:
-            continue
+    except:
+        pass
 
     return resultados
 
-# ================= MILANUNCIOS =================
+# ================= BUSCADOR (BING) =================
 
-def milanuncios(page):
-    print("Buscando en Milanuncios...")
+def buscador(query):
     resultados = []
+    url = f"https://www.bing.com/search?q={query}"
 
-    url = "https://www.milanuncios.com/venta-de-casas-en-asturias/"
+    try:
+        r = requests.get(url, headers=HEADERS)
+        soup = BeautifulSoup(r.text, "html.parser")
 
-    page.goto(url)
-    page.wait_for_timeout(6000)
+        for item in soup.select("li.b_algo")[:10]:
+            try:
+                titulo = item.find("h2").get_text()
+                link = item.find("a")["href"]
 
-    items = page.locator("article")
-
-    for i in range(min(items.count(), 20)):
-        try:
-            item = items.nth(i)
-            texto = item.inner_text()
-
-            if "€" not in texto:
+                resultados.append({
+                    "titulo": titulo,
+                    "precio": 0,
+                    "link": link
+                })
+            except:
                 continue
-
-            precio = int(re.findall(r'\d{2,3}\.\d{3}', texto)[0].replace(".", ""))
-
-            link = item.locator("a").get_attribute("href")
-
-            resultados.append({
-                "titulo": texto[:100],
-                "precio": precio,
-                "link": link
-            })
-        except:
-            continue
+    except:
+        pass
 
     return resultados
+
+# ================= FUENTES =================
+
+def inmobiliarias(page):
+    return (
+        scrap(page, "https://www.idealista.com/venta-viviendas/asturias/") +
+        scrap(page, "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l") +
+        scrap(page, "https://www.habitaclia.com/viviendas-asturias.htm") +
+        scrap(page, "https://www.yaencontre.com/venta/viviendas/asturias") +
+        scrap(page, "https://www.pisos.com/venta/viviendas-asturias/")
+    )
+
+def buscadores():
+    queries = [
+        "casa asturias venta oviedo",
+        "terreno asturias venta cerca oviedo",
+        "finca asturias barata"
+    ]
+
+    resultados = []
+    for q in queries:
+        resultados += buscador(q)
+
+    return resultados
+
+def redes():
+    queries = [
+        "vendo casa asturias",
+        "vendo finca asturias",
+        "terreno asturias venta"
+    ]
+
+    resultados = []
+    for q in queries:
+        resultados += buscador(f"{q} site:twitter.com OR site:facebook.com OR site:reddit.com")
+
+    return resultados
+
+def particulares():
+    return (
+        buscador("site:wallapop.com casa asturias") +
+        buscador("site:milanuncios.com casa asturias")
+    )
 
 # ================= MAIN =================
 
@@ -176,9 +205,10 @@ def main():
         page = browser.new_page()
 
         fuentes = (
-            idealista(page) +
-            wallapop(page) +
-            milanuncios(page)
+            inmobiliarias(page) +
+            buscadores() +
+            redes() +
+            particulares()
         )
 
         browser.close()
@@ -192,8 +222,13 @@ def main():
         key = item["link"]
 
         if key not in seen:
-            parcela = extraer_parcela(item["titulo"])
+            texto = item["titulo"]
+
+            parcela = extraer_parcela(texto)
+            inversion = es_inversion(item)
+
             item["parcela"] = parcela if parcela else "No especificado"
+            item["inversion"] = "🔥 OPORTUNIDAD" if inversion else "Normal"
 
             seen[key] = item["precio"]
             nuevos.append(item)
@@ -201,13 +236,14 @@ def main():
     guardar_seen(seen)
 
     if nuevos:
-        for n in nuevos:
-            msg = f"""🏠 NUEVA CASA
+        for n in nuevos[:20]:
+            msg = f"""🏠 INMUEBLE DETECTADO
 
 {n['titulo']}
 
 💰 {n['precio']}€
 🌳 Parcela: {n['parcela']}
+📊 {n['inversion']}
 
 🔗 {n['link']}
 """
