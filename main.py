@@ -9,7 +9,9 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 MAX_PRECIO = 250000
-MIN_PRECIO = 5000          # bajado para capturar más gangas
+MIN_PRECIO = 5000
+
+# Archivo para no repetir exactamente el mismo anuncio en la misma ejecución
 SEEN_FILE = "seen_ads.json"
 
 def enviar(msg):
@@ -47,7 +49,7 @@ def extraer_parcela(texto):
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== SCRAPERS MEJORADOS ====================
+# ==================== SCRAPERS ====================
 
 def idealista(page):
     resultados = []
@@ -58,22 +60,18 @@ def idealista(page):
         page.wait_for_load_state("networkidle", timeout=30000)
         page.wait_for_timeout(8000)
 
-        # Selectores más amplios y actuales
-        items = page.locator("article.item, article[data-testid='listing'], div[data-test-id='property']").all()[:30]
-        print(f"   Idealista → {len(items)} elementos detectados")
+        items = page.locator("article.item, article[data-testid='listing']").all()[:40]
+        print(f"   Idealista → {len(items)} anuncios detectados")
 
         for item in items:
             try:
-                titulo = item.inner_text()[:150].strip() or "Casa en Asturias"
+                titulo = item.inner_text()[:160].strip() or "Casa en Asturias"
                 link_elem = item.locator("a").first
                 link = link_elem.get_attribute("href")
                 if link and not link.startswith("http"):
                     link = "https://www.idealista.com" + link
 
-                # Buscar precio de muchas formas
-                precio_txt = item.inner_text()
-                precio = limpiar_precio(precio_txt)
-
+                precio = limpiar_precio(item.inner_text())
                 if precio and MIN_PRECIO <= precio <= MAX_PRECIO:
                     resultados.append({
                         "titulo": titulo,
@@ -89,15 +87,15 @@ def idealista(page):
 
 def fotocasa(page):
     resultados = []
-    url = "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l?sortType=priceAsc"
+    url = "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l?sortType=price&sortOrderDesc=false"
     try:
         print("🔍 Cargando Fotocasa...")
         page.goto(url, timeout=90000)
         page.wait_for_load_state("networkidle", timeout=30000)
         page.wait_for_timeout(8000)
 
-        items = page.locator("article").all()[:30]
-        print(f"   Fotocasa → {len(items)} elementos detectados")
+        items = page.locator("article").all()[:40]
+        print(f"   Fotocasa → {len(items)} anuncios detectados")
 
         for item in items:
             try:
@@ -109,7 +107,7 @@ def fotocasa(page):
                 precio = limpiar_precio(texto)
                 if precio and MIN_PRECIO <= precio <= MAX_PRECIO:
                     resultados.append({
-                        "titulo": texto[:140].strip(),
+                        "titulo": texto[:150].strip(),
                         "precio": precio,
                         "link": link,
                         "fuente": "Fotocasa"
@@ -129,8 +127,8 @@ def milanuncios(page):
         page.wait_for_load_state("networkidle", timeout=30000)
         page.wait_for_timeout(6000)
 
-        items = page.locator("article").all()[:40]
-        print(f"   Milanuncios → {len(items)} elementos detectados")
+        items = page.locator("article").all()[:50]
+        print(f"   Milanuncios → {len(items)} anuncios detectados")
 
         for item in items:
             try:
@@ -142,7 +140,7 @@ def milanuncios(page):
                 precio = limpiar_precio(texto)
                 if precio and MIN_PRECIO <= precio <= MAX_PRECIO:
                     resultados.append({
-                        "titulo": texto[:150].strip(),
+                        "titulo": texto[:160].strip(),
                         "precio": precio,
                         "link": link,
                         "fuente": "Milanuncios"
@@ -156,9 +154,8 @@ def milanuncios(page):
 # ==================== MAIN ====================
 
 def main():
-    seen = cargar_seen()
-    nuevos = []
-    todos_encontrados = 0
+    seen_today = cargar_seen()   # solo para evitar duplicados exactos en la misma ejecución
+    enviados = 0
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -171,53 +168,44 @@ def main():
         )
         page = context.new_page()
 
-        print("🚀 Iniciando búsqueda de casas baratas en Asturias...")
+        print("🚀 Iniciando bot - Enviando TODAS las casas baratas encontradas...")
 
         todas = idealista(page) + fotocasa(page) + milanuncios(page)
-        todos_encontrados = len(todas)
 
-        page.screenshot(path="debug_ultima_pagina.png", full_page=True)
-        print("📸 Captura guardada: debug_ultima_pagina.png")
+        page.screenshot(path="debug_casas_asturias.png", full_page=True)
+        print("📸 Captura guardada: debug_casas_asturias.png")
 
         browser.close()
 
-    print(f"Total anuncios detectados con precio: {todos_encontrados}")
+    print(f"Total de casas con precio válido detectadas: {len(todas)}")
 
     for item in todas:
-        key = item.get("link")
-        if not key or key in seen:
+        key = item["link"]
+        if key in seen_today:
             continue
 
-        precio = item.get("precio")
-        if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
-            continue
+        msg = f"""🏠 <b>CASA EN ASTURIAS - {item['fuente']}</b>
 
-        item["parcela"] = extraer_parcela(item["titulo"])
-        seen[key] = precio
-        nuevos.append(item)
+{item['titulo']}
 
-    guardar_seen(seen)
-
-    if nuevos:
-        print(f"✅ ¡Encontrados {len(nuevos)} NUEVOS inmuebles!")
-        for n in nuevos[:10]:
-            msg = f"""🏠 <b>NUEVA CASA EN ASTURIAS - {n['fuente']}</b>
-
-{n['titulo']}
-
-💰 <b>{n['precio']:,} €</b>
-🌳 Parcela: {n.get('parcela')}
-🔗 {n['link']}
+💰 <b>{item['precio']:,} €</b>
+🌳 Parcela: {extraer_parcela(item['titulo'])}
+🔗 {item['link']}
 """
-            enviar(msg)
+        enviar(msg)
+        seen_today[key] = item['precio']
+        enviados += 1
+
+        if enviados >= 15:   # límite diario para no saturar Telegram
+            break
+
+    guardar_seen(seen_today)
+
+    if enviados == 0:
+        enviar("❌ Hoy no se detectaron casas baratas válidas (revisa la captura debug_casas_asturias.png)")
+        print("❌ No se enviaron casas")
     else:
-        enviar(f"""❌ No se encontraron **nuevas** casas hoy.
-
-Detectados: {todos_encontrados} anuncios con precio.
-Rango: {MIN_PRECIO}€ - {MAX_PRECIO}€
-
-Revisa la captura debug_ultima_pagina.png en los artifacts.""")
-        print("❌ Sin nuevos anuncios (pero sí detectó algunos). Revisa la captura.")
+        print(f"✅ Se enviaron {enviados} casas baratas a Telegram")
 
 if __name__ == "__main__":
     main()
