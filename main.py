@@ -130,6 +130,29 @@ def fotocasa(page):
 
 # ================= MILANUNCIOS =================
 
+
+def extraer_desde_soup(items, source, base_url):
+    resultados = []
+    for item in items[:150]:
+        try:
+            txt = limpiar_texto(item.get_text(" "))
+            if len(txt) < 5:
+                continue
+            a = item.find("a")
+            link = normalizar_link(a.get("href") if a else "", base_url)
+            resultados.append({
+                "fuente": source,
+                "titulo": txt[:160],
+                "descripcion": txt,
+                "precio": extraer_precio(txt),
+                "link": link,
+                "parcela_m2": extraer_parcela(txt)
+            })
+        except Exception:
+            continue
+    return resultados
+
+
 def milanuncios():
     resultados = []
     url = "https://www.milanuncios.com/venta-de-casas-en-asturias/"
