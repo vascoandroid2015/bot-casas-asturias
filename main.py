@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 import json
 import os
@@ -11,8 +10,6 @@ CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 MAX_PRECIO = 250000
 SEEN_FILE = "seen_ads.json"
-
-HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 # ================= TELEGRAM =================
 
@@ -35,10 +32,7 @@ def guardar_seen(data):
 # ================= FILTRO =================
 
 def cumple_criterios(item):
-    texto = (item.get("titulo", "") + " " + item.get("link", "")).lower()
-
-    if "asturias" not in texto:
-        return False
+    texto = (item.get("titulo", "")).lower()
 
     if "casa" not in texto:
         return False
@@ -54,7 +48,6 @@ def cumple_criterios(item):
 def extraer_parcela(texto):
     patrones = [
         r'(\d{2,5})\s?m2',
-        r'(\d{2,5})\s?metros',
         r'parcela\s?de\s?(\d{2,5})',
         r'finca\s?de\s?(\d{2,5})'
     ]
@@ -66,156 +59,111 @@ def extraer_parcela(texto):
 
     return None
 
-# ================= SCRAPERS =================
-
-def scrap_generico(url):
-    resultados = []
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=10)
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        for a in soup.find_all("a", href=True):
-            texto = a.get_text(" ", strip=True)
-            link = a["href"]
-
-            if not texto or len(texto) < 20:
-                continue
-
-            if "€" in texto:
-                precio_match = re.findall(r'(\d{2,3}\.\d{3})', texto)
-                precio = int(precio_match[0].replace(".", "")) if precio_match else 0
-            else:
-                precio = 0
-
-            resultados.append({
-                "titulo": texto[:120],
-                "precio": precio,
-                "link": link if link.startswith("http") else url
-            })
-    except:
-        pass
-
-    return resultados
-
-# ================= IDEALISTA =================
+# ================= IDEALISTA (FIABLE) =================
 
 def idealista(page):
+    print("Buscando en Idealista...")
     resultados = []
+
     url = "https://www.idealista.com/venta-viviendas/asturias/"
 
     page.goto(url)
-    page.wait_for_timeout(5000)
+    page.wait_for_timeout(6000)
 
-    items = page.locator("article").all()
+    items = page.locator("article")
 
-    for item in items[:20]:
+    count = items.count()
+    print(f"Idealista encontrados: {count}")
+
+    for i in range(min(count, 20)):
         try:
+            item = items.nth(i)
+
             titulo = item.locator("a.item-link").inner_text()
             link = item.locator("a.item-link").get_attribute("href")
-            precio = item.locator(".item-price").inner_text()
+            precio_txt = item.locator(".item-price").inner_text()
 
-            precio_num = int(precio.replace("€", "").replace(".", "").strip())
+            precio = int(precio_txt.replace("€", "").replace(".", "").strip())
 
             resultados.append({
                 "titulo": titulo,
-                "precio": precio_num,
+                "precio": precio,
                 "link": "https://www.idealista.com" + link
+            })
+
+        except Exception as e:
+            continue
+
+    return resultados
+
+# ================= WALLAPOP (PLAYWRIGHT REAL) =================
+
+def wallapop(page):
+    print("Buscando en Wallapop...")
+    resultados = []
+
+    url = "https://es.wallapop.com/app/search?keywords=casa&latitude=43.3619&longitude=-5.8494"
+
+    page.goto(url)
+    page.wait_for_timeout(6000)
+
+    items = page.locator("a")
+
+    for i in range(min(items.count(), 30)):
+        try:
+            item = items.nth(i)
+            texto = item.inner_text()
+            link = item.get_attribute("href")
+
+            if not texto or "€" not in texto:
+                continue
+
+            precio = int(re.findall(r'\d+', texto.replace(".", ""))[0])
+
+            resultados.append({
+                "titulo": texto[:100],
+                "precio": precio,
+                "link": "https://es.wallapop.com" + link
             })
         except:
             continue
 
     return resultados
 
-# ================= BÚSQUEDA INTELIGENTE =================
-
-def buscador(query):
-    resultados = []
-    url = f"https://www.bing.com/search?q={query}"
-
-    try:
-        r = requests.get(url, headers=HEADERS)
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        for item in soup.select("li.b_algo")[:15]:
-            try:
-                titulo = item.find("h2").get_text()
-                link = item.find("a")["href"]
-
-                resultados.append({
-                    "titulo": titulo,
-                    "precio": 0,
-                    "link": link
-                })
-            except:
-                continue
-    except:
-        pass
-
-    return resultados
-
-# ================= PORTALES MASIVOS =================
-
-def portales_extra():
-    queries = [
-        "casa asturias venta",
-        "casa rural asturias barata",
-        "vendo casa asturias particular",
-        "casa con terreno asturias",
-    ]
-
-    resultados = []
-
-    for q in queries:
-        resultados += buscador(q)
-
-    # sitios específicos
-    sites = [
-        "habitaclia.com",
-        "yaencontre.com",
-        "pisos.com",
-        "tucasa.com",
-        "indomio.es",
-        "globaliza.com"
-    ]
-
-    for site in sites:
-        resultados += buscador(f"site:{site} casa asturias venta")
-
-    return resultados
-
-# ================= WALLAPOP =================
-
-def wallapop():
-    return buscador("site:wallapop.com casa asturias venta")
-
 # ================= MILANUNCIOS =================
 
-def milanuncios():
-    return buscador("site:milanuncios.com casa asturias")
-
-# ================= REDES SOCIALES =================
-
-def redes():
-    queries = [
-        "vendo casa asturias",
-        "vendo casa rural asturias",
-        "casa asturias particular venta"
-    ]
-
+def milanuncios(page):
+    print("Buscando en Milanuncios...")
     resultados = []
 
-    for q in queries:
-        resultados += buscador(f"{q} site:twitter.com OR site:facebook.com OR site:reddit.com")
+    url = "https://www.milanuncios.com/venta-de-casas-en-asturias/"
+
+    page.goto(url)
+    page.wait_for_timeout(6000)
+
+    items = page.locator("article")
+
+    for i in range(min(items.count(), 20)):
+        try:
+            item = items.nth(i)
+            texto = item.inner_text()
+
+            if "€" not in texto:
+                continue
+
+            precio = int(re.findall(r'\d{2,3}\.\d{3}', texto)[0].replace(".", ""))
+
+            link = item.locator("a").get_attribute("href")
+
+            resultados.append({
+                "titulo": texto[:100],
+                "precio": precio,
+                "link": link
+            })
+        except:
+            continue
 
     return resultados
-
-# ================= BOE Y SUBASTAS =================
-
-def boe():
-    return buscador("site:boe.es subasta vivienda asturias")
-
-def subastas():
-    return buscador("subasta vivienda asturias")
 
 # ================= MAIN =================
 
@@ -229,15 +177,13 @@ def main():
 
         fuentes = (
             idealista(page) +
-            portales_extra() +
-            wallapop() +
-            milanuncios() +
-            redes() +
-            boe() +
-            subastas()
+            wallapop(page) +
+            milanuncios(page)
         )
 
         browser.close()
+
+    print(f"Total encontrados: {len(fuentes)}")
 
     for item in fuentes:
         if not cumple_criterios(item):
@@ -246,9 +192,7 @@ def main():
         key = item["link"]
 
         if key not in seen:
-            texto_total = item.get("titulo", "") + " " + item.get("link", "")
-            parcela = extraer_parcela(texto_total)
-
+            parcela = extraer_parcela(item["titulo"])
             item["parcela"] = parcela if parcela else "No especificado"
 
             seen[key] = item["precio"]
@@ -257,13 +201,13 @@ def main():
     guardar_seen(seen)
 
     if nuevos:
-        for n in nuevos[:20]:
-            msg = f"""🏠 NUEVA OPORTUNIDAD
+        for n in nuevos:
+            msg = f"""🏠 NUEVA CASA
 
 {n['titulo']}
 
 💰 {n['precio']}€
-🌳 Parcela: {n.get('parcela')}
+🌳 Parcela: {n['parcela']}
 
 🔗 {n['link']}
 """
