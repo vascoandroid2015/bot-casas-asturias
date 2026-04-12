@@ -14,6 +14,7 @@ RADIO_KM_APROX = 50
 SEEN_FILE = "seen_ads.json"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
+# Zonas cercanas aproximadas a 50 km de Oviedo
 ZONAS_VALIDAS = [
     "oviedo", "siero", "llanera", "noreña", "mieres", "grado",
     "langreo", "laviana", "aller", "ribera de arriba", "las regueras",
@@ -132,6 +133,49 @@ def cumple_criterios(item):
     return True
 
 
+def safe_select_text(card, selector):
+    try:
+        loc = card.locator(selector)
+        if loc.count():
+            return limpiar_texto(loc.first.inner_text())
+    except Exception:
+        pass
+    return ""
+
+
+def safe_select_link(card, selector='a'):
+    try:
+        loc = card.locator(selector)
+        if loc.count():
+            return loc.first.get_attribute("href") or ""
+    except Exception:
+        pass
+    return ""
+
+
+def parse_cards_generic(cards, source, base_url):
+    results = []
+    for card in cards[:60]:
+        try:
+            txt = limpiar_texto(card.inner_text())
+            if len(txt) < 20:
+                continue
+            link = safe_select_link(card)
+            titulo = safe_select_text(card, 'a') or txt[:160]
+            precio = extraer_precio(txt)
+            results.append({
+                "fuente": source,
+                "titulo": titulo,
+                "descripcion": txt,
+                "precio": precio,
+                "link": normalizar_link(link, base_url),
+                "parcela_m2": extraer_parcela(txt)
+            })
+        except Exception:
+            continue
+    return results
+
+
 def idealista(page):
     resultados = []
     urls = [
@@ -145,24 +189,11 @@ def idealista(page):
     for url in urls:
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(5000)
-            cards = page.locator("article").all()
-            for card in cards[:40]:
-                try:
-                    txt = limpiar_texto(card.inner_text())
-                    a = card.locator("a").first
-                    link = a.get_attribute("href") if a.count() else ""
-                    titulo = limpiar_texto(card.locator("a").first.inner_text()) if a.count() else txt[:140]
-                    resultados.append({
-                        "fuente": "idealista",
-                        "titulo": titulo,
-                        "descripcion": txt,
-                        "precio": extraer_precio(txt),
-                        "link": normalizar_link(link, "https://www.idealista.com"),
-                        "parcela_m2": extraer_parcela(txt)
-                    })
-                except Exception:
-                    continue
+            page.wait_for_timeout(4000)
+            for sel in ["article", "div.item", "div.item-info-container", "li"]:
+                cards = page.locator(sel).all()
+                if cards:
+                    resultados.extend(parse_cards_generic(cards, "idealista", "https://www.idealista.com"))
         except Exception:
             continue
     return resultados
@@ -181,23 +212,11 @@ def fotocasa(page):
     for url in urls:
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            page.wait_for_timeout(5000)
-            cards = page.locator("article").all()
-            for card in cards[:40]:
-                try:
-                    txt = limpiar_texto(card.inner_text())
-                    loc = card.locator("a")
-                    link = loc.first.get_attribute("href") if loc.count() else ""
-                    resultados.append({
-                        "fuente": "fotocasa",
-                        "titulo": txt[:140],
-                        "descripcion": txt,
-                        "precio": extraer_precio(txt),
-                        "link": normalizar_link(link, "https://www.fotocasa.es"),
-                        "parcela_m2": extraer_parcela(txt)
-                    })
-                except Exception:
-                    continue
+            page.wait_for_timeout(4000)
+            for sel in ["article", "div.re-Card", "div.card", "li"]:
+                cards = page.locator(sel).all()
+                if cards:
+                    resultados.extend(parse_cards_generic(cards, "fotocasa", "https://www.fotocasa.es"))
         except Exception:
             continue
     return resultados
@@ -217,9 +236,12 @@ def milanuncios():
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .aditem, .ma-AdCard, .item")[:40]:
+            items = soup.select("article, .aditem, .ma-AdCard, .item, li")
+            for item in items[:60]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
+                    if len(txt) < 20:
+                        continue
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.milanuncios.com")
                     resultados.append({
@@ -251,9 +273,12 @@ def habitaclia():
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .advertisement, .listing-item, .listing")[:40]:
+            items = soup.select("article, .advertisement, .listing-item, .listing, li")
+            for item in items[:60]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
+                    if len(txt) < 20:
+                        continue
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.habitaclia.com")
                     resultados.append({
@@ -285,9 +310,12 @@ def yaencontre():
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .listing, .card, .property")[:40]:
+            items = soup.select("article, .listing, .card, .property, li")
+            for item in items[:60]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
+                    if len(txt) < 20:
+                        continue
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.yaencontre.com")
                     resultados.append({
@@ -319,9 +347,12 @@ def pisos_com():
         try:
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
-            for item in soup.select("article, .ad-box, .listing, .card")[:40]:
+            items = soup.select("article, .ad-box, .listing, .card, li")
+            for item in items[:60]:
                 try:
                     txt = limpiar_texto(item.get_text(" "))
+                    if len(txt) < 20:
+                        continue
                     a = item.find("a")
                     link = normalizar_link(a.get("href") if a else "", "https://www.pisos.com")
                     resultados.append({
@@ -344,7 +375,7 @@ def bing(query):
     try:
         r = requests.get(f"https://www.bing.com/search?q={requests.utils.quote(query)}", headers=HEADERS, timeout=30)
         soup = BeautifulSoup(r.text, "html.parser")
-        for item in soup.select("li.b_algo")[:10]:
+        for item in soup.select("li.b_algo")[:15]:
             try:
                 h2 = item.find("h2")
                 a = h2.find("a") if h2 else item.find("a")
@@ -425,14 +456,15 @@ def boe():
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
             txt_total = limpiar_texto(soup.get_text(" "))
-            resultados.append({
-                "fuente": "boe",
-                "titulo": txt_total[:200],
-                "descripcion": txt_total,
-                "precio": 0,
-                "link": url,
-                "parcela_m2": extraer_parcela(txt_total)
-            })
+            if len(txt_total) > 20:
+                resultados.append({
+                    "fuente": "boe",
+                    "titulo": txt_total[:200],
+                    "descripcion": txt_total,
+                    "precio": 0,
+                    "link": url,
+                    "parcela_m2": extraer_parcela(txt_total)
+                })
         except Exception:
             continue
     return resultados
@@ -451,14 +483,15 @@ def subastas_boe():
             r = requests.get(url, headers=HEADERS, timeout=30)
             soup = BeautifulSoup(r.text, "html.parser")
             txt_total = limpiar_texto(soup.get_text(" "))
-            resultados.append({
-                "fuente": "subastas_boe",
-                "titulo": txt_total[:200],
-                "descripcion": txt_total,
-                "precio": 0,
-                "link": url,
-                "parcela_m2": extraer_parcela(txt_total)
-            })
+            if len(txt_total) > 20:
+                resultados.append({
+                    "fuente": "subastas_boe",
+                    "titulo": txt_total[:200],
+                    "descripcion": txt_total,
+                    "precio": 0,
+                    "link": url,
+                    "parcela_m2": extraer_parcela(txt_total)
+                })
         except Exception:
             continue
     return resultados
@@ -501,10 +534,7 @@ def main():
             if key in seen:
                 continue
             item["parcela"] = item.get("parcela_m2") or "No especificado"
-            seen[key] = {
-                "precio": item.get("precio", 0),
-                "fuente": item.get("fuente", "")
-            }
+            seen[key] = {"precio": item.get("precio", 0), "fuente": item.get("fuente", "")}
             nuevos.append(item)
         except Exception:
             continue
