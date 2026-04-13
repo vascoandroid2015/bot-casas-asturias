@@ -27,14 +27,21 @@ def guardar_vistos(vistos):
 def enviar_con_foto(msg, foto_url=None):
     if not TELEGRAM_TOKEN or not CHAT_ID:
         print("⚠️ TELEGRAM no configurado")
-        return
-    if foto_url:
-        files = {'photo': requests.get(foto_url, stream=True).raw}
-        data = {"chat_id": CHAT_ID, "caption": msg, "parse_mode": "HTML"}
-        requests.post(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto", data=data, files=files)
-    else:
+        return False
+    try:
+        if foto_url:
+            response = requests.get(foto_url, timeout=10)
+            if response.status_code == 200:
+                files = {'photo': response.content}
+                data = {"chat_id": CHAT_ID, "caption": msg, "parse_mode": "HTML"}
+                requests.post(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto", data=data, files=files)
+                return True
+        # Si no hay foto o falla, envía solo texto
         requests.post(f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
                       data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"})
+        return True
+    except:
+        return False
 
 def limpiar_precio(texto):
     match = re.search(r'(\d{1,3}(?:\.\d{3})*)\s*€', texto)
@@ -44,117 +51,123 @@ def limpiar_precio(texto):
 
 def extraer_parcela(texto):
     texto = texto.lower()
-    patrones = [r'(\d{2,5})\s?m2?', r'parcela\s?de?\s?(\d{2,5})', r'finca\s?de?\s?(\d{2,5})']
+    patrones = [r'(\d{2,5})\s?m2?', r'parcela\s?de?\s?(\d{2,5})', r'finca\s?de?\s?(\d{2,5})', r'(\d{3,5})\s*m²']
     for p in patrones:
         m = re.search(p, texto)
         if m:
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== FUNCIÓN GENÉRICA PARA SCRAPEAR CON PLAYWRIGHT ====================
-def scrape_con_playwright(base_url, fuente, select_anuncios, get_link, get_precio_texto, get_foto=None):
+# ==================== SCRAPING CON PLAYWRIGHT (versión más resistente) ====================
+def scrape_sitio(url_base, fuente, espera=8000):
     resultados = []
     vistos = cargar_vistos()
     pagina = 1
+    max_paginas = 30  # seguridad para no scrapear eternamente
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        page = browser.new_page()
-        page.set_viewport_size({"width": 1280, "height": 800})
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-blink-features=AutomationControlled"])
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        )
+        page = context.new_page()
 
-        while True:
-            url = f"{base_url}?pagina={pagina}" if "?" not in base_url else f"{base_url}&pagina={pagina}"
+        while pagina <= max_paginas:
+            url = f"{url_base}{'?' if '?' not in url_base else '&'}pagina={pagina}"
             try:
                 print(f"🔍 {fuente} → Página {pagina}")
-                page.goto(url, timeout=90000)
-                page.wait_for_timeout(7000)  # espera JS y carga dinámica
+                page.goto(url, timeout=90000, wait_until="networkidle")
+                page.wait_for_timeout(espera)
+
+                # Scroll para cargar más contenido dinámico
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(3000)
 
                 html = page.content()
                 soup = BeautifulSoup(html, "html.parser")
-                items = soup.select(select_anuncios)
 
+                # Selectores actualizados 2026 (más genéricos + fallback)
+                items = soup.select("article, div[data-testid*='listing'], div.re-Card, .item, .listing-card")
                 if not items:
-                    print(f"   {fuente} → No hay más anuncios (página {pagina})")
-                    break
+                    items = soup.find_all("a", href=True)  # fallback muy amplio
 
-                print(f"   {fuente} → {len(items)} anuncios encontrados")
+                print(f"   Encontrados {len(items)} posibles anuncios")
 
+                nuevos_en_pagina = 0
                 for item in items:
-                    texto_completo = item.get_text(" ", strip=True)
-                    precio = limpiar_precio(texto_completo)
+                    texto = item.get_text(" ", strip=True)
+                    if len(texto) < 30:
+                        continue
+
+                    precio = limpiar_precio(texto)
                     if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
                         continue
 
-                    link = get_link(item)
-                    if not link or link in vistos:
+                    # Extraer link
+                    link_tag = item.find("a", href=True)
+                    link = link_tag["href"] if link_tag else ""
+                    if not link:
+                        continue
+                    if not link.startswith("http"):
+                        link = "https://www." + fuente.lower() + ".com" + link if fuente.lower() in ["idealista", "fotocasa"] else link
+
+                    if link in vistos:
                         continue
 
-                    foto_url = get_foto(item) if get_foto else None
+                    # Foto (mejorado)
+                    foto = None
+                    img = item.find("img")
+                    if img and img.get("src"):
+                        foto = img["src"]
+                    elif img and img.get("data-src"):
+                        foto = img["data-src"]
 
                     resultados.append({
-                        "titulo": texto_completo[:250],
+                        "titulo": texto[:240],
                         "precio": precio,
                         "link": link,
                         "fuente": fuente,
-                        "foto": foto_url
+                        "foto": foto
                     })
                     vistos.add(link)
+                    nuevos_en_pagina += 1
 
                 guardar_vistos(vistos)
+                print(f"   → {nuevos_en_pagina} nuevos válidos en esta página")
+
+                if nuevos_en_pagina == 0 and pagina > 3:
+                    print(f"   Pocas coincidencias → posiblemente fin o bloqueo")
+                    break
+
                 pagina += 1
-                time.sleep(4)  # anti-bloqueo
+                time.sleep(5)
             except Exception as e:
-                print(f"❌ Error en {fuente} página {pagina}: {e}")
+                print(f"❌ Error {fuente} página {pagina}: {e}")
                 break
 
         browser.close()
     return resultados
 
-# ==================== MILANUNCIOS (rápido con requests + fallback) ====================
-def milanuncios_requests():
-    # ... (puedes mantener la versión anterior con requests si prefieres velocidad)
-    # Por simplicidad aquí uso también Playwright para unificar, pero si quieres la versión requests avísame
-    return scrape_con_playwright(
-        "https://www.milanuncios.com/venta-de-casas-en-asturias",
-        "Milanuncios",
-        "article",
-        lambda item: "https://www.milanuncios.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else ""),
-        lambda item: item.get_text(" ", strip=True),
-        lambda item: None  # Milanuncios suele no mostrar foto en listado fácilmente
-    )
+# ==================== FUENTES ====================
+def milanuncios():
+    return scrape_sitio("https://www.milanuncios.com/venta-de-casas-en-asturias/", "Milanuncios", espera=6000)
 
-# ==================== IDEALISTA ====================
 def idealista():
-    return scrape_con_playwright(
-        "https://www.idealista.com/venta-viviendas/asturias/",
-        "Idealista",
-        "article.item",
-        lambda item: "https://www.idealista.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else ""),
-        lambda item: item.get_text(" ", strip=True),
-        lambda item: item.find("img")["src"] if item.find("img") and item.find("img").get("src") else None
-    )
+    return scrape_sitio("https://www.idealista.com/venta-viviendas/asturias/", "Idealista", espera=10000)
 
-# ==================== FOTOCASA ====================
 def fotocasa():
-    return scrape_con_playwright(
-        "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l",
-        "Fotocasa",
-        "div.re-Card",
-        lambda item: item.find("a", href=True)["href"] if item.find("a", href=True) else "",
-        lambda item: item.get_text(" ", strip=True),
-        lambda item: item.find("img")["src"] if item.find("img") and item.find("img").get("src") else None
-    )
+    return scrape_sitio("https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l", "Fotocasa", espera=10000)
 
 # ==================== MAIN ====================
 def main():
-    print("🚀 Iniciando bot completo - Milanuncios + Idealista + Fotocasa (sin límites)")
+    print("🚀 Iniciando bot mejorado - Buscando casas en Asturias (sin límites)")
 
     todas = []
-    todas.extend(milanuncios_requests())
+    todas.extend(milanuncios())
     todas.extend(idealista())
     todas.extend(fotocasa())
 
-    print(f"Total nuevos anuncios encontrados: {len(todas)}")
+    print(f"\nTotal nuevos anuncios encontrados: {len(todas)}")
 
     enviados = 0
     for item in todas:
@@ -167,14 +180,15 @@ def main():
 
 🔗 {item['link']}
 """
-        enviar_con_foto(msg, item.get("foto"))
-        enviados += 1
-        time.sleep(2.0)  # evita flood en Telegram
+        if enviar_con_foto(msg, item.get("foto")):
+            enviados += 1
+            time.sleep(2.2)  # evitar flood
 
     if enviados == 0:
-        enviar_con_foto("❌ Hoy no hay casas nuevas en el rango de precio.")
+        enviar_con_foto("❌ Hoy no se encontraron casas nuevas en el rango 5.000-250.000 €.\nPosible bloqueo temporal o cambio en las webs.")
+        print("❌ Sin resultados nuevos (revisa logs)")
     else:
-        print(f"✅ Enviadas {enviados} casas NUEVAS con foto a Telegram")
+        print(f"✅ Enviadas {enviados} casas NUEVAS a Telegram")
 
 if __name__ == "__main__":
     main()
