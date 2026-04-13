@@ -1,29 +1,34 @@
-name: Bot Inmobiliario Asturias
+name: Scraping Casas Asturias → Telegram
 
 on:
   schedule:
-    - cron: "0 8 * * *"      # Todos los días a las 9:00 hora España
-  workflow_dispatch:
+    - cron: '0 8 * * *'      # 10:00 CEST (UTC+2) → 08:00 UTC
+  workflow_dispatch:         # para ejecutarlo manualmente
 
 jobs:
-  run:
+  scrape:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Instalar dependencias
         run: |
           pip install -r requirements.txt
           playwright install --with-deps chromium
 
-      - name: Ejecutar bot
+      - name: Ejecutar scraper
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
-        timeout-minutes: 18
+
+      - name: Guardar seen_ads.json actualizado
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update seen_ads.json (nuevos anuncios)"
