@@ -1,4 +1,4 @@
-iimport os
+import os
 import re
 import json
 import requests
@@ -44,7 +44,7 @@ def enviar_con_foto(msg, foto_url=None):
             data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"}
         )
     except Exception as e:
-        print(f"Error al enviar: {e}")
+        print(f"Error al enviar mensaje: {e}")
 
 def limpiar_precio(texto):
     match = re.search(r'(\d{1,3}(?:\.\d{3})*)\s*€', texto)
@@ -61,7 +61,7 @@ def extraer_parcela(texto):
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== MILANUNCIOS - Versión mejorada ====================
+# ==================== MILANUNCIOS ====================
 def milanuncios():
     resultados = []
     vistos = cargar_vistos()
@@ -79,34 +79,29 @@ def milanuncios():
             url = f"https://www.milanuncios.com/venta-de-casas-en-asturias/?p={pagina}"
             try:
                 print(f"🔍 Milanuncios - Página {pagina}")
-                page.goto(url, timeout=60000, wait_until="domcontentloaded")
-                time.sleep(random.uniform(5, 8))
+                page.goto(url, timeout=90000, wait_until="domcontentloaded")
+                time.sleep(random.uniform(4, 7))
 
-                # Scroll para cargar anuncios
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 time.sleep(3)
 
                 html = page.content()
                 soup = BeautifulSoup(html, "html.parser")
 
-                # Selectores específicos para Milanuncios 2026
-                items = soup.select("article.ma-Ad")
-                if not items:
-                    items = soup.select("article")  # fallback
-
-                print(f"   → Encontrados {len(items)} anuncios en la página")
+                # Selectores actualizados para Milanuncios (2026)
+                items = soup.select("article.ma-Ad, article")
+                print(f"   → Encontrados {len(items)} posibles anuncios")
 
                 nuevos = 0
                 for item in items:
                     texto = item.get_text(" ", strip=True)
-                    if len(texto) < 30:
+                    if len(texto) < 40:
                         continue
 
                     precio = limpiar_precio(texto)
                     if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
                         continue
 
-                    # Enlace
                     link_tag = item.find("a", href=True)
                     if not link_tag:
                         continue
@@ -115,7 +110,6 @@ def milanuncios():
                     if link in vistos:
                         continue
 
-                    # Foto
                     foto = None
                     img = item.find("img")
                     if img:
@@ -132,14 +126,14 @@ def milanuncios():
                     nuevos += 1
 
                 guardar_vistos(vistos)
-                print(f"   → {nuevos} nuevos anuncios válidos añadidos")
+                print(f"   → {nuevos} nuevos anuncios válidos en esta página")
 
-                if nuevos == 0 and pagina > 8:
-                    print("   Pocas coincidencias → terminando scraping")
+                if nuevos == 0 and pagina > 10:
+                    print("   Terminando scraping de Milanuncios")
                     break
 
                 pagina += 1
-                time.sleep(random.uniform(4, 7))
+                time.sleep(random.uniform(5, 8))
             except Exception as e:
                 print(f"❌ Error página {pagina}: {e}")
                 break
@@ -149,11 +143,11 @@ def milanuncios():
 
 # ==================== MAIN ====================
 def main():
-    print("🚀 Iniciando bot SIMPLIFICADO - Solo Milanuncios (más fiable)")
+    print("🚀 Iniciando bot - Solo Milanuncios (versión corregida)")
 
     todas = milanuncios()
 
-    print(f"\n=== RESUMEN ===\nTotal nuevos anuncios encontrados: {len(todas)}")
+    print(f"\nTotal nuevos anuncios encontrados: {len(todas)}")
 
     enviados = 0
     for item in todas:
@@ -171,8 +165,8 @@ def main():
         time.sleep(2.0)
 
     if enviados == 0:
-        enviar_con_foto("❌ Hoy no se encontraron casas nuevas.\n\nRevisa los logs completos en GitHub Actions.")
-        print("❌ Sin resultados. Por favor copia aquí los logs detallados.")
+        enviar_con_foto("❌ Hoy no se encontraron casas nuevas en el rango de precio.\nRevisa los logs completos.")
+        print("❌ Sin resultados nuevos")
     else:
         print(f"✅ Enviadas {enviados} casas nuevas a Telegram")
 
