@@ -4,9 +4,10 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 MAX_PRICE = 300000
 MIN_PRICE = 5000
-MAX_RESULTS_PER_RUN = 12
+MAX_RESULTS_PER_RUN = 10
 MESSAGE_DELAY_SECONDS = 1.5
 MAX_TELEGRAM_RETRIES = 4
+TELEGRAM_SAFE_CHARS = 3500
 SEEN_FILE = "seen_ads.json"
 DEBUG_FILE = "debug/debug_report.json"
 DEBUG_HTML_DIR = "debug/html"
@@ -44,7 +45,7 @@ WEB_SOURCES = [
     {"name": "Milanuncios", "enabled": False, "kind": "classifieds", "url": "https://www.milanuncios.com/venta-de-casas-en-asturias/", "base_url": "https://www.milanuncios.com", "selectors": ["div.ma-AdCard", "article", "[data-testid='ad-card']"]},
 ]
 SOCIAL_SOURCES = [
-    {"name": "Telegram channels", "enabled": False, "kind": "social", "note": "Añade aquí en el futuro lectura de canales o exportaciones"},
-    {"name": "Facebook Marketplace", "enabled": False, "kind": "social", "note": "Opcional; suele requerir tratamiento aparte y puede bloquearse"},
-    {"name": "Instagram discovery", "enabled": False, "kind": "social", "note": "Usar solo como descubrimiento de agencias, no fuente principal"},
+    {"name": "Telegram channels", "enabled": False, "kind": "social", "note": "Preparado para futuras integraciones"},
+    {"name": "Facebook Marketplace", "enabled": False, "kind": "social", "note": "Opcional y sensible a bloqueos"},
+    {"name": "Instagram discovery", "enabled": False, "kind": "social", "note": "Mejor como descubrimiento de agencias"},
 ]

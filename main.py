@@ -58,7 +58,7 @@ def main():
     to_notify, rejected = process_items(scraped, history)
     to_notify = to_notify[:MAX_RESULTS_PER_RUN]
     if not to_notify:
-        send_message('ℹ️ Metabuscador inmobiliario activo, sin novedades notificables. Revisa el resumen v7.')
+        send_message('ℹ️ Metabuscador inmobiliario activo, sin novedades notificables. Revisa el resumen v8.')
     else:
         for item in to_notify:
             send_message(build_message(item, previous_price=item.get('previous_price')))

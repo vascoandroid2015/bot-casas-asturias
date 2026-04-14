@@ -1,32 +1,15 @@
-# Bot Casas Asturias v7
+# Bot Casas Asturias v8
 
-Metabuscador ampliado con más portales, agencias, servicers y fuentes opcionales sociales.
+Versión recomendada con mejoras de robustez para Telegram y metabuscador ampliado.
 
-## Fuentes web activas
-- Idealista
-- CASASAPO
-- Fincas Asturias
-- CASAL Inmobiliaria
-- Inmobiliaria Asturias
-- Agencia Asturias
-- Inmobiliaria María
-- Grupo Duarte
-- REMAX Asturias
-- Facilitea Casa
-- e-viviendas
-- Arxus Inmobiliaria
-- Hunosa Inmobiliario
-- Solvia
-- Altamira
-- Green-Acres
-- ThinkSPAIN
+## Mejoras principales
+- Anti-429 con reintentos usando `retry_after`.
+- Anti-400 con fallback automático sin HTML si Telegram rechaza el parseo.
+- Troceo automático de mensajes largos para no superar límites seguros.
+- Resumen debug compacto para evitar errores por longitud.
+- Truncado de campos largos en anuncios.
+- Catálogo amplio de portales, agencias, servicers e institucionales.
+- Preparación para fuentes sociales opcionales.
 
-## Fuentes opcionales sociales
-- Telegram channels
-- Facebook Marketplace
-- Instagram discovery
-
-## Notas
-- Cada anuncio nuevo o con cambio de precio se envía como mensaje individual.
-- Hay clasificación por tipo de fuente (`portal`, `agency`, `servicer`, `institutional`, `social`).
-- Milanuncios y Fotocasa quedan desactivados por bloqueo previo en CI.
+## Recomendación
+Usa esta versión como base estable para seguir afinando selectores fuente por fuente.
