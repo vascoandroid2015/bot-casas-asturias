@@ -4,25 +4,13 @@ import time
 import requests
 import feedparser
 import re
-import math
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 SEEN_FILE = "seen_ads.json"
 
-# 📍 CENTRO: OVIEDO
-OVIEDO_LAT = 43.3619
-OVIEDO_LON = -5.8494
-RADIO_KM = 50
-
-# 🏘️ ZONAS CERCANAS (aprox 50 km)
-ZONAS_VALIDAS = [
-    "oviedo", "gijon", "aviles", "siero", "langreo",
-    "mieres", "llanera", "noreña", "laviana",
-    "carreño", "castrillon", "corvera"
-]
-
+# 🔥 SOLO TIPO DE INMUEBLE (SIN BLOQUEAR RESULTADOS)
 KEYWORDS_OBJETIVO = ["casa", "terreno", "finca", "parcela", "chalet"]
 
 
@@ -34,8 +22,9 @@ def enviar(msg):
             data={"chat_id": CHAT_ID, "text": msg},
             timeout=10
         )
+        print("✅ Enviado")
     except Exception as e:
-        print("Error Telegram:", e)
+        print("❌ Error Telegram:", e)
 
 
 # ================= VISTOS =================
@@ -49,26 +38,10 @@ def guardar_vistos(v):
     json.dump(list(v), open(SEEN_FILE, "w"))
 
 
-# ================= DISTANCIA =================
-def distancia_km(lat1, lon1, lat2, lon2):
-    R = 6371
-    dlat = math.radians(lat2 - lat1)
-    dlon = math.radians(lon2 - lon1)
-
-    a = math.sin(dlat/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
-    return R * c
-
-
-# ================= FILTROS =================
+# ================= FILTRO =================
 def es_relevante(texto):
     texto = texto.lower()
     return any(k in texto for k in KEYWORDS_OBJETIVO)
-
-
-def dentro_radio(texto):
-    texto = texto.lower()
-    return any(z in texto for z in ZONAS_VALIDAS)
 
 
 # ================= PRECIO =================
@@ -88,9 +61,6 @@ def rss(url, fuente):
         if not es_relevante(e.title):
             continue
 
-        if not dentro_radio(e.title):
-            continue
-
         datos.append({
             "titulo": e.title,
             "precio": extraer_precio(e.title),
@@ -101,7 +71,7 @@ def rss(url, fuente):
     return datos
 
 
-# ================= PORTALES =================
+# ================= PORTALES (SCRAPING LIGERO) =================
 def buscar_portales():
     headers = {"User-Agent": "Mozilla/5.0"}
     resultados = []
@@ -118,9 +88,6 @@ def buscar_portales():
 
             for linea in html:
                 if not es_relevante(linea):
-                    continue
-
-                if not dentro_radio(linea):
                     continue
 
                 resultados.append({
@@ -141,18 +108,18 @@ def buscar_marketplace():
     headers = {"User-Agent": "Mozilla/5.0"}
     resultados = []
 
-    query = "site:facebook.com/marketplace oviedo gijon aviles casa terreno parcela"
+    query = "site:facebook.com/marketplace asturias casa terreno parcela"
     url = f"https://www.google.com/search?q={query}"
 
     try:
         r = requests.get(url, headers=headers, timeout=10)
         html = r.text
 
-        links = re.findall(r'/url\?q=(https://www.facebook.com/marketplace/[^&]+)', html)
+        links = re.findall(r'/url\\?q=(https://www.facebook.com/marketplace/[^&]+)', html)
 
         for l in links[:10]:
             resultados.append({
-                "titulo": "Casa o terreno en Facebook Marketplace (zona Oviedo)",
+                "titulo": "Casa o terreno en Facebook Marketplace",
                 "precio": 0,
                 "link": l,
                 "fuente": "Facebook"
@@ -167,7 +134,7 @@ def buscar_marketplace():
 # ================= BOE =================
 def boe():
     return [{
-        "titulo": "Subasta inmobiliaria BOE Asturias",
+        "titulo": "Subasta inmobiliaria BOE",
         "precio": 0,
         "link": "https://www.boe.es/",
         "fuente": "BOE"
@@ -176,11 +143,12 @@ def boe():
 
 # ================= MAIN =================
 def main():
-    enviar("📍 BOT INMOBILIARIO CON RADIO 50km OVIEDO ACTIVO")
+    enviar("🏠 BOT INMOBILIARIO MULTIPORTAL ACTIVO")
 
     vistos = cargar_vistos()
     resultados = []
 
+    # 🔥 TODAS LAS FUENTES
     resultados += buscar_marketplace()
     resultados += buscar_portales()
     resultados += rss("https://www.idealista.com/venta-viviendas/asturias-provincia/rss.xml", "Idealista")
@@ -197,13 +165,14 @@ def main():
         nuevos.append(r)
 
     if not nuevos:
-        enviar("⚠️ Sin resultados en radio 50km")
+        enviar("⚠️ Bot activo pero sin resultados nuevos")
         return
 
+    # ordenar por precio bajo primero
     nuevos.sort(key=lambda x: x["precio"] if x["precio"] else 999999999)
 
     for item in nuevos[:15]:
-        msg = f"""📍 RESULTADO (<=50km Oviedo)
+        msg = f"""🏠 RESULTADO
 
 {item['titulo']}
 
