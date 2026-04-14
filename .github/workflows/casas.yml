@@ -1,4 +1,4 @@
-name: Bot Casas Asturias v4
+name: Bot Casas Asturias v5
 on:
   schedule:
     - cron: "0 */3 * * *"
@@ -8,7 +8,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -32,7 +32,7 @@ jobs:
       - name: Upload debug artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: bot-casas-debug
+          name: bot-casas-debug-v5
           path: |
             debug/debug_report.json
             debug/html/*.html
