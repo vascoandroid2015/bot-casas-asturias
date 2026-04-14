@@ -3,7 +3,6 @@ import re
 import json
 import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
 import time
 import random
 
@@ -17,135 +16,138 @@ SEEN_FILE = "seen_ads.json"
 
 def cargar_vistos():
     if os.path.exists(SEEN_FILE):
-        with open(SEEN_FILE, "r", encoding="utf-8") as f:
-            return set(json.load(f))
+        try:
+            with open(SEEN_FILE, "r", encoding="utf-8") as f:
+                return set(json.load(f))
+        except:
+            return set()
     return set()
 
 def guardar_vistos(vistos):
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
         json.dump(list(vistos), f, ensure_ascii=False)
 
-def enviar_con_foto(msg, foto_url=None):
+def enviar(msg):
     if not TELEGRAM_TOKEN or not CHAT_ID:
         print("⚠️ TELEGRAM no configurado")
         return
     try:
-        if foto_url and foto_url.startswith("http"):
-            r = requests.get(foto_url, timeout=10)
-            if r.status_code == 200:
-                requests.post(
-                    f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto",
-                    data={"chat_id": CHAT_ID, "caption": msg, "parse_mode": "HTML"},
-                    files={"photo": r.content}
-                )
-                return
         requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-            data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"}
+            data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"},
+            timeout=15
         )
     except Exception as e:
-        print(f"Error al enviar mensaje: {e}")
+        print(f"Error enviando a Telegram: {e}")
 
 def limpiar_precio(texto):
+    """Extrae el precio correctamente"""
+    # Busca formato típico: 95.000 € o 95000 €
     match = re.search(r'(\d{1,3}(?:\.\d{3})*)\s*€', texto)
     if match:
         return int(match.group(1).replace('.', ''))
+    
+    # Fallback: cualquier número de 4 a 6 dígitos
+    match = re.search(r'\b(\d{4,6})\b', texto)
+    if match:
+        num = int(match.group(1))
+        if MIN_PRECIO <= num <= MAX_PRECIO:
+            return num
     return None
 
 def extraer_parcela(texto):
     texto = texto.lower()
-    patrones = [r'(\d{2,5})\s?m2?', r'parcela\s?de?\s?(\d{2,5})', r'finca\s?de?\s?(\d{2,5})', r'(\d{3,5})\s*m²']
+    patrones = [
+        r'(\d{2,5})\s?m2?', r'parcela\s?de?\s?(\d{2,5})', r'finca\s?de?\s?(\d{2,5})',
+        r'terreno\s?de?\s?(\d{2,5})', r'(\d{3,5})\s*m²'
+    ]
     for p in patrones:
         m = re.search(p, texto)
         if m:
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== MILANUNCIOS ====================
-def milanuncios():
+# ==================== SCRAPING COMPLETO DE MILANUNCIOS ====================
+def milanuncios_scraper():
     resultados = []
     vistos = cargar_vistos()
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    }
     pagina = 1
-    max_paginas = 30
+    max_paginas = 50  # seguridad alta
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+    print("🚀 Iniciando búsqueda completa de casas en Milanuncios...")
 
-        while pagina <= max_paginas:
-            url = f"https://www.milanuncios.com/venta-de-casas-en-asturias/?p={pagina}"
-            try:
-                print(f"🔍 Milanuncios - Página {pagina}")
-                page.goto(url, timeout=90000, wait_until="domcontentloaded")
-                time.sleep(random.uniform(4, 7))
+    while pagina <= max_paginas:
+        url = f"https://www.milanuncios.com/venta-de-casas-en-asturias/?p={pagina}"
+        try:
+            print(f"📄 Scraping página {pagina}...")
+            r = requests.get(url, headers=headers, timeout=40)
 
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                time.sleep(3)
-
-                html = page.content()
-                soup = BeautifulSoup(html, "html.parser")
-
-                # Selectores actualizados para Milanuncios (2026)
-                items = soup.select("article.ma-Ad, article")
-                print(f"   → Encontrados {len(items)} posibles anuncios")
-
-                nuevos = 0
-                for item in items:
-                    texto = item.get_text(" ", strip=True)
-                    if len(texto) < 40:
-                        continue
-
-                    precio = limpiar_precio(texto)
-                    if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
-                        continue
-
-                    link_tag = item.find("a", href=True)
-                    if not link_tag:
-                        continue
-                    link = "https://www.milanuncios.com" + link_tag["href"]
-
-                    if link in vistos:
-                        continue
-
-                    foto = None
-                    img = item.find("img")
-                    if img:
-                        foto = img.get("src") or img.get("data-src")
-
-                    resultados.append({
-                        "titulo": texto[:240],
-                        "precio": precio,
-                        "link": link,
-                        "fuente": "Milanuncios",
-                        "foto": foto
-                    })
-                    vistos.add(link)
-                    nuevos += 1
-
-                guardar_vistos(vistos)
-                print(f"   → {nuevos} nuevos anuncios válidos en esta página")
-
-                if nuevos == 0 and pagina > 10:
-                    print("   Terminando scraping de Milanuncios")
-                    break
-
-                pagina += 1
-                time.sleep(random.uniform(5, 8))
-            except Exception as e:
-                print(f"❌ Error página {pagina}: {e}")
+            if r.status_code != 200:
+                print(f"   ⚠️ Bloqueado o fin (código {r.status_code})")
                 break
 
-        browser.close()
+            soup = BeautifulSoup(r.text, "html.parser")
+            items = soup.select("article")
+
+            if not items or len(items) < 3:
+                print(f"   No hay más anuncios en página {pagina}. Fin del scraping.")
+                break
+
+            print(f"   → {len(items)} anuncios encontrados")
+
+            nuevos = 0
+            for item in items:
+                texto = item.get_text(" ", strip=True)
+
+                precio = limpiar_precio(texto)
+                if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
+                    continue
+
+                link_tag = item.find("a", href=True)
+                if not link_tag:
+                    continue
+                link = "https://www.milanuncios.com" + link_tag["href"]
+
+                if link in vistos:
+                    continue
+
+                resultados.append({
+                    "titulo": texto[:280],
+                    "precio": precio,
+                    "link": link,
+                    "fuente": "Milanuncios"
+                })
+
+                vistos.add(link)
+                nuevos += 1
+
+            guardar_vistos(vistos)
+
+            print(f"   → {nuevos} nuevos anuncios válidos añadidos en esta página")
+
+            if nuevos == 0 and pagina > 8:
+                print("   Pocas coincidencias → terminando")
+                break
+
+            pagina += 1
+            time.sleep(random.uniform(2.5, 4.5))
+
+        except Exception as e:
+            print(f"❌ Error en página {pagina}: {e}")
+            break
+
     return resultados
 
 # ==================== MAIN ====================
 def main():
-    print("🚀 Iniciando bot - Solo Milanuncios (versión corregida)")
+    print("="*70)
+    print("🤖 BOT CASAS ASTURIAS - Modo Búsqueda Completa")
+    print("="*70)
 
-    todas = milanuncios()
+    todas = milanuncios_scraper()
 
     print(f"\nTotal nuevos anuncios encontrados: {len(todas)}")
 
@@ -160,15 +162,15 @@ def main():
 
 🔗 {item['link']}
 """
-        enviar_con_foto(msg, item.get("foto"))
+        enviar(msg)
         enviados += 1
-        time.sleep(2.0)
+        time.sleep(1.7)
 
     if enviados == 0:
-        enviar_con_foto("❌ Hoy no se encontraron casas nuevas en el rango de precio.\nRevisa los logs completos.")
-        print("❌ Sin resultados nuevos")
+        enviar("❌ Hoy no se encontraron casas nuevas en el rango 5.000€ - 250.000€.")
+        print("❌ No se enviaron casas nuevas")
     else:
-        print(f"✅ Enviadas {enviados} casas nuevas a Telegram")
+        print(f"✅ Se enviaron {enviados} casas NUEVAS a Telegram")
 
 if __name__ == "__main__":
     main()
