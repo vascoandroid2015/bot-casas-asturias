@@ -1,12 +1,12 @@
 {
-  "scraped_count": 122,
-  "rejected_count": 85,
+  "scraped_count": 184,
+  "rejected_count": 143,
   "notified_count": 10,
   "reject_reasons": {
-    "negative_term": 39,
-    "price_out_of_range": 29,
-    "missing_search_term": 33,
-    "missing_price": 32
+    "negative_term": 53,
+    "price_out_of_range": 37,
+    "missing_search_term": 73,
+    "missing_price": 73
   },
   "sources": [
     {
@@ -153,7 +153,7 @@
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
       "valid_count": 8,
-      "notify_count": 3
+      "notify_count": 2
     },
     {
       "name": "Hunosa Inmobiliario",
@@ -218,6 +218,66 @@
       "notify_count": 0
     },
     {
+      "name": "Properstar",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 20,
+      "error_count": 0,
+      "final_url": "https://www.properstar.es/spain/asturias/buy",
+      "page_title": "7580 Propiedades en venta en Asturias | Properstar",
+      "block_signals": [],
+      "valid_count": 4,
+      "notify_count": 1
+    },
+    {
+      "name": "Engel & Völkers Asturias",
+      "kind": "agency",
+      "enabled": true,
+      "raw_count": 41,
+      "error_count": 0,
+      "final_url": "https://www.engelvoelkers.com/es/en/properties/res/sale/real-estate/asturias",
+      "page_title": "Homes for sale in Asturias | Engel & Völkers",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Sellmi",
+      "kind": "agency",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.sellmi.es/inmuebles-venta/",
+      "page_title": "Inmuebles en Venta en Asturias - Sellmi Inmobiliaria",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Asturias Property",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Indomio",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.indomio.es/en/venta-casas/asturias-provincia/",
+      "page_title": "indomio.es",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
       "name": "Fotocasa",
       "kind": "portal",
       "enabled": false,
@@ -244,6 +304,16 @@
       "valid_count": 0,
       "notify_count": 0,
       "note": "Preparado para futuras integraciones"
+    },
+    {
+      "name": "Facebook groups",
+      "kind": "social",
+      "enabled": false,
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0,
+      "note": "Usar solo para descubrimiento o ingesta manual"
     },
     {
       "name": "Facebook Marketplace",
