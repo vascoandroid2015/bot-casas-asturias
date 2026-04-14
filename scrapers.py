@@ -3,7 +3,7 @@ from typing import Dict, List, Tuple
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from playwright.sync_api import Browser, Page
-from config import DEBUG_HTML_DIR, DEBUG_SCREENSHOT_DIR, SOURCES
+from config import DEBUG_HTML_DIR, DEBUG_SCREENSHOT_DIR, SOCIAL_SOURCES, WEB_SOURCES
 from filters import clean_price
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 COOKIE_SELECTORS = ["button:has-text('Aceptar')", "button:has-text('Accept')", "button:has-text('Consentir')", '#didomi-notice-agree-button', 'button#onetrust-accept-btn-handler']
@@ -41,18 +41,18 @@ def detect_blocks(text: str) -> List[str]:
     lower = (text or '').lower()
     return [p for p in BLOCK_PATTERNS if p in lower]
 
-def extract_items(soup, selectors: List[str], source: str, base_url: str) -> List[Dict]:
+def extract_items(soup, selectors: List[str], source: Dict) -> List[Dict]:
     results, seen = [], set()
     for selector in selectors:
         for item in soup.select(selector):
             link_tag = item.find('a', href=True)
             text = item.get_text(' ', strip=True)
             if not link_tag or len(text) < 25: continue
-            href = urljoin(base_url, link_tag['href'])
+            href = urljoin(source['base_url'], link_tag['href'])
             if href in seen: continue
             seen.add(href)
             title = link_tag.get_text(' ', strip=True) or text[:170]
-            results.append({'source': source, 'title': title[:170], 'price': clean_price(text), 'url': href, 'location': text[:240], 'description': text[:900]})
+            results.append({'source': source['name'], 'kind': source['kind'], 'title': title[:170], 'price': clean_price(text), 'url': href, 'location': text[:240], 'description': text[:900]})
         if results: break
     return results
 
@@ -65,22 +65,24 @@ def collect_source(page: Page, source: Dict):
     html = page.content()
     save_debug_assets(source['name'], page)
     soup = BeautifulSoup(html, 'html.parser')
-    results = extract_items(soup, source['selectors'], source['name'], source['base_url'])
-    meta = {'name': source['name'], 'enabled': source['enabled'], 'raw_count': len(results), 'error_count': 0, 'final_url': page.url, 'page_title': page.title(), 'block_signals': detect_blocks(soup.get_text(' ', strip=True))}
+    results = extract_items(soup, source['selectors'], source)
+    meta = {'name': source['name'], 'kind': source['kind'], 'enabled': source['enabled'], 'raw_count': len(results), 'error_count': 0, 'final_url': page.url, 'page_title': page.title(), 'block_signals': detect_blocks(soup.get_text(' ', strip=True))}
     return results, meta
 
 def run_all_scrapers(browser: Browser) -> Tuple[List[Dict], List[Dict]]:
     collected, report = [], []
-    for source in SOURCES:
+    for source in WEB_SOURCES:
         if not source['enabled']:
-            report.append({'name': source['name'], 'enabled': False, 'raw_count': 0, 'error_count': 0, 'valid_count': 0, 'notify_count': 0})
+            report.append({'name': source['name'], 'kind': source['kind'], 'enabled': False, 'raw_count': 0, 'error_count': 0, 'valid_count': 0, 'notify_count': 0})
             continue
         page = prepare_page(browser)
         try:
             items, meta = collect_source(page, source)
             collected.extend(items); report.append(meta)
         except Exception as exc:
-            report.append({'name': source['name'], 'enabled': True, 'raw_count': 0, 'error_count': 1, 'final_url': page.url if page else '', 'page_title': '', 'block_signals': [], 'exception': str(exc)})
+            report.append({'name': source['name'], 'kind': source['kind'], 'enabled': True, 'raw_count': 0, 'error_count': 1, 'final_url': page.url if page else '', 'page_title': '', 'block_signals': [], 'exception': str(exc)})
         finally:
             page.context.close()
+    for source in SOCIAL_SOURCES:
+        report.append({'name': source['name'], 'kind': source['kind'], 'enabled': source['enabled'], 'raw_count': 0, 'error_count': 0, 'valid_count': 0, 'notify_count': 0, 'note': source.get('note', '')})
     return collected, report

@@ -7,17 +7,20 @@ from scrapers import run_all_scrapers
 from storage import load_seen, save_debug, save_seen
 from telegram_client import build_debug_message, build_message, send_message
 
-def dedupe_by_url(items: List[Dict]) -> List[Dict]:
+def dedupe_key(item: Dict):
+    return (item.get('url') or '', item.get('price'), item.get('source'))
+
+def dedupe_items(items: List[Dict]) -> List[Dict]:
     seen, deduped = set(), []
     for item in items:
-        url = item.get('url')
-        if not url or url in seen: continue
-        seen.add(url); deduped.append(item)
+        key = dedupe_key(item)
+        if key in seen or not item.get('url'): continue
+        seen.add(key); deduped.append(item)
     return deduped
 
 def process_items(scraped: List[Dict], history: Dict):
     candidates, rejected = [], []
-    for item in dedupe_by_url(scraped):
+    for item in dedupe_items(scraped):
         classify_listing(item)
         if not item.get('valid'): rejected.append(item); continue
         item['score'] = score_listing(item)
@@ -31,7 +34,7 @@ def process_items(scraped: List[Dict], history: Dict):
     return candidates, rejected
 
 def update_history(scraped: List[Dict], history: Dict) -> Dict:
-    for item in dedupe_by_url(scraped):
+    for item in dedupe_items(scraped):
         if not item.get('url'): continue
         history[item['url']] = {'title': item.get('title'), 'price': item.get('price'), 'source': item.get('source'), 'location': item.get('location')}
     return history
@@ -55,7 +58,7 @@ def main():
     to_notify, rejected = process_items(scraped, history)
     to_notify = to_notify[:MAX_RESULTS_PER_RUN]
     if not to_notify:
-        send_message('ℹ️ Bot inmobiliario activo, sin novedades notificables. Revisa el resumen v6 por fuente.')
+        send_message('ℹ️ Metabuscador inmobiliario activo, sin novedades notificables. Revisa el resumen v7.')
     else:
         for item in to_notify:
             send_message(build_message(item, previous_price=item.get('previous_price')))

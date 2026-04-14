@@ -46,6 +46,6 @@ def classify_listing(item: Dict) -> Dict:
 def score_listing(item: Dict) -> int:
     text = normalize_text(' '.join([item.get('title',''), item.get('description',''), item.get('location','')]))
     score = sum(2 for term in PRIORITY_TERMS if normalize_text(term) in text)
-    if item.get('price') and item['price'] <= 150000: score += 2
-    if item.get('distance_km') is not None and item['distance_km'] <= 30: score += 2
+    if item.get('price') and item['price'] <= 170000: score += 2
+    if item.get('distance_km') is not None and item['distance_km'] <= 35: score += 2
     return score
