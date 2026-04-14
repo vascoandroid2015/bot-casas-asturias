@@ -2,143 +2,150 @@ import os
 import json
 import time
 import requests
-from playwright.sync_api import sync_playwright
-
-from scrapers import scrap_milanuncios, scrap_idealista, scrap_boe
-from inteligencia import es_ganga
+import feedparser
+import re
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 SEEN_FILE = "seen_ads.json"
 
+KEYWORDS_GANGA = [
+    "urge", "oportunidad", "reformar", "bajo precio",
+    "chollo", "herencia", "embargo", "subasta"
+]
+
 
 # ================= TELEGRAM =================
 def enviar(msg):
-    if not TELEGRAM_TOKEN or not CHAT_ID:
-        print("⚠️ Telegram no configurado")
-        return
-
     try:
-        response = requests.post(
+        requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-            data={
-                "chat_id": CHAT_ID,
-                "text": msg,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": True
-            },
-            timeout=20
+            data={"chat_id": CHAT_ID, "text": msg},
+            timeout=10
         )
-
-        if response.status_code != 200:
-            print("❌ Error Telegram:", response.text)
-        else:
-            print("✅ Enviado a Telegram")
-
+        print("✅ Enviado")
     except Exception as e:
-        print("❌ Error Telegram:", e)
+        print("❌ Error:", e)
 
 
 # ================= VISTOS =================
 def cargar_vistos():
     if not os.path.exists(SEEN_FILE):
         return set()
-
-    try:
-        with open(SEEN_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if isinstance(data, list):
-                return set(data)
-    except Exception as e:
-        print("Error leyendo vistos:", e)
-
-    return set()
+    return set(json.load(open(SEEN_FILE)))
 
 
-def guardar_vistos(vistos):
-    try:
-        with open(SEEN_FILE, "w", encoding="utf-8") as f:
-            json.dump(list(vistos), f, indent=2, ensure_ascii=False)
-    except Exception as e:
-        print("Error guardando vistos:", e)
+def guardar_vistos(v):
+    json.dump(list(v), open(SEEN_FILE, "w"))
+
+
+# ================= PRECIO =================
+def extraer_precio(txt):
+    m = re.search(r'(\d+[.,]?\d*)\s?€', txt)
+    if m:
+        return int(m.group(1).replace(".", "").replace(",", ""))
+    return 0
+
+
+# ================= SCORE =================
+def calcular_score(item):
+    score = 0
+
+    precio = item["precio"]
+
+    if precio:
+        if precio < 60000:
+            score += 3
+        elif precio < 100000:
+            score += 2
+
+    texto = item["titulo"].lower()
+
+    for k in KEYWORDS_GANGA:
+        if k in texto:
+            score += 2
+
+    return score
+
+
+# ================= RSS =================
+def rss(url, fuente):
+    feed = feedparser.parse(url)
+    datos = []
+
+    for e in feed.entries:
+        datos.append({
+            "titulo": e.title,
+            "precio": extraer_precio(e.title),
+            "link": e.link,
+            "fuente": fuente
+        })
+
+    return datos
+
+
+# ================= BOE =================
+def boe():
+    return [{
+        "titulo": "Subasta inmobiliaria BOE",
+        "precio": 0,
+        "link": "https://www.boe.es/",
+        "fuente": "BOE"
+    }]
 
 
 # ================= MAIN =================
 def main():
-    print("🚀 BOT INICIADO")
-
-    enviar("🤖 Bot activo y ejecutándose...")
+    enviar("🚀 BOT INMOBILIARIO NIVEL DIOS ACTIVO")
 
     vistos = cargar_vistos()
 
+    resultados = []
+
+    # 🔎 FUENTES
+    resultados += rss("https://www.idealista.com/venta-viviendas/asturias-provincia/rss.xml", "Idealista")
+    resultados += rss("https://www.fotocasa.es/es/rss/venta/viviendas/asturias/todas-las-zonas/l", "Fotocasa")
+    resultados += boe()
+
     nuevos = []
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        page = browser.new_page()
-
-        print("🔎 Buscando en Milanuncios...")
-        milanuncios = scrap_milanuncios(page)
-        print(f"➡️ Milanuncios encontrados: {len(milanuncios)}")
-
-        print("🔎 Buscando en Idealista...")
-        idealista = scrap_idealista(page)
-        print(f"➡️ Idealista encontrados: {len(idealista)}")
-
-        browser.close()
-
-    print("🔎 Buscando en BOE...")
-    boe = scrap_boe()
-    print(f"➡️ BOE encontrados: {len(boe)}")
-
-    nuevos += milanuncios + idealista + boe
-
-    # ================= FILTRAR DUPLICADOS =================
-    filtrados = []
-
-    for item in nuevos:
-        if item["link"] in vistos:
+    for r in resultados:
+        if r["link"] in vistos:
             continue
 
-        vistos.add(item["link"])
-        filtrados.append(item)
+        r["score"] = calcular_score(r)
+        vistos.add(r["link"])
+        nuevos.append(r)
 
-    print(f"📊 Total nuevos sin duplicados: {len(filtrados)}")
-
-    if not filtrados:
-        enviar("⚠️ Bot funcionando pero no encontró anuncios nuevos")
+    if not nuevos:
+        enviar("⚠️ Sin novedades (bot operativo)")
         return
 
-    # ================= ORDENAR =================
-    filtrados.sort(key=lambda x: x["precio"] if x["precio"] else 999999999)
+    # 🔥 ORDEN DIOS
+    nuevos.sort(key=lambda x: (x["score"], -x["precio"] if x["precio"] else 0), reverse=True)
 
-    # ================= ENVIAR =================
-    enviados = 0
+    # 🔝 SOLO LOS MEJORES
+    top = nuevos[:10]
 
-    for item in filtrados:
-        ganga = es_ganga(item["precio"], item["titulo"])
+    for item in top:
+        tag = "🔥 GANGA" if item["score"] >= 4 else "🏠 CASA"
 
-        tag = "🔥 GANGA" if ganga else "🏠 CASA"
-
-        mensaje = f"""<b>{tag} - {item['fuente']}</b>
+        msg = f"""{tag} [{item['score']}⭐]
 
 {item['titulo']}
 
-💰 <b>{item['precio']:,} €</b>
+💰 {item['precio']:,} €
 
-🔗 {item['link']}
-"""
+🌍 {item['fuente']}
 
-        enviar(mensaje)
-        enviados += 1
-        time.sleep(1.5)
+{item['link']}"""
 
-    print(f"✅ Total enviados: {enviados}")
+        enviar(msg)
+        time.sleep(1)
 
     guardar_vistos(vistos)
 
 
-# ================= RUN =================
 if __name__ == "__main__":
     main()
