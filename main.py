@@ -30,16 +30,22 @@ def guardar_vistos(vistos):
 def enviar(msg):
     if not TELEGRAM_TOKEN or not CHAT_ID:
         print("⚠️ TELEGRAM no configurado")
-        return
+        return False
     try:
-        requests.post(
+        r = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"},
-            timeout=15
+            timeout=20
         )
-        print("✅ Enviado a Telegram")
+        if r.status_code == 200:
+            print("✅ MENSAJE ENVIADO A TELEGRAM")
+            return True
+        else:
+            print(f"❌ Telegram devolvió error {r.status_code}: {r.text[:200]}")
+            return False
     except Exception as e:
-        print(f"❌ Error Telegram: {e}")
+        print(f"❌ Excepción al enviar a Telegram: {e}")
+        return False
 
 def limpiar_precio(texto):
     match = re.search(r'(\d{1,3}(?:\.\d{3})*)\s*€', texto)
@@ -61,50 +67,46 @@ def extraer_parcela(texto):
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== FUNCIÓN GENÉRICA (para todos los portales) ====================
-def scrape_portal(nombre, base_url, selector_anuncios, get_link_func, espera=7000):
+# ==================== SCRAPING GENÉRICO ====================
+def scrape_portal(nombre, base_url, selector, link_func):
     resultados = []
     vistos = cargar_vistos()
     pagina = 1
 
+    print(f"\n🔍 INICIANDO {nombre.upper()}...")
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-        )
+        context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
         page = context.new_page()
 
-        while True:
-            # Construcción de URL según el portal
-            if "milanuncios" in base_url.lower():
-                url = f"{base_url}?p={pagina}"
-            else:
-                url = f"{base_url}{'?' if '?' not in base_url else '&'}pagina={pagina}"
-
+        while pagina <= 15:   # límite razonable por portal
+            url = f"{base_url}?p={pagina}" if "milanuncios" in base_url.lower() else f"{base_url}{'?' if '?' not in base_url else '&'}pagina={pagina}"
             try:
-                print(f"🔍 {nombre} → Página {pagina}")
+                print(f"   → {nombre} | Página {pagina}")
                 page.goto(url, timeout=90000, wait_until="domcontentloaded")
                 time.sleep(random.uniform(5, 8))
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 time.sleep(4)
 
                 soup = BeautifulSoup(page.content(), "html.parser")
-                items = soup.select(selector_anuncios)
+                items = soup.select(selector)
 
-                if not items or len(items) < 4:
-                    print(f"   {nombre} → Fin de anuncios (página {pagina})")
+                if not items or len(items) < 5:
+                    print(f"   {nombre} → Fin o pocos anuncios en página {pagina}")
                     break
 
-                print(f"   → {len(items)} anuncios encontrados")
+                print(f"   {nombre} → {len(items)} anuncios detectados")
 
                 nuevos = 0
                 for item in items:
                     texto = item.get_text(" ", strip=True)
                     precio = limpiar_precio(texto)
+
                     if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
                         continue
 
-                    link = get_link_func(item)
+                    link = link_func(item)
                     if not link or link in vistos:
                         continue
 
@@ -118,92 +120,54 @@ def scrape_portal(nombre, base_url, selector_anuncios, get_link_func, espera=700
                     nuevos += 1
 
                 guardar_vistos(vistos)
-                print(f"   → {nuevos} nuevos válidos en {nombre}")
 
-                if nuevos == 0 and pagina > 6:
-                    break
+                if nuevos > 0:
+                    print(f"   ✅ {nuevos} nuevos anuncios válidos en {nombre}")
+                else:
+                    print(f"   No hay anuncios válidos en esta página")
 
                 pagina += 1
                 time.sleep(random.uniform(6, 10))
+
             except Exception as e:
-                print(f"❌ Error en {nombre} página {pagina}: {e}")
+                print(f"   ❌ Error en {nombre} página {pagina}: {e}")
                 break
 
         browser.close()
     return resultados
 
-# ==================== TODOS LOS PORTALES ====================
-def milanuncios():
-    return scrape_portal(
+# ==================== PORTALES ====================
+def main():
+    print("🚀 BOT MULTI-PORTAL - Modo Depuración Máxima")
+    print("Buscando en: Milanuncios, Idealista, Fotocasa, Habitaclia, Pisos.com, Yaencontre")
+
+    todas = []
+
+    # Milanuncios (más fácil)
+    todas.extend(scrape_portal(
         "Milanuncios",
         "https://www.milanuncios.com/venta-de-casas-en-asturias/",
         "article",
         lambda item: "https://www.milanuncios.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
-    )
+    ))
 
-def idealista():
-    return scrape_portal(
+    # Idealista
+    todas.extend(scrape_portal(
         "Idealista",
         "https://www.idealista.com/venta-viviendas/asturias/",
         "article.item",
         lambda item: "https://www.idealista.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
-    )
+    ))
 
-def fotocasa():
-    return scrape_portal(
+    # Fotocasa
+    todas.extend(scrape_portal(
         "Fotocasa",
         "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l",
-        "div.re-Card, article",
+        "div.re-Card",
         lambda item: item.find("a", href=True)["href"] if item.find("a", href=True) else ""
-    )
+    ))
 
-def habitaclia():
-    return scrape_portal(
-        "Habitaclia",
-        "https://www.habitaclia.com/venta-casas-asturias",
-        "div.list-element, article",
-        lambda item: "https://www.habitaclia.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
-    )
-
-def pisos_com():
-    return scrape_portal(
-        "Pisos.com",
-        "https://www.pisos.com/venta-pisos/asturias/",
-        "div.ad",
-        lambda item: "https://www.pisos.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
-    )
-
-def yaencontre():
-    return scrape_portal(
-        "Yaencontre",
-        "https://www.yaencontre.com/venta-viviendas/asturias",
-        "div.listing-item, article",
-        lambda item: "https://www.yaencontre.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
-    )
-
-def spainhouses():
-    return scrape_portal(
-        "SpainHouses",
-        "https://www.spainhouses.net/es/venta-casas-asturias",
-        "div.property-item, article",
-        lambda item: "https://www.spainhouses.net" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
-    )
-
-# ==================== MAIN ====================
-def main():
-    print("🚀 INICIANDO BOT MULTI-PORTAL (máxima cobertura)")
-    print("Portales activos: Milanuncios, Idealista, Fotocasa, Habitaclia, Pisos.com, Yaencontre, SpainHouses")
-
-    todas = []
-    todas.extend(milanuncios())
-    todas.extend(idealista())
-    todas.extend(fotocasa())
-    todas.extend(habitaclia())
-    todas.extend(pisos_com())
-    todas.extend(yaencontre())
-    todas.extend(spainhouses())
-
-    print(f"\n=== RESUMEN FINAL ===\nTotal nuevos anuncios encontrados en TODOS los portales: {len(todas)}")
+    print(f"\n=== RESUMEN FINAL ===\nTotal nuevos anuncios encontrados: {len(todas)}")
 
     enviados = 0
     for item in todas:
@@ -216,14 +180,15 @@ def main():
 
 🔗 {item['link']}
 """
-        enviar(msg)
-        enviados += 1
+        if enviar(msg):
+            enviados += 1
         time.sleep(2.0)
 
     if enviados == 0:
         enviar("❌ Hoy no se encontraron casas nuevas en el rango 5.000 - 250.000 €.")
+        print("❌ No se enviaron anuncios")
     else:
-        print(f"✅ Enviadas {enviados} casas NUEVAS a Telegram")
+        print(f"✅ Se enviaron {enviados} casas NUEVAS a Telegram")
 
 if __name__ == "__main__":
     main()
