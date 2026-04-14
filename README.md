@@ -1,24 +1,10 @@
-# Bot Casas Asturias v5
+# Bot Casas Asturias v6
 
-Versión ampliada con catálogo grande de portales e inmobiliarias de Asturias.
+Versión v6 con control anti-429 para Telegram.
 
-## Incluye fuentes
-- Idealista
-- Fotocasa
-- Milanuncios
-- CASASAPO
-- Fincas Asturias
-- CASAL Inmobiliaria
-- Inmobiliaria Asturias
-- Agencia Asturias
-- Inmobiliaria María
-- Grupo Duarte
-- REMAX Asturias
-- Facilitea Casa
-- e-viviendas
-- Arxus Inmobiliaria
-
-## Notas
-- Cada anuncio nuevo o con cambio de precio se envía como mensaje individual a Telegram.
-- Algunas fuentes quedan desactivadas por defecto si ya han mostrado bloqueo claro en CI.
-- El objetivo es tener el máximo catálogo posible y luego ir afinando fuente por fuente.
+## Mejoras
+- Cada anuncio sigue siendo un mensaje independiente.
+- Pausa entre mensajes (`MESSAGE_DELAY_SECONDS`).
+- Reintentos automáticos si Telegram responde 429 usando `retry_after`.
+- Límite por ejecución (`MAX_RESULTS_PER_RUN = 10`).
+- Mantiene debug por fuente y artefactos HTML/capturas.
