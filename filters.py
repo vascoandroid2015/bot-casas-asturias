@@ -4,6 +4,7 @@ import unicodedata
 from typing import Dict, Optional, Tuple
 
 from config import (
+    ALLOW_UNKNOWN_LOCATION,
     CENTER_COORDS,
     MAX_DISTANCE_KM,
     MAX_PRICE,
@@ -12,6 +13,7 @@ from config import (
     NEGATIVE_TERMS,
     PRIORITY_TERMS,
     SEARCH_TERMS,
+    STRICT_DISTANCE_FILTER,
 )
 
 
@@ -26,6 +28,7 @@ def clean_price(text: str) -> Optional[int]:
     if not text:
         return None
     text = text.replace("EUR", "€").replace("euros", "€")
+    text = text.replace(".000", "000")
     patterns = [
         r"(\d{1,3}(?:[\.\s]\d{3})+|\d{4,6})\s*€",
         r"€\s*(\d{1,3}(?:[\.\s]\d{3})+|\d{4,6})",
@@ -33,7 +36,9 @@ def clean_price(text: str) -> Optional[int]:
     for pattern in patterns:
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
-            return int(re.sub(r"\D", "", match.group(1)))
+            digits = re.sub(r"\D", "", match.group(1))
+            if digits:
+                return int(digits)
     return None
 
 
@@ -54,6 +59,32 @@ def detect_municipality(text: str) -> Tuple[Optional[str], Optional[float]]:
     return None, None
 
 
+def classify_listing(item: Dict) -> Dict:
+    text = normalize_text(" ".join([item.get("title", ""), item.get("description", ""), item.get("location", "")]))
+    price = item.get("price")
+    municipality, distance = detect_municipality(text)
+    item["municipality"] = municipality
+    item["distance_km"] = distance
+
+    reasons = []
+    if any(term in text for term in map(normalize_text, NEGATIVE_TERMS)):
+        reasons.append("negative_term")
+    if not any(term in text for term in map(normalize_text, SEARCH_TERMS)):
+        reasons.append("missing_search_term")
+    if price is None:
+        reasons.append("missing_price")
+    elif not (MIN_PRICE <= price <= MAX_PRICE):
+        reasons.append("price_out_of_range")
+    if municipality is None and not ALLOW_UNKNOWN_LOCATION:
+        reasons.append("unknown_location")
+    if STRICT_DISTANCE_FILTER and distance is not None and distance > MAX_DISTANCE_KM:
+        reasons.append("outside_radius")
+
+    item["valid"] = len(reasons) == 0
+    item["reject_reasons"] = reasons
+    return item
+
+
 def score_listing(item: Dict) -> int:
     text = normalize_text(" ".join([item.get("title", ""), item.get("description", ""), item.get("location", "")]))
     score = 0
@@ -65,20 +96,3 @@ def score_listing(item: Dict) -> int:
     if item.get("distance_km") is not None and item["distance_km"] <= 30:
         score += 2
     return score
-
-
-def is_relevant_listing(item: Dict) -> bool:
-    text = normalize_text(" ".join([item.get("title", ""), item.get("description", ""), item.get("location", "")]))
-    if any(term in text for term in map(normalize_text, NEGATIVE_TERMS)):
-        return False
-    if not any(term in text for term in map(normalize_text, SEARCH_TERMS)):
-        return False
-    price = item.get("price")
-    if price is None or not (MIN_PRICE <= price <= MAX_PRICE):
-        return False
-    municipality, distance = detect_municipality(text)
-    item["municipality"] = municipality
-    item["distance_km"] = distance
-    if distance is not None and distance > MAX_DISTANCE_KM:
-        return False
-    return True

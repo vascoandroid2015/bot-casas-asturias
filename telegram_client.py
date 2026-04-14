@@ -3,7 +3,7 @@ from typing import Dict, Optional
 
 import requests
 
-from config import CENTER_NAME, TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
+from config import CENTER_NAME, SEND_DEBUG_SUMMARY, TELEGRAM_CHAT_ID, TELEGRAM_TOKEN
 
 
 def send_message(text: str) -> None:
@@ -29,14 +29,11 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
     location = html.escape(item.get("location") or item.get("municipality") or "Ubicación no detectada")
     price = item.get("price")
     distance = item.get("distance_km")
-    description = html.escape((item.get("description") or "").strip()[:500])
+    description = html.escape((item.get("description") or "").strip()[:450])
 
     header = "🏡 <b>Nueva oportunidad detectada</b>"
     if previous_price and price and previous_price != price:
-        if price < previous_price:
-            header = "📉 <b>Bajada de precio detectada</b>"
-        else:
-            header = "🔁 <b>Cambio de precio detectado</b>"
+        header = "📉 <b>Bajada de precio detectada</b>" if price < previous_price else "🔁 <b>Cambio de precio detectado</b>"
 
     lines = [header, "", f"<b>{title}</b>"]
     if price:
@@ -51,4 +48,17 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
         lines.append(f"📝 <b>Resumen:</b> {description}")
     if link:
         lines.append(f"🔗 <a href=\"{html.escape(link)}\">Ver anuncio</a>")
+    return "\n".join(lines)
+
+
+def build_debug_message(report: Dict) -> str:
+    if not SEND_DEBUG_SUMMARY:
+        return ""
+    lines = ["🛠️ <b>Resumen debug bot casas</b>", ""]
+    for portal in report.get("portals", []):
+        lines.append(
+            f"• <b>{html.escape(portal['name'])}</b>: extraídos={portal['raw_count']}, válidos={portal['valid_count']}, nuevos/cambios={portal['notify_count']}, errores={portal['error_count']}"
+        )
+    lines.append("")
+    lines.append(f"Total notificados: <b>{report.get('notified_count', 0)}</b>")
     return "\n".join(lines)

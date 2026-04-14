@@ -1,35 +1,26 @@
-# Bot Casas Asturias
+# Bot Casas Asturias v2
 
-Bot de Telegram en Python + Playwright para detectar anuncios de casas, fincas, parcelas y terrenos en Asturias, priorizando inmuebles a un radio aproximado de 50 km desde Oviedo y con precio máximo de 250.000 €.
+Versión más abierta y depurable del bot inmobiliario con Playwright para Telegram.
 
-## Qué hace
+## Mejoras respecto a la v1
 
-- Busca anuncios en Idealista, Milanuncios y Fotocasa.
-- Filtra por precio máximo.
-- Intenta detectar municipios dentro del radio configurado desde Oviedo.
-- Evita duplicados por URL.
-- Detecta cambios y bajadas de precio.
-- Envía mensajes completos a Telegram.
-- Guarda histórico en `seen_ads.json`.
+- Añade `debug/debug_report.json` con conteos por portal y motivos de descarte.
+- No aplica el radio de 50 km de forma estricta al principio (`STRICT_DISTANCE_FILTER = False`).
+- Permite anuncios con ubicación no detectada (`ALLOW_UNKNOWN_LOCATION = True`).
+- Mantiene precio máximo de 250.000 €.
+- Detecta anuncios nuevos y cambios de precio.
+- Envía resumen debug al Telegram al final de cada ejecución.
 
-## Estructura
+## Objetivo de esta versión
 
-- `main.py`: ejecución principal.
-- `scrapers.py`: scrapers Playwright por portal.
-- `filters.py`: filtros de texto, precio y distancia.
-- `storage.py`: persistencia local JSON.
-- `telegram_client.py`: envío y formato del mensaje.
-- `config.py`: configuración general.
-- `.github/workflows/casas.yml`: ejecución en GitHub Actions.
+Primero comprobar que el bot realmente extrae anuncios válidos de los portales. Después, cuando veamos resultados en el debug, se puede endurecer de nuevo el filtro de distancia.
 
-## Variables necesarias
-
-Configura estos secrets en GitHub:
+## Secrets necesarios
 
 - `TELEGRAM_TOKEN`
 - `TELEGRAM_CHAT_ID`
 
-## Ejecución local
+## Uso local
 
 ```bash
 python -m venv .venv
@@ -39,11 +30,16 @@ playwright install --with-deps chromium
 python main.py
 ```
 
-## GitHub Actions
+## Ficheros clave
 
-El workflow instala Python, dependencias y Chromium, ejecuta el bot y guarda cambios de `seen_ads.json` en el repo.
+- `debug/debug_report.json`: resumen por portal, descartes y ejemplos.
+- `seen_ads.json`: histórico de anuncios vistos y último precio.
 
-## Notas
+## Ajustes rápidos
 
-- Los selectores de scraping pueden cambiar con el tiempo; los portales inmobiliarios cambian su HTML con frecuencia.
-- He dejado la configuración preparada para ampliar a más portales y fuentes experimentales como Wallapop o redes sociales, pero desactivadas de serie para no romper la estabilidad de la v1.
+En `config.py` puedes cambiar:
+
+- `STRICT_DISTANCE_FILTER = False` a `True`
+- `ALLOW_UNKNOWN_LOCATION = True` a `False`
+- `MAX_RESULTS_PER_RUN`
+- portales activos

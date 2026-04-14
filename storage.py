@@ -2,7 +2,13 @@ import json
 import os
 from typing import Dict
 
-from config import SEEN_FILE
+from config import DEBUG_FILE, SEEN_FILE
+
+
+def _ensure_parent(path: str) -> None:
+    folder = os.path.dirname(path)
+    if folder:
+        os.makedirs(folder, exist_ok=True)
 
 
 def load_seen() -> Dict:
@@ -16,5 +22,12 @@ def load_seen() -> Dict:
 
 
 def save_seen(data: Dict) -> None:
+    _ensure_parent(SEEN_FILE)
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+def save_debug(report: Dict) -> None:
+    _ensure_parent(DEBUG_FILE)
+    with open(DEBUG_FILE, "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
