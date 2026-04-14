@@ -30,24 +30,29 @@ def guardar_vistos(vistos):
 def enviar(msg):
     if not TELEGRAM_TOKEN or not CHAT_ID:
         print("⚠️ TELEGRAM no configurado")
-        return
+        return False
     try:
-        requests.post(
+        response = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"},
-            timeout=15
+            timeout=20
         )
+        if response.status_code == 200:
+            print("✅ Mensaje enviado a Telegram")
+            return True
+        else:
+            print(f"❌ Error Telegram: {response.status_code} - {response.text}")
+            return False
     except Exception as e:
-        print(f"Error enviando a Telegram: {e}")
+        print(f"❌ Excepción al enviar: {e}")
+        return False
 
 def limpiar_precio(texto):
-    """Extrae el precio correctamente"""
-    # Busca formato típico: 95.000 € o 95000 €
+    # Busca precios como "95.000 €", "95000 €", etc.
     match = re.search(r'(\d{1,3}(?:\.\d{3})*)\s*€', texto)
     if match:
         return int(match.group(1).replace('.', ''))
-    
-    # Fallback: cualquier número de 4 a 6 dígitos
+    # Fallback: cualquier número entre 4 y 6 dígitos
     match = re.search(r'\b(\d{4,6})\b', texto)
     if match:
         num = int(match.group(1))
@@ -57,43 +62,37 @@ def limpiar_precio(texto):
 
 def extraer_parcela(texto):
     texto = texto.lower()
-    patrones = [
-        r'(\d{2,5})\s?m2?', r'parcela\s?de?\s?(\d{2,5})', r'finca\s?de?\s?(\d{2,5})',
-        r'terreno\s?de?\s?(\d{2,5})', r'(\d{3,5})\s*m²'
-    ]
+    patrones = [r'(\d{2,5})\s?m2?', r'parcela\s?de?\s?(\d{2,5})', r'finca\s?de?\s?(\d{2,5})', r'(\d{3,5})\s*m²']
     for p in patrones:
         m = re.search(p, texto)
         if m:
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== SCRAPING COMPLETO DE MILANUNCIOS ====================
+# ==================== SCRAPING COMPLETO ====================
 def milanuncios_scraper():
     resultados = []
     vistos = cargar_vistos()
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-    }
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+
     pagina = 1
-    max_paginas = 50  # seguridad alta
+    print("🚀 Iniciando scraping completo de Milanuncios...")
 
-    print("🚀 Iniciando búsqueda completa de casas en Milanuncios...")
-
-    while pagina <= max_paginas:
+    while True:
         url = f"https://www.milanuncios.com/venta-de-casas-en-asturias/?p={pagina}"
         try:
-            print(f"📄 Scraping página {pagina}...")
+            print(f"📄 Página {pagina} → Solicitando...")
             r = requests.get(url, headers=headers, timeout=40)
 
             if r.status_code != 200:
-                print(f"   ⚠️ Bloqueado o fin (código {r.status_code})")
+                print(f"   Bloqueado o fin (código {r.status_code})")
                 break
 
             soup = BeautifulSoup(r.text, "html.parser")
             items = soup.select("article")
 
-            if not items or len(items) < 3:
-                print(f"   No hay más anuncios en página {pagina}. Fin del scraping.")
+            if not items or len(items) < 5:
+                print(f"   No hay más anuncios en página {pagina}. Fin.")
                 break
 
             print(f"   → {len(items)} anuncios encontrados")
@@ -101,8 +100,8 @@ def milanuncios_scraper():
             nuevos = 0
             for item in items:
                 texto = item.get_text(" ", strip=True)
-
                 precio = limpiar_precio(texto)
+
                 if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
                     continue
 
@@ -120,36 +119,33 @@ def milanuncios_scraper():
                     "link": link,
                     "fuente": "Milanuncios"
                 })
-
                 vistos.add(link)
                 nuevos += 1
 
             guardar_vistos(vistos)
+            print(f"   → {nuevos} nuevos anuncios válidos en esta página")
 
-            print(f"   → {nuevos} nuevos anuncios válidos añadidos en esta página")
-
-            if nuevos == 0 and pagina > 8:
-                print("   Pocas coincidencias → terminando")
+            if nuevos == 0 and pagina > 10:
                 break
 
             pagina += 1
-            time.sleep(random.uniform(2.5, 4.5))
+            time.sleep(random.uniform(2.8, 5.0))
 
         except Exception as e:
-            print(f"❌ Error en página {pagina}: {e}")
+            print(f"❌ Error página {pagina}: {e}")
             break
 
     return resultados
 
 # ==================== MAIN ====================
 def main():
-    print("="*70)
-    print("🤖 BOT CASAS ASTURIAS - Modo Búsqueda Completa")
-    print("="*70)
+    print("=" * 60)
+    print("🤖 BOT CASAS ASTURIAS - Versión de depuración")
+    print("=" * 60)
 
     todas = milanuncios_scraper()
 
-    print(f"\nTotal nuevos anuncios encontrados: {len(todas)}")
+    print(f"\n=== RESUMEN FINAL ===\nTotal nuevos anuncios encontrados: {len(todas)}")
 
     enviados = 0
     for item in todas:
@@ -162,13 +158,13 @@ def main():
 
 🔗 {item['link']}
 """
-        enviar(msg)
-        enviados += 1
-        time.sleep(1.7)
+        if enviar(msg):
+            enviados += 1
+        time.sleep(1.8)
 
     if enviados == 0:
-        enviar("❌ Hoy no se encontraron casas nuevas en el rango 5.000€ - 250.000€.")
-        print("❌ No se enviaron casas nuevas")
+        enviar("❌ Hoy no se encontraron casas nuevas en el rango 5.000 - 250.000 €.")
+        print("❌ No se enviaron anuncios")
     else:
         print(f"✅ Se enviaron {enviados} casas NUEVAS a Telegram")
 
