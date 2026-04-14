@@ -3,20 +3,17 @@ from typing import Dict, Optional, Tuple
 from config import ALLOW_UNKNOWN_LOCATION, CENTER_COORDS, MAX_DISTANCE_KM, MAX_PRICE, MIN_PRICE, MUNICIPALITIES, NEGATIVE_TERMS, PRIORITY_TERMS, SEARCH_TERMS, STRICT_DISTANCE_FILTER
 
 def normalize_text(text: str) -> str:
-    text = (text or "").lower().strip()
-    text = unicodedata.normalize("NFKD", text)
+    text = (text or "").lower().strip(); text = unicodedata.normalize("NFKD", text)
     return "".join(ch for ch in text if not unicodedata.combining(ch))
 
 def clean_price(text: str) -> Optional[int]:
-    if not text:
-        return None
+    if not text: return None
     text = text.replace("EUR", "€").replace("euros", "€")
     for pattern in [r"(\d{1,3}(?:[\.\s]\d{3})+|\d{4,6})\s*€", r"€\s*(\d{1,3}(?:[\.\s]\d{3})+|\d{4,6})"]:
         m = re.search(pattern, text, re.IGNORECASE)
         if m:
             digits = re.sub(r"\D", "", m.group(1))
-            if digits:
-                return int(digits)
+            if digits: return int(digits)
     return None
 
 def haversine_km(a: Tuple[float, float], b: Tuple[float, float]) -> float:
@@ -28,8 +25,7 @@ def haversine_km(a: Tuple[float, float], b: Tuple[float, float]) -> float:
 def detect_municipality(text: str):
     base = normalize_text(text)
     for municipality, coords in MUNICIPALITIES.items():
-        if municipality in base:
-            return municipality.title(), round(haversine_km(CENTER_COORDS, coords), 1)
+        if municipality in base: return municipality.title(), round(haversine_km(CENTER_COORDS, coords), 1)
     return None, None
 
 def classify_listing(item: Dict) -> Dict:

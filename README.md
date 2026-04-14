@@ -1,17 +1,12 @@
-# Bot Casas Asturias v3
+# Bot Casas Asturias v4
 
-Versión v3 enfocada en depurar extracción real con Playwright.
+Versión v4 centrada en diagnóstico explícito en Telegram y GitHub Actions.
 
-## Qué añade
-- Guardado de HTML por portal en `debug/html/`
-- Capturas completas en `debug/screenshots/`
-- Selectores alternativos por portal
-- Intento de aceptar cookies
-- Capa básica anti-detección (`navigator.webdriver`, idioma, chrome runtime)
-- Resumen debug a Telegram
-
-## Objetivo
-Validar si el problema es selector roto, muro de cookies o variante anti-bot.
+## Novedades
+- En Telegram informa por portal de URL final, título de página, señales de bloqueo y conteos por selector.
+- Guarda HTML y screenshots en `debug/`.
+- Sube `debug/` también como artifact del workflow.
+- Mantiene extracción en Playwright con capa básica anti-detección.
 
 ## Uso local
 ```bash
