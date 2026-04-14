@@ -2,8 +2,8 @@ name: Bot Casas Asturias
 
 on:
   schedule:
-    - cron: "0 */3 * * *"      # Ejecuta cada 3 horas (a las 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC)
-  workflow_dispatch:           # Permite ejecutar manualmente
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,8 +14,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0   # Necesario para el commit posterior
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -27,8 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Playwright Browsers
-        run: playwright install --with-deps chromium
+      - name: Instalar Playwright
+        run: |
+          playwright install --with-deps chromium
 
       - name: Ejecutar bot
         env:
@@ -36,8 +35,8 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
 
-      - name: Guardar seen_ads.json (solo si hubo cambios)
+      - name: Guardar vistos
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update seen_ads.json - Nuevos anuncios procesados"
+          commit_message: "Update seen_ads.json"
           file_pattern: seen_ads.json
