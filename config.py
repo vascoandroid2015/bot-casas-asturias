@@ -41,11 +41,17 @@ WEB_SOURCES = [
     {"name": "Altamira", "enabled": True, "kind": "servicer", "url": "https://www.altamirainmuebles.com/venta-viviendas/asturias", "base_url": "https://www.altamirainmuebles.com", "selectors": ["article", ".property", ".item", ".listing"]},
     {"name": "Green-Acres", "enabled": True, "kind": "portal", "url": "https://www.green-acres.es/property-for-sale/asturias-province", "base_url": "https://www.green-acres.es", "selectors": ["article", ".property", ".item", ".listing"]},
     {"name": "ThinkSPAIN", "enabled": True, "kind": "portal", "url": "https://www.thinkspain.com/property-for-sale/asturias", "base_url": "https://www.thinkspain.com", "selectors": ["article", ".property", ".item", ".listing"]},
+    {"name": "Properstar", "enabled": True, "kind": "portal", "url": "https://www.properstar.com/spain/asturias/buy", "base_url": "https://www.properstar.com", "selectors": ["article", ".property", ".listing", "[data-testid='property-card']"]},
+    {"name": "Engel & Völkers Asturias", "enabled": True, "kind": "agency", "url": "https://www.engelvoelkers.com/es/en/properties/res/sale/real-estate/asturias", "base_url": "https://www.engelvoelkers.com", "selectors": ["article", ".property", ".listing", "[data-testid='property-card']"]},
+    {"name": "Sellmi", "enabled": True, "kind": "agency", "url": "https://www.sellmi.es/inmuebles-venta/", "base_url": "https://www.sellmi.es", "selectors": ["article", ".property", ".listing", ".item"]},
+    {"name": "Asturias Property", "enabled": True, "kind": "portal", "url": "https://asturiasproperty.com", "base_url": "https://asturiasproperty.com", "selectors": ["article", ".property", ".listing", ".item"]},
+    {"name": "Indomio", "enabled": True, "kind": "portal", "url": "https://www.indomio.es/en/venta-casas/asturias-provincia/", "base_url": "https://www.indomio.es", "selectors": ["article", ".property", ".listing", ".item"]},
     {"name": "Fotocasa", "enabled": False, "kind": "portal", "url": "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l", "base_url": "https://www.fotocasa.es", "selectors": ["article", "div.re-CardPackPremium", "div.re-CardPack", "[class*='CardPack']"]},
     {"name": "Milanuncios", "enabled": False, "kind": "classifieds", "url": "https://www.milanuncios.com/venta-de-casas-en-asturias/", "base_url": "https://www.milanuncios.com", "selectors": ["div.ma-AdCard", "article", "[data-testid='ad-card']"]},
 ]
 SOCIAL_SOURCES = [
     {"name": "Telegram channels", "enabled": False, "kind": "social", "note": "Preparado para futuras integraciones"},
+    {"name": "Facebook groups", "enabled": False, "kind": "social", "note": "Usar solo para descubrimiento o ingesta manual"},
     {"name": "Facebook Marketplace", "enabled": False, "kind": "social", "note": "Opcional y sensible a bloqueos"},
     {"name": "Instagram discovery", "enabled": False, "kind": "social", "note": "Mejor como descubrimiento de agencias"},
 ]
