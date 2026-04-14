@@ -1,50 +1,36 @@
-name: Bot Casas Asturias v2
-
+name: Bot Casas Asturias v3
 on:
   schedule:
     - cron: "0 */3 * * *"
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
       - name: Install Playwright browser
         run: playwright install --with-deps chromium
-
-      - name: Ensure state and debug folders exist
+      - name: Ensure folders exist
         run: |
-          mkdir -p debug
-          if [ ! -f seen_ads.json ]; then
-            echo '{}' > seen_ads.json
-          fi
-
+          mkdir -p debug/html debug/screenshots
+          if [ ! -f seen_ads.json ]; then echo '{}' > seen_ads.json; fi
       - name: Run bot
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
-
-      - name: Commit updated state and debug
+      - name: Commit state and debug artifacts
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update seen_ads and debug report"
-          file_pattern: seen_ads.json debug/debug_report.json
+          commit_message: "Update bot state and debug artifacts"
+          file_pattern: seen_ads.json debug/debug_report.json debug/html/*.html debug/screenshots/*.png
