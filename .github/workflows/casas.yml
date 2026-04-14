@@ -1,4 +1,4 @@
-name: Bot Casas Asturias v8
+name: Bot Casas Asturias v9
 on:
   schedule:
     - cron: "0 */3 * * *"
@@ -32,7 +32,7 @@ jobs:
       - name: Upload debug artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: bot-casas-debug-v8
+          name: bot-casas-debug-v9
           path: |
             debug/debug_report.json
             debug/html/*.html
