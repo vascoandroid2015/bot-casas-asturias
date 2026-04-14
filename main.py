@@ -16,11 +16,14 @@ KEYWORDS = ["casa", "terreno", "finca", "parcela", "chalet"]
 
 # ================= TELEGRAM =================
 def enviar(msg):
-    requests.post(
-        f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-        data={"chat_id": CHAT_ID, "text": msg},
-        timeout=10
-    )
+    try:
+        requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
+            data={"chat_id": CHAT_ID, "text": msg},
+            timeout=10
+        )
+    except:
+        pass
 
 
 # ================= VISTOS =================
@@ -40,7 +43,6 @@ def es_relevante(texto):
     return any(k in texto for k in KEYWORDS)
 
 
-# ================= PRECIO =================
 def extraer_precio(texto):
     m = re.search(r'(\d+[\.\,]?\d*)\s?€', texto)
     if m:
@@ -48,91 +50,132 @@ def extraer_precio(texto):
     return 0
 
 
-# ================= IDEALISTA REAL =================
-def idealista():
-    url = "https://www.idealista.com/venta-viviendas/asturias/"
+# ================= SCRAPER BASE =================
+def scrap(url, base_url, fuente):
     headers = {"User-Agent": "Mozilla/5.0"}
-
-    r = requests.get(url, headers=headers)
-    soup = BeautifulSoup(r.text, "html.parser")
-
     resultados = []
 
-    anuncios = soup.select("article")
+    try:
+        r = requests.get(url, headers=headers, timeout=10)
+        soup = BeautifulSoup(r.text, "html.parser")
 
-    for a in anuncios:
-        titulo = a.get_text(" ", strip=True)
+        enlaces = soup.find_all("a", href=True)
 
-        if not es_relevante(titulo):
-            continue
+        for e in enlaces:
+            texto = e.get_text(" ", strip=True)
 
-        link_tag = a.find("a", href=True)
-        link = "https://www.idealista.com" + link_tag["href"] if link_tag else url
+            if len(texto) < 20:
+                continue
 
-        precio = extraer_precio(titulo)
+            if not es_relevante(texto):
+                continue
 
-        resultados.append({
-            "titulo": titulo[:200],
-            "precio": precio,
-            "link": link,
-            "fuente": "Idealista"
-        })
+            link = e["href"]
+            if link.startswith("/"):
+                link = base_url + link
+
+            resultados.append({
+                "titulo": texto[:200],
+                "precio": extraer_precio(texto),
+                "link": link,
+                "fuente": fuente
+            })
+
+    except Exception as e:
+        print("Error en", fuente, e)
 
     return resultados
 
 
-# ================= RSS =================
-def rss():
-    feed = feedparser.parse("https://www.idealista.com/venta-viviendas/asturias-provincia/rss.xml")
-    datos = []
-
-    for e in feed.entries:
-        if not es_relevante(e.title):
-            continue
-
-        datos.append({
-            "titulo": e.title,
-            "precio": extraer_precio(e.title),
-            "link": e.link,
-            "fuente": "RSS"
-        })
-
-    return datos
+# ================= PORTALES =================
+def idealista():
+    return scrap(
+        "https://www.idealista.com/venta-viviendas/asturias/",
+        "https://www.idealista.com",
+        "Idealista"
+    )
 
 
-# ================= MARKETPLACE =================
-def marketplace():
+def fotocasa():
+    return scrap(
+        "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l",
+        "https://www.fotocasa.es",
+        "Fotocasa"
+    )
+
+
+def milanuncios():
+    return scrap(
+        "https://www.milanuncios.com/venta-de-casas-en-asturias/",
+        "https://www.milanuncios.com",
+        "Milanuncios"
+    )
+
+
+def wallapop():
+    return scrap(
+        "https://es.wallapop.com/app/search?keywords=casa&latitude=43.36&longitude=-5.84",
+        "https://es.wallapop.com",
+        "Wallapop"
+    )
+
+
+def yaencontre():
+    return scrap(
+        "https://www.yaencontre.com/venta/viviendas/asturias",
+        "https://www.yaencontre.com",
+        "Yaencontre"
+    )
+
+
+def pisos():
+    return scrap(
+        "https://www.pisos.com/venta/viviendas-asturias/",
+        "https://www.pisos.com",
+        "Pisos.com"
+    )
+
+
+# ================= GOOGLE EXTRA =================
+def google_extra():
     headers = {"User-Agent": "Mozilla/5.0"}
     resultados = []
 
-    query = "site:facebook.com/marketplace asturias casa terreno"
+    query = "casa terreno asturias venta"
     url = f"https://www.google.com/search?q={query}"
 
-    r = requests.get(url, headers=headers)
+    try:
+        r = requests.get(url, headers=headers)
+        links = re.findall(r'/url\\?q=(https://[^&]+)', r.text)
 
-    links = re.findall(r'/url\\?q=(https://www.facebook.com/marketplace/[^&]+)', r.text)
+        for l in links[:10]:
+            resultados.append({
+                "titulo": "Resultado externo inmobiliario",
+                "precio": 0,
+                "link": l,
+                "fuente": "Google"
+            })
 
-    for l in links[:5]:
-        resultados.append({
-            "titulo": "Posible casa en Marketplace",
-            "precio": 0,
-            "link": l,
-            "fuente": "Facebook"
-        })
+    except:
+        pass
 
     return resultados
 
 
 # ================= MAIN =================
 def main():
-    enviar("🚀 BOT INMOBILIARIO ACTIVO (RESULTADOS REALES)")
+    enviar("🚀 BOT MULTIPORTAL INMOBILIARIO ACTIVO")
 
     vistos = cargar_vistos()
 
     resultados = []
     resultados += idealista()
-    resultados += rss()
-    resultados += marketplace()
+    resultados += fotocasa()
+    resultados += milanuncios()
+    resultados += wallapop()
+    resultados += yaencontre()
+    resultados += pisos()
+    resultados += google_extra()
 
     nuevos = []
 
@@ -144,13 +187,13 @@ def main():
         nuevos.append(r)
 
     if not nuevos:
-        enviar("⚠️ Sin anuncios nuevos (pero el bot funciona)")
+        enviar("⚠️ Sin resultados nuevos (pero el bot funciona)")
         return
 
     nuevos.sort(key=lambda x: x["precio"] if x["precio"] else 999999999)
 
-    for item in nuevos:
-        msg = f"""🏠 NUEVA PROPIEDAD
+    for item in nuevos[:20]:
+        msg = f"""🏠 PROPIEDAD DETECTADA
 
 {item['titulo']}
 
