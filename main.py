@@ -1,113 +1,80 @@
+from typing import Dict, List
 
-import os
-import json
-import time
-import requests
-import feedparser
-import re
-from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+from config import MAX_RESULTS_PER_RUN
+from filters import is_relevant_listing, score_listing
+from scrapers import run_all_scrapers
+from storage import load_seen, save_seen
+from telegram_client import build_message, send_message
 
-SEEN_FILE = "seen_ads.json"
 
-KEYWORDS = ["casa", "terreno", "finca", "parcela", "chalet"]
-
-def enviar(msg):
-    try:
-        requests.post(
-            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-            data={"chat_id": CHAT_ID, "text": msg},
-            timeout=10
-        )
-    except:
-        pass
-
-def cargar_vistos():
-    if not os.path.exists(SEEN_FILE):
-        return set()
-    return set(json.load(open(SEEN_FILE)))
-
-def guardar_vistos(v):
-    json.dump(list(v), open(SEEN_FILE, "w"))
-
-def es_relevante(texto):
-    texto = texto.lower()
-    return any(k in texto for k in KEYWORDS)
-
-def extraer_precio(texto):
-    m = re.search(r'(\d+[\.,]?\d*)\s?€', texto)
-    if m:
-        return int(m.group(1).replace(".", "").replace(",", ""))
-    return 0
-
-def scrap(url, base_url, fuente):
-    headers = {"User-Agent": "Mozilla/5.0"}
-    resultados = []
-    try:
-        r = requests.get(url, headers=headers, timeout=10)
-        soup = BeautifulSoup(r.text, "html.parser")
-        enlaces = soup.find_all("a", href=True)
-
-        for e in enlaces:
-            texto = e.get_text(" ", strip=True)
-            if len(texto) < 20:
-                continue
-            if not es_relevante(texto):
-                continue
-
-            link = e["href"]
-            if link.startswith("/"):
-                link = base_url + link
-
-            resultados.append({
-                "titulo": texto[:200],
-                "precio": extraer_precio(texto),
-                "link": link,
-                "fuente": fuente
-            })
-    except:
-        pass
-
-    return resultados
-
-def main():
-    enviar("🚀 BOT INMOBILIARIO ACTIVO")
-
-    vistos = cargar_vistos()
-
-    resultados = []
-    resultados += scrap("https://www.idealista.com/venta-viviendas/asturias/", "https://www.idealista.com", "Idealista")
-    resultados += scrap("https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l", "https://www.fotocasa.es", "Fotocasa")
-    resultados += scrap("https://www.milanuncios.com/venta-de-casas-en-asturias/", "https://www.milanuncios.com", "Milanuncios")
-
-    nuevos = []
-
-    for r in resultados:
-        if r["link"] in vistos:
+def dedupe_by_url(items: List[Dict]) -> List[Dict]:
+    seen = set()
+    deduped = []
+    for item in items:
+        url = item.get("url")
+        if not url or url in seen:
             continue
-        vistos.add(r["link"])
-        nuevos.append(r)
+        seen.add(url)
+        deduped.append(item)
+    return deduped
 
-    if not nuevos:
-        enviar("⚠️ Sin resultados nuevos")
-        return
 
-    for item in nuevos[:15]:
-        msg = f"""🏠 PROPIEDAD
+def process_items(scraped: List[Dict], history: Dict) -> List[Dict]:
+    candidates = []
+    for item in dedupe_by_url(scraped):
+        if item.get("error"):
+            continue
+        if not is_relevant_listing(item):
+            continue
+        item["score"] = score_listing(item)
+        prev = history.get(item["url"])
+        if not prev:
+            item["change_type"] = "new"
+            candidates.append(item)
+            continue
+        prev_price = prev.get("price")
+        if prev_price != item.get("price"):
+            item["previous_price"] = prev_price
+            item["change_type"] = "price_change"
+            candidates.append(item)
+    return sorted(candidates, key=lambda x: (x.get("change_type") != "price_change", -x.get("score", 0), x.get("price") or 999999))
 
-{item['titulo']}
 
-💰 {item['precio']:,} €
+def update_history(scraped: List[Dict], history: Dict) -> Dict:
+    for item in dedupe_by_url(scraped):
+        if not item.get("url") or item.get("error"):
+            continue
+        history[item["url"]] = {
+            "title": item.get("title"),
+            "price": item.get("price"),
+            "source": item.get("source"),
+            "location": item.get("location"),
+        }
+    return history
 
-🌍 {item['fuente']}
 
-{item['link']}"""
-        enviar(msg)
-        time.sleep(1)
+def main() -> None:
+    history = load_seen()
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        scraped = run_all_scrapers(browser)
+        browser.close()
 
-    guardar_vistos(vistos)
+    to_notify = process_items(scraped, history)[:MAX_RESULTS_PER_RUN]
+
+    if not to_notify:
+        send_message("ℹ️ Bot inmobiliario activo, sin novedades que cumplan filtros en esta ejecución.")
+    else:
+        for item in to_notify:
+            previous_price = item.get("previous_price")
+            message = build_message(item, previous_price=previous_price)
+            send_message(message)
+
+    history = update_history(scraped, history)
+    save_seen(history)
+
 
 if __name__ == "__main__":
     main()
