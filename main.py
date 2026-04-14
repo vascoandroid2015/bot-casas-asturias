@@ -61,21 +61,28 @@ def extraer_parcela(texto):
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== FUNCIÓN GENÉRICA CON PLAYWRIGHT ====================
-def scrape_portal(base_url, fuente, selector_anuncios, get_link_func, espera=8000):
+# ==================== FUNCIÓN GENÉRICA (para todos los portales) ====================
+def scrape_portal(nombre, base_url, selector_anuncios, get_link_func, espera=7000):
     resultados = []
     vistos = cargar_vistos()
     pagina = 1
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        )
         page = context.new_page()
 
         while True:
-            url = f"{base_url}{'?' if '?' not in base_url else '&'}pagina={pagina}" if "pagina" in base_url or fuente != "Milanuncios" else f"{base_url}?p={pagina}"
+            # Construcción de URL según el portal
+            if "milanuncios" in base_url.lower():
+                url = f"{base_url}?p={pagina}"
+            else:
+                url = f"{base_url}{'?' if '?' not in base_url else '&'}pagina={pagina}"
+
             try:
-                print(f"🔍 {fuente} - Página {pagina}")
+                print(f"🔍 {nombre} → Página {pagina}")
                 page.goto(url, timeout=90000, wait_until="domcontentloaded")
                 time.sleep(random.uniform(5, 8))
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
@@ -84,8 +91,8 @@ def scrape_portal(base_url, fuente, selector_anuncios, get_link_func, espera=800
                 soup = BeautifulSoup(page.content(), "html.parser")
                 items = soup.select(selector_anuncios)
 
-                if not items or len(items) < 5:
-                    print(f"   {fuente} → Fin de anuncios en página {pagina}")
+                if not items or len(items) < 4:
+                    print(f"   {nombre} → Fin de anuncios (página {pagina})")
                     break
 
                 print(f"   → {len(items)} anuncios encontrados")
@@ -105,63 +112,98 @@ def scrape_portal(base_url, fuente, selector_anuncios, get_link_func, espera=800
                         "titulo": texto[:280],
                         "precio": precio,
                         "link": link,
-                        "fuente": fuente
+                        "fuente": nombre
                     })
                     vistos.add(link)
                     nuevos += 1
 
                 guardar_vistos(vistos)
-                print(f"   → {nuevos} nuevos válidos")
+                print(f"   → {nuevos} nuevos válidos en {nombre}")
 
-                if nuevos == 0 and pagina > 5:
+                if nuevos == 0 and pagina > 6:
                     break
 
                 pagina += 1
                 time.sleep(random.uniform(6, 10))
             except Exception as e:
-                print(f"❌ Error en {fuente} página {pagina}: {e}")
+                print(f"❌ Error en {nombre} página {pagina}: {e}")
                 break
 
         browser.close()
     return resultados
 
-# ==================== PORTALES ====================
+# ==================== TODOS LOS PORTALES ====================
 def milanuncios():
     return scrape_portal(
-        "https://www.milanuncios.com/venta-de-casas-en-asturias/",
         "Milanuncios",
+        "https://www.milanuncios.com/venta-de-casas-en-asturias/",
         "article",
         lambda item: "https://www.milanuncios.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
     )
 
 def idealista():
     return scrape_portal(
-        "https://www.idealista.com/venta-viviendas/asturias/",
         "Idealista",
-        "article.item, div.item",
+        "https://www.idealista.com/venta-viviendas/asturias/",
+        "article.item",
         lambda item: "https://www.idealista.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
     )
 
 def fotocasa():
     return scrape_portal(
-        "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l",
         "Fotocasa",
+        "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l",
         "div.re-Card, article",
         lambda item: item.find("a", href=True)["href"] if item.find("a", href=True) else ""
     )
 
-# Añade más portales aquí si quieres (Habitaclia, Pisos.com, etc.)
+def habitaclia():
+    return scrape_portal(
+        "Habitaclia",
+        "https://www.habitaclia.com/venta-casas-asturias",
+        "div.list-element, article",
+        lambda item: "https://www.habitaclia.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
+    )
+
+def pisos_com():
+    return scrape_portal(
+        "Pisos.com",
+        "https://www.pisos.com/venta-pisos/asturias/",
+        "div.ad",
+        lambda item: "https://www.pisos.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
+    )
+
+def yaencontre():
+    return scrape_portal(
+        "Yaencontre",
+        "https://www.yaencontre.com/venta-viviendas/asturias",
+        "div.listing-item, article",
+        lambda item: "https://www.yaencontre.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
+    )
+
+def spainhouses():
+    return scrape_portal(
+        "SpainHouses",
+        "https://www.spainhouses.net/es/venta-casas-asturias",
+        "div.property-item, article",
+        lambda item: "https://www.spainhouses.net" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
+    )
 
 # ==================== MAIN ====================
 def main():
-    print("🚀 Iniciando bot multi-portal - Buscando en Idealista, Fotocasa, Milanuncios...")
+    print("🚀 INICIANDO BOT MULTI-PORTAL (máxima cobertura)")
+    print("Portales activos: Milanuncios, Idealista, Fotocasa, Habitaclia, Pisos.com, Yaencontre, SpainHouses")
 
     todas = []
     todas.extend(milanuncios())
     todas.extend(idealista())
     todas.extend(fotocasa())
+    todas.extend(habitaclia())
+    todas.extend(pisos_com())
+    todas.extend(yaencontre())
+    todas.extend(spainhouses())
 
-    print(f"\nTotal nuevos anuncios encontrados en todos los portales: {len(todas)}")
+    print(f"\n=== RESUMEN FINAL ===\nTotal nuevos anuncios encontrados en TODOS los portales: {len(todas)}")
 
     enviados = 0
     for item in todas:
@@ -179,7 +221,7 @@ def main():
         time.sleep(2.0)
 
     if enviados == 0:
-        enviar("❌ Hoy no se encontraron casas nuevas en el rango de precio.")
+        enviar("❌ Hoy no se encontraron casas nuevas en el rango 5.000 - 250.000 €.")
     else:
         print(f"✅ Enviadas {enviados} casas NUEVAS a Telegram")
 
