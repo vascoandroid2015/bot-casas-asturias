@@ -1,76 +1,310 @@
 {
-  "scraped_count": 0,
-  "rejected_count": 0,
-  "notified_count": 0,
-  "reject_reasons": {},
-  "portals": [
+  "scraped_count": 105,
+  "rejected_count": 71,
+  "notified_count": 10,
+  "reject_reasons": {
+    "negative_term": 34,
+    "price_out_of_range": 33,
+    "missing_search_term": 20,
+    "missing_price": 15
+  },
+  "sources": [
     {
       "name": "Idealista",
+      "enabled": true,
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.idealista.com/venta-viviendas/asturias/",
       "page_title": "idealista.com",
-      "selectors_tested": [
-        "article.item",
-        "article[data-adid]",
-        ".items-container article",
-        ".listing-items article"
-      ],
-      "selector_counts": {
-        "article.item": 0,
-        "article[data-adid]": 0,
-        ".items-container article": 0,
-        ".listing-items article": 0
-      },
       "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "CASASAPO",
+      "enabled": true,
+      "raw_count": 25,
+      "error_count": 0,
+      "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
+      "page_title": "40 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "block_signals": [],
+      "valid_count": 4,
+      "notify_count": 3
+    },
+    {
+      "name": "Fincas Asturias",
+      "enabled": true,
+      "raw_count": 12,
+      "error_count": 0,
+      "final_url": "https://www.fincasasasturias.com/search-form-top.php?pagina=1",
+      "page_title": "Buscando",
+      "block_signals": [],
+      "valid_count": 4,
+      "notify_count": 2
+    },
+    {
+      "name": "CASAL Inmobiliaria",
+      "enabled": true,
+      "raw_count": 14,
+      "error_count": 0,
+      "final_url": "https://www.inmocasal.es/",
+      "page_title": "CASAL Inmobiliaria: La mayor Inmobiliaria de Asturias",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Inmobiliaria Asturias",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.inmobiliariaasturias.es/",
+      "page_title": "Inmobiliaria Asturias: Te ayudamos a comprar casa en Asturias",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Agencia Asturias",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://agencia-asturias.com/tipo/casa/",
+      "page_title": "Casa – Agencia Asturias",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Inmobiliaria María",
+      "enabled": true,
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://inmobiliariamaria.es/",
+      "page_title": "Inmobiliaria María | Inmobiliaria en el occidente de Asturias",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Grupo Duarte",
+      "enabled": true,
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://www.grupoduarte.es/propiedades-venta/",
+      "page_title": "Propiedades en venta en Asturias - Inmobiliaria Toral",
+      "block_signals": [
+        "enable javascript"
+      ],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "REMAX Asturias",
+      "enabled": true,
+      "raw_count": 20,
+      "error_count": 0,
+      "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
+      "page_title": "Venta de Casa en provincia Asturias - Remax",
+      "block_signals": [],
+      "valid_count": 15,
+      "notify_count": 0
+    },
+    {
+      "name": "Facilitea Casa",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://faciliteacasa.com/viviendas/comprar/Asturias",
+      "page_title": "Viviendas",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "e-viviendas",
+      "enabled": true,
+      "raw_count": 20,
+      "error_count": 0,
+      "final_url": "https://www.e-viviendas.es/inmuebles/venta_asturias",
+      "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
+      "block_signals": [],
+      "valid_count": 3,
+      "notify_count": 1
+    },
+    {
+      "name": "Arxus Inmobiliaria",
+      "enabled": true,
+      "raw_count": 12,
+      "error_count": 0,
+      "final_url": "https://arxus.es/casas-en-venta-en-asturias/",
+      "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
+      "block_signals": [],
+      "valid_count": 8,
+      "notify_count": 4
+    },
+    {
+      "name": "Fotocasa",
+      "enabled": false,
+      "raw_count": 0,
+      "error_count": 0,
       "valid_count": 0,
       "notify_count": 0
     },
     {
       "name": "Milanuncios",
+      "enabled": false,
       "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.milanuncios.com/venta-de-casas-en-asturias/",
-      "page_title": "Pardon Our Interruption",
-      "selectors_tested": [
-        "div.ma-AdCard",
-        "article",
-        "[data-testid=\"ad-card\"]"
-      ],
-      "selector_counts": {
-        "div.ma-AdCard": 0,
-        "article": 0,
-        "[data-testid=\"ad-card\"]": 0
-      },
-      "block_signals": [
-        "captcha"
-      ],
-      "valid_count": 0,
-      "notify_count": 0
-    },
-    {
-      "name": "Fotocasa",
-      "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l",
-      "page_title": "SENTIMOS LA INTERRUPCIÃ“N",
-      "selectors_tested": [
-        "article",
-        "div.re-CardPackPremium",
-        "div.re-CardPack",
-        "[class*=\"CardPack\"]"
-      ],
-      "selector_counts": {
-        "article": 0,
-        "div.re-CardPackPremium": 0,
-        "div.re-CardPack": 0,
-        "[class*=\"CardPack\"]": 0
-      },
-      "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
     }
   ],
-  "examples_to_notify": [],
-  "examples_rejected": []
+  "examples_to_notify": [
+    {
+      "source": "Fincas Asturias",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2178029",
+      "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concejo de Langreo, en un entorno natural privilegiado, con",
+      "description": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concejo de Langreo, en un entorno natural privilegiado, con vistas abiertas a la montaña y rodeado de tranquilidad, a 30 min de Gijón y 10-15 minutos de Oviedo. Se trata de una propiedad para rehabilitar/reformar, con acceso tambien a reformar, ideal para quienes buscan un proyecto de rehabilitación en plena naturaleza, con múltiples posibilidades tanto para vivienda habitual como segunda residencia. 📐 Características principales Vivienda de dos plantas con una superficie total construida de 116 m² (58 m² por planta). La planta de abajo tiene luz. Almacén en planta baja de 64 m² . Establo de 40 m² . Buen estado. Inmuebles registrados. Ubicado en plena naturaleza, con vistas despejadas. Terreno de unos 55.000 m",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 10,
+      "change_type": "new"
+    },
+    {
+      "source": "e-viviendas",
+      "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
+      "price": 20000,
+      "url": "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410",
+      "location": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
+      "description": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
+      "municipality": "Villaviciosa",
+      "distance_km": 36.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "change_type": "new"
+    },
+    {
+      "source": "Arxus Inmobiliaria",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2178029",
+      "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concej",
+      "description": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concejo de Langreo, en un entorno natural privilegiado, con vistas abiertas a la montaña y rodeado de tranquilidad, a 30 min de Gijón y 10-15 minutos de Oviedo. Se trata de una propiedad para rehabilitar/reformar, con acceso tambien a reformar, ideal para quienes buscan un proyecto de rehabilitación en plena naturaleza, con múltiples posibilidades tanto para vivienda habitual como segunda residencia. 📐 Características principales Vivienda de dos plantas con una superficie total construida de 116 m² (58 m² por planta). La planta de abajo tiene luz. Almacén en planta baja de 64 m² . Establo de 40 m² . Buen estado. Inmuebles registrados. Ubicado en plena natura",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "change_type": "new"
+    },
+    {
+      "source": "Arxus Inmobiliaria",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2152988",
+      "location": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN ",
+      "description": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN PARCELA DE 2.300M2. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. La casa originalmente data del año 1.900 con un pronunciado carácter rural Asturiano es un lienzo en blanco ideal para desarrollar su proyecto de vida a sus necesidades. La casa dispone de vistas despejadas al valle y la montaña occidental asturiana. La casona dispone de un total de 367 m2 construidos distribuidos en 2 pl",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "change_type": "new"
+    },
+    {
+      "source": "Fincas Asturias",
+      "title": "Venta",
+      "price": 55000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2153014",
+      "location": "Venta Fincas y solares, Venta Camino de VALDACEO-SAN ROMÁN, San Román, Asturias 55.000 € Se vende finca en Sariego en el centro de Asturias, con una superficie de 2.040 m² y posibilidad de edificar hasta 250 m². Situada en un entorno tranqu",
+      "description": "Venta Fincas y solares, Venta Camino de VALDACEO-SAN ROMÁN, San Román, Asturias 55.000 € Se vende finca en Sariego en el centro de Asturias, con una superficie de 2.040 m² y posibilidad de edificar hasta 250 m². Situada en un entorno tranquilo, con muy buena orientación y excelente ubicación, próxima a Siero, Villaviciosa, Gijón y Oviedo. Ideal para quienes buscan construir una vivienda unifamiliar en plena naturaleza, sin alejarse de los principales núcleos urbanos. El agua que gestiona la empresa Aqualia y la luz están muy próximos a la finca y hay saneamiento en el pueblo. El precio no incluye el impuesto de Trasmisiones Patrimoniales ni gastos de Notaría ni de Registro.  Actualmente en Asturias existen beneficios fiscales en Impuesto de Trasmisiones Patrimoniales. Detalles",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 6,
+      "change_type": "new"
+    }
+  ],
+  "examples_rejected": [
+    {
+      "source": "CASASAPO",
+      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 185.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
+      "price": 185000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
+      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 185.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
+      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 185.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay otro apartamento com",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detene",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. E",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, es una invitación c",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "title": "Chalet Rural, Gijón, Asturias 317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos met",
+      "price": 750000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-rural-6d379b72-259f-11f0-b3d3-060000000057.html",
+      "location": "Chalet Rural, Gijón, Asturias 317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos metros de la Escuela de Fútbol del Real Sporting de Gijón y con parada de",
+      "description": "Chalet Rural, Gijón, Asturias 317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos metros de la Escuela de Fútbol del Real Sporting de Gijón y con parada de autobús (línea 24) muy próxima. Se trata de una vivienda unifamiliar cerrada dentro de una urbanización privada, con total privacidad y rodeada de naturaleza. La propiedad cuenta con: · 2.000 m’ de parcela ajardinada · Piscina privada · 4 habitaciones distribuidas en primera y segunda planta · Sótano con choco, cocina, zona de vivienda y garaje · Acabados de alta calidad · Espacios amplios, cómodos y muy luminosos Un chalet perfecto para familias, amantes de la tranquilidad o quienes desean vivir en un entorno natural, sin renunciar a la cercanía de la ciudad. Una casa perfecta para disfrutar de momentos y tener recuerdos únicos con la familia. Contac",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    }
+  ]
 }
