@@ -14,39 +14,19 @@ MIN_PRECIO = 5000
 MAX_PRECIO = 250000
 SEEN_FILE = "seen_ads.json"
 
-print(f"🔧 TELEGRAM_TOKEN existe: {'SÍ' if TELEGRAM_TOKEN else 'NO'}")
-print(f"🔧 CHAT_ID existe: {'SÍ' if CHAT_ID else 'NO'}")
-
 def enviar(msg):
     if not TELEGRAM_TOKEN or not CHAT_ID:
-        print("❌ TELEGRAM no configurado")
+        print("⚠️ TELEGRAM no configurado")
         return
     try:
-        r = requests.post(
+        requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"},
-            timeout=20
+            timeout=15
         )
-        print(f"📤 Telegram respuesta: {r.status_code}")
-        if r.status_code == 200:
-            print("✅ MENSAJE ENVIADO A TELEGRAM")
-        else:
-            print(f"❌ Telegram error: {r.text[:300]}")
+        print("✅ Enviado a Telegram")
     except Exception as e:
-        print(f"❌ Excepción Telegram: {e}")
-
-# Test inmediato al empezar
-enviar("🧪 Test del bot - Iniciando ejecución...")
-
-def cargar_vistos():
-    if os.path.exists(SEEN_FILE):
-        with open(SEEN_FILE, "r", encoding="utf-8") as f:
-            return set(json.load(f))
-    return set()
-
-def guardar_vistos(vistos):
-    with open(SEEN_FILE, "w", encoding="utf-8") as f:
-        json.dump(list(vistos), f, ensure_ascii=False)
+        print(f"❌ Error Telegram: {e}")
 
 def limpiar_precio(texto):
     match = re.search(r'(\d{1,3}(?:\.\d{3})*)\s*€', texto)
@@ -54,39 +34,52 @@ def limpiar_precio(texto):
         return int(match.group(1).replace('.', ''))
     return None
 
-# ==================== MILANUNCIOS CON PLAYWRIGHT (máxima depuración) ====================
-def milanuncios_scraper():
-    resultados = []
-    vistos = cargar_vistos()
-    pagina = 1
+def main():
+    print("🤖 BOT CASAS ASTURIAS - DEPURACIÓN MÁXIMA")
+    enviar("🧪 Iniciando ejecución del bot...")
 
-    print("🚀 Iniciando Playwright para Milanuncios...")
+    vistos = set()
+    if os.path.exists(SEEN_FILE):
+        try:
+            with open(SEEN_FILE, "r", encoding="utf-8") as f:
+                vistos = set(json.load(f))
+        except:
+            pass
+
+    resultados = []
+    pagina = 1
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
         page = browser.new_page()
-        page.set_viewport_size({"width": 1280, "height": 800})
+        page.set_viewport_size({"width": 1366, "height": 768})
 
-        while pagina <= 10:
+        while pagina <= 8:   # limitamos a 8 páginas para prueba rápida
             url = f"https://www.milanuncios.com/venta-de-casas-en-asturias/?p={pagina}"
             try:
                 print(f"📄 Cargando página {pagina}...")
                 page.goto(url, timeout=90000)
-                time.sleep(8)
+                time.sleep(10)   # espera larga
 
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                time.sleep(5)
+                # Scroll fuerte
+                for _ in range(3):
+                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    time.sleep(3)
 
                 html = page.content()
                 soup = BeautifulSoup(html, "html.parser")
-                items = soup.select("article")
 
-                print(f"   Encontrados {len(items)} elementos <article>")
+                # Selectores más amplios posibles
+                items = soup.select("article, div.ad, div.listing, .ma-Ad")
+
+                print(f"   Encontrados {len(items)} posibles elementos")
 
                 for item in items:
                     texto = item.get_text(" ", strip=True)
-                    precio = limpiar_precio(texto)
+                    if len(texto) < 50:
+                        continue
 
+                    precio = limpiar_precio(texto)
                     if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
                         continue
 
@@ -105,32 +98,23 @@ def milanuncios_scraper():
                         "fuente": "Milanuncios"
                     })
                     vistos.add(link)
-                    print(f"   ✅ Nuevo anuncio válido: {precio}€")
-
-                pagina += 1
-                time.sleep(6)
+                    print(f"   ✅ Encontrado: {precio}€ - {texto[:80]}...")
 
             except Exception as e:
                 print(f"❌ Error página {pagina}: {e}")
-                break
+
+            pagina += 1
+            time.sleep(6)
 
         browser.close()
 
-    print(f"Total anuncios válidos encontrados: {len(resultados)}")
-    return resultados
+    print(f"\n=== RESUMEN ===\nTotal anuncios válidos encontrados: {len(resultados)}")
 
-# ==================== MAIN ====================
-def main():
-    print("🤖 BOT CASAS ASTURIAS - VERSIÓN DEPURACIÓN MÁXIMA")
-    
-    todas = milanuncios_scraper()
-
-    if len(todas) == 0:
+    if len(resultados) == 0:
         enviar("❌ No se encontraron casas nuevas hoy.")
-        print("❌ No se encontraron anuncios válidos")
     else:
         enviados = 0
-        for item in todas:
+        for item in resultados:
             msg = f"""🏠 <b>CASA EN ASTURIAS</b> - {item['fuente']}
 
 {item['titulo']}
@@ -143,7 +127,11 @@ def main():
             enviados += 1
             time.sleep(2)
 
-        print(f"✅ Se enviaron {enviados} anuncios")
+        print(f"✅ Enviados {enviados} anuncios")
+
+    # Guardar vistos
+    with open(SEEN_FILE, "w", encoding="utf-8") as f:
+        json.dump(list(vistos), f, ensure_ascii=False)
 
 if __name__ == "__main__":
     main()
