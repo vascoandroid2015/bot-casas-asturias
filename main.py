@@ -1,10 +1,11 @@
 import os
 import re
 import json
-import time
-import random
+import requests
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
+import time
+import random
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
@@ -31,7 +32,7 @@ def enviar(msg):
         print("⚠️ TELEGRAM no configurado")
         return
     try:
-        requests.post(   # Necesitas importar requests abajo
+        requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             data={"chat_id": CHAT_ID, "text": msg, "parse_mode": "HTML"},
             timeout=15
@@ -60,38 +61,31 @@ def extraer_parcela(texto):
             return m.group(1) + " m²"
     return "No especificado"
 
-# ==================== SCRAPING CON PLAYWRIGHT (anti-bloqueo) ====================
-def milanuncios_scraper():
+# ==================== FUNCIÓN GENÉRICA CON PLAYWRIGHT ====================
+def scrape_portal(base_url, fuente, selector_anuncios, get_link_func, espera=8000):
     resultados = []
     vistos = cargar_vistos()
     pagina = 1
 
-    print("🚀 Iniciando scraping con Playwright (anti-403)...")
-
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-blink-features=AutomationControlled"])
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-        )
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
+        context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
         page = context.new_page()
 
         while True:
-            url = f"https://www.milanuncios.com/venta-de-casas-en-asturias/?p={pagina}"
+            url = f"{base_url}{'?' if '?' not in base_url else '&'}pagina={pagina}" if "pagina" in base_url or fuente != "Milanuncios" else f"{base_url}?p={pagina}"
             try:
-                print(f"📄 Cargando página {pagina} con Playwright...")
-                page.goto(url, timeout=60000, wait_until="domcontentloaded")
-                time.sleep(random.uniform(4, 7))
-
-                # Scroll para cargar contenido dinámico
+                print(f"🔍 {fuente} - Página {pagina}")
+                page.goto(url, timeout=90000, wait_until="domcontentloaded")
+                time.sleep(random.uniform(5, 8))
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                time.sleep(3)
+                time.sleep(4)
 
-                html = page.content()
-                soup = BeautifulSoup(html, "html.parser")
-                items = soup.select("article")
+                soup = BeautifulSoup(page.content(), "html.parser")
+                items = soup.select(selector_anuncios)
 
                 if not items or len(items) < 5:
-                    print(f"   Fin de anuncios en página {pagina}")
+                    print(f"   {fuente} → Fin de anuncios en página {pagina}")
                     break
 
                 print(f"   → {len(items)} anuncios encontrados")
@@ -100,52 +94,74 @@ def milanuncios_scraper():
                 for item in items:
                     texto = item.get_text(" ", strip=True)
                     precio = limpiar_precio(texto)
-
                     if not precio or not (MIN_PRECIO <= precio <= MAX_PRECIO):
                         continue
 
-                    link_tag = item.find("a", href=True)
-                    if not link_tag:
-                        continue
-                    link = "https://www.milanuncios.com" + link_tag["href"]
-
-                    if link in vistos:
+                    link = get_link_func(item)
+                    if not link or link in vistos:
                         continue
 
                     resultados.append({
                         "titulo": texto[:280],
                         "precio": precio,
                         "link": link,
-                        "fuente": "Milanuncios"
+                        "fuente": fuente
                     })
                     vistos.add(link)
                     nuevos += 1
 
                 guardar_vistos(vistos)
-                print(f"   → {nuevos} nuevos anuncios válidos añadidos")
+                print(f"   → {nuevos} nuevos válidos")
 
-                if nuevos == 0 and pagina > 8:
+                if nuevos == 0 and pagina > 5:
                     break
 
                 pagina += 1
-                time.sleep(random.uniform(5, 8))
-
+                time.sleep(random.uniform(6, 10))
             except Exception as e:
-                print(f"❌ Error página {pagina}: {e}")
+                print(f"❌ Error en {fuente} página {pagina}: {e}")
                 break
 
         browser.close()
     return resultados
 
+# ==================== PORTALES ====================
+def milanuncios():
+    return scrape_portal(
+        "https://www.milanuncios.com/venta-de-casas-en-asturias/",
+        "Milanuncios",
+        "article",
+        lambda item: "https://www.milanuncios.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
+    )
+
+def idealista():
+    return scrape_portal(
+        "https://www.idealista.com/venta-viviendas/asturias/",
+        "Idealista",
+        "article.item, div.item",
+        lambda item: "https://www.idealista.com" + (item.find("a", href=True)["href"] if item.find("a", href=True) else "")
+    )
+
+def fotocasa():
+    return scrape_portal(
+        "https://www.fotocasa.es/es/comprar/viviendas/asturias/todas-las-zonas/l",
+        "Fotocasa",
+        "div.re-Card, article",
+        lambda item: item.find("a", href=True)["href"] if item.find("a", href=True) else ""
+    )
+
+# Añade más portales aquí si quieres (Habitaclia, Pisos.com, etc.)
+
 # ==================== MAIN ====================
 def main():
-    print("="*65)
-    print("🤖 BOT CASAS ASTURIAS - Versión anti-403 con Playwright")
-    print("="*65)
+    print("🚀 Iniciando bot multi-portal - Buscando en Idealista, Fotocasa, Milanuncios...")
 
-    todas = milanuncios_scraper()
+    todas = []
+    todas.extend(milanuncios())
+    todas.extend(idealista())
+    todas.extend(fotocasa())
 
-    print(f"\nTotal nuevos anuncios encontrados: {len(todas)}")
+    print(f"\nTotal nuevos anuncios encontrados en todos los portales: {len(todas)}")
 
     enviados = 0
     for item in todas:
@@ -160,13 +176,12 @@ def main():
 """
         enviar(msg)
         enviados += 1
-        time.sleep(1.8)
+        time.sleep(2.0)
 
     if enviados == 0:
-        enviar("❌ Hoy no se encontraron casas nuevas (rango 5.000 - 250.000 €).")
-        print("❌ No se enviaron anuncios")
+        enviar("❌ Hoy no se encontraron casas nuevas en el rango de precio.")
     else:
-        print(f"✅ Se enviaron {enviados} casas NUEVAS a Telegram")
+        print(f"✅ Enviadas {enviados} casas NUEVAS a Telegram")
 
 if __name__ == "__main__":
     main()
