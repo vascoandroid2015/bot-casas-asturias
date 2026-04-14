@@ -1,181 +1,146 @@
 import os
-import json
 import time
+import json
+import math
 import requests
-import feedparser
-import re
 from bs4 import BeautifulSoup
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+# ================= CONFIG =================
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-SEEN_FILE = "seen_ads.json"
+SEEN_FILE = "seen.json"
+
+OVIEDO_LAT = 43.3619
+OVIEDO_LON = -5.8494
+MAX_KM = 50
 
 KEYWORDS = ["casa", "terreno", "finca", "parcela", "chalet"]
 
 
 # ================= TELEGRAM =================
 def enviar(msg):
-    try:
-        requests.post(
-            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
-            data={"chat_id": CHAT_ID, "text": msg},
-            timeout=10
-        )
-    except:
-        pass
+    requests.post(
+        f"https://api.telegram.org/bot{TOKEN}/sendMessage",
+        data={"chat_id": CHAT_ID, "text": msg}
+    )
 
 
 # ================= VISTOS =================
-def cargar_vistos():
+def load_seen():
     if not os.path.exists(SEEN_FILE):
         return set()
     return set(json.load(open(SEEN_FILE)))
 
 
-def guardar_vistos(v):
-    json.dump(list(v), open(SEEN_FILE, "w"))
+def save_seen(s):
+    json.dump(list(s), open(SEEN_FILE, "w"))
 
 
-# ================= FILTRO =================
-def es_relevante(texto):
-    texto = texto.lower()
-    return any(k in texto for k in KEYWORDS)
+# ================= DISTANCIA =================
+def distancia_km(lat1, lon1, lat2, lon2):
+    R = 6371
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+
+    a = math.sin(dlat/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2)**2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+    return R * c
 
 
-def extraer_precio(texto):
-    m = re.search(r'(\d+[\.\,]?\d*)\s?€', texto)
-    if m:
-        return int(m.group(1).replace(".", "").replace(",", ""))
-    return 0
-
-
-# ================= SCRAPER BASE =================
-def scrap(url, base_url, fuente):
-    headers = {"User-Agent": "Mozilla/5.0"}
-    resultados = []
-
+# ================= GEO =================
+def geocode(direccion):
     try:
-        r = requests.get(url, headers=headers, timeout=10)
-        soup = BeautifulSoup(r.text, "html.parser")
+        url = f"https://nominatim.openstreetmap.org/search?q={direccion}&format=json"
+        r = requests.get(url, headers={"User-Agent": "bot"})
+        data = r.json()
 
-        enlaces = soup.find_all("a", href=True)
-
-        for e in enlaces:
-            texto = e.get_text(" ", strip=True)
-
-            if len(texto) < 20:
-                continue
-
-            if not es_relevante(texto):
-                continue
-
-            link = e["href"]
-            if link.startswith("/"):
-                link = base_url + link
-
-            resultados.append({
-                "titulo": texto[:200],
-                "precio": extraer_precio(texto),
-                "link": link,
-                "fuente": fuente
-            })
-
-    except Exception as e:
-        print("Error en", fuente, e)
-
-    return resultados
-
-
-# ================= PORTALES =================
-def idealista():
-    return scrap(
-        "https://www.idealista.com/venta-viviendas/asturias/",
-        "https://www.idealista.com",
-        "Idealista"
-    )
-
-
-def fotocasa():
-    return scrap(
-        "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l",
-        "https://www.fotocasa.es",
-        "Fotocasa"
-    )
-
-
-def milanuncios():
-    return scrap(
-        "https://www.milanuncios.com/venta-de-casas-en-asturias/",
-        "https://www.milanuncios.com",
-        "Milanuncios"
-    )
-
-
-def wallapop():
-    return scrap(
-        "https://es.wallapop.com/app/search?keywords=casa&latitude=43.36&longitude=-5.84",
-        "https://es.wallapop.com",
-        "Wallapop"
-    )
-
-
-def yaencontre():
-    return scrap(
-        "https://www.yaencontre.com/venta/viviendas/asturias",
-        "https://www.yaencontre.com",
-        "Yaencontre"
-    )
-
-
-def pisos():
-    return scrap(
-        "https://www.pisos.com/venta/viviendas-asturias/",
-        "https://www.pisos.com",
-        "Pisos.com"
-    )
-
-
-# ================= GOOGLE EXTRA =================
-def google_extra():
-    headers = {"User-Agent": "Mozilla/5.0"}
-    resultados = []
-
-    query = "casa terreno asturias venta"
-    url = f"https://www.google.com/search?q={query}"
-
-    try:
-        r = requests.get(url, headers=headers)
-        links = re.findall(r'/url\\?q=(https://[^&]+)', r.text)
-
-        for l in links[:10]:
-            resultados.append({
-                "titulo": "Resultado externo inmobiliario",
-                "precio": 0,
-                "link": l,
-                "fuente": "Google"
-            })
-
+        if data:
+            return float(data[0]["lat"]), float(data[0]["lon"])
     except:
         pass
 
+    return None, None
+
+
+# ================= SELENIUM =================
+def navegador():
+    opt = Options()
+    opt.add_argument("--headless")
+    opt.add_argument("--no-sandbox")
+    opt.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=opt)
+    return driver
+
+
+# ================= SCRAPER =================
+def scrap_selenium(url, fuente):
+    driver = navegador()
+    driver.get(url)
+    time.sleep(5)
+
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    driver.quit()
+
+    resultados = []
+
+    for a in soup.find_all("a", href=True):
+        txt = a.get_text(" ", strip=True)
+
+        if len(txt) < 20:
+            continue
+
+        if not any(k in txt.lower() for k in KEYWORDS):
+            continue
+
+        link = a["href"]
+        if link.startswith("/"):
+            link = url.split(".com")[0] + ".com" + link
+
+        resultados.append({
+            "titulo": txt,
+            "link": link,
+            "fuente": fuente
+        })
+
     return resultados
+
+
+# ================= FILTRO GEO =================
+def filtrar_geo(items):
+    buenos = []
+
+    for i in items:
+        lat, lon = geocode(i["titulo"])
+
+        if not lat:
+            continue
+
+        d = distancia_km(OVIEDO_LAT, OVIEDO_LON, lat, lon)
+
+        if d <= MAX_KM:
+            i["distancia"] = round(d, 1)
+            buenos.append(i)
+
+    return buenos
 
 
 # ================= MAIN =================
 def main():
-    enviar("🚀 BOT MULTIPORTAL INMOBILIARIO ACTIVO")
+    enviar("🚀 BOT NIVEL DIOS (GEO + SELENIUM)")
 
-    vistos = cargar_vistos()
+    vistos = load_seen()
 
     resultados = []
-    resultados += idealista()
-    resultados += fotocasa()
-    resultados += milanuncios()
-    resultados += wallapop()
-    resultados += yaencontre()
-    resultados += pisos()
-    resultados += google_extra()
+    resultados += scrap_selenium("https://www.idealista.com/venta-viviendas/asturias/", "Idealista")
+    resultados += scrap_selenium("https://www.fotocasa.es/es/comprar/viviendas/asturias/", "Fotocasa")
+    resultados += scrap_selenium("https://www.milanuncios.com/venta-de-casas-en-asturias/", "Milanuncios")
+
+    resultados = filtrar_geo(resultados)
 
     nuevos = []
 
@@ -187,17 +152,15 @@ def main():
         nuevos.append(r)
 
     if not nuevos:
-        enviar("⚠️ Sin resultados nuevos (pero el bot funciona)")
+        enviar("⚠️ Sin resultados en radio 50km")
         return
 
-    nuevos.sort(key=lambda x: x["precio"] if x["precio"] else 999999999)
-
-    for item in nuevos[:20]:
-        msg = f"""🏠 PROPIEDAD DETECTADA
+    for item in nuevos[:15]:
+        msg = f"""🏠 PROPIEDAD CERCA DE OVIEDO
 
 {item['titulo']}
 
-💰 {item['precio']:,} €
+📍 Distancia: {item['distancia']} km
 
 🌍 {item['fuente']}
 
@@ -206,7 +169,7 @@ def main():
         enviar(msg)
         time.sleep(2)
 
-    guardar_vistos(vistos)
+    save_seen(vistos)
 
 
 if __name__ == "__main__":
