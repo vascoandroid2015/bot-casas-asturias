@@ -23,22 +23,24 @@ def strip_html(text: str) -> str:
 def chunk_text(text: str, limit: int) -> List[str]:
     if len(text) <= limit:
         return [text]
-    parts, current = [], []
+
+    parts: List[str] = []
+    current: List[str] = []
     current_len = 0
-    for line in text.split('
-'):
+
+    for line in text.split('\n'):
         extra = len(line) + 1
         if current and current_len + extra > limit:
-            parts.append('
-'.join(current))
+            parts.append('\n'.join(current))
             current = [line]
             current_len = len(line)
         else:
             current.append(line)
             current_len += extra
+
     if current:
-        parts.append('
-'.join(current))
+        parts.append('\n'.join(current))
+
     return parts
 
 
@@ -74,6 +76,7 @@ def send_message(text: str):
                     retry_after = 5
                 time.sleep(retry_after + 1)
                 continue
+
             if r.status_code == 400:
                 plain = strip_html(part)
                 r2 = _post_message(plain, parse_mode=None)
@@ -89,10 +92,12 @@ def send_message(text: str):
                 time.sleep(MESSAGE_DELAY_SECONDS)
                 sent = True
                 break
+
             r.raise_for_status()
             time.sleep(MESSAGE_DELAY_SECONDS)
             sent = True
             break
+
         if not sent:
             raise RuntimeError('No se pudo enviar un bloque a Telegram tras varios reintentos')
 
@@ -106,9 +111,11 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
     price = item.get('price')
     distance = item.get('distance_km')
     description = html.escape((item.get('description') or '').strip()[:320])
+
     header = '🏡 <b>Nueva oportunidad detectada</b>'
     if previous_price and price and previous_price != price:
         header = '📉 <b>Bajada de precio detectada</b>' if price < previous_price else '🔁 <b>Cambio de precio detectado</b>'
+
     lines = [header, '', f'<b>{title}</b>']
     if price:
         lines.append(f"💰 <b>Precio:</b> {price:,} €".replace(',', '.'))
@@ -123,13 +130,13 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
         lines.append(f'📝 <b>Resumen:</b> {description}')
     if link:
         lines.append(f'🔗 <a href="{html.escape(link)}">Ver anuncio</a>')
-    return '
-'.join(lines)
+    return '\n'.join(lines)
 
 
 def build_debug_message(report: Dict) -> str:
     if not SEND_DEBUG_SUMMARY:
         return ''
+
     lines = [
         '🛠️ <b>Resumen debug metabuscador v8</b>',
         f"Total extraídos: <b>{report.get('scraped_count', 0)}</b>",
@@ -137,6 +144,7 @@ def build_debug_message(report: Dict) -> str:
         f"Total notificados: <b>{report.get('notified_count', 0)}</b>",
         '',
     ]
+
     for portal in report.get('sources', []):
         line = (
             f"• <b>{html.escape(portal['name'])}</b> | {portal['kind']} | "
@@ -145,8 +153,9 @@ def build_debug_message(report: Dict) -> str:
         lines.append(line)
         if portal.get('block_signals'):
             lines.append(f"  ↳ bloqueos: {html.escape(', '.join(portal['block_signals'][:3]))}")
+
     if report.get('reject_reasons'):
         top_reasons = ', '.join(f"{k}:{v}" for k, v in list(report['reject_reasons'].items())[:6])
         lines += ['', f"Rechazos: {html.escape(top_reasons)}"]
-    return '
-'.join(lines)
+
+    return '\n'.join(lines)
