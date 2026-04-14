@@ -1,4 +1,4 @@
-name: Bot Casas Asturias v3
+name: Bot Casas Asturias v4
 on:
   schedule:
     - cron: "0 */3 * * *"
@@ -29,6 +29,15 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
+      - name: Upload debug artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bot-casas-debug
+          path: |
+            debug/debug_report.json
+            debug/html/*.html
+            debug/screenshots/*.png
+          if-no-files-found: warn
       - name: Commit state and debug artifacts
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
