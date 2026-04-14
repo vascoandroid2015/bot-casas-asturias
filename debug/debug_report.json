@@ -1,0 +1,31 @@
+{
+  "scraped_count": 0,
+  "rejected_count": 0,
+  "notified_count": 0,
+  "reject_reasons": {},
+  "portals": [
+    {
+      "name": "Idealista",
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Milanuncios",
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Fotocasa",
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0
+    }
+  ],
+  "examples_to_notify": [],
+  "examples_rejected": []
+}
