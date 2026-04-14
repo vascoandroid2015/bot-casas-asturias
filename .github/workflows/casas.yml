@@ -1,4 +1,4 @@
-name: Bot Casas Asturias
+name: Bot Casas Asturias v2
 
 on:
   schedule:
@@ -30,8 +30,9 @@ jobs:
       - name: Install Playwright browser
         run: playwright install --with-deps chromium
 
-      - name: Ensure state file exists
+      - name: Ensure state and debug folders exist
         run: |
+          mkdir -p debug
           if [ ! -f seen_ads.json ]; then
             echo '{}' > seen_ads.json
           fi
@@ -42,8 +43,8 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
 
-      - name: Commit updated state
+      - name: Commit updated state and debug
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update seen_ads.json"
-          file_pattern: seen_ads.json
+          commit_message: "Update seen_ads and debug report"
+          file_pattern: seen_ads.json debug/debug_report.json
