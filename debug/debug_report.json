@@ -1,16 +1,17 @@
 {
-  "scraped_count": 105,
-  "rejected_count": 71,
+  "scraped_count": 122,
+  "rejected_count": 85,
   "notified_count": 10,
   "reject_reasons": {
-    "negative_term": 34,
-    "price_out_of_range": 33,
-    "missing_search_term": 20,
-    "missing_price": 15
+    "negative_term": 39,
+    "price_out_of_range": 29,
+    "missing_search_term": 33,
+    "missing_price": 32
   },
   "sources": [
     {
       "name": "Idealista",
+      "kind": "portal",
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
@@ -22,6 +23,7 @@
     },
     {
       "name": "CASASAPO",
+      "kind": "portal",
       "enabled": true,
       "raw_count": 25,
       "error_count": 0,
@@ -33,17 +35,19 @@
     },
     {
       "name": "Fincas Asturias",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 12,
       "error_count": 0,
       "final_url": "https://www.fincasasasturias.com/search-form-top.php?pagina=1",
       "page_title": "Buscando",
       "block_signals": [],
-      "valid_count": 4,
-      "notify_count": 2
+      "valid_count": 5,
+      "notify_count": 3
     },
     {
       "name": "CASAL Inmobiliaria",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 14,
       "error_count": 0,
@@ -55,6 +59,7 @@
     },
     {
       "name": "Inmobiliaria Asturias",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
@@ -66,6 +71,7 @@
     },
     {
       "name": "Agencia Asturias",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
@@ -77,6 +83,7 @@
     },
     {
       "name": "Inmobiliaria María",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 1,
       "error_count": 0,
@@ -88,6 +95,7 @@
     },
     {
       "name": "Grupo Duarte",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 1,
       "error_count": 0,
@@ -101,17 +109,19 @@
     },
     {
       "name": "REMAX Asturias",
+      "kind": "portal",
       "enabled": true,
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
       "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
-      "valid_count": 15,
+      "valid_count": 17,
       "notify_count": 0
     },
     {
       "name": "Facilitea Casa",
+      "kind": "portal",
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
@@ -123,6 +133,7 @@
     },
     {
       "name": "e-viviendas",
+      "kind": "portal",
       "enabled": true,
       "raw_count": 20,
       "error_count": 0,
@@ -134,6 +145,7 @@
     },
     {
       "name": "Arxus Inmobiliaria",
+      "kind": "agency",
       "enabled": true,
       "raw_count": 12,
       "error_count": 0,
@@ -141,10 +153,73 @@
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
       "valid_count": 8,
-      "notify_count": 4
+      "notify_count": 3
+    },
+    {
+      "name": "Hunosa Inmobiliario",
+      "kind": "institutional",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://hunosainmobiliario.es/",
+      "page_title": "Portal Inmobiliario Hunosa",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Solvia",
+      "kind": "servicer",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
+      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Altamira",
+      "kind": "servicer",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.altamirainmuebles.com/venta-viviendas/asturias",
+      "page_title": "Access Denied",
+      "block_signals": [
+        "access denied"
+      ],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Green-Acres",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
+      "page_title": "Property for sale Asturias: 35 exclusive apartments and houses to buy",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "ThinkSPAIN",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 16,
+      "error_count": 0,
+      "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
+      "page_title": "Property for sale in Asturias - 448 houses & apartments",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
     },
     {
       "name": "Fotocasa",
+      "kind": "portal",
       "enabled": false,
       "raw_count": 0,
       "error_count": 0,
@@ -153,16 +228,63 @@
     },
     {
       "name": "Milanuncios",
+      "kind": "classifieds",
       "enabled": false,
       "raw_count": 0,
       "error_count": 0,
       "valid_count": 0,
       "notify_count": 0
+    },
+    {
+      "name": "Telegram channels",
+      "kind": "social",
+      "enabled": false,
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0,
+      "note": "Preparado para futuras integraciones"
+    },
+    {
+      "name": "Facebook Marketplace",
+      "kind": "social",
+      "enabled": false,
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0,
+      "note": "Opcional y sensible a bloqueos"
+    },
+    {
+      "name": "Instagram discovery",
+      "kind": "social",
+      "enabled": false,
+      "raw_count": 0,
+      "error_count": 0,
+      "valid_count": 0,
+      "notify_count": 0,
+      "note": "Mejor como descubrimiento de agencias"
     }
   ],
   "examples_to_notify": [
     {
       "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 285000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2152984",
+      "location": "Venta Casas o chalets, Venta LUGAR SORRIBA, Agones, Asturias 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de ensueño, rodeada de naturaleza y con impresionantes vistas a la montaña. Un lugar idea",
+      "description": "Venta Casas o chalets, Venta LUGAR SORRIBA, Agones, Asturias 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de ensueño, rodeada de naturaleza y con impresionantes vistas a la montaña. Un lugar ideal para disfrutar del silencio, la naturaleza y el aire puro de Asturias. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. Sobre su parcela de 4700 m2, dispone de una construcción principal de 2 viviendas Pareadas de 80 m2 construidos cada una de ellas y un hórreo/panera tradicional, también reformado y habilitado como vivienda. Cada vivienda Pareada (reformada siguiendo el carácter rural a",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 14,
+      "change_type": "new"
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
       "title": "Venta",
       "price": 135000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2178029",
@@ -177,6 +299,7 @@
     },
     {
       "source": "e-viviendas",
+      "kind": "portal",
       "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
       "price": 20000,
       "url": "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410",
@@ -190,7 +313,23 @@
       "change_type": "new"
     },
     {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios ",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-cudillero-62f1bdbc-1a97-11e5-9ec9-000c2946937b.html",
+      "location": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 ",
+      "description": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 m2 construidos. Finca de 1.300 m2 con camelias y árboles frutales. Vistas a la playa de la Concha de Artedo. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "change_type": "new"
+    },
+    {
       "source": "Arxus Inmobiliaria",
+      "kind": "agency",
       "title": "Venta",
       "price": 135000,
       "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2178029",
@@ -202,68 +341,12 @@
       "reject_reasons": [],
       "score": 8,
       "change_type": "new"
-    },
-    {
-      "source": "Arxus Inmobiliaria",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2152988",
-      "location": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN ",
-      "description": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN PARCELA DE 2.300M2. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. La casa originalmente data del año 1.900 con un pronunciado carácter rural Asturiano es un lienzo en blanco ideal para desarrollar su proyecto de vida a sus necesidades. La casa dispone de vistas despejadas al valle y la montaña occidental asturiana. La casona dispone de un total de 367 m2 construidos distribuidos en 2 pl",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 8,
-      "change_type": "new"
-    },
-    {
-      "source": "Fincas Asturias",
-      "title": "Venta",
-      "price": 55000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2153014",
-      "location": "Venta Fincas y solares, Venta Camino de VALDACEO-SAN ROMÁN, San Román, Asturias 55.000 € Se vende finca en Sariego en el centro de Asturias, con una superficie de 2.040 m² y posibilidad de edificar hasta 250 m². Situada en un entorno tranqu",
-      "description": "Venta Fincas y solares, Venta Camino de VALDACEO-SAN ROMÁN, San Román, Asturias 55.000 € Se vende finca en Sariego en el centro de Asturias, con una superficie de 2.040 m² y posibilidad de edificar hasta 250 m². Situada en un entorno tranquilo, con muy buena orientación y excelente ubicación, próxima a Siero, Villaviciosa, Gijón y Oviedo. Ideal para quienes buscan construir una vivienda unifamiliar en plena naturaleza, sin alejarse de los principales núcleos urbanos. El agua que gestiona la empresa Aqualia y la luz están muy próximos a la finca y hay saneamiento en el pueblo. El precio no incluye el impuesto de Trasmisiones Patrimoniales ni gastos de Notaría ni de Registro.  Actualmente en Asturias existen beneficios fiscales en Impuesto de Trasmisiones Patrimoniales. Detalles",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 6,
-      "change_type": "new"
     }
   ],
   "examples_rejected": [
     {
       "source": "CASASAPO",
-      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 185.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
-      "price": 185000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
-      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 185.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
-      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 185.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
-      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE E",
-      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay otro apartamento com",
-      "municipality": null,
-      "distance_km": null,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term",
-        "price_out_of_range"
-      ]
-    },
-    {
-      "source": "CASASAPO",
+      "kind": "portal",
       "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
       "price": 250000,
       "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
@@ -278,13 +361,14 @@
     },
     {
       "source": "CASASAPO",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detene",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. E",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, es una invitación c",
-      "municipality": null,
-      "distance_km": null,
+      "kind": "portal",
+      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
+      "price": 350000,
+      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
+      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
+      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox Contacto",
+      "municipality": "Aller",
+      "distance_km": 31.9,
       "valid": false,
       "reject_reasons": [
         "negative_term",
@@ -293,17 +377,47 @@
     },
     {
       "source": "CASASAPO",
-      "title": "Chalet Rural, Gijón, Asturias 317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos met",
-      "price": 750000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-rural-6d379b72-259f-11f0-b3d3-060000000057.html",
-      "location": "Chalet Rural, Gijón, Asturias 317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos metros de la Escuela de Fútbol del Real Sporting de Gijón y con parada de",
-      "description": "Chalet Rural, Gijón, Asturias 317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos metros de la Escuela de Fútbol del Real Sporting de Gijón y con parada de autobús (línea 24) muy próxima. Se trata de una vivienda unifamiliar cerrada dentro de una urbanización privada, con total privacidad y rodeada de naturaleza. La propiedad cuenta con: · 2.000 m’ de parcela ajardinada · Piscina privada · 4 habitaciones distribuidas en primera y segunda planta · Sótano con choco, cocina, zona de vivienda y garaje · Acabados de alta calidad · Espacios amplios, cómodos y muy luminosos Un chalet perfecto para familias, amantes de la tranquilidad o quienes desean vivir en un entorno natural, sin renunciar a la cercanía de la ciudad. Una casa perfecta para disfrutar de momentos y tener recuerdos únicos con la familia. Contac",
-      "municipality": null,
-      "distance_km": null,
+      "kind": "portal",
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
       "valid": false,
       "reject_reasons": [
-        "negative_term",
-        "price_out_of_range"
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
+      "price": 280000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
+      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
+      "price": 206000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
+      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
+      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term"
       ]
     }
   ]
