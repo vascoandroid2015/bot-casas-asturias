@@ -8,6 +8,21 @@
       "name": "Idealista",
       "raw_count": 0,
       "error_count": 0,
+      "final_url": "https://www.idealista.com/venta-viviendas/asturias/",
+      "page_title": "idealista.com",
+      "selectors_tested": [
+        "article.item",
+        "article[data-adid]",
+        ".items-container article",
+        ".listing-items article"
+      ],
+      "selector_counts": {
+        "article.item": 0,
+        "article[data-adid]": 0,
+        ".items-container article": 0,
+        ".listing-items article": 0
+      },
+      "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
     },
@@ -15,6 +30,21 @@
       "name": "Milanuncios",
       "raw_count": 0,
       "error_count": 0,
+      "final_url": "https://www.milanuncios.com/venta-de-casas-en-asturias/",
+      "page_title": "Pardon Our Interruption",
+      "selectors_tested": [
+        "div.ma-AdCard",
+        "article",
+        "[data-testid=\"ad-card\"]"
+      ],
+      "selector_counts": {
+        "div.ma-AdCard": 0,
+        "article": 0,
+        "[data-testid=\"ad-card\"]": 0
+      },
+      "block_signals": [
+        "captcha"
+      ],
       "valid_count": 0,
       "notify_count": 0
     },
@@ -22,6 +52,21 @@
       "name": "Fotocasa",
       "raw_count": 0,
       "error_count": 0,
+      "final_url": "https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l",
+      "page_title": "SENTIMOS LA INTERRUPCIÃ“N",
+      "selectors_tested": [
+        "article",
+        "div.re-CardPackPremium",
+        "div.re-CardPack",
+        "[class*=\"CardPack\"]"
+      ],
+      "selector_counts": {
+        "article": 0,
+        "div.re-CardPackPremium": 0,
+        "div.re-CardPack": 0,
+        "[class*=\"CardPack\"]": 0
+      },
+      "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
     }
