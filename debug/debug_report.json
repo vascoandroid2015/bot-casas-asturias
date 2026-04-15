@@ -1,11 +1,11 @@
 {
-  "scraped_count": 184,
-  "rejected_count": 143,
-  "notified_count": 10,
+  "scraped_count": 164,
+  "rejected_count": 140,
+  "notified_count": 1,
   "reject_reasons": {
-    "negative_term": 53,
-    "price_out_of_range": 37,
-    "missing_search_term": 73,
+    "negative_term": 52,
+    "price_out_of_range": 34,
+    "missing_search_term": 76,
     "missing_price": 73
   },
   "sources": [
@@ -31,7 +31,7 @@
       "page_title": "40 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
       "valid_count": 4,
-      "notify_count": 3
+      "notify_count": 1
     },
     {
       "name": "Fincas Asturias",
@@ -43,7 +43,7 @@
       "page_title": "Buscando",
       "block_signals": [],
       "valid_count": 5,
-      "notify_count": 3
+      "notify_count": 0
     },
     {
       "name": "CASAL Inmobiliaria",
@@ -111,12 +111,13 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
-      "error_count": 0,
-      "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "Venta de Casa en provincia Asturias - Remax",
+      "raw_count": 0,
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 17,
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/\", waiting until \"domcontentloaded\"\n",
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -141,7 +142,7 @@
       "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
       "block_signals": [],
       "valid_count": 3,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "Arxus Inmobiliaria",
@@ -153,7 +154,7 @@
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
       "valid_count": 8,
-      "notify_count": 2
+      "notify_count": 0
     },
     {
       "name": "Hunosa Inmobiliario",
@@ -212,7 +213,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 448 houses & apartments",
+      "page_title": "Property for sale in Asturias - 447 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -224,10 +225,10 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7580 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7583 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 4,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "Engel & Völkers Asturias",
@@ -338,128 +339,22 @@
   ],
   "examples_to_notify": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 285000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2152984",
-      "location": "Venta Casas o chalets, Venta LUGAR SORRIBA, Agones, Asturias 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de ensueño, rodeada de naturaleza y con impresionantes vistas a la montaña. Un lugar idea",
-      "description": "Venta Casas o chalets, Venta LUGAR SORRIBA, Agones, Asturias 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de ensueño, rodeada de naturaleza y con impresionantes vistas a la montaña. Un lugar ideal para disfrutar del silencio, la naturaleza y el aire puro de Asturias. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. Sobre su parcela de 4700 m2, dispone de una construcción principal de 2 viviendas Pareadas de 80 m2 construidos cada una de ellas y un hórreo/panera tradicional, también reformado y habilitado como vivienda. Cada vivienda Pareada (reformada siguiendo el carácter rural a",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 14,
-      "change_type": "new"
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2178029",
-      "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concejo de Langreo, en un entorno natural privilegiado, con",
-      "description": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concejo de Langreo, en un entorno natural privilegiado, con vistas abiertas a la montaña y rodeado de tranquilidad, a 30 min de Gijón y 10-15 minutos de Oviedo. Se trata de una propiedad para rehabilitar/reformar, con acceso tambien a reformar, ideal para quienes buscan un proyecto de rehabilitación en plena naturaleza, con múltiples posibilidades tanto para vivienda habitual como segunda residencia. 📐 Características principales Vivienda de dos plantas con una superficie total construida de 116 m² (58 m² por planta). La planta de abajo tiene luz. Almacén en planta baja de 64 m² . Establo de 40 m² . Buen estado. Inmuebles registrados. Ubicado en plena naturaleza, con vistas despejadas. Terreno de unos 55.000 m",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 10,
-      "change_type": "new"
-    },
-    {
-      "source": "e-viviendas",
-      "kind": "portal",
-      "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
-      "price": 20000,
-      "url": "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410",
-      "location": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
-      "description": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
-      "municipality": "Villaviciosa",
-      "distance_km": 36.0,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 8,
-      "change_type": "new"
-    },
-    {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios ",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-cudillero-62f1bdbc-1a97-11e5-9ec9-000c2946937b.html",
-      "location": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 ",
-      "description": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 m2 construidos. Finca de 1.300 m2 con camelias y árboles frutales. Vistas a la playa de la Concha de Artedo. Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 8,
-      "change_type": "new"
-    },
-    {
-      "source": "Arxus Inmobiliaria",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2178029",
-      "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concej",
-      "description": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concejo de Langreo, en un entorno natural privilegiado, con vistas abiertas a la montaña y rodeado de tranquilidad, a 30 min de Gijón y 10-15 minutos de Oviedo. Se trata de una propiedad para rehabilitar/reformar, con acceso tambien a reformar, ideal para quienes buscan un proyecto de rehabilitación en plena naturaleza, con múltiples posibilidades tanto para vivienda habitual como segunda residencia. 📐 Características principales Vivienda de dos plantas con una superficie total construida de 116 m² (58 m² por planta). La planta de abajo tiene luz. Almacén en planta baja de 64 m² . Establo de 40 m² . Buen estado. Inmuebles registrados. Ubicado en plena natura",
+      "title": "Casa Laviana, Asturias A reformar  ·  86m² comprar 75.000 € Hoy te traigo esta oportunidad única en Puente de Arco, Pola de Laviana. A solo 50 metros del río, con su pequ",
+      "price": 75000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-laviana-480b6069-62f0-11f0-b3d3-060000000057.html",
+      "location": "Casa Laviana, Asturias A reformar  ·  86m² comprar 75.000 € Hoy te traigo esta oportunidad única en Puente de Arco, Pola de Laviana. A solo 50 metros del río, con su pequeña playa fluvial donde la gente disfruta del baño cada verano y a las",
+      "description": "Casa Laviana, Asturias A reformar  ·  86m² comprar 75.000 € Hoy te traigo esta oportunidad única en Puente de Arco, Pola de Laviana. A solo 50 metros del río, con su pequeña playa fluvial donde la gente disfruta del baño cada verano y a las puertas del Parque Natural de Redes, la auténtica Asturias de montaña. Pero ojo, ¡a solo 40 minutos de la playa y muy cerca de Oviedo, La Felguera y todos los servicios en Pola de Laviana! La casa la está en obra (60% hecha), con forjados y parte de la instalación adelantada. Contamos con empresa para acabarla según tu gusto. Si quieres invertir en un lugar de ensueño o tener tu segunda residencia en Asturias, este es tu sitio. Oportunidades así no aparecen todos los días... ¡y menos a este precio! ¡Llámanos y ven a conocerla! Contacto",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [],
-      "score": 8,
+      "score": 4,
       "change_type": "new"
     }
   ],
   "examples_rejected": [
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
-      "price": 350000,
-      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
-      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
-      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox Contacto",
-      "municipality": "Aller",
-      "distance_km": 31.9,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term",
-        "price_out_of_range"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
-      "price": 226000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
     {
       "source": "CASASAPO",
       "kind": "portal",
@@ -473,6 +368,54 @@
       "valid": false,
       "reject_reasons": [
         "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
+      "price": 600000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
+      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
+      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa",
+      "price": 420000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-gijon-sur-8e3a2c3f-31c6-11f1-9a8d-060000000057.html",
+      "location": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espac",
+      "description": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espacio, comodidad y la tranquilidad de estar perfectamente conectados con la ciudad sin renunciar absolutamente a nada. Ubicación TOP dentro del núcleo urbano, con supermercado, centro médico y todos los servicios a un paso, además de autobús directo al centro. Porque vivir cómodo también es vivir bien ubicado. La vivienda cuenta con 4 habitaciones, 3 baños, un salón amplio donde realmente apetece estar, garaje y trastero. Todo ello sobre una parcela de 979 m², con 271 m² construidos y 240 m² útiles, ofreciendo espacio de sobra tanto dentro como fuera de casa. Y ahora viene lo interesante Posibilidad de dividirla en dos viviendas. Sí, has leído bien: una p",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "missing_search_term"
       ]
     },
     {
