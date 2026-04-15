@@ -747,7 +747,7 @@
     "title": "Francisco  TAMARGO",
     "price": 359000,
     "source": "Properstar",
-    "location": "Francisco  TAMARGO Hace 14 días 359.000 € 389.000 € -30.000 Piso señorial en pleno centro de Gijón a 3 minutos andando del Puerto y 5 de San Lorenzo Gijón Piso • 3 dormitorios • 2 baño. • 117 m² Añadir a favoritos Enviar mensaje"
+    "location": "Francisco  TAMARGO 359.000 € Piso señorial en pleno centro de Gijón a 3 minutos andando del Puerto y 5 de San Lorenzo Gijón Piso • 3 dormitorios • 2 baño. • 117 m² Añadir a favoritos Enviar mensaje"
   },
   "https://www.properstar.com/vivienda/108002800": {
     "title": "Hace 12 días 43.000 € 49.500 € -6500 Casa para comprar en Mieres, España Mieres Casa • 2 habitaciónes • 2 dormitorios • 1 baño. • 60 m² Añadir a favoritos Enviar mensaje",
@@ -1222,5 +1222,23 @@
     "price": null,
     "source": "ThinkSPAIN",
     "location": "More photos 2 / 62 € 70,000 Townhouse for sale in Pravia, Asturias Townhouse for sale in Pravia, Asturias 117 m 2 Build 3 Bedrooms 1 Bathroom 1223 m 2 Plot Beautiful village house for sale with a lovely completely flat plot and a good high "
+  },
+  "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-4e1bc72c-cfb6-11e9-a325-060000000054.html": {
+    "title": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. ",
+    "price": 595000,
+    "source": "CASASAPO",
+    "location": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río"
+  },
+  "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html": {
+    "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
+    "price": 240000,
+    "source": "CASASAPO",
+    "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca"
+  },
+  "https://www.properstar.com/vivienda/115721967": {
+    "title": "Francisco  TAMARGO",
+    "price": 189000,
+    "source": "Properstar",
+    "location": "Francisco  TAMARGO Hace 3 horas 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje"
   }
 }
