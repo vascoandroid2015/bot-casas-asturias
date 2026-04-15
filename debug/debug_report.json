@@ -1,11 +1,11 @@
 {
-  "scraped_count": 138,
-  "rejected_count": 104,
+  "scraped_count": 139,
+  "rejected_count": 105,
   "notified_count": 1,
   "reject_reasons": {
     "price_out_of_range": 14,
     "missing_search_term": 65,
-    "negative_term": 18,
+    "negative_term": 19,
     "missing_price": 73
   },
   "sources": [
@@ -43,7 +43,7 @@
       "page_title": "Buscando",
       "block_signals": [],
       "valid_count": 6,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "CASAL Inmobiliaria",
@@ -117,7 +117,7 @@
       "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
       "valid_count": 17,
-      "notify_count": 0
+      "notify_count": 1
     },
     {
       "name": "Facilitea Casa",
@@ -257,12 +257,11 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -339,18 +338,18 @@
   ],
   "examples_to_notify": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 220000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200371",
-      "location": "Venta Casas o chalets, Venta Llaneza 1. Oviedo, Oviedo, Asturias 220.000 € A tan solo 15 minutos de Oviedo, en la tranquila zona de Llaneza, se encuentra esta preciosa casa independiente, con amplia terraza y finca, lista para entrar a vivi",
-      "description": "Venta Casas o chalets, Venta Llaneza 1. Oviedo, Oviedo, Asturias 220.000 € A tan solo 15 minutos de Oviedo, en la tranquila zona de Llaneza, se encuentra esta preciosa casa independiente, con amplia terraza y finca, lista para entrar a vivir. Una opción ideal para quienes desean disfrutar de la naturaleza, la privacidad y, al mismo tiempo, mantener una excelente conexión con la ciudad. Sin duda, una propiedad que destaca como una oportunidad única en el mercado actual. La ubicación es uno de sus grandes atractivos: en apenas 15 minutos en coche se accede al centro de Oviedo y en unos 30 minutos a Gijón. Además, la cercanía a paradas de tren y autobús urbano (TUA) facilita enormemente los desplazamientos diarios, aportando comodidad y rapidez en el día a día. La vivienda ofrece una distribución cómoda y funcional, con espacios luminosos y bien aprovechados. Se distribuye en dos plantas y ",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "REMAX Asturias",
+      "kind": "portal",
+      "title": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,",
+      "price": 169900,
+      "url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/fuentespino/todos/3555_05619/",
+      "location": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,",
+      "description": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [],
-      "score": 6,
+      "score": 2,
       "change_type": "new"
     }
   ],
