@@ -1,11 +1,11 @@
 {
-  "scraped_count": 139,
+  "scraped_count": 138,
   "rejected_count": 105,
   "notified_count": 1,
   "reject_reasons": {
-    "price_out_of_range": 14,
-    "missing_search_term": 65,
     "negative_term": 19,
+    "missing_search_term": 66,
+    "price_out_of_range": 14,
     "missing_price": 73
   },
   "sources": [
@@ -42,7 +42,7 @@
       "final_url": "https://www.fincasasasturias.com/search-form-top.php?pagina=1",
       "page_title": "Buscando",
       "block_signals": [],
-      "valid_count": 6,
+      "valid_count": 5,
       "notify_count": 0
     },
     {
@@ -257,11 +257,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
-      "error_count": 0,
-      "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "raw_count": 0,
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -340,11 +341,11 @@
     {
       "source": "REMAX Asturias",
       "kind": "portal",
-      "title": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,",
-      "price": 169900,
-      "url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/fuentespino/todos/3555_05619/",
-      "location": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,",
-      "description": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,",
+      "title": "Nueva en el mercado",
+      "price": 49900,
+      "url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/san-pedro-de-coliema/todos/3555_05704/",
+      "location": "Nueva en el mercado 49.900 € Casa en venta, San Pedro de Coliema, Asturias 2 hab 1 baños 174 m 2 ¿Te imaginas despertar con el sonido de la naturaleza y vistas panorámicas de... ,",
+      "description": "Nueva en el mercado 49.900 € Casa en venta, San Pedro de Coliema, Asturias 2 hab 1 baños 174 m 2 ¿Te imaginas despertar con el sonido de la naturaleza y vistas panorámicas de... ,",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -354,6 +355,22 @@
     }
   ],
   "examples_rejected": [
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 290000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530",
+      "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra",
+      "description": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estratégica, rodeado de comercios consolidados, con gran visibilidad y un flujo constante de peatones, lo que lo convierte en un enclave ideal para cualquier actividad. Cuenta con una superficie de 142 m² distribuidos en dos plantas amplias, diáfanas y muy bien aprovechadas. Dispone de baño y aseo en ambas plantas, aportando funcionalidad tanto para clientes como para el equipo de trabajo. El local ha sido reformado con un diseño moderno y elegante, utilizando materiales de alta calidad, por lo que se encuentra en un estado impecable, listo para iniciar actividad sin necesidad de inversión adicional. Actualmente cuenta con licencia vigente de comercio menor",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "missing_search_term"
+      ]
+    },
     {
       "source": "Fincas Asturias",
       "kind": "agency",
@@ -412,22 +429,6 @@
       "valid": false,
       "reject_reasons": [
         "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 585000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2172801",
-      "location": "Venta Pisos, Venta, Centro CL CORRIDA, Gijón, Asturias 585.000 € Elegancia, amplitud y ubicación en el corazón más exclusivo de Gijón Presentamos esta excepcional vivienda de 180 m² útiles situada en la emblemática Calle Corrida, la direcci",
-      "description": "Venta Pisos, Venta, Centro CL CORRIDA, Gijón, Asturias 585.000 € Elegancia, amplitud y ubicación en el corazón más exclusivo de Gijón Presentamos esta excepcional vivienda de 180 m² útiles situada en la emblemática Calle Corrida, la dirección más prestigiosa de Gijón. Un enclave único donde el dinamismo urbano se combina con la distinción de una de las zonas más cotizadas de la ciudad. Este magnífico piso destaca por su amplitud, distribución y posibilidades, ofreciendo una experiencia de vivienda sofisticada y confortable:  • Imponente salón-comedor, ideal para recibir y disfrutar de espacios abiertos y luminosos  • 5 dormitorios de generosas dimensiones, pensados para el máximo confort  • 3 baños completos, incluyendo un elegante baño en suite  • Cocina independiente con office, amplia y funcional  • Terraza cubierta, perfecta como zona privada de descanso o espacio polivalente  • Dobl",
-      "municipality": null,
-      "distance_km": null,
-      "valid": false,
-      "reject_reasons": [
-        "missing_search_term",
-        "price_out_of_range"
       ]
     }
   ]

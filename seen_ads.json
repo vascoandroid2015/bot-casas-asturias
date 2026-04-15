@@ -1264,5 +1264,17 @@
     "price": null,
     "source": "Engel & Völkers Asturias",
     "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530": {
+    "title": "Venta",
+    "price": 290000,
+    "source": "Fincas Asturias",
+    "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/san-pedro-de-coliema/todos/3555_05704/": {
+    "title": "Nueva en el mercado",
+    "price": 49900,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 49.900 € Casa en venta, San Pedro de Coliema, Asturias 2 hab 1 baños 174 m 2 ¿Te imaginas despertar con el sonido de la naturaleza y vistas panorámicas de... ,"
   }
 }
