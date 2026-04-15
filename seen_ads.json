@@ -603,7 +603,7 @@
     "title": "Venta",
     "price": 135000,
     "source": "Arxus Inmobiliaria",
-    "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en el concej"
+    "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entor"
   },
   "https://arxus.es/ficha-inmueble?cod_inmueble=2177360": {
     "title": "Venta",
@@ -1240,5 +1240,11 @@
     "price": 189000,
     "source": "Properstar",
     "location": "Francisco  TAMARGO Hace 3 horas 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200371": {
+    "title": "Venta",
+    "price": 220000,
+    "source": "Fincas Asturias",
+    "location": "Venta Casas o chalets, Venta Llaneza 1. Oviedo, Oviedo, Asturias 220.000 € A tan solo 15 minutos de Oviedo, en la tranquila zona de Llaneza, se encuentra esta preciosa casa independiente, con amplia terraza y finca, lista para entrar a vivi"
   }
 }
