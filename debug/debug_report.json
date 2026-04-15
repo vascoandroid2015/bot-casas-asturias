@@ -1,11 +1,11 @@
 {
-  "scraped_count": 184,
-  "rejected_count": 141,
-  "notified_count": 1,
+  "scraped_count": 139,
+  "rejected_count": 106,
+  "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 53,
-    "price_out_of_range": 37,
-    "missing_search_term": 74,
+    "price_out_of_range": 15,
+    "missing_search_term": 65,
+    "negative_term": 20,
     "missing_price": 73
   },
   "sources": [
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "40 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 5,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 35 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 43 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -221,13 +221,13 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7582 Propiedades en venta en Asturias | Properstar",
+      "page_title": "Properstar",
       "block_signals": [],
-      "valid_count": 5,
-      "notify_count": 1
+      "valid_count": 0,
+      "notify_count": 0
     },
     {
       "name": "Engel & Völkers Asturias",
@@ -336,98 +336,81 @@
       "note": "Mejor como descubrimiento de agencias"
     }
   ],
-  "examples_to_notify": [
-    {
-      "source": "Properstar",
-      "kind": "portal",
-      "title": "Francisco  TAMARGO",
-      "price": 189000,
-      "url": "https://www.properstar.com/vivienda/115721967",
-      "location": "Francisco  TAMARGO Hace 3 horas 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje",
-      "description": "Francisco  TAMARGO Hace 3 horas 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 2,
-      "change_type": "new"
-    }
-  ],
+  "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
-      "price": 280000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
-      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 895000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200391",
+      "location": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza",
+      "description": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza esta vivienda de nueva construcción concebida para disfrutar de la luz, la amplitud y unas vistas absolutamente espectaculares sobre la Ría de Villaviciosa. Desde el primer instante, esta casa transmite una sensación especial. Su arquitectura actual, la calidad de sus materiales y la forma en la que se abre al entorno crean una vivienda que no solo destaca por su diseño, sino también por la manera en la que invita a vivirla. Aquí, el verdadero lujo está en el espacio, en la calma y en esa conexión permanente con el paisaje. La zona principal de la casa ha sido pensada para convertirse en el gran escenario del día a día. La amplia cocina abierta al sal",
+      "municipality": "Villaviciosa",
+      "distance_km": 36.0,
       "valid": false,
       "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en ",
-      "price": 950000,
-      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
-      "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
-      "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term",
         "price_out_of_range"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 245000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177396",
+      "location": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad exce",
+      "description": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad excepcional para adquirir un inmueble en esta emblemática ciudad costera, perfecta tanto para quienes buscan su nuevo hogar como para aquellos interesados en invertir en una propiedad con un gran potencial de revalorización. Este piso de 67 metros construidos es una joya que no querrás dejar escapar. El inmueble, ubicado en la cuarta planta de un edificio bien mantenido construido en 1984, cuenta con una superficie útil de 59 metros cuadrados, ofreciendo un espacio perfectamente distribuido para disfrutar de una vida plena y cómoda. El edificio dispone de ascensor, garantizando un acceso cómodo y práctico, lo que supone una gran ventaja para sus residentes",
       "municipality": null,
       "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "missing_search_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 65000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177360",
+      "location": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representati",
+      "description": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representativas de la localidad, con gran visibilidad y valor estratégico.\n\nSe trata de un inmueble completo para rehabilitación integral, compuesto por planta baja, planta primera, planta segunda y bajocubierta, lo que permite desarrollar un proyecto con múltiples posibilidades de distribución.\n\nDispone además de una finca anexa a la construcción en la parte trasera, con una edificación auxiliar destinada actualmente a almacén, y existe la posibilidad de adquirir otra finca colindante, lo que incrementa notablemente las opciones de desarrollo.\n\nAl tratarse de un edificio de carácter histórico, es necesario conservar la fachada, lo que no solo respeta su identidad",
+      "municipality": "Laviana",
+      "distance_km": 27.1,
       "valid": false,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
-      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
-      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177356",
+      "location": "Venta Casas o chalets, Venta CL COK, San Martín del Rey Aurelio, Asturias 135.000 € Ubicación estratégica: En un entorno residencial consolidado de San Martín del Rey Aurelio, con alta demanda de vivienda y escasez de plazas de aparcamiento",
+      "description": "Venta Casas o chalets, Venta CL COK, San Martín del Rey Aurelio, Asturias 135.000 € Ubicación estratégica: En un entorno residencial consolidado de San Martín del Rey Aurelio, con alta demanda de vivienda y escasez de plazas de aparcamiento. Estación de tren a tan solo unos metros, comercio, colegios y todos los servicios. Edificio principal ;Planta baja (100 m²): local/almacén con techos altos y espacio para 4 plazas de garaje. Versátil para destinar a actividad comercial, trasteros, talleres o explotarlo como aparcamiento. Primera planta (100 m²) vivienda lista para entrar a vivir, luminosa y funcional con cuatro dormitorios, amplia cocina, salón en esquina, baño con ventana, despensa y terraza cubierta. Ventanas de aluminio con climalit, calefacción de gas-oil, suelos de parquet y cerámica. Planta bajo cubierta como desván. 📌 Precio de venta: No incluye Impuesto de Transmisiones Patri",
+      "municipality": "Aller",
+      "distance_km": 31.9,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 585000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2172801",
+      "location": "Venta Pisos, Venta, Centro CL CORRIDA, Gijón, Asturias 585.000 € Elegancia, amplitud y ubicación en el corazón más exclusivo de Gijón Presentamos esta excepcional vivienda de 180 m² útiles situada en la emblemática Calle Corrida, la direcci",
+      "description": "Venta Pisos, Venta, Centro CL CORRIDA, Gijón, Asturias 585.000 € Elegancia, amplitud y ubicación en el corazón más exclusivo de Gijón Presentamos esta excepcional vivienda de 180 m² útiles situada en la emblemática Calle Corrida, la dirección más prestigiosa de Gijón. Un enclave único donde el dinamismo urbano se combina con la distinción de una de las zonas más cotizadas de la ciudad. Este magnífico piso destaca por su amplitud, distribución y posibilidades, ofreciendo una experiencia de vivienda sofisticada y confortable:  • Imponente salón-comedor, ideal para recibir y disfrutar de espacios abiertos y luminosos  • 5 dormitorios de generosas dimensiones, pensados para el máximo confort  • 3 baños completos, incluyendo un elegante baño en suite  • Cocina independiente con office, amplia y funcional  • Terraza cubierta, perfecta como zona privada de descanso o espacio polivalente  • Dobl",
       "municipality": null,
       "distance_km": null,
       "valid": false,
       "reject_reasons": [
-        "negative_term",
+        "missing_search_term",
         "price_out_of_range"
       ]
     }
