@@ -1,11 +1,11 @@
 {
-  "scraped_count": 138,
-  "rejected_count": 105,
-  "notified_count": 1,
+  "scraped_count": 164,
+  "rejected_count": 127,
+  "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 19,
-    "missing_search_term": 66,
-    "price_out_of_range": 14,
+    "negative_term": 41,
+    "price_out_of_range": 28,
+    "missing_search_term": 67,
     "missing_price": 73
   },
   "sources": [
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "40 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 4,
       "notify_count": 0
     },
     {
@@ -117,7 +117,7 @@
       "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
       "valid_count": 17,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "Facilitea Casa",
@@ -257,12 +257,11 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -337,98 +336,86 @@
       "note": "Mejor como descubrimiento de agencias"
     }
   ],
-  "examples_to_notify": [
-    {
-      "source": "REMAX Asturias",
-      "kind": "portal",
-      "title": "Nueva en el mercado",
-      "price": 49900,
-      "url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/san-pedro-de-coliema/todos/3555_05704/",
-      "location": "Nueva en el mercado 49.900 € Casa en venta, San Pedro de Coliema, Asturias 2 hab 1 baños 174 m 2 ¿Te imaginas despertar con el sonido de la naturaleza y vistas panorámicas de... ,",
-      "description": "Nueva en el mercado 49.900 € Casa en venta, San Pedro de Coliema, Asturias 2 hab 1 baños 174 m 2 ¿Te imaginas despertar con el sonido de la naturaleza y vistas panorámicas de... ,",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 2,
-      "change_type": "new"
-    }
-  ],
+  "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 290000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530",
-      "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra",
-      "description": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estratégica, rodeado de comercios consolidados, con gran visibilidad y un flujo constante de peatones, lo que lo convierte en un enclave ideal para cualquier actividad. Cuenta con una superficie de 142 m² distribuidos en dos plantas amplias, diáfanas y muy bien aprovechadas. Dispone de baño y aseo en ambas plantas, aportando funcionalidad tanto para clientes como para el equipo de trabajo. El local ha sido reformado con un diseño moderno y elegante, utilizando materiales de alta calidad, por lo que se encuentra en un estado impecable, listo para iniciar actividad sin necesidad de inversión adicional. Actualmente cuenta con licencia vigente de comercio menor",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias 300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias 300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Plan",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias 300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
+      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
+      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
+      "price": 800000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
+      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
+      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detene",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. E",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias 274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, es una invitación c",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias 490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY B",
+      "price": 600000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
+      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias 490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN U",
+      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias 490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CALDERAS, CUARTO DE L",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": false,
       "reject_reasons": [
         "negative_term",
-        "missing_search_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 895000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200391",
-      "location": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza",
-      "description": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza esta vivienda de nueva construcción concebida para disfrutar de la luz, la amplitud y unas vistas absolutamente espectaculares sobre la Ría de Villaviciosa. Desde el primer instante, esta casa transmite una sensación especial. Su arquitectura actual, la calidad de sus materiales y la forma en la que se abre al entorno crean una vivienda que no solo destaca por su diseño, sino también por la manera en la que invita a vivirla. Aquí, el verdadero lujo está en el espacio, en la calma y en esa conexión permanente con el paisaje. La zona principal de la casa ha sido pensada para convertirse en el gran escenario del día a día. La amplia cocina abierta al sal",
-      "municipality": "Villaviciosa",
-      "distance_km": 36.0,
-      "valid": false,
-      "reject_reasons": [
         "price_out_of_range"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 245000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177396",
-      "location": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad exce",
-      "description": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad excepcional para adquirir un inmueble en esta emblemática ciudad costera, perfecta tanto para quienes buscan su nuevo hogar como para aquellos interesados en invertir en una propiedad con un gran potencial de revalorización. Este piso de 67 metros construidos es una joya que no querrás dejar escapar. El inmueble, ubicado en la cuarta planta de un edificio bien mantenido construido en 1984, cuenta con una superficie útil de 59 metros cuadrados, ofreciendo un espacio perfectamente distribuido para disfrutar de una vida plena y cómoda. El edificio dispone de ascensor, garantizando un acceso cómodo y práctico, lo que supone una gran ventaja para sus residentes",
-      "municipality": null,
-      "distance_km": null,
-      "valid": false,
-      "reject_reasons": [
-        "missing_search_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 65000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177360",
-      "location": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representati",
-      "description": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representativas de la localidad, con gran visibilidad y valor estratégico.\n\nSe trata de un inmueble completo para rehabilitación integral, compuesto por planta baja, planta primera, planta segunda y bajocubierta, lo que permite desarrollar un proyecto con múltiples posibilidades de distribución.\n\nDispone además de una finca anexa a la construcción en la parte trasera, con una edificación auxiliar destinada actualmente a almacén, y existe la posibilidad de adquirir otra finca colindante, lo que incrementa notablemente las opciones de desarrollo.\n\nAl tratarse de un edificio de carácter histórico, es necesario conservar la fachada, lo que no solo respeta su identidad",
-      "municipality": "Laviana",
-      "distance_km": 27.1,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177356",
-      "location": "Venta Casas o chalets, Venta CL COK, San Martín del Rey Aurelio, Asturias 135.000 € Ubicación estratégica: En un entorno residencial consolidado de San Martín del Rey Aurelio, con alta demanda de vivienda y escasez de plazas de aparcamiento",
-      "description": "Venta Casas o chalets, Venta CL COK, San Martín del Rey Aurelio, Asturias 135.000 € Ubicación estratégica: En un entorno residencial consolidado de San Martín del Rey Aurelio, con alta demanda de vivienda y escasez de plazas de aparcamiento. Estación de tren a tan solo unos metros, comercio, colegios y todos los servicios. Edificio principal ;Planta baja (100 m²): local/almacén con techos altos y espacio para 4 plazas de garaje. Versátil para destinar a actividad comercial, trasteros, talleres o explotarlo como aparcamiento. Primera planta (100 m²) vivienda lista para entrar a vivir, luminosa y funcional con cuatro dormitorios, amplia cocina, salón en esquina, baño con ventana, despensa y terraza cubierta. Ventanas de aluminio con climalit, calefacción de gas-oil, suelos de parquet y cerámica. Planta bajo cubierta como desván. 📌 Precio de venta: No incluye Impuesto de Transmisiones Patri",
-      "municipality": "Aller",
-      "distance_km": 31.9,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
       ]
     }
   ]
