@@ -1,11 +1,11 @@
 {
-  "scraped_count": 159,
-  "rejected_count": 121,
+  "scraped_count": 184,
+  "rejected_count": 141,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 34,
-    "missing_search_term": 74,
-    "price_out_of_range": 22,
+    "negative_term": 54,
+    "price_out_of_range": 37,
+    "missing_search_term": 76,
     "missing_price": 73
   },
   "sources": [
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 5,
       "notify_count": 0
     },
     {
@@ -339,15 +339,62 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 290000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530",
-      "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra",
-      "description": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estratégica, rodeado de comercios consolidados, con gran visibilidad y un flujo constante de peatones, lo que lo convierte en un enclave ideal para cualquier actividad. Cuenta con una superficie de 142 m² distribuidos en dos plantas amplias, diáfanas y muy bien aprovechadas. Dispone de baño y aseo en ambas plantas, aportando funcionalidad tanto para clientes como para el equipo de trabajo. El local ha sido reformado con un diseño moderno y elegante, utilizando materiales de alta calidad, por lo que se encuentra en un estado impecable, listo para iniciar actividad sin necesidad de inversión adicional. Actualmente cuenta con licencia vigente de comercio menor",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias 307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a",
+      "price": 495000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-siero-parroquias-norte-6d91304a-3990-11f1-9a8d-060000000057.html",
+      "location": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias 307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zo",
+      "description": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias 307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zona como Amazon, te presentamos este chalet que marca la diferencia. Una vivienda construida con mimo y excelentes calidades, pensada para quienes valoran el espacio, la tranquilidad y una calidad de vida real, sin renunciar a una ubicación estratégica y bien conectada. Aquí no solo compras una casa, sino una forma de vivir. La propiedad se asienta sobre una amplia parcela de 820 m², ofreciendo privacidad, luz y múltiples posibilidades. Sus 307 m² construidos se distribuyen en tres cómodas plantas, con una distribución versátil que se adapta tanto a familias como a quienes buscan amplitud y funcionalidad en su día a día. Cuenta con 5 habitaciones y 4 ba",
+      "municipality": "Siero",
+      "distance_km": 15.4,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias 634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay otro apartamento com",
+      "municipality": null,
+      "distance_km": null,
+      "valid": false,
+      "reject_reasons": [
+        "negative_term",
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias 74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vi",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias 74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias 74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "municipality": null,
+      "distance_km": null,
       "valid": false,
       "reject_reasons": [
         "negative_term",
@@ -355,63 +402,19 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 895000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200391",
-      "location": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza",
-      "description": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza esta vivienda de nueva construcción concebida para disfrutar de la luz, la amplitud y unas vistas absolutamente espectaculares sobre la Ría de Villaviciosa. Desde el primer instante, esta casa transmite una sensación especial. Su arquitectura actual, la calidad de sus materiales y la forma en la que se abre al entorno crean una vivienda que no solo destaca por su diseño, sino también por la manera en la que invita a vivirla. Aquí, el verdadero lujo está en el espacio, en la calma y en esa conexión permanente con el paisaje. La zona principal de la casa ha sido pensada para convertirse en el gran escenario del día a día. La amplia cocina abierta al sal",
-      "municipality": "Villaviciosa",
-      "distance_km": 36.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
+      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
+      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
       "valid": false,
       "reject_reasons": [
+        "negative_term",
         "price_out_of_range"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 245000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177396",
-      "location": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad exce",
-      "description": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad excepcional para adquirir un inmueble en esta emblemática ciudad costera, perfecta tanto para quienes buscan su nuevo hogar como para aquellos interesados en invertir en una propiedad con un gran potencial de revalorización. Este piso de 67 metros construidos es una joya que no querrás dejar escapar. El inmueble, ubicado en la cuarta planta de un edificio bien mantenido construido en 1984, cuenta con una superficie útil de 59 metros cuadrados, ofreciendo un espacio perfectamente distribuido para disfrutar de una vida plena y cómoda. El edificio dispone de ascensor, garantizando un acceso cómodo y práctico, lo que supone una gran ventaja para sus residentes",
-      "municipality": null,
-      "distance_km": null,
-      "valid": false,
-      "reject_reasons": [
-        "missing_search_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 65000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177360",
-      "location": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representati",
-      "description": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representativas de la localidad, con gran visibilidad y valor estratégico.\n\nSe trata de un inmueble completo para rehabilitación integral, compuesto por planta baja, planta primera, planta segunda y bajocubierta, lo que permite desarrollar un proyecto con múltiples posibilidades de distribución.\n\nDispone además de una finca anexa a la construcción en la parte trasera, con una edificación auxiliar destinada actualmente a almacén, y existe la posibilidad de adquirir otra finca colindante, lo que incrementa notablemente las opciones de desarrollo.\n\nAl tratarse de un edificio de carácter histórico, es necesario conservar la fachada, lo que no solo respeta su identidad",
-      "municipality": "Laviana",
-      "distance_km": 27.1,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177356",
-      "location": "Venta Casas o chalets, Venta CL COK, San Martín del Rey Aurelio, Asturias 135.000 € Ubicación estratégica: En un entorno residencial consolidado de San Martín del Rey Aurelio, con alta demanda de vivienda y escasez de plazas de aparcamiento",
-      "description": "Venta Casas o chalets, Venta CL COK, San Martín del Rey Aurelio, Asturias 135.000 € Ubicación estratégica: En un entorno residencial consolidado de San Martín del Rey Aurelio, con alta demanda de vivienda y escasez de plazas de aparcamiento. Estación de tren a tan solo unos metros, comercio, colegios y todos los servicios. Edificio principal ;Planta baja (100 m²): local/almacén con techos altos y espacio para 4 plazas de garaje. Versátil para destinar a actividad comercial, trasteros, talleres o explotarlo como aparcamiento. Primera planta (100 m²) vivienda lista para entrar a vivir, luminosa y funcional con cuatro dormitorios, amplia cocina, salón en esquina, baño con ventana, despensa y terraza cubierta. Ventanas de aluminio con climalit, calefacción de gas-oil, suelos de parquet y cerámica. Planta bajo cubierta como desván. 📌 Precio de venta: No incluye Impuesto de Transmisiones Patri",
-      "municipality": "Aller",
-      "distance_km": 31.9,
-      "valid": false,
-      "reject_reasons": [
-        "negative_term"
       ]
     }
   ]
