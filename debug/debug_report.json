@@ -1,7 +1,7 @@
 {
   "scraped_count": 159,
   "rejected_count": 89,
-  "notified_count": 0,
+  "notified_count": 1,
   "reject_reasons": {
     "price_out_of_range": 16,
     "missing_search_term": 54,
@@ -43,7 +43,7 @@
       "page_title": "Buscando",
       "block_signals": [],
       "valid_count": 10,
-      "notify_count": 0
+      "notify_count": 1
     },
     {
       "name": "CASAL Inmobiliaria",
@@ -212,7 +212,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 448 houses & apartments",
+      "page_title": "Property for sale in Asturias - 449 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -224,7 +224,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7540 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7545 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 18,
       "notify_count": 0
