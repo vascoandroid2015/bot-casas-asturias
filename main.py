@@ -14,55 +14,56 @@ def dedupe_items(items: List[Dict]) -> List[Dict]:
     seen, deduped = set(), []
     for item in items:
         key = dedupe_key(item)
-        if key in seen or not item.get('url'): 
+        if key in seen or not item.get('url'):
             continue
         seen.add(key)
         deduped.append(item)
     return deduped
 
 def process_items(scraped: List[Dict], history: Dict):
-    candidates, rejected = [], []
+    candidates = []
+    rejected = []
+    
     for item in dedupe_items(scraped):
         classify_listing(item)
         
-        if not item.get('valid'):
+        # === CAMBIO CLAVE: Forzamos que casi todo sea candidato ===
+        if item.get('valid') is False:
+            # Solo rechazamos si realmente no tiene precio válido
             rejected.append(item)
             continue
             
+        # Añadimos score aunque no sea necesario
         item['score'] = score_listing(item)
-        prev = history.get(item['url'])
         
+        prev = history.get(item.get('url'))
         if not prev:
             item['change_type'] = 'new'
             candidates.append(item)
-            continue
-            
-        prev_price = prev.get('price')
-        if prev_price != item.get('price'):
-            item['previous_price'] = prev_price
-            item['change_type'] = 'price_change'
-            candidates.append(item)
+        else:
+            prev_price = prev.get('price')
+            if prev_price != item.get('price'):
+                item['previous_price'] = prev_price
+                item['change_type'] = 'price_change'
+                candidates.append(item)
+            # Si el precio es igual, no lo notificamos de nuevo (para evitar spam)
 
-    # Orden: primero bajadas de precio, luego mejor puntuación, luego precio más bajo
+    # Ordenamos: bajadas de precio primero, luego precio más bajo
     candidates = sorted(
-        candidates, 
-        key=lambda x: (
-            x.get('change_type') != 'price_change', 
-            -x.get('score', 0), 
-            x.get('price') or 999999
-        )
+        candidates,
+        key=lambda x: (x.get('change_type') != 'price_change', x.get('price') or 999999)
     )
     
     return candidates, rejected
 
 def update_history(scraped: List[Dict], history: Dict) -> Dict:
     for item in dedupe_items(scraped):
-        if not item.get('url'): 
+        if not item.get('url'):
             continue
         history[item['url']] = {
-            'title': item.get('title'), 
-            'price': item.get('price'), 
-            'source': item.get('source'), 
+            'title': item.get('title'),
+            'price': item.get('price'),
+            'source': item.get('source'),
             'location': item.get('location')
         }
     return history
@@ -75,7 +76,7 @@ def build_report(scraped: List[Dict], rejected: List[Dict], to_notify: List[Dict
     
     for source in source_stats:
         name = source['name']
-        source['valid_count'] = sum(1 for x in scraped if x.get('source') == name and x.get('valid'))
+        source['valid_count'] = sum(1 for x in scraped if x.get('source') == name and x.get('valid', False))
         source['notify_count'] = sum(1 for x in to_notify if x.get('source') == name)
     
     return {
@@ -96,17 +97,18 @@ def main():
 
     to_notify, rejected = process_items(scraped, history)
     
-    # Limitamos solo por el valor de config (ahora está en 150)
+    # Quitamos cualquier límite fuerte - usamos el de config
     to_notify = to_notify[:MAX_RESULTS_PER_RUN]
 
-    # Envío de mensajes
+    # Envío a Telegram
     if not to_notify:
-        send_message('ℹ️ Metabuscador activo - No hay anuncios nuevos esta ejecución.')
+        send_message('ℹ️ Metabuscador activo.\nNo se encontraron anuncios nuevos con precio válido esta vez.')
     else:
+        send_message(f'📢 Se encontraron {len(to_notify)} anuncios para revisar:')
         for item in to_notify:
             send_message(build_message(item, previous_price=item.get('previous_price')))
 
-    # Guardar debug y enviar resumen
+    # Resumen debug
     report = build_report(scraped, rejected, to_notify, source_stats)
     save_debug(report)
     send_message(build_debug_message(report))
