@@ -14,57 +14,104 @@ def dedupe_items(items: List[Dict]) -> List[Dict]:
     seen, deduped = set(), []
     for item in items:
         key = dedupe_key(item)
-        if key in seen or not item.get('url'): continue
-        seen.add(key); deduped.append(item)
+        if key in seen or not item.get('url'): 
+            continue
+        seen.add(key)
+        deduped.append(item)
     return deduped
 
 def process_items(scraped: List[Dict], history: Dict):
     candidates, rejected = [], []
     for item in dedupe_items(scraped):
         classify_listing(item)
-        if not item.get('valid'): rejected.append(item); continue
+        
+        if not item.get('valid'):
+            rejected.append(item)
+            continue
+            
         item['score'] = score_listing(item)
         prev = history.get(item['url'])
+        
         if not prev:
-            item['change_type'] = 'new'; candidates.append(item); continue
+            item['change_type'] = 'new'
+            candidates.append(item)
+            continue
+            
         prev_price = prev.get('price')
         if prev_price != item.get('price'):
-            item['previous_price'] = prev_price; item['change_type'] = 'price_change'; candidates.append(item)
-    candidates = sorted(candidates, key=lambda x: (x.get('change_type') != 'price_change', -x.get('score', 0), x.get('price') or 999999))
+            item['previous_price'] = prev_price
+            item['change_type'] = 'price_change'
+            candidates.append(item)
+
+    # Orden: primero bajadas de precio, luego mejor puntuación, luego precio más bajo
+    candidates = sorted(
+        candidates, 
+        key=lambda x: (
+            x.get('change_type') != 'price_change', 
+            -x.get('score', 0), 
+            x.get('price') or 999999
+        )
+    )
+    
     return candidates, rejected
 
 def update_history(scraped: List[Dict], history: Dict) -> Dict:
     for item in dedupe_items(scraped):
-        if not item.get('url'): continue
-        history[item['url']] = {'title': item.get('title'), 'price': item.get('price'), 'source': item.get('source'), 'location': item.get('location')}
+        if not item.get('url'): 
+            continue
+        history[item['url']] = {
+            'title': item.get('title'), 
+            'price': item.get('price'), 
+            'source': item.get('source'), 
+            'location': item.get('location')
+        }
     return history
 
 def build_report(scraped: List[Dict], rejected: List[Dict], to_notify: List[Dict], source_stats: List[Dict]) -> Dict:
     reject_counter = Counter()
     for item in rejected:
-        for reason in item.get('reject_reasons', ['error']): reject_counter[reason] += 1
+        for reason in item.get('reject_reasons', ['error']):
+            reject_counter[reason] += 1
+    
     for source in source_stats:
         name = source['name']
         source['valid_count'] = sum(1 for x in scraped if x.get('source') == name and x.get('valid'))
         source['notify_count'] = sum(1 for x in to_notify if x.get('source') == name)
-    return {'scraped_count': len(scraped), 'rejected_count': len(rejected), 'notified_count': len(to_notify), 'reject_reasons': dict(reject_counter), 'sources': source_stats, 'examples_to_notify': to_notify[:5], 'examples_rejected': rejected[:5]}
+    
+    return {
+        'scraped_count': len(scraped),
+        'rejected_count': len(rejected),
+        'notified_count': len(to_notify),
+        'reject_reasons': dict(reject_counter),
+        'sources': source_stats
+    }
 
 def main():
     history = load_seen()
+    
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=HEADLESS)
         scraped, source_stats = run_all_scrapers(browser)
         browser.close()
+
     to_notify, rejected = process_items(scraped, history)
+    
+    # Limitamos solo por el valor de config (ahora está en 150)
     to_notify = to_notify[:MAX_RESULTS_PER_RUN]
+
+    # Envío de mensajes
     if not to_notify:
-        send_message('ℹ️ Metabuscador inmobiliario activo, sin novedades notificables. Revisa el resumen v8.')
+        send_message('ℹ️ Metabuscador activo - No hay anuncios nuevos esta ejecución.')
     else:
         for item in to_notify:
             send_message(build_message(item, previous_price=item.get('previous_price')))
+
+    # Guardar debug y enviar resumen
     report = build_report(scraped, rejected, to_notify, source_stats)
     save_debug(report)
     send_message(build_debug_message(report))
+
+    # Actualizar historial
     history = update_history(scraped, history)
     save_seen(history)
 
