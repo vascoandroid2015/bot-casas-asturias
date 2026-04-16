@@ -6,8 +6,8 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
 MAX_PRICE = 350000
 MIN_PRICE = 5000
-MAX_RESULTS_PER_RUN = 30
-MESSAGE_DELAY_SECONDS = 1.5
+MAX_RESULTS_PER_RUN = 150          # ← aumentado mucho para que veas casi todo
+MESSAGE_DELAY_SECONDS = 2.0        # un poco más de delay para no saturar Telegram
 MAX_TELEGRAM_RETRIES = 4
 TELEGRAM_SAFE_CHARS = 3500
 
