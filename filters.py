@@ -42,10 +42,9 @@ def classify_listing(item: Dict) -> Dict:
 
     reasons = []
 
-    # Filtros relajados (los registramos pero ya no bloquean tan fuerte)
+    # Registramos los rechazos pero no los usamos para bloquear
     if any(term in text for term in map(normalize_text, NEGATIVE_TERMS)):
         reasons.append('negative_term')
-
     if not any(term in text for term in map(normalize_text, SEARCH_TERMS)):
         reasons.append('missing_search_term')
 
@@ -57,13 +56,12 @@ def classify_listing(item: Dict) -> Dict:
 
     if municipality is None and not ALLOW_UNKNOWN_LOCATION:
         reasons.append('unknown_location')
-
     if STRICT_DISTANCE_FILTER and distance is not None and distance > MAX_DISTANCE_KM:
         reasons.append('outside_radius')
 
-    # === LÓGICA PERMISIVA ===
+    # === ULTRA PERMISIVO ===
     # Solo rechazamos si NO tiene precio o el precio es absurdo
-    if price is None or (price and (price < 1000 or price > MAX_PRICE + 50000)):
+    if price is None or price < 1000 or price > 400000:
         item['valid'] = False
     else:
         item['valid'] = True
