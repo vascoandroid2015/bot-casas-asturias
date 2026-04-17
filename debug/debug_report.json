@@ -1,9 +1,9 @@
 {
   "scraped_count": 184,
-  "rejected_count": 101,
+  "rejected_count": 102,
   "notified_count": 0,
   "reject_reasons": {
-    "price_out_of_range": 28,
+    "price_out_of_range": 29,
     "negative_term": 4,
     "missing_search_term": 52,
     "missing_price": 73
@@ -30,7 +30,7 @@
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
       "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 13,
+      "valid_count": 12,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 445 houses & apartments",
+      "page_title": "Property for sale in Asturias - 446 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
