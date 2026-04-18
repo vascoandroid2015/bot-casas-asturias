@@ -1,9 +1,9 @@
 {
-  "scraped_count": 184,
-  "rejected_count": 103,
+  "scraped_count": 139,
+  "rejected_count": 87,
   "notified_count": 0,
   "reject_reasons": {
-    "price_out_of_range": 30,
+    "price_out_of_range": 14,
     "missing_search_term": 56,
     "missing_price": 73,
     "negative_term": 4
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 11,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 446 houses & apartments",
+      "page_title": "Property for sale in Asturias - 449 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -221,12 +221,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7572 Propiedades en venta en Asturias | Properstar",
+      "final_url": "https://www.properstar.com/spain/asturias/buy?afd_azwaf_tok=eyJraWQiOiIzOTA3REE1ODJFNkI1QkM1Njg4NEQ4NzYyRkY4M0E5MDhCQ0QxNTM0RUE4RDAxMDAwMkNBQjNFRTY1RTBFMjFEIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5jb20iLCJleHAiOjE3NzY0ODg4MjUsImlhdCI6MTc3NjQ4ODgxNSwiaXNzIjoidGllcjEtN2Y0ODg4ZDg0Ny1naDludiIsInN1YiI6IjUyLjE2NS41OS4zIiwiZGF0YSI6eyJ0eXBlIjoiaXNzdWVkIiwicmVmIjoiMjAyNjA0MThUMDUwNjU1Wi0xN2Y0ODg4ZDg0N2doOW52aEMxRE0xd2djMDAwMDAwMDE4OTAwMDAwMDAwMGFiZDMiLCJiIjoiZE1qYV8teTlLUk50VFhmdDBoMnllZXdWb29xMUlSNU9uemg5NTlqdmFuZyIsImgiOiJRQmpPajVzSk9xRUlqZjY3aldkU3hsUFl5VHVRT1RyMWYyMnd5QndYa3NJIn19.oHfkCzT83fysleeh1n2D7rkSZrjR0-DjVBTeLEtZyYrRukVxDEyV_p-2fb6uGJ65t81amlC1P_6xHu1b1aC6QN9bw0SghpCfsZ2fgYZXpdiCrWi09GVlw99csp4k7dJ7XmORGUui2hEAVaU1t5-jaVP-kBfuXjYEqpN5i9nkJpGWEaXicU8GGurjoVKLGB-aiWlm6D0rKqXMARMapPHf9wDQ1HZ1qarw4KiDpBiZwtjmiahDJvgJ3wshGpgYIFSVuJoSoZ6uwNxgzh81Lb2XhPt71ty_tAswbe98Ne3ti3_QuMrSdkxG7tYx5JRbarGeVDxDkizhEGWsDPD8w73s0Q.WF3obl2IDtqgvMFRqVdYkD5s",
+      "page_title": "Service unavailable",
       "block_signals": [],
-      "valid_count": 18,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
