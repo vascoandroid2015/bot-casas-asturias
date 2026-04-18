@@ -1,12 +1,12 @@
 {
-  "scraped_count": 184,
-  "rejected_count": 101,
+  "scraped_count": 159,
+  "rejected_count": 89,
   "notified_count": 0,
   "reject_reasons": {
-    "price_out_of_range": 28,
-    "negative_term": 5,
+    "price_out_of_range": 16,
     "missing_search_term": 56,
-    "missing_price": 73
+    "missing_price": 73,
+    "negative_term": 4
   },
   "sources": [
     {
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 13,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -224,7 +224,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7571 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7572 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 18,
       "notify_count": 0
