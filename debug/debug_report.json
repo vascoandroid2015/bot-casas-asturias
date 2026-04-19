@@ -1,10 +1,10 @@
 {
-  "scraped_count": 159,
-  "rejected_count": 91,
-  "notified_count": 1,
+  "scraped_count": 139,
+  "rejected_count": 88,
+  "notified_count": 0,
   "reject_reasons": {
-    "price_out_of_range": 18,
-    "missing_search_term": 55,
+    "price_out_of_range": 15,
+    "missing_search_term": 54,
     "missing_price": 73,
     "negative_term": 3
   },
@@ -43,7 +43,7 @@
       "page_title": "Buscando",
       "block_signals": [],
       "valid_count": 10,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "CASAL Inmobiliaria",
@@ -221,12 +221,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7568 Propiedades en venta en Asturias | Properstar",
+      "final_url": "https://www.properstar.com/spain/asturias/buy?afd_azwaf_tok=eyJraWQiOiJEREJBQTEzMjYxRDJCRUExQ0ZGRTJERUI3RUQzMjRDQjY1NzY0QzJFRERERjc3NkZFQTkyNUIxOTY4ODk3OUM5IiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5jb20iLCJleHAiOjE3NzY2MTMwMjMsImlhdCI6MTc3NjYxMzAxMywiaXNzIjoidGllcjEtN2Y0ODg4ZDg0Ny1ja3duaCIsInN1YiI6IjEzMi4xOTYuMzIuNDkiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MDQxOVQxNTM2NTNaLTE3ZjQ4ODhkODQ3Y2t3bmhoQzFETTFnaDJnMDAwMDAwMGg5ZzAwMDAwMDAwNmNrayIsImIiOiIzRks4QXoxYTNpMjNSMGtETE1JWTRLdFJyc3lBekdNdTJjREhOdGhWTDdzIiwiaCI6IllFZ252a0o2azM0ejRsNjAwMGpGMmxuS1dlelJ0QWs0SnZGZlRzWTBLM0UifX0.ZhLl2SMQqavqxJRb8DQ2m3QQwRS4FW245O_tAB9IPURoxCE4_Nwra0yI36LEPDrP6NNzDmWIUiBobxTJICwI7c1kZpHt0cKoG2pa0vwSwLOVha3ajSb_eyQWLyEI57S86N6W7XPlF48aPVFYotuC8Hu2w09C7Hy-GCGJi4XBqTnSU8IMR0UHKktK9jPi7wDN5BDHxvYUGb-QEpav1E457GQ8DqI65jfcuXmGYpZLJfmcOQgg-0HoPTVdTBedBoGoz7NJul9fyJbJ27CUqFhdvVo25PlDCU8otOjOVhLqnmRLtem4Ev-2AkurRf-zVGrsTAGyO0wtvax0leQqkz7cEg.WF3obl2IDtqgvMFRqVdYkD5s",
+      "page_title": "Service unavailable",
       "block_signals": [],
-      "valid_count": 17,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
