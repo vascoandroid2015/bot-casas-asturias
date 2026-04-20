@@ -1,12 +1,12 @@
 {
-  "scraped_count": 159,
-  "rejected_count": 91,
+  "scraped_count": 184,
+  "rejected_count": 104,
   "notified_count": 0,
   "reject_reasons": {
-    "price_out_of_range": 18,
-    "missing_search_term": 55,
-    "missing_price": 73,
-    "negative_term": 3
+    "price_out_of_range": 31,
+    "negative_term": 5,
+    "missing_search_term": 54,
+    "missing_price": 73
   },
   "sources": [
     {
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 12,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 40 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 34 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 450 houses & apartments",
+      "page_title": "Property for sale in Asturias - 449 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
