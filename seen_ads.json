@@ -1239,7 +1239,7 @@
     "title": "Francisco  TAMARGO",
     "price": 189000,
     "source": "Properstar",
-    "location": "Francisco  TAMARGO Hace 5 días 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje"
+    "location": "Francisco  TAMARGO Hace 6 días 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje"
   },
   "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200371": {
     "title": "Venta",
@@ -1674,15 +1674,27 @@
     "location": "72.000 € Piso Venta Asturias San Martín del Rey Aurelio Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 85 m² Añadir a favoritos Enviar mensaje"
   },
   "https://www.properstar.com/vivienda/105070906": {
-    "title": "Hace 40 min 72.200 € 80.800 € -8600 Parcela Urbana Venta Asturias Siero Parcela Añadir a favoritos Enviar mensaje",
+    "title": "Hace 3 horas 72.200 € 80.800 € -8600 Parcela Urbana Venta Asturias Siero Parcela Añadir a favoritos Enviar mensaje",
     "price": 72200,
     "source": "Properstar",
-    "location": "Hace 40 min 72.200 € 80.800 € -8600 Parcela Urbana Venta Asturias Siero Parcela Añadir a favoritos Enviar mensaje"
+    "location": "Hace 3 horas 72.200 € 80.800 € -8600 Parcela Urbana Venta Asturias Siero Parcela Añadir a favoritos Enviar mensaje"
   },
   "https://www.properstar.com/vivienda/113504260": {
     "title": "329.000 € Piso Venta Asturias Gijón Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 80 m² Añadir a favoritos Enviar mensaje",
     "price": 329000,
     "source": "Properstar",
     "location": "329.000 € Piso Venta Asturias Gijón Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 80 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177015": {
+    "title": "Venta",
+    "price": 250000,
+    "source": "Fincas Asturias",
+    "location": "Venta DOS HABITACIONES, CON LUZ, VISTAS DESPEJADAS Y UBICACION Avenida del Llano, Gijón, Asturias 250.000 € No es casualidad que te haya llamado la atención. No es para todo el mundo. Y eso es buena señal. Este piso en Avenida del Llano no "
+  },
+  "https://www.properstar.com/vivienda/115903689": {
+    "title": "Hace 2 horas 172.000 € Piso Venta Asturias Oviedo Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 105 m² Añadir a favoritos Enviar mensaje",
+    "price": 172000,
+    "source": "Properstar",
+    "location": "Hace 2 horas 172.000 € Piso Venta Asturias Oviedo Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 105 m² Añadir a favoritos Enviar mensaje"
   }
 }
