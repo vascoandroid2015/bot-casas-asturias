@@ -1254,7 +1254,7 @@
     "location": "169.900 € Casa en venta, Fuentespino, Asturias 5 hab 1 baños 105 m 2 ? ¡Oportunidad única en Fonciello! Esta casa de 105 metros cuadrados, lista p... ,"
   },
   "https://www.engelvoelkers.com/es/en/exposes/46ebb738-9c2f-5d3d-a6af-ceda380f0d41": {
-    "title": "Exclusiva casa con piscina y gran jardín",
+    "title": "Exclusive house with pool and large garden",
     "price": null,
     "source": "Engel & Völkers Asturias",
     "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
@@ -1642,5 +1642,11 @@
     "price": 308700,
     "source": "Properstar",
     "location": "Promoción inmobiliaria Residencial Nyx Oviedo, Parcela R6b-8b Vaqueros la Estrecha 308.700 € Piso • 3 habitaciónes • 3 dormitorios • 2 baño. • 85 m² 308.700 € Piso 3 dormitorios 2 baño. 85 m² 238.200 € Piso • 2 habitaciónes • 2 dormitorios "
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2194042": {
+    "title": "Venta",
+    "price": 203000,
+    "source": "Fincas Asturias",
+    "location": "Venta Pisos, Venta, Nuevo roces Ramon Gomez Lozana, Gijón, Asturias 203.000 € En la cotizada zona de Nuevo Roces, Gijón , se ofrece en venta un acogedor piso que se presenta como una oportunidad inmejorable. Este inmueble cuenta con dos esp"
   }
 }
