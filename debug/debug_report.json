@@ -1,11 +1,11 @@
 {
-  "scraped_count": 159,
-  "rejected_count": 90,
-  "notified_count": 0,
+  "scraped_count": 139,
+  "rejected_count": 87,
+  "notified_count": 2,
   "reject_reasons": {
-    "price_out_of_range": 17,
+    "price_out_of_range": 14,
     "missing_price": 73,
-    "negative_term": 4,
+    "negative_term": 3,
     "missing_search_term": 55
   },
   "sources": [
@@ -105,7 +105,7 @@
         "enable javascript"
       ],
       "valid_count": 1,
-      "notify_count": 0
+      "notify_count": 1
     },
     {
       "name": "REMAX Asturias",
@@ -117,7 +117,7 @@
       "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
       "valid_count": 19,
-      "notify_count": 0
+      "notify_count": 1
     },
     {
       "name": "Facilitea Casa",
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 40 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 36 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 444 houses & apartments",
+      "page_title": "Property for sale in Asturias - 443 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -221,12 +221,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7571 Propiedades en venta en Asturias | Properstar",
+      "final_url": "https://www.properstar.com/spain/asturias/buy?afd_azwaf_tok=eyJraWQiOiJBQkVFN0YwMEQ0Qzk3RUQ1NDk3OTgwODAyRkIxRDIxQzA0MUREOENDMEI0RDlENDk1NDgxQzcwQjRFREE5OUU5IiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5jb20iLCJleHAiOjE3NzY3Mzc0MDIsImlhdCI6MTc3NjczNzM5MiwiaXNzIjoidGllcjEtODVmN2Q0ODhjOC1rZnFneiIsInN1YiI6IjUyLjE4Ni4xNzQuMTQ4IiwiZGF0YSI6eyJ0eXBlIjoiaXNzdWVkIiwicmVmIjoiMjAyNjA0MjFUMDIwOTUyWi0xODVmN2Q0ODhjOGtmcWd6aEMxQkwxdjlkczAwMDAwMDE1MzAwMDAwMDAwMDRxdjYiLCJiIjoiSUY0WUx4X3pHa0hLY3M2X0VtVUNmdmlHZmxKUFJrbjg0Z0VkR1JCVEtEMCIsImgiOiJVWkN0ZlNUaVlZQU9Ba0dJZ0ZzNWVJV1c5ekxKQzVyUlFvSWNFVTFsSnRRIn19.Tj0Fxcukq-l0Q_VWKEhzTxr7nUqyUW_-btBCkXSnX1FGPfAvC3g4sBjzHPErf18UmFxKzLG3n-rdILC3lO5jLBYVQWRM8wjqL7qTdwp01FHom8Rz1J2wQquHHHtxDA4cAgn9SSzLnkTo6CBZSxPGdXw4DRAiZLkLzl0uSg4dP1Q6HFW93_YLPm3rjAIl_fGWtZTjfWTF9TIgdcKFJboIDf4fjLheBh3MiSfLcG3LFjqqAg1RO47VDkUCaFCH0gc1cSR3-tfROGpedFbV4gs4alEs0Kx-Wo7O_uZEqy-Fouk5sCZbaghSwiFWdvr6WuFq5_bN178ZBjAPy3zUzJ1FEA.WF3obl2IDtqgvMFRqVdYkD5s",
+      "page_title": "Service unavailable",
       "block_signals": [],
-      "valid_count": 17,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
