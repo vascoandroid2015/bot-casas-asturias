@@ -11,8 +11,9 @@ MESSAGE_DELAY_SECONDS = 1.5
 MAX_TELEGRAM_RETRIES = 4
 TELEGRAM_SAFE_CHARS = 3500
 
-SEEN_FILE = 'seen_ads.json'
+SEEN_FILE = 'data/sent_ads_registry.json'
 DEBUG_FILE = 'debug/debug_report.json'
+CONTROL_REPORT_FILE = 'data/anuncios_control.md'
 DEBUG_HTML_DIR = 'debug/html'
 DEBUG_SCREENSHOT_DIR = 'debug/screenshots'
 
@@ -21,7 +22,7 @@ CENTER_COORDS: Tuple[float, float] = (43.3614, -5.8494)
 MAX_DISTANCE_KM = 60
 STRICT_DISTANCE_FILTER = False
 ALLOW_UNKNOWN_LOCATION = True
-SEND_DEBUG_SUMMARY = True
+SEND_DEBUG_SUMMARY = False
 HEADLESS = True
 
 SEARCH_TERMS: List[str] = [

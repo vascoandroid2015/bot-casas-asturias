@@ -1,20 +1,21 @@
-# Bot Casas Asturias max
+# Bot Casas Asturias max - control anti-duplicados
 
-Versión corregida para maximizar anuncios siguiendo 3 mejoras prácticas:
+Esta versión añade un registro persistente de anuncios enviados a Telegram para no reenviar duplicados y para avisar cuando un anuncio ya conocido cambia.
 
-- Fase 1: quitar el corte por primer selector, subir scrolls y eliminar filtros agresivos.
-- Fase 2: enviar todo lo deduplicado por URL, no solo novedades.
-- Fase 3: dejar la base preparada para crear scrapers específicos por portal en una siguiente iteración.
+## Qué hace ahora
 
-## Cambios aplicados
+- Guarda cada anuncio enviado en `data/sent_ads_registry.json`.
+- Genera un documento de control en `data/anuncios_control.md`.
+- No vuelve a notificar anuncios idénticos ya enviados.
+- Sí notifica cambios en anuncios ya vistos, por ejemplo precio, título o ubicación.
+- Si el precio cambia, el mensaje incluye el precio anterior.
+- El resumen debug final de Telegram queda desactivado.
 
-- Ya no se rompe la extracción al primer selector con resultados.
-- Se hace autoscroll más largo para cargar más tarjetas.
-- Los anuncios no se invalidan por texto, precio o ubicación desconocida; solo se marcan con señales informativas.
-- Se deduplica por URL.
-- Se envían todos los anuncios encontrados en cada ejecución.
-- El límite de resultados se ha subido a 9999.
-- Se corrigieron errores de sintaxis en `telegram_client.py`.
+## Lógica de notificación
+
+- Anuncio nuevo -> se envía
+- Anuncio ya conocido sin cambios -> no se envía
+- Anuncio ya conocido con cambios -> se envía indicando cambios detectados
 
 ## Uso
 
@@ -25,7 +26,3 @@ export TELEGRAM_TOKEN='tu_token'
 export TELEGRAM_CHAT_ID='tu_chat_id'
 python main.py
 ```
-
-## Siguiente mejora recomendada
-
-La fase 3 real consiste en sustituir selectores genéricos por extractores específicos para los 5-8 portales que más anuncios aporten.
