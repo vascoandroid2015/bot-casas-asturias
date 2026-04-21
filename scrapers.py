@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from playwright.sync_api import Browser, Page
 
-from config import DEBUG_HTML_DIR, DEBUG_SCREENSHOT_DIR, SOCIAL_SOURCES, WEB_SOURCES
+from config import DEBUG_HTML_DIR, DEBUG_SCREENSHOT_DIR, WEB_SOURCES
 from filters import clean_price
 
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
@@ -27,13 +27,12 @@ BLOCK_PATTERNS = [
     'enable javascript', 'ad blocker', 'security check', 'sentimos la interrupción',
     'pardon our interruption', 'datadome'
 ]
-SPECIAL_SOURCE_NAMES = {'Idealista', 'Fotocasa', 'Milanuncios', 'Wallapop'}
 
 
 def prepare_page(browser: Browser) -> Page:
     context = browser.new_context(
         user_agent=USER_AGENT,
-        viewport={'width': 1440, 'height': 2400},
+        viewport={'width': 1440, 'height': 2600},
         locale='es-ES',
         java_script_enabled=True,
     )
@@ -76,7 +75,7 @@ def detect_blocks(text: str) -> List[str]:
     return [p for p in BLOCK_PATTERNS if p in lower]
 
 
-def auto_scroll(page: Page, rounds: int = 10, pixels: int = 7000, wait_ms: int = 1800):
+def auto_scroll(page: Page, rounds: int = 12, pixels: int = 7000, wait_ms: int = 1700):
     last_height = 0
     stable_rounds = 0
     for _ in range(rounds):
@@ -95,35 +94,6 @@ def auto_scroll(page: Page, rounds: int = 10, pixels: int = 7000, wait_ms: int =
             break
 
 
-def try_expand_source(page: Page, source_name: str):
-    if source_name == 'Idealista':
-        for selector in [
-            "button:has-text('Ver más')",
-            "button:has-text('Mostrar más')",
-            "a:has-text('Siguiente')",
-        ]:
-            try:
-                btn = page.locator(selector).first
-                if btn.is_visible(timeout=1000):
-                    btn.click(timeout=1000)
-                    page.wait_for_timeout(1500)
-            except Exception:
-                pass
-    elif source_name in {'Fotocasa', 'Milanuncios', 'Wallapop'}:
-        for selector in [
-            "button:has-text('Ver más')",
-            "button:has-text('Cargar más')",
-            "button:has-text('Mostrar más')",
-        ]:
-            try:
-                btn = page.locator(selector).first
-                if btn.is_visible(timeout=800):
-                    btn.click(timeout=1000)
-                    page.wait_for_timeout(1200)
-            except Exception:
-                pass
-
-
 def normalize_href(href: str, base_url: str) -> str:
     if not href:
         return ''
@@ -133,44 +103,68 @@ def normalize_href(href: str, base_url: str) -> str:
     return urljoin(base_url, href)
 
 
+def collapse_ws(text: str) -> str:
+    return re.sub(r'\s+', ' ', text or '').strip()
+
+
 def build_item(source: Dict, href: str, text: str, title: str = '') -> Dict:
-    href = normalize_href(href, source['base_url'])
-    clean_text = re.sub(r'\s+', ' ', text or '').strip()
-    clean_title = re.sub(r'\s+', ' ', title or '').strip() or clean_text[:170] or 'Sin título'
+    clean_text = collapse_ws(text)
+    clean_title = collapse_ws(title) or clean_text[:170] or 'Sin título'
     return {
         'source': source['name'],
         'kind': source['kind'],
         'title': clean_title[:170],
         'price': clean_price(clean_text),
-        'url': href,
+        'url': normalize_href(href, source['base_url']),
         'location': clean_text[:240],
         'description': clean_text[:900],
     }
 
 
-def extract_generic_items(soup, selectors: List[str], source: Dict) -> List[Dict]:
-    results, seen = [], set()
-    for selector in selectors:
-        for item in soup.select(selector):
-            link_tag = item.find('a', href=True)
-            text = item.get_text(' ', strip=True)
-            if not link_tag or len(text) < 25:
+def dedupe_results(items: List[Dict]) -> List[Dict]:
+    out, seen = [], set()
+    for item in items:
+        url = item.get('url')
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        out.append(item)
+    return out
+
+
+def extract_from_json_ld(soup: BeautifulSoup, source: Dict) -> List[Dict]:
+    results = []
+    for tag in soup.select('script[type="application/ld+json"]'):
+        raw = tag.string or tag.get_text(strip=True)
+        if not raw:
+            continue
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        blocks = data if isinstance(data, list) else [data]
+        for block in blocks:
+            if not isinstance(block, dict):
                 continue
-            href = normalize_href(link_tag.get('href', ''), source['base_url'])
-            if not href or href in seen:
-                continue
-            seen.add(href)
-            title = link_tag.get_text(' ', strip=True) or text[:170]
-            results.append(build_item(source, href, text, title))
-    return results
+            if block.get('@type') == 'ItemList' and isinstance(block.get('itemListElement'), list):
+                for entry in block['itemListElement']:
+                    if isinstance(entry, dict):
+                        entry = entry.get('item') or entry
+                    if not isinstance(entry, dict):
+                        continue
+                    href = entry.get('url', '')
+                    title = entry.get('name', '')
+                    text = ' '.join(str(entry.get(k, '')) for k in ['name', 'description'])
+                    if href:
+                        results.append(build_item(source, href, text, title))
+    return dedupe_results(results)
 
 
 def extract_idealista(page: Page, source: Dict) -> List[Dict]:
-    results, seen = [], set()
+    results = []
     selectors = [
         'article.item',
         'article[data-adid]',
-        '[class*="item"]:has(a[href*="/inmueble/"])',
         'a[href*="/inmueble/"]',
     ]
     for selector in selectors:
@@ -180,34 +174,32 @@ def extract_idealista(page: Page, source: Dict) -> List[Dict]:
             nodes = []
         for node in nodes:
             try:
-                if 'a[href*="/inmueble/"]' in selector:
-                    href = node.get_attribute('href')
-                    text = node.text_content() or ''
-                    title = text.strip()
+                if selector.startswith('a['):
+                    href = node.get_attribute('href') or ''
+                    title = node.text_content() or ''
+                    text = title
                 else:
                     link = node.locator('a[href*="/inmueble/"]').first
-                    href = link.get_attribute('href')
-                    text = node.text_content() or ''
+                    href = link.get_attribute('href') or ''
                     title = link.text_content() or ''
-                href = normalize_href(href or '', source['base_url'])
-                if not href or href in seen or '/inmueble/' not in href:
+                    text = node.text_content() or ''
+                href = normalize_href(href, source['base_url'])
+                if '/inmueble/' not in href:
                     continue
-                if len((text or '').strip()) < 20:
+                if len(collapse_ws(text)) < 20:
                     continue
-                seen.add(href)
                 results.append(build_item(source, href, text, title))
             except Exception:
                 continue
-    return results
+    return dedupe_results(results)
 
 
 def extract_fotocasa(page: Page, source: Dict) -> List[Dict]:
-    results, seen = [], set()
+    results = []
     selectors = [
         'a[href*="/es/comprar/vivienda/"]',
         'a[href*="/es/comprar/casa/"]',
-        '[class*="re-Card"] a[href]',
-        '[class*="CardPack"] a[href]',
+        'a[href*="/es/comprar/piso/"]',
     ]
     for selector in selectors:
         try:
@@ -217,27 +209,24 @@ def extract_fotocasa(page: Page, source: Dict) -> List[Dict]:
         for link in links:
             try:
                 href = normalize_href(link.get_attribute('href') or '', source['base_url'])
-                if not href or href in seen:
-                    continue
                 if '/es/comprar/' not in href:
                     continue
                 container = link.locator('xpath=ancestor-or-self::*[self::article or contains(@class, "Card") or contains(@class, "card")][1]').first
                 text = (container.text_content() if container.count() else link.text_content()) or ''
                 title = (link.text_content() or text).strip()
-                if len(text.strip()) < 20:
+                if len(collapse_ws(text)) < 20:
                     continue
-                seen.add(href)
                 results.append(build_item(source, href, text, title))
             except Exception:
                 continue
-    return results
+    return dedupe_results(results)
 
 
 def extract_milanuncios(page: Page, source: Dict) -> List[Dict]:
-    results, seen = [], set()
+    results = []
     selectors = [
-        'a[href*="/inmuebles/"]',
         'a[href*="/venta-de-casas/"]',
+        'a[href*="/inmuebles/"]',
         '[data-testid="ad-card"] a[href]',
         'div.ma-AdCard a[href]',
     ]
@@ -249,24 +238,21 @@ def extract_milanuncios(page: Page, source: Dict) -> List[Dict]:
         for link in links:
             try:
                 href = normalize_href(link.get_attribute('href') or '', source['base_url'])
-                if not href or href in seen:
-                    continue
                 if 'milanuncios.com' not in href:
                     continue
                 container = link.locator('xpath=ancestor-or-self::*[self::article or contains(@class, "AdCard") or contains(@class, "ad-card")][1]').first
                 text = (container.text_content() if container.count() else link.text_content()) or ''
                 title = (link.text_content() or text).strip()
-                if len(text.strip()) < 20:
+                if len(collapse_ws(text)) < 20:
                     continue
-                seen.add(href)
                 results.append(build_item(source, href, text, title))
             except Exception:
                 continue
-    return results
+    return dedupe_results(results)
 
 
 def extract_wallapop(page: Page, source: Dict) -> List[Dict]:
-    results, seen = [], set()
+    results = []
     selectors = [
         'a[href*="/item/"]',
         '[data-testid="item-card"] a[href]',
@@ -280,94 +266,65 @@ def extract_wallapop(page: Page, source: Dict) -> List[Dict]:
         for link in links:
             try:
                 href = normalize_href(link.get_attribute('href') or '', source['base_url'])
-                if not href or href in seen:
-                    continue
                 if '/item/' not in href:
                     continue
                 container = link.locator('xpath=ancestor-or-self::*[self::article or contains(@data-testid, "item-card") or contains(@class, "card")][1]').first
                 text = (container.text_content() if container.count() else link.text_content()) or ''
                 title = (link.text_content() or text).strip()
-                if len(text.strip()) < 10:
+                if len(collapse_ws(text)) < 10:
                     continue
-                seen.add(href)
                 results.append(build_item(source, href, text, title))
             except Exception:
                 continue
-    return results
+    return dedupe_results(results)
 
 
-def extract_from_json_ld(soup: BeautifulSoup, source: Dict) -> List[Dict]:
-    results, seen = [], set()
-    for tag in soup.select('script[type="application/ld+json"]'):
-        raw = tag.string or tag.get_text(strip=True)
-        if not raw:
-            continue
+def click_load_more(page: Page):
+    selectors = [
+        "button:has-text('Ver más')",
+        "button:has-text('Cargar más')",
+        "button:has-text('Mostrar más')",
+        "a:has-text('Siguiente')",
+    ]
+    for selector in selectors:
         try:
-            data = json.loads(raw)
+            btn = page.locator(selector).first
+            if btn.is_visible(timeout=800):
+                btn.click(timeout=1000)
+                page.wait_for_timeout(1200)
         except Exception:
-            continue
-        blocks = data if isinstance(data, list) else [data]
-        for block in blocks:
-            if not isinstance(block, dict):
-                continue
-            item_list = block.get('itemListElement') if block.get('@type') == 'ItemList' else None
-            if not item_list:
-                continue
-            for entry in item_list:
-                if isinstance(entry, dict):
-                    entry = entry.get('item') or entry
-                if not isinstance(entry, dict):
-                    continue
-                href = normalize_href(entry.get('url', ''), source['base_url'])
-                title = entry.get('name', '')
-                text = ' '.join(str(entry.get(k, '')) for k in ['name', 'description'])
-                if not href or href in seen:
-                    continue
-                seen.add(href)
-                results.append(build_item(source, href, text, title))
-    return results
+            pass
 
 
-def extract_items(page: Page, soup: BeautifulSoup, selectors: List[str], source: Dict) -> List[Dict]:
-    if source['name'] == 'Idealista':
-        results = extract_idealista(page, source)
-    elif source['name'] == 'Fotocasa':
-        results = extract_fotocasa(page, source)
-    elif source['name'] == 'Milanuncios':
-        results = extract_milanuncios(page, source)
-    elif source['name'] == 'Wallapop':
-        results = extract_wallapop(page, source)
+def extract_items(page: Page, soup: BeautifulSoup, source: Dict) -> List[Dict]:
+    name = source['name']
+    if name == 'Idealista':
+        items = extract_idealista(page, source)
+    elif name == 'Fotocasa':
+        items = extract_fotocasa(page, source)
+    elif name == 'Milanuncios':
+        items = extract_milanuncios(page, source)
+    elif name == 'Wallapop':
+        items = extract_wallapop(page, source)
     else:
-        results = extract_generic_items(soup, selectors, source)
-
-    if not results:
-        results = extract_from_json_ld(soup, source)
-
-    if not results:
-        results = extract_generic_items(soup, selectors, source)
-
-    unique = []
-    seen = set()
-    for item in results:
-        url = item.get('url')
-        if not url or url in seen:
-            continue
-        seen.add(url)
-        unique.append(item)
-    return unique
+        items = []
+    if not items:
+        items = extract_from_json_ld(soup, source)
+    return dedupe_results(items)
 
 
 def collect_source(page: Page, source: Dict):
     page.goto(source['url'], wait_until='domcontentloaded')
     page.wait_for_timeout(5000)
     accept_cookies(page)
-    auto_scroll(page, rounds=12 if source['name'] in SPECIAL_SOURCE_NAMES else 10)
-    try_expand_source(page, source['name'])
-    page.wait_for_timeout(1200)
+    auto_scroll(page)
+    click_load_more(page)
+    auto_scroll(page, rounds=6, pixels=5000, wait_ms=1300)
+    page.wait_for_timeout(1000)
     html = page.content()
     save_debug_assets(source['name'], page)
     soup = BeautifulSoup(html, 'html.parser')
-    results = extract_items(page, soup, source['selectors'], source)
+    results = extract_items(page, soup, source)
     meta = {
         'name': source['name'],
         'kind': source['kind'],
@@ -384,12 +341,6 @@ def collect_source(page: Page, source: Dict):
 def run_all_scrapers(browser: Browser) -> Tuple[List[Dict], List[Dict]]:
     collected, report = [], []
     for source in WEB_SOURCES:
-        if not source['enabled']:
-            report.append({
-                'name': source['name'], 'kind': source['kind'], 'enabled': False,
-                'raw_count': 0, 'error_count': 0, 'valid_count': 0, 'notify_count': 0,
-            })
-            continue
         page = prepare_page(browser)
         try:
             items, meta = collect_source(page, source)
@@ -404,11 +355,4 @@ def run_all_scrapers(browser: Browser) -> Tuple[List[Dict], List[Dict]]:
             })
         finally:
             page.context.close()
-
-    for source in SOCIAL_SOURCES:
-        report.append({
-            'name': source['name'], 'kind': source['kind'], 'enabled': source['enabled'],
-            'raw_count': 0, 'error_count': 0, 'valid_count': 0, 'notify_count': 0,
-            'note': source.get('note', ''),
-        })
     return collected, report

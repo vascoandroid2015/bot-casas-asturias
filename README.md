@@ -1,21 +1,24 @@
-# Bot Casas Asturias portales
+# Bot Casas Portales Pro
 
-Versión ampliada para intentar incluir Fotocasa, Idealista, Milanuncios y Wallapop manteniendo el comportamiento actual del proyecto.
+Versión enfocada solo en Idealista, Fotocasa, Milanuncios y Wallapop.
 
-## Qué se ha añadido
+## Enfoque
 
-- Activación de Fotocasa, Milanuncios y Wallapop en configuración.
-- Extractores específicos por portal para Idealista, Fotocasa, Milanuncios y Wallapop.
-- Fallback a `application/ld+json` cuando exista listado estructurado.
-- Más selectores y scroll más agresivo en portales difíciles.
-- Intentos de aceptar cookies y pulsar botones de cargar más.
-- Se mantiene el envío de todos los anuncios deduplicados por URL.
+- Solo 4 portales.
+- Extractores dedicados por portal.
+- Scroll largo y segundo scroll corto.
+- Intento de aceptar cookies y de pulsar botones de cargar más.
+- Fallback a `application/ld+json` si la página publica listados estructurados.
+- Mantiene tu flujo actual: deduplicación por URL, envío por Telegram y debug.
 
-## Nota importante
+## URLs base usadas
 
-Idealista usa protección anti-bot avanzada y puede bloquear por IP, fingerprint o reputación de red. Esta versión mejora selectores y navegación, pero no garantiza extracción estable sin proxies o infraestructura anti-bot específica.
+- Idealista Asturias: https://www.idealista.com/venta-viviendas/asturias/
+- Fotocasa Asturias: https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l
+- Milanuncios Asturias: https://www.milanuncios.com/venta-de-casas-en-asturias/
+- Wallapop inmobiliaria Salas: https://es.wallapop.com/inmobiliaria/salas
 
-## Uso
+## Instalación
 
 ```bash
 pip install -r requirements.txt
@@ -25,6 +28,14 @@ export TELEGRAM_CHAT_ID='tu_chat_id'
 python main.py
 ```
 
-## Recomendación
+## Nota seria
 
-Si alguno de estos portales sigue dando 0 anuncios en el debug, revisa `debug/html/` y `debug/screenshots/` para ver si hay bloqueo, login, captcha o DOM diferente.
+Fotocasa y Wallapop publican URLs y listados accesibles desde buscador público. Idealista también muestra listados públicos en Asturias, pero puede activar medidas anti-bot y devolver menos resultados o bloquear sesiones. Wallapop además puede variar mucho por municipio o búsqueda. [web:26][web:31][web:32][web:34]
+
+## Revisión de fallos
+
+Si uno da 0 resultados, revisa:
+
+- `debug/html/<portal>.html`
+- `debug/screenshots/<portal>.png`
+- `debug/debug_report.json`
