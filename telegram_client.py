@@ -9,7 +9,6 @@ from config import (
     CENTER_NAME,
     MAX_TELEGRAM_RETRIES,
     MESSAGE_DELAY_SECONDS,
-    SEND_DEBUG_SUMMARY,
     TELEGRAM_CHAT_ID,
     TELEGRAM_SAFE_CHARS,
     TELEGRAM_TOKEN,
@@ -99,14 +98,12 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
     distance = item.get('distance_km')
     description = html.escape((item.get('description') or '').strip()[:320])
     changes = item.get('changes', [])
-
     if item.get('change_type') == 'new':
         header = '🆕 Nuevo anuncio detectado'
     elif previous_price and price and previous_price != price:
         header = '📉 Bajada de precio detectada' if price < previous_price else '🔁 Cambio de precio detectado'
     else:
         header = '✏️ Anuncio actualizado'
-
     lines = [header, '', f'{title}']
     if price is not None:
         lines.append(f"💰 Precio: {price:,} €".replace(',', '.'))
@@ -132,27 +129,4 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
         lines.append(f'📝 Resumen: {description}')
     if link:
         lines.append(f'🔗 {link}')
-    return '\n'.join(lines)
-
-def build_debug_message(report: Dict) -> str:
-    if not SEND_DEBUG_SUMMARY:
-        return ''
-    lines = [
-        '🛠️ Resumen debug metabuscador max',
-        f"Total extraídos: {report.get('scraped_count', 0)}",
-        f"Total marcados con señales: {report.get('rejected_count', 0)}",
-        f"Total notificados: {report.get('notified_count', 0)}",
-        '',
-    ]
-    for portal in report.get('sources', []):
-        line = (
-            f"• {html.escape(portal['name'])} | {portal['kind']} | "
-            f"on={portal['enabled']} | ext={portal['raw_count']} | val={portal['valid_count']} | env={portal['notify_count']} | err={portal['error_count']}"
-        )
-        lines.append(line)
-        if portal.get('block_signals'):
-            lines.append(f" ↳ bloqueos: {html.escape(', '.join(portal['block_signals'][:3]))}")
-    if report.get('reject_reasons'):
-        top_reasons = ', '.join(f"{k}:{v}" for k, v in list(report['reject_reasons'].items())[:6])
-        lines += ['', f"Señales observadas: {html.escape(top_reasons)}"]
     return '\n'.join(lines)

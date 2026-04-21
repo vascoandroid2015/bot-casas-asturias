@@ -29,9 +29,11 @@ SEARCH_TERMS: List[str] = [
     'casa', 'casas', 'chalet', 'chalets', 'finca', 'fincas', 'parcela', 'parcelas',
     'terreno', 'terrenos', 'solar', 'solares', 'casona', 'aldea', 'rural', 'piedra'
 ]
+
 PRIORITY_TERMS: List[str] = [
     'piedra', 'finca', 'parcela', 'terreno', 'rustica', 'rústica', 'independiente', 'aldea'
 ]
+
 NEGATIVE_TERMS: List[str] = [
     'alquiler', 'alquilar', 'habitacion', 'habitación', 'traspaso', 'parking',
     'garaje', 'oficina', 'local', 'nave', 'compartir'

@@ -48,4 +48,5 @@ def save_control_report(history: Dict):
         '|---|---|---|---|---|---:|---:|---:|---|---|',
     ]
     md.extend(rows or ['| Sin anuncios |  |  |  |  | 0 | 0 |  |  |  |'])
-    Path(CONTROL_REPORT_FILE).write_text('\n'.join(md), encoding='utf-8')
+    with open(CONTROL_REPORT_FILE, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(md))

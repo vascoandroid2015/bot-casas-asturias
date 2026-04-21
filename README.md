@@ -1,21 +1,20 @@
-# Bot Casas Asturias max - control anti-duplicados
+# Bot Casas Asturias max - versión corregida final
 
-Esta versión añade un registro persistente de anuncios enviados a Telegram para no reenviar duplicados y para avisar cuando un anuncio ya conocido cambia.
+Esta versión incluye:
 
-## Qué hace ahora
+- control persistente de anuncios ya enviados a Telegram
+- prevención de duplicados por URL
+- detección de cambios en precio, título y ubicación
+- documento de control legible en `data/anuncios_control.md`
+- almacenamiento del registro maestro en `data/sent_ads_registry.json`
+- eliminación del mensaje final de Telegram llamado resumen debug
 
-- Guarda cada anuncio enviado en `data/sent_ads_registry.json`.
-- Genera un documento de control en `data/anuncios_control.md`.
-- No vuelve a notificar anuncios idénticos ya enviados.
-- Sí notifica cambios en anuncios ya vistos, por ejemplo precio, título o ubicación.
-- Si el precio cambia, el mensaje incluye el precio anterior.
-- El resumen debug final de Telegram queda desactivado.
+## Comportamiento
 
-## Lógica de notificación
-
-- Anuncio nuevo -> se envía
-- Anuncio ya conocido sin cambios -> no se envía
-- Anuncio ya conocido con cambios -> se envía indicando cambios detectados
+- Anuncio nuevo: se envía
+- Anuncio ya conocido sin cambios: no se envía
+- Anuncio con cambios: se vuelve a enviar indicando los cambios
+- Si cambia el precio: se muestra también el precio anterior
 
 ## Uso
 
