@@ -1,1 +1,854 @@
-{}
+{
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201241": {
+    "title": "Venta",
+    "price": 295000,
+    "source": "Fincas Asturias",
+    "location": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble o"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201235": {
+    "title": "Venta",
+    "price": 249000,
+    "source": "Fincas Asturias",
+    "location": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando "
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530": {
+    "title": "Venta",
+    "price": 290000,
+    "source": "Fincas Asturias",
+    "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200391": {
+    "title": "Venta",
+    "price": 895000,
+    "source": "Fincas Asturias",
+    "location": "Venta Casas o chalets, Venta, San Martín del Mar SAN MARTIN DEL MAR, Villaviciosa, Asturias 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villaviciosa donde el paisaje parece detener el tiempo, se alza"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200371": {
+    "title": "Venta",
+    "price": 220000,
+    "source": "Fincas Asturias",
+    "location": "Venta Casas o chalets, Venta Llaneza 1. Oviedo, Oviedo, Asturias 220.000 € A tan solo 15 minutos de Oviedo, en la tranquila zona de Llaneza, se encuentra esta preciosa casa independiente, con amplia terraza y finca, lista para entrar a vivi"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2194042": {
+    "title": "Venta",
+    "price": 203000,
+    "source": "Fincas Asturias",
+    "location": "Venta Pisos, Venta, Nuevo roces Ramon Gomez Lozana, Gijón, Asturias 203.000 € En la cotizada zona de Nuevo Roces, Gijón , se ofrece en venta un acogedor piso que se presenta como una oportunidad inmejorable. Este inmueble cuenta con dos esp"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2193859": {
+    "title": "Venta",
+    "price": 250000,
+    "source": "Fincas Asturias",
+    "location": "Venta Casas o chalets, Venta BO LA MARESIA 1 PINTUELES, Pintueles, Asturias 250.000 € Se presenta una oportunidad única en el encantador entorno de Pintueles, a 7 km de Infiesto, a 22 km de Colunga, ideal para quienes buscan una residencia "
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2178029": {
+    "title": "Venta",
+    "price": 135000,
+    "source": "Fincas Asturias",
+    "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entorno natural privilegiado, con vistas abiertas a la mon"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177396": {
+    "title": "Venta",
+    "price": 245000,
+    "source": "Fincas Asturias",
+    "location": "Venta Pisos, Venta, Centro CL RAMON Y CAJAL, Gijón, Asturias 245.000 € Descubre un acogedor piso en el corazón de Gijón, situado en la codiciada zona Centro, donde la comodidad y el dinamismo urbano se fusionan. Esta es una oportunidad exce"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177360": {
+    "title": "Venta",
+    "price": 65000,
+    "source": "Fincas Asturias",
+    "location": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representati"
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177015": {
+    "title": "Venta",
+    "price": 250000,
+    "source": "Fincas Asturias",
+    "location": "Venta DOS HABITACIONES, CON LUZ, VISTAS DESPEJADAS Y UBICACION Avenida del Llano, Gijón, Asturias 250.000 € No es casualidad que te haya llamado la atención. No es para todo el mundo. Y eso es buena señal. Este piso en Avenida del Llano no "
+  },
+  "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2176961": {
+    "title": "Venta",
+    "price": 298000,
+    "source": "Fincas Asturias",
+    "location": "Venta Pisos, Venta, Vallobin CL FRANCISCO REITER, Oviedo, Asturias 298.000 € Ático con gran terraza en Vallobin (Oviedo) | Garaje y trastero | Luminoso y tranquilo Luz y estilo de vida Si buscas un ático en Oviedo con terraza donde disfruta"
+  },
+  "https://www.inmocasal.es/costes-ocultos-comprar-casa/": {
+    "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de"
+  },
+  "https://www.inmocasal.es/reformar-o-vender-tal-cual/": {
+    "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025"
+  },
+  "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/": {
+    "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria "
+  },
+  "https://www.inmocasal.es/central/": {
+    "title": "Oficinas Centrales",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88"
+  },
+  "https://www.inmocasal.es/inmobiliaria-la-felguera/": {
+    "title": "CASAL Inmobiliaria La Felguera",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66"
+  },
+  "https://www.inmocasal.es/inmobiliaria-gijon/": {
+    "title": "CASAL Inmobiliaria Gijón",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Gijón C/Marques de casa valdes 24 A, 33202 Gijón – Asturias 985 35 55 00"
+  },
+  "https://www.inmocasal.es/inmobiliaria-sama/": {
+    "title": "CASAL Inmobiliaria Sama",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Sama Plaza Herrero, 2, bajo, 33900 Sama – Asturias 985 69 44 57"
+  },
+  "https://www.inmocasal.es/inmobiliaria-mieres/": {
+    "title": "CASAL Inmobiliaria Mieres",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Mieres C/Manuel Llaneza ,7, bajo, 33600 Mieres – Asturias 985 46 09 04"
+  },
+  "https://www.inmocasal.es/inmobiliaria-oviedo-rio-san-pedro/": {
+    "title": "CASAL Inmobiliaria Río San Pedro",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Río San Pedro C/ Río San Pedro, 3, 33001 Oviedo – Asturias 985 20 21 00"
+  },
+  "https://www.inmocasal.es/inmobiliaria-pola-de-laviana/": {
+    "title": "CASAL Inmobiliaria Pola de Laviana",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Pola de Laviana C/ Víctor Fdez. Mayo, 2, 33980 Pola de Laviana - Asturias 985 60 21 10"
+  },
+  "https://www.inmocasal.es/inmobiliaria-aviles/": {
+    "title": "CASAL Inmobiliaria Avilés",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Avilés Avda. Fernández Balsera, 2. 33402 Avilés – Asturias 985 52 52 92"
+  },
+  "https://www.inmocasal.es/inmobiliaria-oviedo-masip/": {
+    "title": "CASAL Inmobiliaria Masip",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Masip C/Valentín Masip, 14, bajo, 33013 Oviedo – Asturias 984 19 00 77"
+  },
+  "https://www.inmocasal.es/inmobiliaria-moreda/": {
+    "title": "CASAL Inmobiliaria Moreda",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Moreda Avda. Constitución, 63, 33670 Moreda – Asturias 985 48 32 61"
+  },
+  "https://www.inmocasal.es/casal-inmobiliaria-puebla-de-lillo/": {
+    "title": "CASAL Inmobiliaria Puebla de Lillo",
+    "price": null,
+    "source": "CASAL Inmobiliaria",
+    "location": "CASAL Inmobiliaria Puebla de Lillo Urb. San Roque, chalet 5, 24855 Puebla de Lillo – León 985 46 09 04"
+  },
+  "https://inmobiliariamaria.es/property/casa-con-fincas-en-illano-asturias/": {
+    "title": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principale",
+    "price": null,
+    "source": "Inmobiliaria María",
+    "location": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todas las ubicaciones principales "
+  },
+  "https://www.grupoduarte.es/propiedad/terrenos-asturias-pillarno-ref104901398-104901398/": {
+    "title": "90.000€",
+    "price": 100000,
+    "source": "Grupo Duarte",
+    "location": "Inmuebles Propiedades en Venta en Asturias Asturias Lugo Toledo Población Asturias Lugo Toledo Asturias Lugo Toledo Zona Casa o Chalet independiente Casas de pueblo Chalet adosado Locales comerciales Pisos Terrenos Tipo Casa o Chalet indepe"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/oviedo/todos/3555_05717/": {
+    "title": "Nueva en el mercado",
+    "price": 700000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 700.000 € Casa en venta, Oviedo, Asturias 5 hab 4 baños 304 m 2 En pleno corazón de Oviedo, a escasos 550 metros de la estación de Renfe y a ... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/colunga/todos/3431-18071/": {
+    "title": "Nueva en el mercado",
+    "price": 105000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 105.000 € Casa en venta, Colunga, Asturias 3 hab 2 baños 104 m 2 Casa de Pueblo en Fano, Libardón: Tu Refugio en Asturias. Descubre esta encan... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/san-pedro-de-coliema/todos/3555_05704/": {
+    "title": "Nueva en el mercado",
+    "price": 49900,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 49.900 € Casa en venta, San Pedro de Coliema, Asturias 2 hab 1 baños 114 m 2 ¿Te imaginas despertar con el sonido de la naturaleza y vistas panorámicas de... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/gijon-xixon/periurbano-rural-cabuenes/3555_05701/": {
+    "title": "Nueva en el mercado",
+    "price": 980000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 980.000 € Casa en venta, Periurbano - Rural - Cabueñes, Gijón / Xixón 3 hab 3 baños 476 m 2 Vivienda unifamiliar independiente con vistas abiertas hacia Gijón 387 m² vi... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/tineo/todos/3431-18039/": {
+    "title": "Nueva en el mercado",
+    "price": 94000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 94.000 € Casa en venta, Tineo, Asturias 5 hab 1 baños 220 m 2 Joya Rural en Tineo: Casona Asturiana con Vistas Panorámicas y Gran Potencial... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/tineo/todos/3431-18038/": {
+    "title": "Nueva en el mercado",
+    "price": 189000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 189.000 € Casa en venta, Tineo, Asturias 2 hab 1 baños 381 m 2 Espectacular Casona de Piedra en Tineo: Autenticidad y Espacio sin Límites S... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/bermiego/todos/3431-18030/": {
+    "title": "30.000 € Casa en venta, Bermiego, Asturias 2 hab 1 baños 120 m 2 Proyecto en Bermiego: Vistas espectaculares y libertad total de diseño Esta ... ,",
+    "price": 30000,
+    "source": "REMAX Asturias",
+    "location": "30.000 € Casa en venta, Bermiego, Asturias 2 hab 1 baños 120 m 2 Proyecto en Bermiego: Vistas espectaculares y libertad total de diseño Esta ... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/lorio/todos/3555_05674/": {
+    "title": "88.000 € Casa en venta, Lorío, Asturias 4 hab 2 baños 112 m 2 CASA DE DOS PLANTAS, REFORMA PARCIAL (ELECTRICIDAD, FACHADA, VENTANAS Y BAÑOS... ,",
+    "price": 88000,
+    "source": "REMAX Asturias",
+    "location": "88.000 € Casa en venta, Lorío, Asturias 4 hab 2 baños 112 m 2 CASA DE DOS PLANTAS, REFORMA PARCIAL (ELECTRICIDAD, FACHADA, VENTANAS Y BAÑOS... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/sieres/todos/3431-18014/": {
+    "title": "17.000 € Casa en venta, Sieres, Asturias 88 m 2 **Casa Rural-Cuadra de Piedra en Borines, San Feliz, Piloña, Asturias** Des... ,",
+    "price": 17000,
+    "source": "REMAX Asturias",
+    "location": "17.000 € Casa en venta, Sieres, Asturias 88 m 2 **Casa Rural-Cuadra de Piedra en Borines, San Feliz, Piloña, Asturias** Des... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/sante/todos/3431-18023/": {
+    "title": "Nueva en el mercado",
+    "price": 115000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 115.000 € Casa en venta, Sante, Asturias 4 hab 1 baños 137 m 2 ¡Oportunidad única en Sante, a solo 4 km de NAVIA! � Esta encantadora CASA p... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/rengos/todos/3555_05653/": {
+    "title": "99.995 € Casa en venta, Rengos, Asturias 2 hab 1 baños 250 m 2 Este conjunto de dos propiedades se encuentra en Rengos y cuenta con un pat... ,",
+    "price": 99995,
+    "source": "REMAX Asturias",
+    "location": "99.995 € Casa en venta, Rengos, Asturias 2 hab 1 baños 250 m 2 Este conjunto de dos propiedades se encuentra en Rengos y cuenta con un pat... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/el-viso/todos/3431-18015/": {
+    "title": "Nueva en el mercado",
+    "price": 73000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 73.000 € Casa en venta, El Viso, Asturias 3 hab 1 baños 192 m 2 Casa Rural con encanto, horno tradicional y 3 parcelas con derechos de agua –... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/bustellon/todos/3431-17933/": {
+    "title": "29.000 € Casa en venta, Bustellón, Asturias 3 hab 341 m 2 RE/MAX Casa élite, te presenta esta propiedad única en el pueblo de Bustellón... ,",
+    "price": 29000,
+    "source": "REMAX Asturias",
+    "location": "29.000 € Casa en venta, Bustellón, Asturias 3 hab 341 m 2 RE/MAX Casa élite, te presenta esta propiedad única en el pueblo de Bustellón... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/riovena/todos/3555_05649/": {
+    "title": "179.900 € Casa en venta, Riovena, Asturias 5 hab 1 baños 483 m 2 ¿Buscas un proyecto de vida autosuficiente sin empezar desde cero? Esta propi... ,",
+    "price": 179900,
+    "source": "REMAX Asturias",
+    "location": "179.900 € Casa en venta, Riovena, Asturias 5 hab 1 baños 483 m 2 ¿Buscas un proyecto de vida autosuficiente sin empezar desde cero? Esta propi... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/lagar/todos/3555_05648/": {
+    "title": "250.000 € Casa en venta, Lagar, Asturias 10 hab 1 baños 923 m 2 Hay propiedades que no se explican… se sienten. Y esta casa en Lagar, en el c... ,",
+    "price": 250000,
+    "source": "REMAX Asturias",
+    "location": "250.000 € Casa en venta, Lagar, Asturias 10 hab 1 baños 923 m 2 Hay propiedades que no se explican… se sienten. Y esta casa en Lagar, en el c... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/tapia-de-casariego/todos/3555_05647/": {
+    "title": "299.000 € Casa en venta, Tapia de Casariego, Asturias 4 hab 1 baños 368 m 2 REMAX VETUSTA ¿Te imaginas despertar cada día en una auténtica casa indiana,... ,",
+    "price": 299000,
+    "source": "REMAX Asturias",
+    "location": "299.000 € Casa en venta, Tapia de Casariego, Asturias 4 hab 1 baños 368 m 2 REMAX VETUSTA ¿Te imaginas despertar cada día en una auténtica casa indiana,... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/cabanaquinta/todos/3555_05646/": {
+    "title": "Nueva en el mercado",
+    "price": 45000,
+    "source": "REMAX Asturias",
+    "location": "Nueva en el mercado 45.000 € Casa en venta, Cabañaquinta, Asturias 1 hab 1 baño 53 m 2 Se vende acogedora casa situada en Vallina, una tranquila localidad del conce... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/villabona/todos/3555_05644/": {
+    "title": "286.000 € Casa en venta, Villabona, Asturias 4 hab 1 baños 163 m 2 ¿Buscas privacidad, autosuficiencia o un proyecto rural? Esta finca es una op... ,",
+    "price": 286000,
+    "source": "REMAX Asturias",
+    "location": "286.000 € Casa en venta, Villabona, Asturias 4 hab 1 baños 163 m 2 ¿Buscas privacidad, autosuficiencia o un proyecto rural? Esta finca es una op... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/felechosa/todos/3555_05642/": {
+    "title": "74.500 € Casa en venta, Felechosa, Asturias 5 hab 2 baños 211 m 2 Descubre esta gran oportunidad de inversión en la tranquila localidad de Fele... ,",
+    "price": 74500,
+    "source": "REMAX Asturias",
+    "location": "74.500 € Casa en venta, Felechosa, Asturias 5 hab 2 baños 211 m 2 Descubre esta gran oportunidad de inversión en la tranquila localidad de Fele... ,"
+  },
+  "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/carabanzo/todos/3555_05630/": {
+    "title": "180.000 € Casa en venta, Carabanzo, Asturias 3 hab 2 baños 200 m 2 Ubicada en Carabanzo (Pola de Lena), combina el encanto del entorno natural c... ,",
+    "price": 180000,
+    "source": "REMAX Asturias",
+    "location": "180.000 € Casa en venta, Carabanzo, Asturias 3 hab 2 baños 200 m 2 Ubicada en Carabanzo (Pola de Lena), combina el encanto del entorno natural c... ,"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38676": {
+    "title": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€",
+    "price": 864125000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-casa-asturias-san-martin-del-rey-aurelio/38673": {
+    "title": "Casa en Venta Actualizado: 25/07/2022 4 Hab. - 1 Baños San Martín del Rey Aurelio - Asturias Anuncio N°: 38673 70.000€",
+    "price": 70000,
+    "source": "e-viviendas",
+    "location": "Casa en Venta Actualizado: 25/07/2022 4 Hab. - 1 Baños San Martín del Rey Aurelio - Asturias Anuncio N°: 38673 70.000€ Tel: 684-607-080"
+  },
+  "https://www.e-viviendas.es/venta-chalets-individuales-asturias-oviedo/38518": {
+    "title": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€",
+    "price": 518350000,
+    "source": "e-viviendas",
+    "location": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€ Tel: 984-295-275"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-corvera-de-asturias/38458": {
+    "title": "Piso en Venta Actualizado: 25/11/2021 3 Hab. - 1 Baños Corvera de Asturias - Asturias Anuncio N°: 38458 Inmo: es30672 39.000€",
+    "price": 39000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 25/11/2021 3 Hab. - 1 Baños Corvera de Asturias - Asturias Anuncio N°: 38458 Inmo: es30672 39.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38445": {
+    "title": "Piso en Venta Actualizado: 20/11/2021 2 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38445 Inmo: ES30258 29.000€",
+    "price": 29000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 20/11/2021 2 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38445 Inmo: ES30258 29.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-corvera-de-asturias/38409": {
+    "title": "Piso en Venta Actualizado: 24/01/2022 3 Hab. - 1 Baños Corvera de Asturias - Asturias Anuncio N°: 38409 Inmo: es30557 20.000€",
+    "price": 20000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 24/01/2022 3 Hab. - 1 Baños Corvera de Asturias - Asturias Anuncio N°: 38409 Inmo: es30557 20.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-lena/38408": {
+    "title": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable",
+    "price": 408130000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable Tel: 658-719-251"
+  },
+  "https://www.e-viviendas.es/venta-apartamento-asturias-aviles/38405": {
+    "title": "Apartamento en Venta Actualizado: 04/11/2021 1 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38405 Inmo: ES30050 55.000€",
+    "price": 55000,
+    "source": "e-viviendas",
+    "location": "Apartamento en Venta Actualizado: 04/11/2021 1 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38405 Inmo: ES30050 55.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38399": {
+    "title": "Piso en Venta Actualizado: 03/11/2021 2 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38399 Inmo: ES30160 109.000€",
+    "price": 160109000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 03/11/2021 2 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38399 Inmo: ES30160 109.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38398": {
+    "title": "Piso en Venta Actualizado: 04/02/2022 4 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38398 Inmo: es30446 95.000€",
+    "price": 95000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 04/02/2022 4 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38398 Inmo: es30446 95.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38397": {
+    "title": "Piso en Venta Actualizado: 04/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38397 Inmo: es30380 113.000€",
+    "price": 380113000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 04/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38397 Inmo: es30380 113.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38378": {
+    "title": "Piso en Venta Actualizado: 01/12/2021 6 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38378 Inmo: es29788 330.000€",
+    "price": 788330000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 01/12/2021 6 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38378 Inmo: es29788 330.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38372": {
+    "title": "Piso en Venta Actualizado: 03/11/2021 3 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38372 Inmo: ES30556 85.000€",
+    "price": 85000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 03/11/2021 3 Hab. - 1 Baños Avilés - Asturias Anuncio N°: 38372 Inmo: ES30556 85.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-duplex-asturias-aviles/38371": {
+    "title": "Duplex en Venta Actualizado: 04/02/2022 2 Hab. - 3 Baños Avilés - Asturias Anuncio N°: 38371 Inmo: es30387 179.000€",
+    "price": 387179000,
+    "source": "e-viviendas",
+    "location": "Duplex en Venta Actualizado: 04/02/2022 2 Hab. - 3 Baños Avilés - Asturias Anuncio N°: 38371 Inmo: es30387 179.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-duplex-asturias-aviles/38368": {
+    "title": "Duplex en Venta Actualizado: 03/11/2021 3 Hab. - 3 Baños Avilés - Asturias Anuncio N°: 38368 Inmo: ES30643 179.000€",
+    "price": 643179000,
+    "source": "e-viviendas",
+    "location": "Duplex en Venta Actualizado: 03/11/2021 3 Hab. - 3 Baños Avilés - Asturias Anuncio N°: 38368 Inmo: ES30643 179.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38359": {
+    "title": "Piso en Venta Actualizado: 03/11/2021 3 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38359 Inmo: es30648 149.000€",
+    "price": 648149000,
+    "source": "e-viviendas",
+    "location": "Piso en Venta Actualizado: 03/11/2021 3 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38359 Inmo: es30648 149.000€ Reines AvilÃ©s"
+  },
+  "https://www.e-viviendas.es/venta-chalets-individuales-asturias-llanera/37447": {
+    "title": "Chalets individuales en Venta Actualizado: 21/03/2022 4 Hab. - 3 Baños Llanera - Asturias Anuncio N°: 37447 500.000€",
+    "price": 447500000,
+    "source": "e-viviendas",
+    "location": "Chalets individuales en Venta Actualizado: 21/03/2022 4 Hab. - 3 Baños Llanera - Asturias Anuncio N°: 37447 500.000€ Tel: 696034207"
+  },
+  "https://www.e-viviendas.es/venta-casas-de-campo-asturias-nava/34973": {
+    "title": "Casas de campo en Venta Actualizado: 30/08/2022 4 Hab. - 1 Baños Nava - Asturias Anuncio N°: 34973 28.000€ Negociable",
+    "price": 28000,
+    "source": "e-viviendas",
+    "location": "Casas de campo en Venta Actualizado: 30/08/2022 4 Hab. - 1 Baños Nava - Asturias Anuncio N°: 34973 28.000€ Negociable Tel: 679990958"
+  },
+  "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410": {
+    "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
+    "price": 20000,
+    "source": "e-viviendas",
+    "location": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940"
+  },
+  "https://www.e-viviendas.es/venta-apartamento-asturias-oviedo/38045": {
+    "title": "Apartamento en Venta Actualizado: 09/07/2021 3 Hab. - 1 Baños Oviedo - Asturias Anuncio N°: 38045 105.000€ Negociable",
+    "price": 45105000,
+    "source": "e-viviendas",
+    "location": "Apartamento en Venta Actualizado: 09/07/2021 3 Hab. - 1 Baños Oviedo - Asturias Anuncio N°: 38045 105.000€ Negociable Tel: 670506308"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2200371": {
+    "title": "Venta",
+    "price": 220000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta CASA INDEPENDIENTE CON FINCA EN OVIEDO Llaneza 1. Oviedo, , Oviedo, Asturias Ref.: 08346 Precio: 220.000 € A tan solo 15 minutos de Oviedo, en la tranquila zona de Llaneza, se encuentra esta preciosa casa independiente, con amplia ter"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2152053": {
+    "title": "Venta",
+    "price": 89000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta Rincón de naturaleza en Oviedo: finca con cabaña equipada y excelente ubicación AL COVADONGA, , Cruces, Asturias Ref.: 08341 Precio: 89.000 € FINCA CON CABAÑA EN SAN ESTEBAN DE LAS CRUCES (OVIEDO) – NATURALEZA Y CIUDAD A UN PASO Si bu"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2088396": {
+    "title": "Venta",
+    "price": 140000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta CASA INDEPENDIENTE EN TREVÍAS Carretera de Balsera, , Valdés, Asturias Ref.: 08332 Precio: 140.000 € Tu refugio ideal en Trevías: naturaleza, tranquilidad y mar a un paso, sin renunciar a todos los servicios. Imagina vivir en un lugar"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=1976506": {
+    "title": "Venta",
+    "price": 92000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta CASA EXCELENTES CONEXIONES Calle Tras la estación, , Tuilla / Tiuya, Asturias Ref.: 08318 Precio: 92.000 € Vivienda unifamiliar en venta en Tuilla, Langreo , situada en una zona con excelentes conexiones , una ubicación especialmente "
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=1459496": {
+    "title": "Venta",
+    "price": 75000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta ¡SAN ESTEBAN DE LAS CRUCES! Las Cruces, , Cruces, Asturias Ref.: 08231 Precio: 75.000 € ¡Gran Oportunidad en San Esteban de Las Cruces!!. Convierte esta casa en el hogar de tus sueños. Con una Ubicación Privilegiada , a 3 minutos en c"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2200391": {
+    "title": "Venta",
+    "price": 895000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta Venta de preciosa casa independiente con vistas a la Ría de Villaviciosa. SAN MARTIN DEL MAR, , Villaviciosa, Asturias Ref.: 1766 Precio: 895.000 € En el corazón de San Martín del Mar, uno de esos rincones privilegiados de Villavicios"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2193859": {
+    "title": "Venta",
+    "price": 250000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta VIVIENDA CON ESTUPENDA FINCA EN PINTUELES PILOÑA BO LA MARESIA 1 PINTUELES, , Pintueles, Asturias Ref.: 2193859 Precio: 250.000 € Se presenta una oportunidad única en el encantador entorno de Pintueles, a 7 km de Infiesto, a 22 km de "
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2178029": {
+    "title": "Venta",
+    "price": 135000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, , Langreo, Asturias Ref.: 252C Precio: 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entorno natural privilegiado, con vis"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2177360": {
+    "title": "Venta",
+    "price": 65000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta EDIFICIO EN EL CENTRO DE POLA DE LAVIANA PZ PONTONA LA, , Pola de Laviana, Asturias Ref.: EXP.576_PBVTA Precio: 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, u"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2153003": {
+    "title": "Venta",
+    "price": 53000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta Casa rural con hórreo en La Fresneda (Amieva) – Gran oportunidad de reforma LG FRESNEDA LA, , Amieva, Asturias Ref.: 4132 Precio: 53.000 € Se vende auténtica casa tradicional asturiana con hórreo en La Fresneda (Amieva), a solo 10 min"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2152988": {
+    "title": "Venta",
+    "price": 135000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, , Agones, Asturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN PARCELA DE 2.300M2. Emplazada en"
+  },
+  "https://arxus.es/ficha-inmueble?cod_inmueble=2152984": {
+    "title": "Venta",
+    "price": 285000,
+    "source": "Arxus Inmobiliaria",
+    "location": "Venta ¡¡FANTASTICA FINCA RUSTICA REFORMADA EN PARCELA DE 4.700 M2 A SOLO 10 MIN DE PRAVIA!! LUGAR SORRIBA, , Agones, Asturias Ref.: 4130 Precio: 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de en"
+  },
+  "https://tarteaucitron.io/en/service-details/criteo/": {
+    "title": "Read more",
+    "price": null,
+    "source": "Green-Acres",
+    "location": "Cookies management panel Close Cookies management panel By allowing these third party services, you accept their cookies and the use of tracking technologies necessary for their proper functioning. Preference for all services Allow all cook"
+  },
+  "https://www.properstar.com/vivienda/111481984": {
+    "title": "Blue House",
+    "price": 1075000,
+    "source": "Properstar",
+    "location": "Blue House 1.075.000 € Casa para comprar en Gijón, España Gijón Villa • 7 habitaciónes • 7 dormitorios • 4 baño. • 898 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/112796984": {
+    "title": "Cuarta Avenida",
+    "price": 1500000,
+    "source": "Properstar",
+    "location": "Cuarta Avenida 1.500.000 € Casa para comprar en Noreña, España Noreña Casa • 20 habitaciónes • 20 dormitorios • 7 baño. • 1690 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115721967": {
+    "title": "Francisco TAMARGO",
+    "price": 189000,
+    "source": "Properstar",
+    "location": "Francisco TAMARGO Hace 6 días 189.000 € Despertar con el sol de la montaña y el aroma del salitre a solo unos pasos de casa. Soto del Barco Piso • 3 dormitorios • 2 baño. • 105 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115858843": {
+    "title": "Moyza Consulting Inmobiliario",
+    "price": 6700000,
+    "source": "Properstar",
+    "location": "Moyza Consulting Inmobiliario Hace 3 días 6.700.000 € CONJUNTO INMOBILIARIO EN AVILÉS Avilés Propiedad • 56 habitaciónes • 56 dormitorios • 1 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/114598949": {
+    "title": "Francisco TAMARGO",
+    "price": 359000,
+    "source": "Properstar",
+    "location": "Francisco TAMARGO 359.000 € Piso señorial en pleno centro de Gijón a 3 minutos andando del Puerto y 5 de San Lorenzo Gijón Piso • 3 dormitorios • 2 baño. • 117 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/108002800": {
+    "title": "43.000 € Casa para comprar en Mieres, España Mieres Casa • 2 habitaciónes • 2 dormitorios • 1 baño. • 60 m² Añadir a favoritos Enviar mensaje",
+    "price": 43000,
+    "source": "Properstar",
+    "location": "43.000 € Casa para comprar en Mieres, España Mieres Casa • 2 habitaciónes • 2 dormitorios • 1 baño. • 60 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115778046": {
+    "title": "Hace 5 días 149.000 € Apartamento 1 dormitorio - 49 m2 Gijón, Calle Santa Eladia Piso • 1 habitación • 1 dormitorio • 1 baño. • 49 m² Añadir a favoritos Enviar mensaje",
+    "price": 149000,
+    "source": "Properstar",
+    "location": "Hace 5 días 149.000 € Apartamento 1 dormitorio - 49 m2 Gijón, Calle Santa Eladia Piso • 1 habitación • 1 dormitorio • 1 baño. • 49 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/108002769": {
+    "title": "100.000 € Piso para comprar en Pola de Siero, España Pola de Siero Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 111 m² Añadir a favoritos Enviar mensaje",
+    "price": 100000,
+    "source": "Properstar",
+    "location": "100.000 € Piso para comprar en Pola de Siero, España Pola de Siero Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 111 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115435276": {
+    "title": "72.000 € Terreno para construir - 1250.38 m2 Poladura, Los Villares de Anes, Poladura Parcela \"B\" Parcela • 1250 m² Añadir a favoritos Enviar mensaje",
+    "price": 72000,
+    "source": "Properstar",
+    "location": "72.000 € Terreno para construir - 1250.38 m2 Poladura, Los Villares de Anes, Poladura Parcela \"B\" Parcela • 1250 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115282029": {
+    "title": "262.000 € Casa rural 2 dormitorios - 90 m2 Barbechu, Camin de Peña Granja • 2 habitaciónes • 2 dormitorios • 2 baño. • 90 m² Añadir a favoritos Enviar mensaje",
+    "price": 262000,
+    "source": "Properstar",
+    "location": "262.000 € Casa rural 2 dormitorios - 90 m2 Barbechu, Camin de Peña Granja • 2 habitaciónes • 2 dormitorios • 2 baño. • 90 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115435262": {
+    "title": "68.000 € Terreno para construir - 1251.48 m2 Poladura, Los Villares de Anes, Poladura Parcela \"C\" Parcela • 1251 m² Añadir a favoritos Enviar mensaje",
+    "price": 68000,
+    "source": "Properstar",
+    "location": "68.000 € Terreno para construir - 1251.48 m2 Poladura, Los Villares de Anes, Poladura Parcela \"C\" Parcela • 1251 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115435274": {
+    "title": "75.000 € Terreno para construir - 1251.8 m2 Poladura, Los Villares de Anes, Poladura Parcela • 1252 m² Añadir a favoritos Enviar mensaje",
+    "price": 75000,
+    "source": "Properstar",
+    "location": "75.000 € Terreno para construir - 1251.8 m2 Poladura, Los Villares de Anes, Poladura Parcela • 1252 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115374015": {
+    "title": "115.000 € Apartamento 2 dormitorios - 83 m2 Langreo, Calle Torre de Abajo Piso • 2 habitaciónes • 2 dormitorios • 2 baño. • 83 m² Añadir a favoritos Enviar mensaje",
+    "price": 115000,
+    "source": "Properstar",
+    "location": "115.000 € Apartamento 2 dormitorios - 83 m2 Langreo, Calle Torre de Abajo Piso • 2 habitaciónes • 2 dormitorios • 2 baño. • 83 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/114982326": {
+    "title": "Francisco TAMARGO",
+    "price": 11900,
+    "source": "Properstar",
+    "location": "Francisco TAMARGO 11.900 € El refugio perfecto para tus vehículos y ese espacio extra que siempre has necesitado. Oviedo Plaza de aparcamiento • 21 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/proyecto/107812861": {
+    "title": "Promoción inmobiliaria Residencial Nyx Oviedo, Parcela R6b-8b Vaqueros la Estrecha 308.700 € Piso • 3 habitaciónes • 3 dormitorios • 2 baño. • 85 m² 308.700 € Piso 3 dorm",
+    "price": 308700,
+    "source": "Properstar",
+    "location": "Promoción inmobiliaria Residencial Nyx Oviedo, Parcela R6b-8b Vaqueros la Estrecha 308.700 € Piso • 3 habitaciónes • 3 dormitorios • 2 baño. • 85 m² 308.700 € Piso 3 dormitorios 2 baño. 85 m² Ver todas las unidades Añadir a favoritos Solici"
+  },
+  "https://www.properstar.com/vivienda/115664394": {
+    "title": "Hace 5 días 67.000 € 85.000 € -18.000 Piso para comprar en Laviana, España Laviana Piso • 2 habitaciónes • 2 dormitorios • 1 baño. • 70 m² Añadir a favoritos Enviar mensa",
+    "price": 67000,
+    "source": "Properstar",
+    "location": "Hace 5 días 67.000 € 85.000 € -18.000 Piso para comprar en Laviana, España Laviana Piso • 2 habitaciónes • 2 dormitorios • 1 baño. • 70 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/114380707": {
+    "title": "349.000 € Casa para comprar en Villaviciosa, España Villaviciosa Chalet • 4 habitaciónes • 4 dormitorios • 2 baño. • 131 m² Añadir a favoritos Enviar mensaje",
+    "price": 349000,
+    "source": "Properstar",
+    "location": "349.000 € Casa para comprar en Villaviciosa, España Villaviciosa Chalet • 4 habitaciónes • 4 dormitorios • 2 baño. • 131 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115903689": {
+    "title": "Hace 23 horas 172.000 € Piso Venta Asturias Oviedo Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 105 m² Añadir a favoritos Enviar mensaje",
+    "price": 172000,
+    "source": "Properstar",
+    "location": "Hace 23 horas 172.000 € Piso Venta Asturias Oviedo Piso • 3 habitaciónes • 3 dormitorios • 1 baño. • 105 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115535073": {
+    "title": "Hace 1 hora 150.000 € 155.000 € -5000 Casa para comprar en San Bartolome, España San Bartolome Casa • 3 habitaciónes • 3 dormitorios • 1 baño. • 210 m² Añadir a favoritos",
+    "price": 150000,
+    "source": "Properstar",
+    "location": "Hace 1 hora 150.000 € 155.000 € -5000 Casa para comprar en San Bartolome, España San Bartolome Casa • 3 habitaciónes • 3 dormitorios • 1 baño. • 210 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.properstar.com/vivienda/115910565": {
+    "title": "Hace 11 horas 275.000 € Local comercial para comprar en Gijón, España Gijón Suelo comercial • 1 habitación • 1 dormitorio • 600 m² Añadir a favoritos Enviar mensaje",
+    "price": 275000,
+    "source": "Properstar",
+    "location": "Hace 11 horas 275.000 € Local comercial para comprar en Gijón, España Gijón Suelo comercial • 1 habitación • 1 dormitorio • 600 m² Añadir a favoritos Enviar mensaje"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/51a38258-9d25-57a2-8ced-67381ba350dd": {
+    "title": "Beautiful beachfront designer apartment",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/46ebb738-9c2f-5d3d-a6af-ceda380f0d41": {
+    "title": "Exclusive house with pool and large garden",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/dd1167cb-2a81-56a2-84d4-d24a0aa20101": {
+    "title": "Elegant apartment with terrace, garage and sea views",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/8e5db11f-e845-5bc9-8e4d-257aca0dff9f": {
+    "title": "Luminoso chalet unifamiliar con piscina climatizada y preciosas vistas",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/7f8c6418-1eec-5ce6-b29d-a439e470c0b7": {
+    "title": "Unifamiliar de diseño en urbanización privada con vistas al mar",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/c7885187-b56d-5daf-83f5-ebaaa6381a9e": {
+    "title": "Encantador ático de techos altos junto al centro.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/ef93adb4-09d2-535b-9a7f-1f0839b99c91": {
+    "title": "Exclusive home in downtown Oviedo",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/ff68d83f-ab17-557b-bb9a-de1edd067f5b": {
+    "title": "Exclusiva vivienda en la mejor zona de Oviedo",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/42bfb183-13ce-52fd-8b7f-c67ef34adcbe": {
+    "title": "Magnificent chalet in the heart of Naranco",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/6dea9063-8bed-5939-939f-0d4599188f96": {
+    "title": "Apartment in the heart of Corrida street",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/9d7764ec-6678-5099-b97a-997ec9227737": {
+    "title": "Elegant apartment with sea and city views",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/0ffa0ea5-6cdd-5239-b924-774308194edf": {
+    "title": "Espectacular parcela edificable frente al mar",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button Salinas, A"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/c6ed7078-ac7f-5682-bf32-9b8e381ea397": {
+    "title": "Monte Naranco. Vistas abiertas, ubicación irrepetible.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/042656fa-447b-5389-bad7-5b9eaa5afd3c": {
+    "title": "Elegance in a privileged setting",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/9dd4c4ac-0413-5043-8be5-ba64a676fb7a": {
+    "title": "Mirador de lujo en Fitoria, con vistas infinitas.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/871a1fa0-eabb-5142-8420-79cd728c0ca7": {
+    "title": "Exclusive home with front sea views and garage",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/be6957b7-536d-52be-a327-b86b90fdb607": {
+    "title": "Parcela en plena naturaleza al lado de Villaviciosa Centro",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/f2e868b2-ffb4-55ce-a6ee-c52e0107db06": {
+    "title": "Exclusive plot near Santa Marina Beach, Ribadesella",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/95453504-9d53-5cec-b836-1a5d20f01864": {
+    "title": "Exclusive villa in Somió",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/ee0b2ca8-1b2f-5127-8428-d0fef588853c": {
+    "title": "Space, light and character next to Europa Square",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/56001576-fa4a-5f0d-a282-3f29df929d89": {
+    "title": "Casa en primera línea de costa en Gijón",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/352ce8a9-3559-53e6-8292-ee67b2757af2": {
+    "title": "Spacious newly renovated apartment with terrace and two balconies",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/ad3497a8-bc06-5b2a-9e12-a6204c166e49": {
+    "title": "Exclusive new-build housing opportunity in Asturias. Nature and privacy near the sea.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/2526ccbe-11da-5ff1-9133-82359471d414": {
+    "title": "Versatile apartment in the center of Oviedo, ideal for multiple uses.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/82e1a4a1-bf2a-5d18-bed8-34d6d38e4e14": {
+    "title": "Chalet with panoramic views in an unparalleled natural setting",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/f42f87d7-de8a-590c-9c0d-fa987387d32d": {
+    "title": "Historic villa comprising a main house (with pool, tennis court and sea views) and two single-family homes.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/283b05e1-6dab-5f15-affb-946573472dbf": {
+    "title": "Exclusive villa in Siero: views, nature, and excellent connectivity.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/projects/2991cb71-b408-552d-8c05-155f5722d84b": {
+    "title": "Preciosos chalets unifamiliares en La Galguera",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button Developmen"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/a94a132d-1320-5878-9b11-bd0a8869ef9b": {
+    "title": "New Development Residencial Palacio Principado",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/e83c15b9-d11f-5c5f-a58f-48c9e1858be5": {
+    "title": "Dream house in La Providencia, Gijón",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/a7e8e269-2a4c-5894-b0dd-7fdf379b1072": {
+    "title": "Exclusive and impeccable detached house in Luanco",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/ec507212-358a-54e3-83ba-a9b031fdb3e7": {
+    "title": "Apartment with great potential to customize to your liking in the center of Oviedo.",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/f2a93ef1-34bc-5ad9-be0f-41ea07443a09": {
+    "title": "Magnificent home with excellent qualities in Somió",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/68734ccb-7e4e-54c6-9228-1337aecab858": {
+    "title": "Skyline of Gijón: iconic building in the city center",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/exposes/a759bbe1-bef1-5e53-9576-2951d865eefe": {
+    "title": "Elegant apartment with garage near San Lorenzo Beach",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Previous Next carousel index 0 button carousel index 1 button carousel index 2 button carousel index 3 button carousel index 4 button carousel index 5 button carousel index 6 button carousel index 7 button carousel index 8 button carousel i"
+  },
+  "https://www.engelvoelkers.com/es/en/properties-prices/asturias": {
+    "title": "Property prices",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Property prices Compare real estate prices on the market. Property prices"
+  },
+  "https://www.engelvoelkers.com/es/en/real-estate-agent/asturias": {
+    "title": "Find your real estate agent",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Find your real estate agent Get expert advice from our professionals, who are knowledgeable and reliable. Find your real estate agent"
+  },
+  "https://www.engelvoelkers.com/es/en/sell/asturias": {
+    "title": "Sell property",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Sell a property Sell your property hassle-free thanks to our seamless selling process. Sell property"
+  },
+  "https://www.engelvoelkers.com/es/en/resources/steps-buy-house": {
+    "title": "Step by step guide to buy a house in 2026 | Complete guide",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Step by step guide to buy a house in 2026 | Complete guide Anyone considering buying a home often wonders: is this the right year to buy? Step by step guide to buy a house in 2026 | Complete guide"
+  },
+  "https://www.engelvoelkers.com/es/en/resources/taxes-to-be-paid-when-buying-and-selling-a-home": {
+    "title": "Taxes to be paid when buying and selling a home",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Taxes to be paid when buying and selling a home Buying and selling a home is one of the biggest long-term commitments a person can make in his or her life. Taxes to be paid when buying and selling a home"
+  },
+  "https://www.engelvoelkers.com/es/en/resources/regional/top-10-reasons-invest-luxury-property-costa-del-sol": {
+    "title": "Top 10 Reasons to invest in luxury property on the Costa del Sol",
+    "price": null,
+    "source": "Engel & Völkers Asturias",
+    "location": "Top 10 Reasons to invest in luxury property on the Costa del Sol Selling to buy is one of the main reasons why a property is transferred in our country. Top 10 Reasons to invest in luxury property on the Costa del Sol"
+  }
+}
