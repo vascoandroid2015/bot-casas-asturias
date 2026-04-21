@@ -106,30 +106,30 @@ def build_message(item: Dict, previous_price: Optional[int] = None) -> str:
     title = html.escape(item.get('title', 'Sin título')[:180])
     source = html.escape(item.get('source', 'Desconocida'))
     kind = html.escape(item.get('kind', 'web'))
-    link = item.get('url', '')
+    link = html.escape(item.get('url', ''))
     location = html.escape((item.get('location') or item.get('municipality') or 'Ubicación no detectada')[:160])
     price = item.get('price')
     distance = item.get('distance_km')
     description = html.escape((item.get('description') or '').strip()[:320])
 
-    header = '🏡 <b>Nueva oportunidad detectada</b>'
+    header = '🏡 Anuncio detectado'
     if previous_price and price and previous_price != price:
-        header = '📉 <b>Bajada de precio detectada</b>' if price < previous_price else '🔁 <b>Cambio de precio detectado</b>'
+        header = '📉 Bajada de precio detectada' if price < previous_price else '🔁 Cambio de precio detectado'
 
-    lines = [header, '', f'<b>{title}</b>']
+    lines = [header, '', f'{title}']
     if price:
-        lines.append(f"💰 <b>Precio:</b> {price:,} €".replace(',', '.'))
+        lines.append(f"💰 Precio: {price:,} €".replace(',', '.'))
     if previous_price and previous_price != price:
-        lines.append(f"🕓 <b>Antes:</b> {previous_price:,} €".replace(',', '.'))
-    lines.append(f'🌍 <b>Fuente:</b> {source}')
-    lines.append(f'🧩 <b>Tipo fuente:</b> {kind}')
-    lines.append(f'📍 <b>Zona:</b> {location}')
+        lines.append(f"🕓 Antes: {previous_price:,} €".replace(',', '.'))
+    lines.append(f'🌍 Fuente: {source}')
+    lines.append(f'🧩 Tipo fuente: {kind}')
+    lines.append(f'📍 Zona: {location}')
     if distance is not None:
-        lines.append(f'🧭 <b>Distancia a {CENTER_NAME}:</b> {distance} km')
+        lines.append(f'🧭 Distancia a {CENTER_NAME}: {distance} km')
     if description:
-        lines.append(f'📝 <b>Resumen:</b> {description}')
+        lines.append(f'📝 Resumen: {description}')
     if link:
-        lines.append(f'🔗 <a href="{html.escape(link)}">Ver anuncio</a>')
+        lines.append(f'🔗 {link}')
     return '\n'.join(lines)
 
 
@@ -138,24 +138,24 @@ def build_debug_message(report: Dict) -> str:
         return ''
 
     lines = [
-        '🛠️ <b>Resumen debug metabuscador v8</b>',
-        f"Total extraídos: <b>{report.get('scraped_count', 0)}</b>",
-        f"Total rechazados: <b>{report.get('rejected_count', 0)}</b>",
-        f"Total notificados: <b>{report.get('notified_count', 0)}</b>",
+        '🛠️ Resumen debug metabuscador max',
+        f"Total extraídos: {report.get('scraped_count', 0)}",
+        f"Total marcados con señales: {report.get('rejected_count', 0)}",
+        f"Total notificados: {report.get('notified_count', 0)}",
         '',
     ]
 
     for portal in report.get('sources', []):
         line = (
-            f"• <b>{html.escape(portal['name'])}</b> | {portal['kind']} | "
-            f"on={portal['enabled']} | ext={portal['raw_count']} | val={portal['valid_count']} | new={portal['notify_count']} | err={portal['error_count']}"
+            f"• {html.escape(portal['name'])} | {portal['kind']} | "
+            f"on={portal['enabled']} | ext={portal['raw_count']} | val={portal['valid_count']} | env={portal['notify_count']} | err={portal['error_count']}"
         )
         lines.append(line)
         if portal.get('block_signals'):
-            lines.append(f"  ↳ bloqueos: {html.escape(', '.join(portal['block_signals'][:3]))}")
+            lines.append(f" ↳ bloqueos: {html.escape(', '.join(portal['block_signals'][:3]))}")
 
     if report.get('reject_reasons'):
         top_reasons = ', '.join(f"{k}:{v}" for k, v in list(report['reject_reasons'].items())[:6])
-        lines += ['', f"Rechazos: {html.escape(top_reasons)}"]
+        lines += ['', f"Señales observadas: {html.escape(top_reasons)}"]
 
     return '\n'.join(lines)
