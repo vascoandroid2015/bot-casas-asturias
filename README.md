@@ -1,24 +1,22 @@
-# Bot Casas Portales Pro
+# Bot Casas Asturias max
 
-Versión enfocada solo en Idealista, Fotocasa, Milanuncios y Wallapop.
+Versión corregida para maximizar anuncios siguiendo 3 mejoras prácticas:
 
-## Enfoque
+- Fase 1: quitar el corte por primer selector, subir scrolls y eliminar filtros agresivos.
+- Fase 2: enviar todo lo deduplicado por URL, no solo novedades.
+- Fase 3: dejar la base preparada para crear scrapers específicos por portal en una siguiente iteración.
 
-- Solo 4 portales.
-- Extractores dedicados por portal.
-- Scroll largo y segundo scroll corto.
-- Intento de aceptar cookies y de pulsar botones de cargar más.
-- Fallback a `application/ld+json` si la página publica listados estructurados.
-- Mantiene tu flujo actual: deduplicación por URL, envío por Telegram y debug.
+## Cambios aplicados
 
-## URLs base usadas
+- Ya no se rompe la extracción al primer selector con resultados.
+- Se hace autoscroll más largo para cargar más tarjetas.
+- Los anuncios no se invalidan por texto, precio o ubicación desconocida; solo se marcan con señales informativas.
+- Se deduplica por URL.
+- Se envían todos los anuncios encontrados en cada ejecución.
+- El límite de resultados se ha subido a 9999.
+- Se corrigieron errores de sintaxis en `telegram_client.py`.
 
-- Idealista Asturias: https://www.idealista.com/venta-viviendas/asturias/
-- Fotocasa Asturias: https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l
-- Milanuncios Asturias: https://www.milanuncios.com/venta-de-casas-en-asturias/
-- Wallapop inmobiliaria Salas: https://es.wallapop.com/inmobiliaria/salas
-
-## Instalación
+## Uso
 
 ```bash
 pip install -r requirements.txt
@@ -28,14 +26,6 @@ export TELEGRAM_CHAT_ID='tu_chat_id'
 python main.py
 ```
 
-## Nota seria
+## Siguiente mejora recomendada
 
-Fotocasa y Wallapop publican URLs y listados accesibles desde buscador público. Idealista también muestra listados públicos en Asturias, pero puede activar medidas anti-bot y devolver menos resultados o bloquear sesiones. Wallapop además puede variar mucho por municipio o búsqueda. [web:26][web:31][web:32][web:34]
-
-## Revisión de fallos
-
-Si uno da 0 resultados, revisa:
-
-- `debug/html/<portal>.html`
-- `debug/screenshots/<portal>.png`
-- `debug/debug_report.json`
+La fase 3 real consiste en sustituir selectores genéricos por extractores específicos para los 5-8 portales que más anuncios aporten.

@@ -36,9 +36,11 @@ def process_items(scraped: List[Dict], history: Dict):
             item['change_type'] = 'price_change'
         else:
             item['change_type'] = 'all'
+
         if item.get('reject_reasons'):
             flagged.append(item)
         candidates.append(item)
+
     candidates = sorted(candidates, key=lambda x: (-x.get('score', 0), x.get('price') or 999999999))
     return candidates, flagged
 
@@ -82,19 +84,23 @@ def main():
         browser = p.chromium.launch(headless=HEADLESS)
         scraped, source_stats = run_all_scrapers(browser)
         browser.close()
+
     to_notify, flagged = process_items(scraped, history)
     if MAX_RESULTS_PER_RUN and MAX_RESULTS_PER_RUN > 0:
         to_notify = to_notify[:MAX_RESULTS_PER_RUN]
+
     if not to_notify:
-        send_message('ℹ️ Metabuscador portales pro activo, sin anuncios detectados en esta ejecución.')
+        send_message('ℹ️ Metabuscador inmobiliario activo, sin anuncios detectados en esta ejecución.')
     else:
         for item in to_notify:
             send_message(build_message(item, previous_price=item.get('previous_price')))
+
     report = build_report(scraped, flagged, to_notify, source_stats)
     save_debug(report)
     debug_message = build_debug_message(report)
     if debug_message:
         send_message(debug_message)
+
     history = update_history(scraped, history)
     save_seen(history)
 

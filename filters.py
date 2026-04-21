@@ -29,7 +29,6 @@ def clean_price(text: str) -> Optional[int]:
     patterns = [
         r'(\d{1,3}(?:[\.\s]\d{3})+|\d{4,8})\s*€',
         r'€\s*(\d{1,3}(?:[\.\s]\d{3})+|\d{4,8})',
-        r'(\d{1,3}(?:[\.\s]\d{3})+|\d{4,8})\s*eur',
     ]
     for pattern in patterns:
         m = re.search(pattern, text, re.IGNORECASE)
