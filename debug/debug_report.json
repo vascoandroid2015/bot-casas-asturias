@@ -1,12 +1,11 @@
 {
-  "scraped_count": 184,
-  "rejected_count": 103,
-  "notified_count": 2,
+  "scraped_count": 148,
+  "rejected_count": 102,
+  "notified_count": 148,
   "reject_reasons": {
-    "price_out_of_range": 30,
-    "negative_term": 4,
-    "missing_price": 73,
-    "missing_search_term": 56
+    "negative_term": 38,
+    "missing_price": 57,
+    "price_out_of_range": 10
   },
   "sources": [
     {
@@ -30,8 +29,8 @@
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
       "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 12,
-      "notify_count": 0
+      "valid_count": 25,
+      "notify_count": 25
     },
     {
       "name": "Fincas Asturias",
@@ -42,8 +41,8 @@
       "final_url": "https://www.fincasasasturias.com/search-form-top.php?pagina=1",
       "page_title": "Buscando",
       "block_signals": [],
-      "valid_count": 11,
-      "notify_count": 1
+      "valid_count": 12,
+      "notify_count": 12
     },
     {
       "name": "CASAL Inmobiliaria",
@@ -54,8 +53,8 @@
       "final_url": "https://www.inmocasal.es/",
       "page_title": "CASAL Inmobiliaria: La mayor Inmobiliaria de Asturias",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 14,
+      "notify_count": 14
     },
     {
       "name": "Inmobiliaria Asturias",
@@ -90,8 +89,8 @@
       "final_url": "https://inmobiliariamaria.es/",
       "page_title": "Inmobiliaria María | Inmobiliaria en el occidente de Asturias",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 1,
+      "notify_count": 1
     },
     {
       "name": "Grupo Duarte",
@@ -105,7 +104,7 @@
         "enable javascript"
       ],
       "valid_count": 1,
-      "notify_count": 0
+      "notify_count": 1
     },
     {
       "name": "REMAX Asturias",
@@ -116,8 +115,8 @@
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
       "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
-      "valid_count": 19,
-      "notify_count": 0
+      "valid_count": 20,
+      "notify_count": 20
     },
     {
       "name": "Facilitea Casa",
@@ -140,8 +139,8 @@
       "final_url": "https://www.e-viviendas.es/inmuebles/venta_asturias",
       "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
       "block_signals": [],
-      "valid_count": 9,
-      "notify_count": 0
+      "valid_count": 20,
+      "notify_count": 20
     },
     {
       "name": "Arxus Inmobiliaria",
@@ -152,8 +151,8 @@
       "final_url": "https://arxus.es/casas-en-venta-en-asturias/",
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
-      "valid_count": 11,
-      "notify_count": 0
+      "valid_count": 12,
+      "notify_count": 12
     },
     {
       "name": "Hunosa Inmobiliario",
@@ -202,32 +201,20 @@
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
       "page_title": "Property for sale Asturias: 43 exclusive apartments and houses to buy",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
-    },
-    {
-      "name": "ThinkSPAIN",
-      "kind": "portal",
-      "enabled": true,
-      "raw_count": 16,
-      "error_count": 0,
-      "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 447 houses & apartments",
-      "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 1,
+      "notify_count": 1
     },
     {
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7574 Propiedades en venta en Asturias | Properstar",
+      "final_url": "https://www.properstar.com/spain/asturias/buy?afd_azwaf_tok=eyJraWQiOiI1MUExNzM1MkJFMzVFNkZCMTE3QUI4MEVDMjhFQjk1NkQ2ODYzNkY5MjA5MENGNENBMTJERTJFREE0MTkxMjY1IiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5jb20iLCJleHAiOjE3NzY3NzU2NzQsImlhdCI6MTc3Njc3NTY2NCwiaXNzIjoidGllcjEtNjhjYjZjYzQ3NS1wMjVuNSIsInN1YiI6IjQuMjQ2LjEzNS4xNjQiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MDQyMVQxMjQ3NDRaLTE2OGNiNmNjNDc1cDI1bjVoQzFCTDE5eGM0MDAwMDAwMTNrMDAwMDAwMDAwZmJ5MCIsImIiOiJlemRvSXRzenVuTzRmcy1RQXczOHlVSXVLRUl5N1FLU2pVaGwtMWJDN3NRIiwiaCI6IkQwMzBQLWJNMTgxN0Z1LTFid0EwSkhSeC1YcUk0RWUwZXFZcUVORDU1UDQifX0.BpbGzpRv8g1iSGowSWJLio5VhTA3QEJkdHokNBBRAk3jI0UqtG_1fF72OboFnJw7aQ6xxj3GCnLVHbuYCR2idJhQ3aIDHlFgsGvyM2kW-v5mvwKWv7s2KpCgldPOtmme-jZqbxqRYjgChPY0OEcVneLClr100opgpKGUGry1LT1m2khL8J-hwDEGOi4LYA90XYRSLz6jCybtv7d0OJE2-W0ichaMU8Yr67KLJR1kn_L_ZWpJZb0reLBtnWU9f18Pv7AJNTWKE4OLSJnvDwosLroiBjxsSDPN6lpsY_Jd7UQDSoFc6cIwt3pi6A2EQhW-Kb2ulwLMskFFoVNE2J1wFg.WF3obl2IDtqgvMFRqVdYkD5s",
+      "page_title": "Service unavailable",
       "block_signals": [],
-      "valid_count": 17,
-      "notify_count": 1
+      "valid_count": 0,
+      "notify_count": 0
     },
     {
       "name": "Engel & Völkers Asturias",
@@ -238,8 +225,8 @@
       "final_url": "https://www.engelvoelkers.com/es/en/properties/res/sale/real-estate/asturias",
       "page_title": "Homes for sale in Asturias | Engel & Völkers",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 41,
+      "notify_count": 41
     },
     {
       "name": "Sellmi",
@@ -263,7 +250,7 @@
       "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
       "valid_count": 1,
-      "notify_count": 0
+      "notify_count": 1
     },
     {
       "name": "Indomio",
@@ -334,6 +321,172 @@
       "valid_count": 0,
       "notify_count": 0,
       "note": "Mejor como descubrimiento de agencias"
+    }
+  ],
+  "examples_to_notify": [
+    {
+      "source": "Arxus Inmobiliaria",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 285000,
+      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2152984",
+      "location": "Venta ¡¡FANTASTICA FINCA RUSTICA REFORMADA EN PARCELA DE 4.700 M2 A SOLO 10 MIN DE PRAVIA!! LUGAR SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4130 Precio: 285.000 € Encantadora Finca Rustica completamente reformada con",
+      "description": "Venta ¡¡FANTASTICA FINCA RUSTICA REFORMADA EN PARCELA DE 4.700 M2 A SOLO 10 MIN DE PRAVIA!! LUGAR SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4130 Precio: 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de ensueño, rodeada de naturaleza y con impresionantes vistas a la montaña. Un lugar ideal para disfrutar del silencio, la naturaleza y el aire puro de Asturias. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. Sobre su parcela de 4700 m2, dispone de una construcción principal de 2 viviendas Pareadas de 80 m2 construidos cada una de ellas y un hórreo/panera tradi",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 14,
+      "change_type": "all"
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2178029",
+      "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entorno natural privilegiado, con vistas abiertas a la mon",
+      "description": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, Langreo, Asturias 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entorno natural privilegiado, con vistas abiertas a la montaña y rodeado de tranquilidad, a 30 min de Gijón y 10-15 minutos de Oviedo. Se trata de una propiedad para rehabilitar, ideal para quienes buscan un proyecto en plena naturaleza, con múltiples posibilidades tanto para vivienda habitual como segunda residencia. 📐 Características principales Vivienda de dos plantas con una superficie total construida de 116 m² (58 m² por planta). La planta de abajo tiene luz Almacén en planta baja de 64 m² Establo de 40 m² . Buen estado Inmuebles registrados Ubicado en plena naturaleza, con vistas despejadas Terreno de unos 55.000 metros cuadrados que rodea la vivienda Agua de Traída. Tiene una fuente en el terreno fren",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 10,
+      "change_type": "all"
+    },
+    {
+      "source": "Arxus Inmobiliaria",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2178029",
+      "location": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entor",
+      "description": "Venta 🏡 Casa para rehabilitar con finca y anejos en Langreo Aldea Zorera, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLangreo,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 252C Precio: 135.000 € 📍Conjunto de vivienda y anejos situado en La Zorera, parroquia de Tuilla, en un entorno natural privilegiado, con vistas abiertas a la montaña y rodeado de tranquilidad, a 30 min de Gijón y 10-15 minutos de Oviedo. Se trata de una propiedad para rehabilitar, ideal para quienes buscan un proyecto en plena naturaleza, con múltiples posibilidades tanto para vivienda habitual como segunda residencia. 📐 Características principales Vivienda de dos plantas con una superficie total construida de 116 m² (58 m² por planta). La planta de abajo tiene luz Almacén en planta baja de 64 m² Establo de 40 m² . Buen estado Inmuebles registrados Ubicado en plena naturaleza, con vistas despejadas Terreno de unos 55.000 metros cuadrados que rodea la viviend",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 10,
+      "change_type": "all"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. ",
+      "price": 595000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-4e1bc72c-cfb6-11e9-a325-060000000054.html",
+      "location": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río",
+      "description": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río que bordea la finca. Planta baja: Amplio hall, cocina con office, salón-comedor con gran chimenea de piedra, sala-despacho. Porche de piedra. 1ª Planta: Dos escaleras de acceso. Seis dormitorios, cuatro baños. Galería. Bajo cubierta: Cuatro dormitorios. Cocina amueblada, suelos y escalera de madera, parquet y gres, armarios empotrados, calefacción gasoil. Varias construcciones independientes como garaje para varios coches y horno. Panera. Hórreo. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 10,
+      "change_type": "all"
+    },
+    {
+      "source": "e-viviendas",
+      "kind": "portal",
+      "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
+      "price": 20000,
+      "url": "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410",
+      "location": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
+      "description": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
+      "municipality": "Villaviciosa",
+      "distance_km": 36.0,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "change_type": "all"
+    }
+  ],
+  "examples_rejected": [
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 0,
+      "change_type": "all"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
+      "price": 280000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
+      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 4,
+      "change_type": "all"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
+      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
+      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche. Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 4,
+      "change_type": "all"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 6,
+      "change_type": "all"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 8,
+      "change_type": "all"
     }
   ]
 }
