@@ -5,19 +5,31 @@
   "reject_reasons": {},
   "sources": [
     {
-      "name": "Idealista",
+      "name": "Idealista Asturias",
       "kind": "portal",
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.idealista.com/venta-viviendas/asturias/",
+      "final_url": "https://www.idealista.com/venta-viviendas/asturias/con-publicado_ultimas-48-horas/",
       "page_title": "idealista.com",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
     },
     {
-      "name": "Fotocasa",
+      "name": "Idealista Oviedo",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.idealista.com/venta-viviendas/oviedo-asturias/con-publicado_ultimas-48-horas/",
+      "page_title": "idealista.com",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Fotocasa Asturias",
       "kind": "portal",
       "enabled": true,
       "raw_count": 0,
@@ -29,9 +41,57 @@
       "notify_count": 0
     },
     {
-      "name": "Milanuncios",
+      "name": "Fotocasa Particulares",
+      "kind": "portal",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://www.fotocasa.es/es/comprar/viviendas/particulares/asturias-provincia/todas-las-zonas/pl",
+      "page_title": "SENTIMOS LA INTERRUPCIÃ“N",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Wallapop Nava",
       "kind": "classifieds",
       "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://es.wallapop.com/inmobiliaria/nava",
+      "page_title": "ERROR: The request could not be satisfied",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Wallapop Llanes",
+      "kind": "classifieds",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://es.wallapop.com/inmobiliaria/llanes",
+      "page_title": "ERROR: The request could not be satisfied",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Wallapop Gijon",
+      "kind": "classifieds",
+      "enabled": true,
+      "raw_count": 0,
+      "error_count": 0,
+      "final_url": "https://es.wallapop.com/inmobiliaria/piso/gijon",
+      "page_title": "ERROR: The request could not be satisfied",
+      "block_signals": [],
+      "valid_count": 0,
+      "notify_count": 0
+    },
+    {
+      "name": "Milanuncios",
+      "kind": "classifieds",
+      "enabled": false,
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.milanuncios.com/venta-de-casas-en-asturias/",
@@ -40,18 +100,6 @@
         "captcha",
         "pardon our interruption"
       ],
-      "valid_count": 0,
-      "notify_count": 0
-    },
-    {
-      "name": "Wallapop",
-      "kind": "classifieds",
-      "enabled": true,
-      "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://es.wallapop.com/inmobiliaria/salas",
-      "page_title": "ERROR: The request could not be satisfied",
-      "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
     }
