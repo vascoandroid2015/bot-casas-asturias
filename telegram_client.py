@@ -138,7 +138,7 @@ def build_debug_message(report: Dict) -> str:
         return ''
 
     lines = [
-        '🛠️ Resumen debug metabuscador max',
+        '🛠️ Resumen debug metabuscador portales',
         f"Total extraídos: {report.get('scraped_count', 0)}",
         f"Total marcados con señales: {report.get('rejected_count', 0)}",
         f"Total notificados: {report.get('notified_count', 0)}",

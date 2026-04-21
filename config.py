@@ -51,7 +51,8 @@ MUNICIPALITIES: Dict[str, Tuple[float, float]] = {
 }
 
 WEB_SOURCES = [
-    {'name': 'Idealista', 'enabled': True, 'kind': 'portal', 'url': 'https://www.idealista.com/venta-viviendas/asturias/', 'base_url': 'https://www.idealista.com', 'selectors': ['article.item', 'article[data-adid]', '.items-container article', '.listing-items article']},
+    {'name': 'Idealista', 'enabled': True, 'kind': 'portal', 'url': 'https://www.idealista.com/venta-viviendas/asturias/', 'base_url': 'https://www.idealista.com', 'selectors': ['article.item', 'article[data-adid]', '.items-container article', '.listing-items article', '[class*="item"]:has(a[href*="/inmueble/"])']},
+    {'name': 'Fotocasa', 'enabled': True, 'kind': 'portal', 'url': 'https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l', 'base_url': 'https://www.fotocasa.es', 'selectors': ['article', 'div.re-CardPackPremium', 'div.re-CardPack', '[class*="CardPack"]', '[class*="re-Card"]']},
     {'name': 'CASASAPO', 'enabled': True, 'kind': 'portal', 'url': 'https://casasapo.es/comprar-viviendas-casas/distrito.asturias/', 'base_url': 'https://casasapo.es', 'selectors': ['article', '.property', '.search-results article', '.listings article']},
     {'name': 'Fincas Asturias', 'enabled': True, 'kind': 'agency', 'url': 'https://www.fincasasasturias.com/search-form-top.php?pagina=1', 'base_url': 'https://www.fincasasasturias.com', 'selectors': ['article', '.property', '.item', '.resultado']},
     {'name': 'CASAL Inmobiliaria', 'enabled': True, 'kind': 'agency', 'url': 'https://www.inmocasal.es', 'base_url': 'https://www.inmocasal.es', 'selectors': ['article', '.property', '.inmueble', '.item']},
@@ -72,8 +73,8 @@ WEB_SOURCES = [
     {'name': 'Sellmi', 'enabled': True, 'kind': 'agency', 'url': 'https://www.sellmi.es/inmuebles-venta/', 'base_url': 'https://www.sellmi.es', 'selectors': ['article', '.property', '.listing', '.item']},
     {'name': 'Asturias Property', 'enabled': True, 'kind': 'portal', 'url': 'https://asturiasproperty.com', 'base_url': 'https://asturiasproperty.com', 'selectors': ['article', '.property', '.listing', '.item']},
     {'name': 'Indomio', 'enabled': True, 'kind': 'portal', 'url': 'https://www.indomio.es/en/venta-casas/asturias-provincia/', 'base_url': 'https://www.indomio.es', 'selectors': ['article', '.property', '.listing', '.item']},
-    {'name': 'Fotocasa', 'enabled': False, 'kind': 'portal', 'url': 'https://www.fotocasa.es/es/comprar/viviendas/asturias-provincia/todas-las-zonas/l', 'base_url': 'https://www.fotocasa.es', 'selectors': ['article', 'div.re-CardPackPremium', 'div.re-CardPack', "[class*='CardPack']"]},
-    {'name': 'Milanuncios', 'enabled': False, 'kind': 'classifieds', 'url': 'https://www.milanuncios.com/venta-de-casas-en-asturias/', 'base_url': 'https://www.milanuncios.com', 'selectors': ['div.ma-AdCard', 'article', "[data-testid='ad-card']"]},
+    {'name': 'Milanuncios', 'enabled': True, 'kind': 'classifieds', 'url': 'https://www.milanuncios.com/venta-de-casas-en-asturias/', 'base_url': 'https://www.milanuncios.com', 'selectors': ['div.ma-AdCard', 'article', '[data-testid="ad-card"]', '[class*="ad-card"]']},
+    {'name': 'Wallapop', 'enabled': True, 'kind': 'classifieds', 'url': 'https://es.wallapop.com/app/search?category_ids=200&keywords=casa%20asturias', 'base_url': 'https://es.wallapop.com', 'selectors': ['[data-testid="item-card"]', 'a[href*="/item/"]', 'article']},
 ]
 
 SOCIAL_SOURCES = [

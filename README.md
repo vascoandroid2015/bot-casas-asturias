@@ -1,20 +1,19 @@
-# Bot Casas Asturias max
+# Bot Casas Asturias portales
 
-Versión corregida para maximizar anuncios siguiendo 3 mejoras prácticas:
+Versión ampliada para intentar incluir Fotocasa, Idealista, Milanuncios y Wallapop manteniendo el comportamiento actual del proyecto.
 
-- Fase 1: quitar el corte por primer selector, subir scrolls y eliminar filtros agresivos.
-- Fase 2: enviar todo lo deduplicado por URL, no solo novedades.
-- Fase 3: dejar la base preparada para crear scrapers específicos por portal en una siguiente iteración.
+## Qué se ha añadido
 
-## Cambios aplicados
+- Activación de Fotocasa, Milanuncios y Wallapop en configuración.
+- Extractores específicos por portal para Idealista, Fotocasa, Milanuncios y Wallapop.
+- Fallback a `application/ld+json` cuando exista listado estructurado.
+- Más selectores y scroll más agresivo en portales difíciles.
+- Intentos de aceptar cookies y pulsar botones de cargar más.
+- Se mantiene el envío de todos los anuncios deduplicados por URL.
 
-- Ya no se rompe la extracción al primer selector con resultados.
-- Se hace autoscroll más largo para cargar más tarjetas.
-- Los anuncios no se invalidan por texto, precio o ubicación desconocida; solo se marcan con señales informativas.
-- Se deduplica por URL.
-- Se envían todos los anuncios encontrados en cada ejecución.
-- El límite de resultados se ha subido a 9999.
-- Se corrigieron errores de sintaxis en `telegram_client.py`.
+## Nota importante
+
+Idealista usa protección anti-bot avanzada y puede bloquear por IP, fingerprint o reputación de red. Esta versión mejora selectores y navegación, pero no garantiza extracción estable sin proxies o infraestructura anti-bot específica.
 
 ## Uso
 
@@ -26,6 +25,6 @@ export TELEGRAM_CHAT_ID='tu_chat_id'
 python main.py
 ```
 
-## Siguiente mejora recomendada
+## Recomendación
 
-La fase 3 real consiste en sustituir selectores genéricos por extractores específicos para los 5-8 portales que más anuncios aporten.
+Si alguno de estos portales sigue dando 0 anuncios en el debug, revisa `debug/html/` y `debug/screenshots/` para ver si hay bloqueo, login, captcha o DOM diferente.
