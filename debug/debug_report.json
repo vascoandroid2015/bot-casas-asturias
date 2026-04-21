@@ -1,12 +1,12 @@
 {
-  "scraped_count": 139,
-  "rejected_count": 87,
-  "notified_count": 0,
+  "scraped_count": 184,
+  "rejected_count": 103,
+  "notified_count": 2,
   "reject_reasons": {
-    "price_out_of_range": 14,
+    "price_out_of_range": 30,
+    "negative_term": 4,
     "missing_price": 73,
-    "negative_term": 3,
-    "missing_search_term": 55
+    "missing_search_term": 56
   },
   "sources": [
     {
@@ -25,13 +25,13 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 12,
+      "notify_count": 1
     },
     {
       "name": "Fincas Asturias",
@@ -212,7 +212,7 @@
       "raw_count": 16,
       "error_count": 0,
       "final_url": "https://www.thinkspain.com/property-for-sale/asturias",
-      "page_title": "Property for sale in Asturias - 445 houses & apartments",
+      "page_title": "Property for sale in Asturias - 444 houses & apartments",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -221,13 +221,13 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 20,
       "error_count": 0,
-      "final_url": "https://www.properstar.com/spain/asturias/buy?afd_azwaf_tok=eyJraWQiOiI1MUExNzM1MkJFMzVFNkZCMTE3QUI4MEVDMjhFQjk1NkQ2ODYzNkY5MjA5MENGNENBMTJERTJFREE0MTkxMjY1IiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5jb20iLCJleHAiOjE3NzY3NDkxNzgsImlhdCI6MTc3Njc0OTE2OCwiaXNzIjoidGllcjEtN2Y0ODg4ZDg0Ny04MjlobCIsInN1YiI6IjEzNS4xMTkuMzguMzQiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MDQyMVQwNTI2MDhaLTE3ZjQ4ODhkODQ3ODI5aGxoQzFETTFoYm53MDAwMDAwMHR6ZzAwMDAwMDAwNnc5NCIsImIiOiJ4ZUdVVmFLTUpvaXZQbk5SQ2hDZDRxZUFlTnVKZlc4eVRDbTVWYVQ4X1BRIiwiaCI6ImVfODZjVTJUOXJ1Wkd1Ty1tZnR3TXBERmRnc3lOdXd1SFRneVNKVURJNkUifX0.0yR6V-a1ZsSxYl65fde0Ay2_C_mdfGl4OJNrxymTUOtH3NJwDE4OWjNORPgUfgWnh7_nHdFFql2btQcbzfrGPsR8CYVL4F7lNDkhFcZUP_C3wQnK4ccYV9B0h1zf6Ytrg8TRSUGM40YMSNdDnSfxt-lJggJr5tcEjTfc-RWX_JeOZw9AYBn-DbsE7StXC-_KKR-v0PnNJG7RHBfcnYDAjw599lurxV7JNCQqBV6X_5mbo-CG-w4-K9p2QAWmzWy5YydqMGuMG7AL1upFX2ZAIkM8vr7iGCesYEy78GeE8MrDUWpSgB5dcSFvmQSkN2DkLKIE2HlyTRxqguB-9Qk9MQ.WF3obl2IDtqgvMFRqVdYkD5s",
-      "page_title": "Service unavailable",
+      "final_url": "https://www.properstar.es/spain/asturias/buy",
+      "page_title": "7572 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 17,
+      "notify_count": 1
     },
     {
       "name": "Engel & Völkers Asturias",
