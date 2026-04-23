@@ -1,14 +1,14 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 94,
-  "notified_count": 143,
+  "scraped_count": 168,
+  "rejected_count": 114,
+  "notified_count": 168,
   "reject_reasons": {
-    "negative_term": 30,
+    "negative_term": 50,
     "missing_price": 57,
     "price_out_of_range": 10
   },
   "changes": {
-    "new": 143
+    "new": 168
   },
   "sources": [
     {
@@ -27,13 +27,13 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
-      "notify_count": 0
+      "valid_count": 25,
+      "notify_count": 25
     },
     {
       "name": "Fincas Asturias",
@@ -64,10 +64,11 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://www.inmobiliariaasturias.es/",
-      "page_title": "Inmobiliaria Asturias: Te ayudamos a comprar casa en Asturias",
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.inmobiliariaasturias.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -162,10 +163,11 @@
       "kind": "institutional",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://hunosainmobiliario.es/",
-      "page_title": "Portal Inmobiliario Hunosa",
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://hunosainmobiliario.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -214,7 +216,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7552 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7558 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 20
@@ -328,25 +330,6 @@
   ],
   "examples_to_notify": [
     {
-      "source": "Arxus Inmobiliaria",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 285000,
-      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2152984",
-      "location": "Venta ¡¡FANTASTICA FINCA RUSTICA REFORMADA EN PARCELA DE 4.700 M2 A SOLO 10 MIN DE PRAVIA!! LUGAR SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4130 Precio: 285.000 € Encantadora Finca Rustica completamente reformada con",
-      "description": "Venta ¡¡FANTASTICA FINCA RUSTICA REFORMADA EN PARCELA DE 4.700 M2 A SOLO 10 MIN DE PRAVIA!! LUGAR SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4130 Precio: 285.000 € Encantadora Finca Rustica completamente reformada con gran terreno en un paraje de ensueño, rodeada de naturaleza y con impresionantes vistas a la montaña. Un lugar ideal para disfrutar del silencio, la naturaleza y el aire puro de Asturias. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. Sobre su parcela de 4700 m2, dispone de una construcción principal de 2 viviendas Pareadas de 80 m2 construidos cada una de ellas y un hórreo/panera tradi",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 14,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
@@ -404,6 +387,25 @@
       "change_type": "new"
     },
     {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios ",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-cudillero-62f1bdbc-1a97-11e5-9ec9-000c2946937b.html",
+      "location": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 ",
+      "description": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 m2 construidos. Finca de 1.300 m2 con camelias y árboles frutales. Vistas a la playa de la Concha de Artedo. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
       "source": "Arxus Inmobiliaria",
       "kind": "agency",
       "title": "Venta",
@@ -425,13 +427,76 @@
   ],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 295000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201241",
-      "location": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble o",
-      "description": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble ofrece a sus futuros propietarios un espacio cómodo y acogedor, ideal para aquellos que buscan el hogar perfecto en un entorno urbano bien comunicado y de fácil acceso. Situado en la cuarta planta de un edificio construido en 1969, el piso cuenta con un amplio  ascensor  y portal completamente reformado sin Barreras arquitectónicas, que facilita el acceso cómodo a todas las plantas, mejorando la experiencia de los residentes al llegar a casa. Dispone de  tres habitaciones, Salón amplio ,Cocina independiente y 2 Baños perfectamente diseñado para maximizar el confort y la privacidad de sus habitantes. La ubicación del piso es simplemente inmejorable ya qu",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 6,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 6,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 8,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 5 habitaciones Parres, Asturias En buen estado  ·  400m² comprar 590.000 € 790.000 € -25,32% En el corazón de Asturias, en la espléndida villa de Arriondas, se alza ",
+      "price": 590000,
+      "url": "https://casasapo.es/comprar-casa-5-habitaciones-parres-3ce4e50b-9216-11f0-b3d3-060000000057.html",
+      "location": "Casa 5 habitaciones Parres, Asturias En buen estado  ·  400m² comprar 590.000 € 790.000 € -25,32% En el corazón de Asturias, en la espléndida villa de Arriondas, se alza esta joya indiana rehabilitada con mimo. Con 400 m² construidos sobre ",
+      "description": "Casa 5 habitaciones Parres, Asturias En buen estado  ·  400m² comprar 590.000 € 790.000 € -25,32% En el corazón de Asturias, en la espléndida villa de Arriondas, se alza esta joya indiana rehabilitada con mimo. Con 400 m² construidos sobre una parcela de 1.000 m², esta propiedad ofrece una ubicación privilegiada, orientada al sol, luminosa y acogedora. Además, dispone de todos los servicios básicos a pocos metros donde encontrarás: Mercadona, gasolinera y el Hospital de Arriondas. En su interior, cada detalle está pensado para disfrutar sin renunciar a nada: Chimenea de leña, perfecta para tardes de invierno. Calefacción eléctrica en cada habitación. Cocina totalmente equipada con electrodomésticos modernos. Todo ello acompañado de un entorno incomparable: Río Sella a escasos pasos Costa asturiana y sus playas espectaculares a tan solo media hora. Picos de Europa y la Sierra del Sueve. N",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -446,55 +511,13 @@
       "change_type": "new"
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 249000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201235",
-      "location": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando ",
-      "description": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando el dormitorio principal por disponer de baño en suite , además de un segundo baño completo que aporta mayor comodidad al día a día. Dispone de una amplia cocina independiente , perfecta para quienes valoran el espacio y la funcionalidad, y de un gran salón , muy luminoso y acogedor, ideal para disfrutar en familia o con amigos. Además, la vivienda cuenta con suelos de madera , un detalle que aporta calidez, elegancia y confort a las estancias. La calefacción y el agua caliente funcionan mediante caldera de gas , una prestación muy valorada por su eficiencia y confort. El edificio dispone de ascensor con acceso directo al garaje , un plus de comodidad m",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 2,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 290000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530",
-      "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra",
-      "description": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estratégica, rodeado de comercios consolidados, con gran visibilidad y un flujo constante de peatones, lo que lo convierte en un enclave ideal para cualquier actividad. Cuenta con una superficie de 142 m² distribuidos en dos plantas amplias, diáfanas y muy bien aprovechadas. Dispone de baño y aseo en ambas plantas, aportando funcionalidad tanto para clientes como para el equipo de trabajo. El local ha sido reformado con un diseño moderno y elegante, utilizando materiales de alta calidad, por lo que se encuentra en un estado impecable, listo para iniciar actividad sin necesidad de inversión adicional. Actualmente cuenta con licencia vigente de comercio menor",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 2,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 203000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2194042",
-      "location": "Venta Pisos, Venta, Nuevo roces Ramon Gomez Lozana, Gijón, Asturias 203.000 € En la cotizada zona de Nuevo Roces, Gijón , se ofrece en venta un acogedor piso que se presenta como una oportunidad inmejorable. Este inmueble cuenta con dos esp",
-      "description": "Venta Pisos, Venta, Nuevo roces Ramon Gomez Lozana, Gijón, Asturias 203.000 € En la cotizada zona de Nuevo Roces, Gijón , se ofrece en venta un acogedor piso que se presenta como una oportunidad inmejorable. Este inmueble cuenta con dos espaciosas habitaciones que brindan intimidad y tranquilidad. El diseño moderno de estas habitaciones invita al descanso, con ventanas que permiten la entrada de luz natural durante el día. Los armarios empotrados ofrecen un almacenamiento generoso sin comprometer el espacio del dormitorio. Los cuartos de baño, uno de ellos en suite, equipados con materiales de primera calidad, completan la oferta de este estupendo piso, La propiedad ofrece una plaza de garaje de fácil acceso en el mismo edificio. No más preocupaciones por encontrar aparcamiento en la zona. No pierda la oportunidad de visitar este maravilloso piso que combina calidez, modernidad y confort",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -502,27 +525,6 @@
         "negative_term"
       ],
       "score": 0,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 65000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2177360",
-      "location": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representati",
-      "description": "Venta Casas o chalets, Venta PZ PONTONA LA, Pola de Laviana, Asturias 65.000 € Edificio histórico en venta en Pola de Laviana, capital del concejo de Laviana, situado en la Plaza La Pontona, una de las plazas más emblemáticas y representativas de la localidad, con gran visibilidad y valor estratégico.\n\nSe trata de un inmueble completo para rehabilitación integral, compuesto por planta baja, planta primera, planta segunda y bajocubierta, lo que permite desarrollar un proyecto con múltiples posibilidades de distribución.\n\nDispone además de una finca anexa a la construcción en la parte trasera, con una edificación auxiliar destinada actualmente a almacén, y existe la posibilidad de adquirir otra finca colindante, lo que incrementa notablemente las opciones de desarrollo.\n\nAl tratarse de un edificio de carácter histórico, es necesario conservar la fachada, lo que no solo respeta su identidad",
-      "municipality": "Laviana",
-      "distance_km": 27.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 6,
       "changes": [
         "new"
       ],
