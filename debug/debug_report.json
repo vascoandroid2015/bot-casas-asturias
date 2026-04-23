@@ -1,9 +1,9 @@
 {
   "scraped_count": 168,
-  "rejected_count": 117,
+  "rejected_count": 119,
   "notified_count": 168,
   "reject_reasons": {
-    "negative_term": 53,
+    "negative_term": 55,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -214,7 +214,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7548 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7549 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 20
@@ -236,11 +236,10 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
+      "error_count": 0,
       "final_url": "https://www.sellmi.es/inmuebles-venta/",
-      "page_title": "",
+      "page_title": "Inmuebles en Venta en Asturias - Sellmi Inmobiliaria",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.sellmi.es/inmuebles-venta/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -386,6 +385,27 @@
       "change_type": "new"
     },
     {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. ",
+      "price": 595000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-4e1bc72c-cfb6-11e9-a325-060000000054.html",
+      "location": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río",
+      "description": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río que bordea la finca. Planta baja: Amplio hall, cocina con office, salón-comedor con gran chimenea de piedra, sala-despacho. Porche de piedra. 1ª Planta: Dos escaleras de acceso. Seis dormitorios, cuatro baños. Galería. Bajo cubierta: Cuatro dormitorios. Cocina amueblada, suelos y escalera de madera, parquet y gres, armarios empotrados, calefacción gasoil. Varias construcciones independientes como garaje para varios coches y horno. Panera. Hórreo. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 10,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
       "source": "e-viviendas",
       "kind": "portal",
       "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
@@ -403,43 +423,45 @@
       ],
       "previous_price": null,
       "change_type": "new"
-    },
-    {
-      "source": "Arxus Inmobiliaria",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2152988",
-      "location": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN ",
-      "description": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN PARCELA DE 2.300M2. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. La casa originalmente data del año 1.900 con un pronunciado carácter rural Asturiano es un lienzo en blanco ideal para desarrollar su proyecto de vida a sus necesidades. La casa dispone de vistas despejadas al valle y la montaña occidental asturiana. La casona dispone de un total de 367 m2 construidos distribuidos en 2 pl",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 8,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
     }
   ],
   "examples_rejected": [
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
+      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
+      "price": 350000,
+      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
+      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
+      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox Contacto",
+      "municipality": "Aller",
+      "distance_km": 31.9,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 2,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ],
-      "score": 4,
+      "score": 6,
       "changes": [
         "new"
       ],
@@ -449,32 +471,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
-      "price": 280000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
-      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 4,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
+      "price": 178000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
+      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
+      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -512,18 +513,18 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitacione",
-      "price": 900000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-efc23c05-6677-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. C",
-      "description": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. Contacto",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ],
-      "score": 4,
+      "score": 2,
       "changes": [
         "new"
       ],
