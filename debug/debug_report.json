@@ -214,7 +214,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7556 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7548 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 20
@@ -236,10 +236,11 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
+      "error_count": 1,
       "final_url": "https://www.sellmi.es/inmuebles-venta/",
-      "page_title": "Inmuebles en Venta en Asturias - Sellmi Inmobiliaria",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.sellmi.es/inmuebles-venta/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -385,27 +386,6 @@
       "change_type": "new"
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. ",
-      "price": 595000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-4e1bc72c-cfb6-11e9-a325-060000000054.html",
-      "location": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río",
-      "description": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río que bordea la finca. Planta baja: Amplio hall, cocina con office, salón-comedor con gran chimenea de piedra, sala-despacho. Porche de piedra. 1ª Planta: Dos escaleras de acceso. Seis dormitorios, cuatro baños. Galería. Bajo cubierta: Cuatro dormitorios. Cocina amueblada, suelos y escalera de madera, parquet y gres, armarios empotrados, calefacción gasoil. Varias construcciones independientes como garaje para varios coches y horno. Panera. Hórreo. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 10,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
       "source": "e-viviendas",
       "kind": "portal",
       "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
@@ -423,9 +403,91 @@
       ],
       "previous_price": null,
       "change_type": "new"
+    },
+    {
+      "source": "Arxus Inmobiliaria",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://arxus.es/ficha-inmueble?cod_inmueble=2152988",
+      "location": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN ",
+      "description": "Venta GRAN CASONA ASTURIANA A REFORMAR EN PARCELA DE 2.300M2, A SOLO 10 MIN DE PRAVIA. AL SORRIBA, ,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgones,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsturias Ref.: 4131 Precio: 135.000 € GRAN CASONA ASTURIANA PARA REFORMAR DE 367 M2 CONSTRUIDOS EN PARCELA DE 2.300M2. Emplazada en el plena aldea rural de Sorriba, a solo 1 minuto del pueblo de Folgueras, típico pueblo Asturiano con su plaza e Iglesia, rodeado de Casonas Indianas, hórreos tradicionales y a solo 10 minutos del Pravia, (capital de municipio) pueblo histórico con su mercado semanal y todos los servicios a su alcance. La casa originalmente data del año 1.900 con un pronunciado carácter rural Asturiano es un lienzo en blanco ideal para desarrollar su proyecto de vida a sus necesidades. La casa dispone de vistas despejadas al valle y la montaña occidental asturiana. La casona dispone de un total de 367 m2 construidos distribuidos en 2 pl",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": true,
+      "reject_reasons": [],
+      "score": 8,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
     }
   ],
   "examples_rejected": [
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
+      "price": 260000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
+      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
+      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 4,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
+      "price": 280000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
+      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 4,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ],
+      "score": 2,
+      "changes": [
+        "new"
+      ],
+      "previous_price": null,
+      "change_type": "new"
+    },
     {
       "source": "CASASAPO",
       "kind": "portal",
@@ -450,74 +512,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
-      "price": 315000,
-      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
-      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
-      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 0,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
       "title": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitacione",
       "price": 900000,
       "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-efc23c05-6677-11e4-aeff-000c2946937b.html",
       "location": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. C",
       "description": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 4,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
-      "price": 240000,
-      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
-      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
-      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ],
-      "score": 4,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa",
-      "price": 420000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-gijon-sur-8e3a2c3f-31c6-11f1-9a8d-060000000057.html",
-      "location": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espac",
-      "description": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espacio, comodidad y la tranquilidad de estar perfectamente conectados con la ciudad sin renunciar absolutamente a nada. Ubicación TOP dentro del núcleo urbano, con supermercado, centro médico y todos los servicios a un paso, además de autobús directo al centro. Porque vivir cómodo también es vivir bien ubicado. La vivienda cuenta con 4 habitaciones, 3 baños, un salón amplio donde realmente apetece estar, garaje y trastero. Todo ello sobre una parcela de 979 m², con 271 m² construidos y 240 m² útiles, ofreciendo espacio de sobra tanto dentro como fuera de casa. Y ahora viene lo interesante Posibilidad de dividirla en dos viviendas. Sí, has leído bien: una p",
       "municipality": null,
       "distance_km": null,
       "valid": true,
