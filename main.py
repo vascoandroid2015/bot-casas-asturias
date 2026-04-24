@@ -1,7 +1,6 @@
 from collections import Counter
 from datetime import datetime
 from typing import Dict, List
-from urllib.parse import urlsplit, urlunsplit
 
 from playwright.sync_api import sync_playwright
 
@@ -16,20 +15,8 @@ def now_iso() -> str:
     return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 
-def normalize_url(url: str) -> str:
-    if not url:
-        return ''
-    parts = urlsplit(url.strip())
-    path = (parts.path or '').rstrip('/')
-    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, '', ''))
-
-
-def history_key(item: Dict) -> str:
-    return normalize_url(item.get('url') or '')
-
-
-def dedupe_key(item: Dict) -> str:
-    return history_key(item)
+def dedupe_key(item: Dict):
+    return (item.get('url') or '').strip()
 
 
 def dedupe_items(items: List[Dict]) -> List[Dict]:
@@ -38,10 +25,17 @@ def dedupe_items(items: List[Dict]) -> List[Dict]:
         key = dedupe_key(item)
         if not key or key in seen:
             continue
-        item['normalized_url'] = key
         seen.add(key)
         deduped.append(item)
     return deduped
+
+
+def normalize_text(value) -> str:
+    return ' '.join(str(value or '').split()).strip().lower()
+
+
+def normalize_price(value):
+    return None if value in (None, '', 0) else value
 
 
 def detect_changes(item: Dict, prev: Dict) -> List[str]:
@@ -49,13 +43,11 @@ def detect_changes(item: Dict, prev: Dict) -> List[str]:
     if not prev:
         changes.append('new')
         return changes
-    if prev.get('last_price') != item.get('price'):
+    if normalize_price(prev.get('last_price')) != normalize_price(item.get('price')):
         changes.append('price')
-    if (prev.get('title') or '').strip() != (item.get('title') or '').strip():
+    if normalize_text(prev.get('title')) != normalize_text(item.get('title')):
         changes.append('title')
-    prev_loc = (prev.get('location') or '').strip()
-    new_loc = (item.get('location') or '').strip()
-    if prev_loc != new_loc:
+    if normalize_text(prev.get('location')) != normalize_text(item.get('location')):
         changes.append('location')
     return changes
 
@@ -64,19 +56,14 @@ def process_items(scraped: List[Dict], history: Dict):
     candidates, flagged = [], []
     for item in dedupe_items(scraped):
         classify_listing(item)
-        item['score'] = score_listing(item)
-
         if item.get('reject_reasons'):
-            item['change_type'] = 'rejected'
             flagged.append(item)
             continue
-
-        key = history_key(item)
-        prev = history.get(key)
+        item['score'] = score_listing(item)
+        prev = history.get(item['url'])
         changes = detect_changes(item, prev)
         item['changes'] = changes
         item['previous_price'] = prev.get('last_price') if prev else None
-
         if 'new' in changes:
             item['change_type'] = 'new'
             candidates.append(item)
@@ -85,19 +72,18 @@ def process_items(scraped: List[Dict], history: Dict):
             candidates.append(item)
         else:
             item['change_type'] = 'unchanged'
-
     candidates = sorted(candidates, key=lambda x: (-x.get('score', 0), x.get('price') or 999999999))
     return candidates, flagged
 
 
 def update_history(scraped: List[Dict], history: Dict, notified: List[Dict]) -> Dict:
     timestamp = now_iso()
-    notified_urls = {history_key(x) for x in notified if history_key(x)}
+    notified_urls = {x.get('url') for x in notified if x.get('url')}
     for item in dedupe_items(scraped):
-        key = history_key(item)
-        if not key:
+        url = item.get('url')
+        if not url:
             continue
-        prev = history.get(key, {})
+        prev = history.get(url, {})
         record = {
             'title': item.get('title'),
             'source': item.get('source'),
@@ -111,14 +97,12 @@ def update_history(scraped: List[Dict], history: Dict, notified: List[Dict]) -> 
             'times_seen': int(prev.get('times_seen', 0)) + 1,
             'times_notified': int(prev.get('times_notified', 0)),
             'status': 'active',
-            'url': item.get('url'),
-            'normalized_url': key,
         }
-        if key in notified_urls:
+        if url in notified_urls:
             record['first_sent_at'] = prev.get('first_sent_at', timestamp)
             record['last_notified_at'] = timestamp
             record['times_notified'] = int(prev.get('times_notified', 0)) + 1
-        history[key] = record
+        history[url] = record
     return history
 
 
@@ -154,17 +138,17 @@ def main():
         scraped, source_stats = run_all_scrapers(browser)
         browser.close()
 
+    history = update_history(scraped, history, [])
     to_notify, flagged = process_items(scraped, history)
     if MAX_RESULTS_PER_RUN and MAX_RESULTS_PER_RUN > 0:
         to_notify = to_notify[:MAX_RESULTS_PER_RUN]
 
-    if to_notify:
-        for item in to_notify:
-            send_message(build_message(item, previous_price=item.get('previous_price')))
+    for item in to_notify:
+        send_message(build_message(item, previous_price=item.get('previous_price')))
 
+    history = update_history(scraped, history, to_notify)
     report = build_report(scraped, flagged, to_notify, source_stats)
     save_debug(report)
-    history = update_history(scraped, history, to_notify)
     save_seen(history)
     save_control_report(history)
 

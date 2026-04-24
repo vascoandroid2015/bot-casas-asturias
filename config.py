@@ -36,8 +36,7 @@ PRIORITY_TERMS: List[str] = [
 
 NEGATIVE_TERMS: List[str] = [
     'alquiler', 'alquilar', 'habitacion', 'habitación', 'traspaso', 'parking',
-    'garaje', 'oficina', 'local', 'local comercial', 'locales comerciales', 'nave', 'compartir',
-    'piso', 'pisos', 'apartamento', 'apartamentos'
+    'garaje', 'oficina', 'local', 'nave', 'compartir'
 ]
 
 MUNICIPALITIES: Dict[str, Tuple[float, float]] = {
