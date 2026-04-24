@@ -1,15 +1,13 @@
 {
   "scraped_count": 168,
-  "rejected_count": 119,
-  "notified_count": 27,
+  "rejected_count": 120,
+  "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 61,
+    "negative_term": 56,
     "missing_price": 57,
     "price_out_of_range": 10
   },
-  "changes": {
-    "new": 27
-  },
+  "changes": {},
   "sources": [
     {
       "name": "Idealista",
@@ -33,7 +31,7 @@
       "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
       "valid_count": 25,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "Fincas Asturias",
@@ -119,7 +117,7 @@
       "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
       "valid_count": 20,
-      "notify_count": 19
+      "notify_count": 0
     },
     {
       "name": "Facilitea Casa",
@@ -143,7 +141,7 @@
       "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
       "block_signals": [],
       "valid_count": 20,
-      "notify_count": 3
+      "notify_count": 0
     },
     {
       "name": "Arxus Inmobiliaria",
@@ -155,7 +153,7 @@
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
       "valid_count": 12,
-      "notify_count": 1
+      "notify_count": 0
     },
     {
       "name": "Hunosa Inmobiliario",
@@ -217,7 +215,7 @@
       "page_title": "7531 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
-      "notify_count": 3
+      "notify_count": 0
     },
     {
       "name": "Engel & Völkers Asturias",
@@ -326,108 +324,7 @@
       "note": "Mejor como descubrimiento de agencias"
     }
   ],
-  "examples_to_notify": [
-    {
-      "source": "e-viviendas",
-      "kind": "portal",
-      "title": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable",
-      "price": 20000,
-      "url": "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410",
-      "location": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
-      "description": "Parcelas Rústicas en Venta Actualizado: 20/06/2021 Villaviciosa - Asturias Anuncio N°: 20410 20.000€ Negociable Tel: 677-822-940",
-      "normalized_url": "https://www.e-viviendas.es/venta-parcelas-rustica-asturias-villaviciosa/20410",
-      "municipality": "Villaviciosa",
-      "distance_km": 36.0,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 8,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios ",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-cudillero-62f1bdbc-1a97-11e5-9ec9-000c2946937b.html",
-      "location": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 ",
-      "description": "Casa con parcela Cudillero, Asturias A reformar  ·  281m² comprar 98.000 € 100.000 € -2% Casa para rehabilitar de planta baja, primera y bajo cubierta. Con los servicios de agua luz, telefonína y fosa séptica Superficie por planta de 93.81 m2 construidos. Finca de 1.300 m2 con camelias y árboles frutales. Vistas a la playa de la Concha de Artedo. Contacto",
-      "normalized_url": "https://casasapo.es/comprar-casa-con-parcela-cudillero-62f1bdbc-1a97-11e5-9ec9-000c2946937b.html",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 8,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "REMAX Asturias",
-      "kind": "portal",
-      "title": "Nueva en el mercado",
-      "price": 74990,
-      "url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/villaviciosa/todos/3555_05718/",
-      "location": "Nueva en el mercado 74.990 € Casa en venta, Villaviciosa, Asturias 1 hab 1 baño 138 m 2 Casa con parcela en Colllanzo, Mieres. \n\nDividida en 3 plantas;\n\nPlanta 0... ,",
-      "description": "Nueva en el mercado 74.990 € Casa en venta, Villaviciosa, Asturias 1 hab 1 baño 138 m 2 Casa con parcela en Colllanzo, Mieres. \n\nDividida en 3 plantas;\n\nPlanta 0... ,",
-      "normalized_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/villaviciosa/todos/3555_05718",
-      "municipality": "Mieres",
-      "distance_km": 13.7,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 6,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "Properstar",
-      "kind": "portal",
-      "title": "75.000 € Terreno para construir - 1251.8 m2 Poladura, Los Villares de Anes, Poladura Parcela • 1252 m² Añadir a favoritos Enviar mensaje",
-      "price": 75000,
-      "url": "https://www.properstar.com/vivienda/115435274",
-      "location": "75.000 € Terreno para construir - 1251.8 m2 Poladura, Los Villares de Anes, Poladura Parcela • 1252 m² Añadir a favoritos Enviar mensaje",
-      "description": "75.000 € Terreno para construir - 1251.8 m2 Poladura, Los Villares de Anes, Poladura Parcela • 1252 m² Añadir a favoritos Enviar mensaje",
-      "normalized_url": "https://www.properstar.com/vivienda/115435274",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 6,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    },
-    {
-      "source": "Properstar",
-      "kind": "portal",
-      "title": "Hace 17 horas 204.000 € Terreno para comprar en Corvera de Asturias, España Corvera de Asturias Parcela Añadir a favoritos Enviar mensaje",
-      "price": 204000,
-      "url": "https://www.properstar.com/vivienda/116032598",
-      "location": "Hace 17 horas 204.000 € Terreno para comprar en Corvera de Asturias, España Corvera de Asturias Parcela Añadir a favoritos Enviar mensaje",
-      "description": "Hace 17 horas 204.000 € Terreno para comprar en Corvera de Asturias, España Corvera de Asturias Parcela Añadir a favoritos Enviar mensaje",
-      "normalized_url": "https://www.properstar.com/vivienda/116032598",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [],
-      "score": 6,
-      "changes": [
-        "new"
-      ],
-      "previous_price": null,
-      "change_type": "new"
-    }
-  ],
+  "examples_to_notify": [],
   "examples_rejected": [
     {
       "source": "CASASAPO",
@@ -437,15 +334,12 @@
       "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
       "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
       "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
-      "normalized_url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
-      ],
-      "score": 2,
-      "change_type": "rejected"
+      ]
     },
     {
       "source": "CASASAPO",
@@ -455,15 +349,12 @@
       "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
       "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
       "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR Contacto",
-      "normalized_url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
-      ],
-      "score": 4,
-      "change_type": "rejected"
+      ]
     },
     {
       "source": "CASASAPO",
@@ -473,15 +364,12 @@
       "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
       "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
       "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
-      "normalized_url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
-      ],
-      "score": 0,
-      "change_type": "rejected"
+      ]
     },
     {
       "source": "CASASAPO",
@@ -491,15 +379,12 @@
       "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
       "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
       "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
-      "normalized_url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
-      ],
-      "score": 4,
-      "change_type": "rejected"
+      ]
     },
     {
       "source": "CASASAPO",
@@ -509,15 +394,12 @@
       "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
       "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
       "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
-      "normalized_url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
         "negative_term"
-      ],
-      "score": 8,
-      "change_type": "rejected"
+      ]
     }
   ]
 }
