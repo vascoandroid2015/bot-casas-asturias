@@ -1,6 +1,7 @@
 from collections import Counter
 from datetime import datetime
 from typing import Dict, List
+from urllib.parse import urlsplit, urlunsplit
 
 from playwright.sync_api import sync_playwright
 
@@ -10,11 +11,26 @@ from scrapers import run_all_scrapers
 from storage import load_seen, save_control_report, save_debug, save_seen
 from telegram_client import build_message, send_message
 
+
 def now_iso() -> str:
     return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-def dedupe_key(item: Dict):
-    return item.get('url') or ''
+
+def normalize_url(url: str) -> str:
+    if not url:
+        return ''
+    parts = urlsplit(url.strip())
+    path = (parts.path or '').rstrip('/')
+    return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), path, '', ''))
+
+
+def history_key(item: Dict) -> str:
+    return normalize_url(item.get('url') or '')
+
+
+def dedupe_key(item: Dict) -> str:
+    return history_key(item)
+
 
 def dedupe_items(items: List[Dict]) -> List[Dict]:
     seen, deduped = set(), []
@@ -22,9 +38,11 @@ def dedupe_items(items: List[Dict]) -> List[Dict]:
         key = dedupe_key(item)
         if not key or key in seen:
             continue
+        item['normalized_url'] = key
         seen.add(key)
         deduped.append(item)
     return deduped
+
 
 def detect_changes(item: Dict, prev: Dict) -> List[str]:
     changes = []
@@ -41,15 +59,24 @@ def detect_changes(item: Dict, prev: Dict) -> List[str]:
         changes.append('location')
     return changes
 
+
 def process_items(scraped: List[Dict], history: Dict):
     candidates, flagged = [], []
     for item in dedupe_items(scraped):
         classify_listing(item)
         item['score'] = score_listing(item)
-        prev = history.get(item['url'])
+
+        if item.get('reject_reasons'):
+            item['change_type'] = 'rejected'
+            flagged.append(item)
+            continue
+
+        key = history_key(item)
+        prev = history.get(key)
         changes = detect_changes(item, prev)
         item['changes'] = changes
         item['previous_price'] = prev.get('last_price') if prev else None
+
         if 'new' in changes:
             item['change_type'] = 'new'
             candidates.append(item)
@@ -58,19 +85,19 @@ def process_items(scraped: List[Dict], history: Dict):
             candidates.append(item)
         else:
             item['change_type'] = 'unchanged'
-        if item.get('reject_reasons'):
-            flagged.append(item)
+
     candidates = sorted(candidates, key=lambda x: (-x.get('score', 0), x.get('price') or 999999999))
     return candidates, flagged
 
+
 def update_history(scraped: List[Dict], history: Dict, notified: List[Dict]) -> Dict:
     timestamp = now_iso()
-    notified_urls = {x.get('url') for x in notified if x.get('url')}
+    notified_urls = {history_key(x) for x in notified if history_key(x)}
     for item in dedupe_items(scraped):
-        url = item.get('url')
-        if not url:
+        key = history_key(item)
+        if not key:
             continue
-        prev = history.get(url, {})
+        prev = history.get(key, {})
         record = {
             'title': item.get('title'),
             'source': item.get('source'),
@@ -84,13 +111,16 @@ def update_history(scraped: List[Dict], history: Dict, notified: List[Dict]) -> 
             'times_seen': int(prev.get('times_seen', 0)) + 1,
             'times_notified': int(prev.get('times_notified', 0)),
             'status': 'active',
+            'url': item.get('url'),
+            'normalized_url': key,
         }
-        if url in notified_urls:
+        if key in notified_urls:
             record['first_sent_at'] = prev.get('first_sent_at', timestamp)
             record['last_notified_at'] = timestamp
             record['times_notified'] = int(prev.get('times_notified', 0)) + 1
-        history[url] = record
+        history[key] = record
     return history
+
 
 def build_report(scraped: List[Dict], flagged: List[Dict], to_notify: List[Dict], source_stats: List[Dict]) -> Dict:
     reject_counter = Counter()
@@ -116,25 +146,28 @@ def build_report(scraped: List[Dict], flagged: List[Dict], to_notify: List[Dict]
         'examples_rejected': flagged[:5],
     }
 
+
 def main():
     history = load_seen()
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=HEADLESS)
         scraped, source_stats = run_all_scrapers(browser)
         browser.close()
+
     to_notify, flagged = process_items(scraped, history)
     if MAX_RESULTS_PER_RUN and MAX_RESULTS_PER_RUN > 0:
         to_notify = to_notify[:MAX_RESULTS_PER_RUN]
-    if not to_notify:
-        send_message('ℹ️ Metabuscador inmobiliario activo, sin anuncios nuevos ni cambios detectados en esta ejecución.')
-    else:
+
+    if to_notify:
         for item in to_notify:
             send_message(build_message(item, previous_price=item.get('previous_price')))
+
     report = build_report(scraped, flagged, to_notify, source_stats)
     save_debug(report)
     history = update_history(scraped, history, to_notify)
     save_seen(history)
     save_control_report(history)
+
 
 if __name__ == '__main__':
     main()
