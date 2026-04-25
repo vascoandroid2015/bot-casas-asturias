@@ -1,9 +1,9 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 97,
+  "scraped_count": 168,
+  "rejected_count": 120,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 33,
+    "negative_term": 56,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7528 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7526 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,28 +327,28 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 399900,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202712",
-      "location": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresi",
-      "description": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresionante extensión construida de 2398 metros cuadrados que incluye jardín y piscina. La propiedad dispone de: 4 Habitaciones 2 cuartos de baño. Gran salón comedor con salida directa a a terraza y parte de atrás de la vivienda. Cocina independiente. Jardín de 2000m2. a 6 km del Aeropuerto de Asturias ( Ranón ) . a 6 km de la Playa. Piscina. La propiedad también destaca por una espaciosa parcela que se extiende con 300 metros cuadrados edificables, a mayores  proporcionando una fantástica oportunidad para proyectos de expansión o personalización según las necesidades del futuro propietario. El espacio exterior es igualmente atractivo, con una zona ajardina",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
+      "price": 350000,
+      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
+      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
+      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox Contacto",
+      "municipality": "Aller",
+      "distance_km": 31.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 32000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201244",
-      "location": "Venta Fincas y solares, Venta, Valdesoto Tierra del Sucu, Bendición, Asturias 32.000 € Se presenta una oportunidad única para adquirir una finca no edificable situada en la idílica localidad de Bendición, en la prestigiosa zona de Valdesoto",
-      "description": "Venta Fincas y solares, Venta, Valdesoto Tierra del Sucu, Bendición, Asturias 32.000 € Se presenta una oportunidad única para adquirir una finca no edificable situada en la idílica localidad de Bendición, en la prestigiosa zona de Valdesoto, con MAGNIFICAS VISTAS !!! La finca, completamente cerrada, garantiza privacidad y protección, proporcionando un entorno sereno y exclusivo para quienes buscan un retiro en la naturaleza. Dispone de un pequeño Fin de semana  para reformar que no esta inscrito Un servicio regular de autobuses que conecta con las áreas cercanas proporciona una opción cómoda para los desplazamientos diarios, haciendo que la ubicación, aunque rural, no se sienta aislada. Esta cercanía al transporte hace que la finca sea perfecta tanto para quienes buscan un lugar tranquilo para desconectar como para aquellos que desean mantenerse conectados con el entorno urbano más ampli",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -357,13 +357,28 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 295000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201241",
-      "location": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble o",
-      "description": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble ofrece a sus futuros propietarios un espacio cómodo y acogedor, ideal para aquellos que buscan el hogar perfecto en un entorno urbano bien comunicado y de fácil acceso. Situado en la cuarta planta de un edificio construido en 1969, el piso cuenta con un amplio  ascensor  y portal completamente reformado sin Barreras arquitectónicas, que facilita el acceso cómodo a todas las plantas, mejorando la experiencia de los residentes al llegar a casa. Dispone de  tres habitaciones, Salón amplio ,Cocina independiente y 2 Baños perfectamente diseñado para maximizar el confort y la privacidad de sus habitantes. La ubicación del piso es simplemente inmejorable ya qu",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
+      "price": 409000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
+      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,30 +387,15 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 249000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201235",
-      "location": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando ",
-      "description": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando el dormitorio principal por disponer de baño en suite , además de un segundo baño completo que aporta mayor comodidad al día a día. Dispone de una amplia cocina independiente , perfecta para quienes valoran el espacio y la funcionalidad, y de un gran salón , muy luminoso y acogedor, ideal para disfrutar en familia o con amigos. Además, la vivienda cuenta con suelos de madera , un detalle que aporta calidez, elegancia y confort a las estancias. La calefacción y el agua caliente funcionan mediante caldera de gas , una prestación muy valorada por su eficiencia y confort. El edificio dispone de ascensor con acceso directo al garaje , un plus de comodidad m",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
+      "price": 240000,
+      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
+      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
+      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
       "municipality": null,
       "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 290000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2200530",
-      "location": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estra",
-      "description": "Venta Locales, Venta, Centro Oeste CL MARQUES DE PIDAL, Oviedo, Asturias 290.000 € Excelente oportunidad de inversión en una de las calles más comerciales y transitadas de Oviedo, Marqués de Pidal. Este local se sitúa en una ubicación estratégica, rodeado de comercios consolidados, con gran visibilidad y un flujo constante de peatones, lo que lo convierte en un enclave ideal para cualquier actividad. Cuenta con una superficie de 142 m² distribuidos en dos plantas amplias, diáfanas y muy bien aprovechadas. Dispone de baño y aseo en ambas plantas, aportando funcionalidad tanto para clientes como para el equipo de trabajo. El local ha sido reformado con un diseño moderno y elegante, utilizando materiales de alta calidad, por lo que se encuentra en un estado impecable, listo para iniciar actividad sin necesidad de inversión adicional. Actualmente cuenta con licencia vigente de comercio menor",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
         "negative_term"
