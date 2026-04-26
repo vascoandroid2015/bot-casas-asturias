@@ -1,9 +1,9 @@
 {
   "scraped_count": 168,
-  "rejected_count": 120,
+  "rejected_count": 122,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 56,
+    "negative_term": 58,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -234,11 +234,10 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://www.sellmi.es/inmuebles-venta/",
+      "page_title": "Inmuebles en Venta en Asturias - Sellmi Inmobiliaria",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.sellmi.es/inmuebles-venta/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -330,43 +329,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
-      "price": 240000,
-      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
-      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
-      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
-      "municipality": null,
-      "distance_km": null,
+      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
+      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
+      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche. Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -390,13 +359,43 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. ",
-      "price": 595000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-4e1bc72c-cfb6-11e9-a325-060000000054.html",
-      "location": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río",
-      "description": "Casa con parcela Soto del Barco, Asturias En buen estado comprar 595.000 € 695.000 € -14,39% Espectacular casa de indianos en uno de los pueblos más bonitos de Asturias. Próximo al aeropuerto. Finca de 3.200 m2 con árboles centenarios y río que bordea la finca. Planta baja: Amplio hall, cocina con office, salón-comedor con gran chimenea de piedra, sala-despacho. Porche de piedra. 1ª Planta: Dos escaleras de acceso. Seis dormitorios, cuatro baños. Galería. Bajo cubierta: Cuatro dormitorios. Cocina amueblada, suelos y escalera de madera, parquet y gres, armarios empotrados, calefacción gasoil. Varias construcciones independientes como garaje para varios coches y horno. Panera. Hórreo. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet Rural, Gijón, Asturias En buen estado  ·  317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de M",
+      "price": 750000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-rural-6d379b72-259f-11f0-b3d3-060000000057.html",
+      "location": "Chalet Rural, Gijón, Asturias En buen estado  ·  317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos metros de la Escuela de Fútbol del Real Sporting de Gi",
+      "description": "Chalet Rural, Gijón, Asturias En buen estado  ·  317m² Con Garaje comprar 750.000 € Presentamos uno de los chalets más exclusivos de la zona, ubicado en la parroquia de Mareo, a escasos metros de la Escuela de Fútbol del Real Sporting de Gijón y con parada de autobús (línea 24) muy próxima. Se trata de una vivienda unifamiliar cerrada dentro de una urbanización privada, con total privacidad y rodeada de naturaleza. La propiedad cuenta con: · 2.000 m’ de parcela ajardinada · Piscina privada · 4 habitaciones distribuidas en primera y segunda planta · Sótano con choco, cocina, zona de vivienda y garaje · Acabados de alta calidad · Espacios amplios, cómodos y muy luminosos Un chalet perfecto para familias, amantes de la tranquilidad o quienes desean vivir en un entorno natural, sin renunciar a la cercanía de la ciudad. Una casa perfecta para disfrutar de momentos y tener recuerdos únicos con",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
+      "price": 600000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
+      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
+      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
         "negative_term"
