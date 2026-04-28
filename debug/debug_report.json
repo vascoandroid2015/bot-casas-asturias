@@ -1,9 +1,9 @@
 {
   "scraped_count": 167,
-  "rejected_count": 120,
+  "rejected_count": 122,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 56,
+    "negative_term": 58,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -174,7 +174,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
-      "page_title": "solvia.es | 502: Bad gateway",
+      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -329,6 +329,66 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 2 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  97m² Con Garaje comprar 225.000 € SAN MIGUEL DE QUILOÑO. Casa independiente con parcela ",
+      "price": 225000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-2-habitaciones-castrillon-pillarno-e460fc8a-1721-11f1-8add-060000000054.html",
+      "location": "Casa con parcela 2 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  97m² Con Garaje comprar 225.000 € SAN MIGUEL DE QUILOÑO. Casa independiente con parcela de 3000 m2. Distribuida en planta baja, principal y bajocubierta. Disp",
+      "description": "Casa con parcela 2 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  97m² Con Garaje comprar 225.000 € SAN MIGUEL DE QUILOÑO. Casa independiente con parcela de 3000 m2. Distribuida en planta baja, principal y bajocubierta. Dispone de garaje y comedor en la planta baja; Salón, cocina-comedor, un dormitorio y un baño en la planta principal; Habitación de 21 m2 útil en la planta bajocubierta para destinar a cualquier uso. Ventanas aluminio doble acristalamiento. Zona de barbacoa y casetas de aperos. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitacione",
+      "price": 900000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-efc23c05-6677-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. C",
+      "description": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
       "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
       "price": 409000,
       "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
@@ -336,66 +396,6 @@
       "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
       "municipality": "Corvera",
       "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa",
-      "price": 420000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-gijon-sur-8e3a2c3f-31c6-11f1-9a8d-060000000057.html",
-      "location": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espac",
-      "description": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espacio, comodidad y la tranquilidad de estar perfectamente conectados con la ciudad sin renunciar absolutamente a nada. Ubicación TOP dentro del núcleo urbano, con supermercado, centro médico y todos los servicios a un paso, además de autobús directo al centro. Porque vivir cómodo también es vivir bien ubicado. La vivienda cuenta con 4 habitaciones, 3 baños, un salón amplio donde realmente apetece estar, garaje y trastero. Todo ello sobre una parcela de 979 m², con 271 m² construidos y 240 m² útiles, ofreciendo espacio de sobra tanto dentro como fuera de casa. Y ahora viene lo interesante Posibilidad de dividirla en dos viviendas. Sí, has leído bien: una p",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
-      "price": 600000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
-      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
-      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, ",
-      "price": 155000,
-      "url": "https://casasapo.es/comprar-casa-de-madera-2-habitaciones-illas-18fcfd0b-667b-11e4-aeff-000c2946937b.html",
-      "location": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador,",
-      "description": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador, todo eléctrico. Otro horreo para rehabilitar. Finca de 2.100m2 con árboles frutales. Contacto",
-      "municipality": null,
-      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
