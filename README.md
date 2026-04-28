@@ -1,16 +1,27 @@
-# Bot casas Asturias - ZIP corregido con Playwright
+# Bot Casas Asturias max - versión corregida final
 
-Cambios incluidos:
-- añadido playwright a requirements.txt
-- workflow GitHub Actions corregido para Python
-- uso de `python -m playwright install --with-deps chromium`
-- envío Telegram con control anti-429
-- persistencia de anuncios vistos
-- debug_report.json al final de cada ejecución
+Esta versión incluye:
 
-## Variables necesarias
-- TELEGRAM_BOT_TOKEN
-- TELEGRAM_CHAT_ID
+- control persistente de anuncios ya enviados a Telegram
+- prevención de duplicados por URL
+- detección de cambios en precio, título y ubicación
+- documento de control legible en `data/anuncios_control.md`
+- almacenamiento del registro maestro en `data/sent_ads_registry.json`
+- eliminación del mensaje final de Telegram llamado resumen debug
 
-## Nota
-El scraper incluido sigue siendo de ejemplo con Playwright. Sustituye `scrape_example_portal()` por tus scrapers reales.
+## Comportamiento
+
+- Anuncio nuevo: se envía
+- Anuncio ya conocido sin cambios: no se envía
+- Anuncio con cambios: se vuelve a enviar indicando los cambios
+- Si cambia el precio: se muestra también el precio anterior
+
+## Uso
+
+```bash
+pip install -r requirements.txt
+playwright install chromium
+export TELEGRAM_TOKEN='tu_token'
+export TELEGRAM_CHAT_ID='tu_chat_id'
+python main.py
+```
