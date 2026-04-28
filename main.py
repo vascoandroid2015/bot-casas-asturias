@@ -25,17 +25,9 @@ def is_valid(item: dict) -> bool:
 
 def main():
     seen = load_seen()
-    stats = {
-        "total_found": 0,
-        "total_new": 0,
-        "total_sent": 0,
-        "sources": {}
-    }
-
+    stats = {"total_found": 0, "total_new": 0, "total_sent": 0, "sources": {}}
     all_items = []
-    sources = {
-        "Example": scrape_example_portal,
-    }
+    sources = {"Example": scrape_example_portal}
 
     for source_name, fn in sources.items():
         source_stats = {"found": 0, "valid": 0, "new": 0, "errors": 0}
@@ -47,9 +39,8 @@ def main():
                 if is_valid(item):
                     source_stats["valid"] += 1
                     all_items.append(item)
-        except Exception as e:
+        except Exception:
             source_stats["errors"] += 1
-            item = {"id": f"error-{source_name.lower()}", "title": f"Error en {source_name}", "price": "0 €", "location": str(e), "source": source_name, "url": ""}
         stats["sources"][source_name] = source_stats
 
     new_items = []

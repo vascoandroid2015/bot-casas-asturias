@@ -1,23 +1,16 @@
-# Bot casas Asturias - ZIP nuevo
+# Bot casas Asturias - ZIP corregido con Playwright
 
-Incluye una base funcional para:
-- detectar anuncios nuevos
-- guardar anuncios ya vistos
-- enviar cada nueva casa como mensaje individual a Telegram
-- evitar errores silenciosos
-- manejar 429 Too Many Requests con reintento
-- generar debug_report.json
+Cambios incluidos:
+- añadido playwright a requirements.txt
+- workflow GitHub Actions corregido para Python
+- uso de `python -m playwright install --with-deps chromium`
+- envío Telegram con control anti-429
+- persistencia de anuncios vistos
+- debug_report.json al final de cada ejecución
 
 ## Variables necesarias
 - TELEGRAM_BOT_TOKEN
 - TELEGRAM_CHAT_ID
 
-## Archivos clave
-- main.py
-- telegram_client.py
-- scrapers.py
-- storage.py
-- .github/workflows/run-bot.yml
-
-## Importante
-El scraper incluido es de ejemplo. Hay que sustituir `scrape_example_portal()` por tus scrapers reales de Idealista/Milanuncios/Fotocasa.
+## Nota
+El scraper incluido sigue siendo de ejemplo con Playwright. Sustituye `scrape_example_portal()` por tus scrapers reales.
