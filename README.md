@@ -1,27 +1,23 @@
-# Bot Casas Asturias max - versión corregida final
+# Bot casas Asturias - ZIP nuevo
 
-Esta versión incluye:
+Incluye una base funcional para:
+- detectar anuncios nuevos
+- guardar anuncios ya vistos
+- enviar cada nueva casa como mensaje individual a Telegram
+- evitar errores silenciosos
+- manejar 429 Too Many Requests con reintento
+- generar debug_report.json
 
-- control persistente de anuncios ya enviados a Telegram
-- prevención de duplicados por URL
-- detección de cambios en precio, título y ubicación
-- documento de control legible en `data/anuncios_control.md`
-- almacenamiento del registro maestro en `data/sent_ads_registry.json`
-- eliminación del mensaje final de Telegram llamado resumen debug
+## Variables necesarias
+- TELEGRAM_BOT_TOKEN
+- TELEGRAM_CHAT_ID
 
-## Comportamiento
+## Archivos clave
+- main.py
+- telegram_client.py
+- scrapers.py
+- storage.py
+- .github/workflows/run-bot.yml
 
-- Anuncio nuevo: se envía
-- Anuncio ya conocido sin cambios: no se envía
-- Anuncio con cambios: se vuelve a enviar indicando los cambios
-- Si cambia el precio: se muestra también el precio anterior
-
-## Uso
-
-```bash
-pip install -r requirements.txt
-playwright install chromium
-export TELEGRAM_TOKEN='tu_token'
-export TELEGRAM_CHAT_ID='tu_chat_id'
-python main.py
-```
+## Importante
+El scraper incluido es de ejemplo. Hay que sustituir `scrape_example_portal()` por tus scrapers reales de Idealista/Milanuncios/Fotocasa.
