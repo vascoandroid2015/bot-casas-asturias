@@ -1,9 +1,9 @@
 {
-  "scraped_count": 141,
-  "rejected_count": 99,
+  "scraped_count": 142,
+  "rejected_count": 101,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 35,
+    "negative_term": 37,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -245,13 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -331,6 +330,21 @@
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
+      "price": 198000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209489",
+      "location": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres",
+      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para ofrecer. Además, la proximidad a tienda",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
       "price": 79000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
       "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
@@ -382,21 +396,6 @@
       "description": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y múltiples posibilidades en pleno centro de la ciudad. Actualmente el inmueble se encuentra acondicionado como oficina , si bien su uso es de vivienda , lo que permite transformarlo nuevamente en un acogedor piso adaptado a tus necesidades. Cuenta con una superficie construida de 91 m² , con una distribución versátil ideal para diseñar una vivienda moderna y funcional tras una reforma. 🔹 Características principales: Superficie: 91 m² construidos 3 despachos 1 baño Amplia recepción 🔹 Posibilidades : 2 dormitorios Salón con cocina americana 1 baño Amplia recepción Planta: 4ª Situación: Semiinterior (mayor tranquilidad) Uso permitido: Vivienda 💡 Gran oportu",
       "municipality": "Oviedo",
       "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 399900,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202712",
-      "location": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresi",
-      "description": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresionante extensión construida de 2398 metros cuadrados que incluye jardín y piscina. La propiedad dispone de: 4 Habitaciones 2 cuartos de baño. Gran salón comedor con salida directa a a terraza y parte de atrás de la vivienda. Cocina independiente. Jardín de 2000m2. a 6 km del Aeropuerto de Asturias ( Ranón ) . a 6 km de la Playa. Piscina. La propiedad también destaca por una espaciosa parcela que se extiende con 300 metros cuadrados edificables, a mayores  proporcionando una fantástica oportunidad para proyectos de expansión o personalización según las necesidades del futuro propietario. El espacio exterior es igualmente atractivo, con una zona ajardina",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
       "valid": true,
       "reject_reasons": [
         "negative_term"
