@@ -1,9 +1,9 @@
 {
   "scraped_count": 142,
-  "rejected_count": 99,
+  "rejected_count": 100,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 35,
+    "negative_term": 36,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7528 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7518 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -330,6 +330,36 @@
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
+      "price": 79000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
+      "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
+      "description": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que necesitas en un espacio eficiente y bien distribuido. Este inmueble, ubicado en la primera planta, es la opción perfecta para aquellos que desean vivir en un entorno tranquilo sin renunciar a las comodidades de una ubicación estratégica. La finca esta bien conservada  gracias a sus mantenimientos,l Con una superficie útil de 58 metros cuadrados y 60 metros construidos, este piso se adapta de manera excepcional a parejas, jóvenes profesionales o  a segunda residencia. El hogar cuenta con dos  habitaciones, ofreciendo un espacio íntimo y acogedor para el descanso o para trabajar desde casa. Las estancias están diseñadas pensando en la funcionalidad y la c",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 200000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209223",
+      "location": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual c",
+      "description": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual como inversión. El edificio cuenta con ascensor, lo que garantiza un acceso cómodo y sin barreras, perfecto para familias, personas mayores o simplemente para el día a día. Ubicado en un entorno tranquilo pero con toda la vida de barrio, este piso destaca por su excelente comunicación. A pocos minutos de la estación de tren y con varias líneas de autobús cercanas, permite moverse con facilidad por toda la ciudad. La zona ofrece todo tipo de servicios: colegios, supermercados, centros deportivos y zonas verdes. Además, cuenta con un ambiente cercano y familiar, con comercios tradicionales y una amplia oferta de hostelería donde disfrutar de la gastronomí",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
       "price": 529000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2207760",
       "location": "Venta Casas o chalets, Venta LG CAMANGO, Ribadesella, Asturias 529.000 € Se presenta a la venta una magnífica INVERSION !!! Casa independiente  con Parcela de 1704 metros y apartamento a estrenar en Planta Baja con entradas independientes y",
@@ -345,57 +375,27 @@
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
+      "price": 258000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202736",
+      "location": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y m",
+      "description": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y múltiples posibilidades en pleno centro de la ciudad. Actualmente el inmueble se encuentra acondicionado como oficina , si bien su uso es de vivienda , lo que permite transformarlo nuevamente en un acogedor piso adaptado a tus necesidades. Cuenta con una superficie construida de 91 m² , con una distribución versátil ideal para diseñar una vivienda moderna y funcional tras una reforma. 🔹 Características principales: Superficie: 91 m² construidos 3 despachos 1 baño Amplia recepción 🔹 Posibilidades : 2 dormitorios Salón con cocina americana 1 baño Amplia recepción Planta: 4ª Situación: Semiinterior (mayor tranquilidad) Uso permitido: Vivienda 💡 Gran oportu",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
       "price": 399900,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202712",
       "location": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresi",
       "description": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresionante extensión construida de 2398 metros cuadrados que incluye jardín y piscina. La propiedad dispone de: 4 Habitaciones 2 cuartos de baño. Gran salón comedor con salida directa a a terraza y parte de atrás de la vivienda. Cocina independiente. Jardín de 2000m2. a 6 km del Aeropuerto de Asturias ( Ranón ) . a 6 km de la Playa. Piscina. La propiedad también destaca por una espaciosa parcela que se extiende con 300 metros cuadrados edificables, a mayores  proporcionando una fantástica oportunidad para proyectos de expansión o personalización según las necesidades del futuro propietario. El espacio exterior es igualmente atractivo, con una zona ajardina",
       "municipality": "Soto Del Barco",
       "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 32000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201244",
-      "location": "Venta Fincas y solares, Venta, Valdesoto Tierra del Sucu, Bendición, Asturias 32.000 € Se presenta una oportunidad única para adquirir una finca no edificable situada en la idílica localidad de Bendición, en la prestigiosa zona de Valdesoto",
-      "description": "Venta Fincas y solares, Venta, Valdesoto Tierra del Sucu, Bendición, Asturias 32.000 € Se presenta una oportunidad única para adquirir una finca no edificable situada en la idílica localidad de Bendición, en la prestigiosa zona de Valdesoto, con MAGNIFICAS VISTAS !!! La finca, completamente cerrada, garantiza privacidad y protección, proporcionando un entorno sereno y exclusivo para quienes buscan un retiro en la naturaleza. Dispone de un pequeño Fin de semana  para reformar que no esta inscrito Un servicio regular de autobuses que conecta con las áreas cercanas proporciona una opción cómoda para los desplazamientos diarios, haciendo que la ubicación, aunque rural, no se sienta aislada. Esta cercanía al transporte hace que la finca sea perfecta tanto para quienes buscan un lugar tranquilo para desconectar como para aquellos que desean mantenerse conectados con el entorno urbano más ampli",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 295000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201241",
-      "location": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble o",
-      "description": "Venta Pisos, Venta, La Arena Calle Ezcurdia, Gijón, Asturias 295.000 € **Exclusiva Oportunidad en La Arena: Piso en Venta en Gijón** Nos complace presentar ,piso en venta ubicado en la prestigiosa zona de La Arena, en Gijón. Este inmueble ofrece a sus futuros propietarios un espacio cómodo y acogedor, ideal para aquellos que buscan el hogar perfecto en un entorno urbano bien comunicado y de fácil acceso. Situado en la cuarta planta de un edificio construido en 1969, el piso cuenta con un amplio  ascensor  y portal completamente reformado sin Barreras arquitectónicas, que facilita el acceso cómodo a todas las plantas, mejorando la experiencia de los residentes al llegar a casa. Dispone de  tres habitaciones, Salón amplio ,Cocina independiente y 2 Baños perfectamente diseñado para maximizar el confort y la privacidad de sus habitantes. La ubicación del piso es simplemente inmejorable ya qu",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 249000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2201235",
-      "location": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando ",
-      "description": "Venta Pisos, Venta, La Calzada Calle de Manolo Quirós, Gijón, Asturias 249.000 € Se vende estupendo piso en una de las zonas más cómodas y prácticas de Gijón, en Calle Manolo de Quirós . La vivienda cuenta con dos habitaciones , destacando el dormitorio principal por disponer de baño en suite , además de un segundo baño completo que aporta mayor comodidad al día a día. Dispone de una amplia cocina independiente , perfecta para quienes valoran el espacio y la funcionalidad, y de un gran salón , muy luminoso y acogedor, ideal para disfrutar en familia o con amigos. Además, la vivienda cuenta con suelos de madera , un detalle que aporta calidez, elegancia y confort a las estancias. La calefacción y el agua caliente funcionan mediante caldera de gas , una prestación muy valorada por su eficiencia y confort. El edificio dispone de ascensor con acceso directo al garaje , un plus de comodidad m",
-      "municipality": null,
-      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
