@@ -1,9 +1,9 @@
 {
-  "scraped_count": 142,
-  "rejected_count": 100,
+  "scraped_count": 167,
+  "rejected_count": 122,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 36,
+    "negative_term": 58,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "43 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7518 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7507 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,13 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 79000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
-      "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
-      "description": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que necesitas en un espacio eficiente y bien distribuido. Este inmueble, ubicado en la primera planta, es la opción perfecta para aquellos que desean vivir en un entorno tranquilo sin renunciar a las comodidades de una ubicación estratégica. La finca esta bien conservada  gracias a sus mantenimientos,l Con una superficie útil de 58 metros cuadrados y 60 metros construidos, este piso se adapta de manera excepcional a parejas, jóvenes profesionales o  a segunda residencia. El hogar cuenta con dos  habitaciones, ofreciendo un espacio íntimo y acogedor para el descanso o para trabajar desde casa. Las estancias están diseñadas pensando en la funcionalidad y la c",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,60 +342,60 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 200000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209223",
-      "location": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual c",
-      "description": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual como inversión. El edificio cuenta con ascensor, lo que garantiza un acceso cómodo y sin barreras, perfecto para familias, personas mayores o simplemente para el día a día. Ubicado en un entorno tranquilo pero con toda la vida de barrio, este piso destaca por su excelente comunicación. A pocos minutos de la estación de tren y con varias líneas de autobús cercanas, permite moverse con facilidad por toda la ciudad. La zona ofrece todo tipo de servicios: colegios, supermercados, centros deportivos y zonas verdes. Además, cuenta con un ambiente cercano y familiar, con comercios tradicionales y una amplia oferta de hostelería donde disfrutar de la gastronomí",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
+      "price": 409000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
+      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 529000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2207760",
-      "location": "Venta Casas o chalets, Venta LG CAMANGO, Ribadesella, Asturias 529.000 € Se presenta a la venta una magnífica INVERSION !!! Casa independiente  con Parcela de 1704 metros y apartamento a estrenar en Planta Baja con entradas independientes y",
-      "description": "Venta Casas o chalets, Venta LG CAMANGO, Ribadesella, Asturias 529.000 € Se presenta a la venta una magnífica INVERSION !!! Casa independiente  con Parcela de 1704 metros y apartamento a estrenar en Planta Baja con entradas independientes y ambas con Licencia Vacacional situada en  el municipio de Ribadesella en Camango ,construida en 2007 La casa cuenta con una extensión de 162 metros construidos, de los cuales 160 metros son útiles, Dispone de 2 Plantas: Planta Baja con Salon Cocina habitacion despacho y Baño y en la Primera Planta dispone de 4 amplias Habitaciones y 1 Baño Grande, lo que la hace ideal para familias numerosas o para aquellos que deseen disponer de espacio adicional. A todo esto se añade un apartamento de 28 metros en planta completamente reformado  con pequeña terraza y con acceso independiente lo que permite sacar una buena rentabilidad a cada propiedad al tener licen",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 258000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202736",
-      "location": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y m",
-      "description": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y múltiples posibilidades en pleno centro de la ciudad. Actualmente el inmueble se encuentra acondicionado como oficina , si bien su uso es de vivienda , lo que permite transformarlo nuevamente en un acogedor piso adaptado a tus necesidades. Cuenta con una superficie construida de 91 m² , con una distribución versátil ideal para diseñar una vivienda moderna y funcional tras una reforma. 🔹 Características principales: Superficie: 91 m² construidos 3 despachos 1 baño Amplia recepción 🔹 Posibilidades : 2 dormitorios Salón con cocina americana 1 baño Amplia recepción Planta: 4ª Situación: Semiinterior (mayor tranquilidad) Uso permitido: Vivienda 💡 Gran oportu",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 399900,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202712",
-      "location": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresi",
-      "description": "Venta Casas o chalets, Venta La Ferreria, Soto del Barco, Asturias 399.900 € Oportunidad !! propiedad excepcional en el encantador municipio de Soto del Barco a 6 km de la PLAYA. Con una superficie útil de 217 metros cuadrados y una impresionante extensión construida de 2398 metros cuadrados que incluye jardín y piscina. La propiedad dispone de: 4 Habitaciones 2 cuartos de baño. Gran salón comedor con salida directa a a terraza y parte de atrás de la vivienda. Cocina independiente. Jardín de 2000m2. a 6 km del Aeropuerto de Asturias ( Ranón ) . a 6 km de la Playa. Piscina. La propiedad también destaca por una espaciosa parcela que se extiende con 300 metros cuadrados edificables, a mayores  proporcionando una fantástica oportunidad para proyectos de expansión o personalización según las necesidades del futuro propietario. El espacio exterior es igualmente atractivo, con una zona ajardina",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
+      "price": 280000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
+      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
       "municipality": "Soto Del Barco",
       "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
+      "price": 206000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
+      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
+      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
       "valid": true,
       "reject_reasons": [
         "negative_term"
