@@ -1,9 +1,9 @@
 {
   "scraped_count": 168,
-  "rejected_count": 122,
+  "rejected_count": 121,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 58,
+    "negative_term": 57,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7465 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7472 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -329,21 +329,6 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pue",
-      "price": 495000,
-      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-siero-parroquias-norte-6d91304a-3990-11f1-9a8d-060000000057.html",
-      "location": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos ",
-      "description": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zona como Amazon, te presentamos este chalet que marca la diferencia. Una vivienda construida con mimo y excelentes calidades, pensada para quienes valoran el espacio, la tranquilidad y una calidad de vida real, sin renunciar a una ubicación estratégica y bien conectada. Aquí no solo compras una casa, sino una forma de vivir. La propiedad se asienta sobre una amplia parcela de 820 m², ofreciendo privacidad, luz y múltiples posibilidades. Sus 307 m² construidos se distribuyen en tres cómodas plantas, con una distribución versátil que se adapta tanto a familias como a quienes buscan amplitud y funcionalidad en su día a día. Cuenta con 5 ",
-      "municipality": "Siero",
-      "distance_km": 15.4,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
       "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
       "price": 120000,
       "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
@@ -359,11 +344,26 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
-      "price": 460000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
-      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
-      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
+      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
+      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
+      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en ",
+      "price": 950000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
+      "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
+      "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -374,11 +374,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -389,11 +389,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
