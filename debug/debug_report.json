@@ -1,10 +1,10 @@
 {
-  "scraped_count": 142,
-  "rejected_count": 102,
+  "scraped_count": 167,
+  "rejected_count": 122,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 38,
-    "missing_price": 57,
+    "negative_term": 58,
+    "missing_price": 58,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "43 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -97,14 +97,14 @@
       "name": "Grupo Duarte",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.grupoduarte.es/propiedades-venta/",
-      "page_title": "Grupo Duarte",
+      "page_title": "Propiedades en venta en Asturias - Inmobiliaria Toral",
       "block_signals": [
         "enable javascript"
       ],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7509 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7507 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -245,12 +245,13 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
-      "error_count": 0,
-      "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "raw_count": 0,
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -327,13 +328,28 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 198000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209489",
-      "location": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres",
-      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para ofrecer. Además, la proximidad a tienda",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
+      "price": 240000,
+      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
+      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
+      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,13 +358,28 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 79000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
-      "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
-      "description": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que necesitas en un espacio eficiente y bien distribuido. Este inmueble, ubicado en la primera planta, es la opción perfecta para aquellos que desean vivir en un entorno tranquilo sin renunciar a las comodidades de una ubicación estratégica. La finca esta bien conservada  gracias a sus mantenimientos,l Con una superficie útil de 58 metros cuadrados y 60 metros construidos, este piso se adapta de manera excepcional a parejas, jóvenes profesionales o  a segunda residencia. El hogar cuenta con dos  habitaciones, ofreciendo un espacio íntimo y acogedor para el descanso o para trabajar desde casa. Las estancias están diseñadas pensando en la funcionalidad y la c",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
+      "price": 206000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
+      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
+      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
+      "price": 178000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
+      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
+      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -357,43 +388,13 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 200000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209223",
-      "location": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual c",
-      "description": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual como inversión. El edificio cuenta con ascensor, lo que garantiza un acceso cómodo y sin barreras, perfecto para familias, personas mayores o simplemente para el día a día. Ubicado en un entorno tranquilo pero con toda la vida de barrio, este piso destaca por su excelente comunicación. A pocos minutos de la estación de tren y con varias líneas de autobús cercanas, permite moverse con facilidad por toda la ciudad. La zona ofrece todo tipo de servicios: colegios, supermercados, centros deportivos y zonas verdes. Además, cuenta con un ambiente cercano y familiar, con comercios tradicionales y una amplia oferta de hostelería donde disfrutar de la gastronomí",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 529000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2207760",
-      "location": "Venta Casas o chalets, Venta LG CAMANGO, Ribadesella, Asturias 529.000 € Se presenta a la venta una magnífica INVERSION !!! Casa independiente  con Parcela de 1704 metros y apartamento a estrenar en Planta Baja con entradas independientes y",
-      "description": "Venta Casas o chalets, Venta LG CAMANGO, Ribadesella, Asturias 529.000 € Se presenta a la venta una magnífica INVERSION !!! Casa independiente  con Parcela de 1704 metros y apartamento a estrenar en Planta Baja con entradas independientes y ambas con Licencia Vacacional situada en  el municipio de Ribadesella en Camango ,construida en 2007 La casa cuenta con una extensión de 162 metros construidos, de los cuales 160 metros son útiles, Dispone de 2 Plantas: Planta Baja con Salon Cocina habitacion despacho y Baño y en la Primera Planta dispone de 4 amplias Habitaciones y 1 Baño Grande, lo que la hace ideal para familias numerosas o para aquellos que deseen disponer de espacio adicional. A todo esto se añade un apartamento de 28 metros en planta completamente reformado  con pequeña terraza y con acceso independiente lo que permite sacar una buena rentabilidad a cada propiedad al tener licen",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 258000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2202736",
-      "location": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y m",
-      "description": "Venta Pisos, Venta, Centro Oeste CL URIA, Oviedo, Asturias 258.000 € Se vende inmueble situado en plena Calle Uría , una de las arterias principales y más demandadas de Oviedo. Ubicado en una 4ª planta semiinterior , ofrece tranquilidad y múltiples posibilidades en pleno centro de la ciudad. Actualmente el inmueble se encuentra acondicionado como oficina , si bien su uso es de vivienda , lo que permite transformarlo nuevamente en un acogedor piso adaptado a tus necesidades. Cuenta con una superficie construida de 91 m² , con una distribución versátil ideal para diseñar una vivienda moderna y funcional tras una reforma. 🔹 Características principales: Superficie: 91 m² construidos 3 despachos 1 baño Amplia recepción 🔹 Posibilidades : 2 dormitorios Salón con cocina americana 1 baño Amplia recepción Planta: 4ª Situación: Semiinterior (mayor tranquilidad) Uso permitido: Vivienda 💡 Gran oportu",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: P",
+      "price": 458000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-la-pola-siero-ae2d737a-dd6a-11ef-9e0e-060000000057.html",
+      "location": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes b",
+      "description": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes buscan tranquilidad sin vivir aislados. A 1,5 km de Pola de Siero, con todos los servicios necesarios. Oviedo: 15 min | Parque Principado: menos de 10 min | Costa: 15-20 min. Cerca del nuevo Amazon Asturias, una ubicación perfecta para familias e inversores. Características del chalet: 147 m² construidos. 3 habitaciones. 2 baños completos. Salón independiente, cocina y un amplio porche. Personalizable a tu gusto: Estamos en el momento ideal para realizar modificaciones en las divisiones interiores y adaptar el chalet a tus necesidades. Precio: 458.000 €. Un hogar único en una zona privilegiada. ¡Llámanos y asegura tu hogar antes de que finalice el proye",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
