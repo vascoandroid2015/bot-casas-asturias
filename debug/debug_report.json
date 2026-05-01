@@ -1,9 +1,9 @@
 {
-  "scraped_count": 142,
-  "rejected_count": 97,
+  "scraped_count": 143,
+  "rejected_count": 98,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 33,
+    "negative_term": 34,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -174,7 +174,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
-      "page_title": "solvia.es | 502: Bad gateway",
+      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7515 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7517 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -245,13 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
