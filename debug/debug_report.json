@@ -1,9 +1,9 @@
 {
-  "scraped_count": 168,
-  "rejected_count": 118,
+  "scraped_count": 143,
+  "rejected_count": 96,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 54,
+    "negative_term": 32,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7524 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7531 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,75 +327,76 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 6 habitaciones Cudillero, Asturias En buen estado  ·  220m² comprar 525.000 € La propiedad se sitúa sobre una parcela de 2.000 m² y cuenta con 220 m² construidos apr",
-      "price": 525000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-cudillero-6a5ef038-fd00-11f0-b3d3-060000000057.html",
-      "location": "Casa 6 habitaciones Cudillero, Asturias En buen estado  ·  220m² comprar 525.000 € La propiedad se sitúa sobre una parcela de 2.000 m² y cuenta con 220 m² construidos aprox., distribuidos en 6 habitaciones, 2 baños, cocina y salón. Completa",
-      "description": "Casa 6 habitaciones Cudillero, Asturias En buen estado  ·  220m² comprar 525.000 € La propiedad se sitúa sobre una parcela de 2.000 m² y cuenta con 220 m² construidos aprox., distribuidos en 6 habitaciones, 2 baños, cocina y salón. Completa el conjunto un hórreo tradicional y casa de aperos, que aportan carácter y autenticidad a la finca. Ubicada en un entorno natural privilegiado, muy cerca de Cudillero y Luarca, y a pocos minutos de playas tan reconocidas como la Playa del Silencio. Novellana, distinguida como Pueblo Ejemplar de Asturias, ofrece tranquilidad, belleza y una alta calidad de vida. Una propiedad ideal como vivienda familiar, retiro personal o proyecto turístico, con el valor añadido de su cercanía al Camino de Santiago. Oportunidades así son poco habituales en esta zona. Precio: 525.000 € Si buscas una casa especial en un entorno único, ¡contacta con nosotros y descubre to",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
-      "price": 315000,
-      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
-      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
-      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: P",
-      "price": 458000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-la-pola-siero-ae2d737a-dd6a-11ef-9e0e-060000000057.html",
-      "location": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes b",
-      "description": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes buscan tranquilidad sin vivir aislados. A 1,5 km de Pola de Siero, con todos los servicios necesarios. Oviedo: 15 min | Parque Principado: menos de 10 min | Costa: 15-20 min. Cerca del nuevo Amazon Asturias, una ubicación perfecta para familias e inversores. Características del chalet: 147 m² construidos. 3 habitaciones. 2 baños completos. Salón independiente, cocina y un amplio porche. Personalizable a tu gusto: Estamos en el momento ideal para realizar modificaciones en las divisiones interiores y adaptar el chalet a tus necesidades. Precio: 458.000 €. Un hogar único en una zona privilegiada. ¡Llámanos y asegura tu hogar antes de que finalice el proye",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
+      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
+      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 198000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209489",
+      "location": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres",
+      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para ofrecer. Además, la proximidad a tienda",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
-      "price": 409000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
-      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 79000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
+      "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
+      "description": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que necesitas en un espacio eficiente y bien distribuido. Este inmueble, ubicado en la primera planta, es la opción perfecta para aquellos que desean vivir en un entorno tranquilo sin renunciar a las comodidades de una ubicación estratégica. La finca esta bien conservada  gracias a sus mantenimientos,l Con una superficie útil de 58 metros cuadrados y 60 metros construidos, este piso se adapta de manera excepcional a parejas, jóvenes profesionales o  a segunda residencia. El hogar cuenta con dos  habitaciones, ofreciendo un espacio íntimo y acogedor para el descanso o para trabajar desde casa. Las estancias están diseñadas pensando en la funcionalidad y la c",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 200000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209223",
+      "location": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual c",
+      "description": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual como inversión. El edificio cuenta con ascensor, lo que garantiza un acceso cómodo y sin barreras, perfecto para familias, personas mayores o simplemente para el día a día. Ubicado en un entorno tranquilo pero con toda la vida de barrio, este piso destaca por su excelente comunicación. A pocos minutos de la estación de tren y con varias líneas de autobús cercanas, permite moverse con facilidad por toda la ciudad. La zona ofrece todo tipo de servicios: colegios, supermercados, centros deportivos y zonas verdes. Además, cuenta con un ambiente cercano y familiar, con comercios tradicionales y una amplia oferta de hostelería donde disfrutar de la gastronomí",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 392000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2208955",
+      "location": "Venta Pisos, Venta, Ciudad Naranco CL PEÑA SANTA DE ENOL, Oviedo, Asturias 392.000 € Espectacular Piso de 4 Dormitorios, 3 Baños (2 en suite) y 1 amplia plaza de Garaje en la exclusiva zona de Ciudad Naranco. Ubicada en la calle Peña Santa ",
+      "description": "Venta Pisos, Venta, Ciudad Naranco CL PEÑA SANTA DE ENOL, Oviedo, Asturias 392.000 € Espectacular Piso de 4 Dormitorios, 3 Baños (2 en suite) y 1 amplia plaza de Garaje en la exclusiva zona de Ciudad Naranco. Ubicada en la calle Peña Santa de Enol, con una ubicación inmejorable, al lado de la Losa y a 3 minutos caminando de la Calle Uría. Vive en un residencial tranquilo, de calidad y con la comodidad de estar a un paso del centro de la ciudad. ¡Esta es la oportunidad que estabas esperando! El piso ubicado en una segunda planta con ascensor consta de un total de 118 m2 construidos, dispone de una buena distribución siendo todas sus estancias amplias y exteriores. Consta de recibidor, amplio salón-comedor, cocina independiente con office y despensa, 4 dormitorios amplios, 3 baños completos ( 2 de ellos en suite) y un balcón tendedero. Este magnífico piso se completa con 1 amplia plaza de ",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
         "negative_term"
