@@ -1,9 +1,9 @@
 {
   "scraped_count": 143,
-  "rejected_count": 94,
+  "rejected_count": 95,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 30,
+    "negative_term": 31,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -346,10 +346,40 @@
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
+      "price": 120000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2213555",
+      "location": "Venta Pisos, Venta, Llano CL MARIA DOLORES, Gijón, Asturias 120.000 € Venta de vivienda situada en Pumarin, de dos habitaciones, un baño , cocina independiente y sala de estar. Esta vivienda es ideal para vivir o para inversión de alquiler,",
+      "description": "Venta Pisos, Venta, Llano CL MARIA DOLORES, Gijón, Asturias 120.000 € Venta de vivienda situada en Pumarin, de dos habitaciones, un baño , cocina independiente y sala de estar. Esta vivienda es ideal para vivir o para inversión de alquiler, ya que es uno de los barrios con mas demanda actualmente, y con todos los servicios en la zona, colegios , supermercados,  muy bien comunicada . Piso muy soleado y luminoso. Es una oportunidad única, no lo deje pasar . Llámenos. Gastos e impuestos no incluidos en el precio. Honorarios de intermediación inmobiliaria a cargo del vendedor y honorarios de mediación inmobiliaria del 2% más I.V.A. con un mínimo de 2000 euros más I.V.A a cargo del comprador A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la w",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 98000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2210375",
+      "location": "Venta Pisos, Venta LUGAR DE FRIERES, Frieres, Asturias 98.000 € \"Casa independiente en Frieres: con patio privado, porche\" Si buscas la tranquilidad de una aldea asturiana sin renunciar a la comodidad, esta casa en Frieres (Langreo) es la o",
+      "description": "Venta Pisos, Venta LUGAR DE FRIERES, Frieres, Asturias 98.000 € \"Casa independiente en Frieres: con patio privado, porche\" Si buscas la tranquilidad de una aldea asturiana sin renunciar a la comodidad, esta casa en Frieres (Langreo) es la oportunidad perfecta. Una vivienda acogedora, totalmente exterior y lista para convertirse en tu nuevo hogar o en una excelente inversión de turismo rural. Distribución y Características Principales: La vivienda destaca por su excelente aprovechamiento del espacio y su luminosidad: Dormitorios: 2 habitaciones amplias y luminosas. Baños: 1 baño completo. Cocina: Independiente, ideal para quienes disfrutan de un espacio propio para cocinar. Extras de Almacenamiento: Cuenta con un práctico trastero y un altillo , ofreciendo ese espacio extra tan necesario. Suministros: Calefacción y agua caliente eléctrica para mayor comodidad. Ubicación y Entorno Privileg",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
       "price": 198000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209489",
       "location": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres",
-      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para ofrecer. Además, la proximidad a tienda",
+      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona tiendas, colegios, y servicios básicos, que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -365,36 +395,6 @@
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
       "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
       "description": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que necesitas en un espacio eficiente y bien distribuido. Este inmueble, ubicado en la primera planta, es la opción perfecta para aquellos que desean vivir en un entorno tranquilo sin renunciar a las comodidades de una ubicación estratégica. La finca esta bien conservada  gracias a sus mantenimientos,l Con una superficie útil de 58 metros cuadrados y 60 metros construidos, este piso se adapta de manera excepcional a parejas, jóvenes profesionales o  a segunda residencia. El hogar cuenta con dos  habitaciones, ofreciendo un espacio íntimo y acogedor para el descanso o para trabajar desde casa. Las estancias están diseñadas pensando en la funcionalidad y la c",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 200000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209223",
-      "location": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual c",
-      "description": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual como inversión. El edificio cuenta con ascensor, lo que garantiza un acceso cómodo y sin barreras, perfecto para familias, personas mayores o simplemente para el día a día. Ubicado en un entorno tranquilo pero con toda la vida de barrio, este piso destaca por su excelente comunicación. A pocos minutos de la estación de tren y con varias líneas de autobús cercanas, permite moverse con facilidad por toda la ciudad. La zona ofrece todo tipo de servicios: colegios, supermercados, centros deportivos y zonas verdes. Además, cuenta con un ambiente cercano y familiar, con comercios tradicionales y una amplia oferta de hostelería donde disfrutar de la gastronomí",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 219900,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2208666",
-      "location": "Venta Pisos, Venta, La Calzada CL MAESTRO AMADO MORAN, Gijón, Asturias 219.900 € VENTA. Ponemos en venta piso ubicado al lado del carrefour de la Calzada una de las zonas mejor comunicadas en el barrio con mas vida de Gijon, con parada de a",
-      "description": "Venta Pisos, Venta, La Calzada CL MAESTRO AMADO MORAN, Gijón, Asturias 219.900 € VENTA. Ponemos en venta piso ubicado al lado del carrefour de la Calzada una de las zonas mejor comunicadas en el barrio con mas vida de Gijon, con parada de autobus a todas las zonas de Gijon a escasos metros de la vivienda y la estacion de tren a un paso. Muy cerca de la Playa del Arbeyal. La vivienda se encuentra en la sexta planta de un buen edificio que dispone de ascensor, debido a la altura la vivienda goza de una excelente luz en todas las estancias. El piso cuenta con 97 metros cuadrados construidos y 85,83 metros cuadrados útiles, con una excelente distribuccion. Esta distribuido en 3 amplias habitaciones, gran salon con vistas despejadas, cocina completamente equipada  y 2 baños (uno de ellos incluido en la habitacion principal). Su distribución y tamaño son perfectemnte adecuados para un piso fam",
       "municipality": null,
       "distance_km": null,
       "valid": true,
