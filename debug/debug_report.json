@@ -1,9 +1,9 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 96,
+  "scraped_count": 146,
+  "rejected_count": 115,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 32,
+    "negative_term": 51,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -111,12 +111,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "Venta de Casa en provincia Asturias - Remax",
+      "page_title": "404 Not Found",
       "block_signals": [],
-      "valid_count": 20,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -209,12 +209,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 18,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
       "page_title": "7533 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
-      "valid_count": 20,
+      "valid_count": 18,
       "notify_count": 0
     },
     {
@@ -327,29 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
-      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
-      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 198000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209489",
-      "location": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres",
-      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para ofrecer. Además, la proximidad a tienda",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 5 habitaciones Parres, Asturias En buen estado  ·  400m² comprar 590.000 € 790.000 € -25,32% En el corazón de Asturias, en la espléndida villa de Arriondas, se alza ",
+      "price": 590000,
+      "url": "https://casasapo.es/comprar-casa-5-habitaciones-parres-3ce4e50b-9216-11f0-b3d3-060000000057.html",
+      "location": "Casa 5 habitaciones Parres, Asturias En buen estado  ·  400m² comprar 590.000 € 790.000 € -25,32% En el corazón de Asturias, en la espléndida villa de Arriondas, se alza esta joya indiana rehabilitada con mimo. Con 400 m² construidos sobre ",
+      "description": "Casa 5 habitaciones Parres, Asturias En buen estado  ·  400m² comprar 590.000 € 790.000 € -25,32% En el corazón de Asturias, en la espléndida villa de Arriondas, se alza esta joya indiana rehabilitada con mimo. Con 400 m² construidos sobre una parcela de 1.000 m², esta propiedad ofrece una ubicación privilegiada, orientada al sol, luminosa y acogedora. Además, dispone de todos los servicios básicos a pocos metros donde encontrarás: Mercadona, gasolinera y el Hospital de Arriondas. En su interior, cada detalle está pensado para disfrutar sin renunciar a nada: Chimenea de leña, perfecta para tardes de invierno. Calefacción eléctrica en cada habitación. Cocina totalmente equipada con electrodomésticos modernos. Todo ello acompañado de un entorno incomparable: Río Sella a escasos pasos Costa asturiana y sus playas espectaculares a tan solo media hora. Picos de Europa y la Sierra del Sueve. N",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -358,13 +342,13 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 79000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209294",
-      "location": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que n",
-      "description": "Venta Pisos, Venta, Trasona - Marzaniella - Garajes Caserio de San  Pelayo, Trasona, Asturias 79.000 € ¡Descubre tu nuevo hogar ideal en el encantador barrio de Trasona, Presentamos este acogedor piso en venta,  para ofrecerte todo lo que necesitas en un espacio eficiente y bien distribuido. Este inmueble, ubicado en la primera planta, es la opción perfecta para aquellos que desean vivir en un entorno tranquilo sin renunciar a las comodidades de una ubicación estratégica. La finca esta bien conservada  gracias a sus mantenimientos,l Con una superficie útil de 58 metros cuadrados y 60 metros construidos, este piso se adapta de manera excepcional a parejas, jóvenes profesionales o  a segunda residencia. El hogar cuenta con dos  habitaciones, ofreciendo un espacio íntimo y acogedor para el descanso o para trabajar desde casa. Las estancias están diseñadas pensando en la funcionalidad y la c",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -373,13 +357,28 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 200000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209223",
-      "location": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual c",
-      "description": "Venta Pisos, Venta, La Calzada CL SIMON GONZALEZ, Gijón, Asturias 200.000 € Se vende piso de 3 habitaciones y 1 baño, situado en una zona consolidada de La Calzada,  a tan solo dos minutos de la playa, ideal tanto como residencia habitual como inversión. El edificio cuenta con ascensor, lo que garantiza un acceso cómodo y sin barreras, perfecto para familias, personas mayores o simplemente para el día a día. Ubicado en un entorno tranquilo pero con toda la vida de barrio, este piso destaca por su excelente comunicación. A pocos minutos de la estación de tren y con varias líneas de autobús cercanas, permite moverse con facilidad por toda la ciudad. La zona ofrece todo tipo de servicios: colegios, supermercados, centros deportivos y zonas verdes. Además, cuenta con un ambiente cercano y familiar, con comercios tradicionales y una amplia oferta de hostelería donde disfrutar de la gastronomí",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pue",
+      "price": 495000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-siero-parroquias-norte-6d91304a-3990-11f1-9a8d-060000000057.html",
+      "location": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos ",
+      "description": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zona como Amazon, te presentamos este chalet que marca la diferencia. Una vivienda construida con mimo y excelentes calidades, pensada para quienes valoran el espacio, la tranquilidad y una calidad de vida real, sin renunciar a una ubicación estratégica y bien conectada. Aquí no solo compras una casa, sino una forma de vivir. La propiedad se asienta sobre una amplia parcela de 820 m², ofreciendo privacidad, luz y múltiples posibilidades. Sus 307 m² construidos se distribuyen en tres cómodas plantas, con una distribución versátil que se adapta tanto a familias como a quienes buscan amplitud y funcionalidad en su día a día. Cuenta con 5 ",
+      "municipality": "Siero",
+      "distance_km": 15.4,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 2 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  97m² Con Garaje comprar 225.000 € SAN MIGUEL DE QUILOÑO. Casa independiente con parcela ",
+      "price": 225000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-2-habitaciones-castrillon-pillarno-e460fc8a-1721-11f1-8add-060000000054.html",
+      "location": "Casa con parcela 2 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  97m² Con Garaje comprar 225.000 € SAN MIGUEL DE QUILOÑO. Casa independiente con parcela de 3000 m2. Distribuida en planta baja, principal y bajocubierta. Disp",
+      "description": "Casa con parcela 2 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  97m² Con Garaje comprar 225.000 € SAN MIGUEL DE QUILOÑO. Casa independiente con parcela de 3000 m2. Distribuida en planta baja, principal y bajocubierta. Dispone de garaje y comedor en la planta baja; Salón, cocina-comedor, un dormitorio y un baño en la planta principal; Habitación de 21 m2 útil en la planta bajocubierta para destinar a cualquier uso. Ventanas aluminio doble acristalamiento. Zona de barbacoa y casetas de aperos. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -388,15 +387,15 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 392000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2208955",
-      "location": "Venta Pisos, Venta, Ciudad Naranco CL PEÑA SANTA DE ENOL, Oviedo, Asturias 392.000 € Espectacular Piso de 4 Dormitorios, 3 Baños (2 en suite) y 1 amplia plaza de Garaje en la exclusiva zona de Ciudad Naranco. Ubicada en la calle Peña Santa ",
-      "description": "Venta Pisos, Venta, Ciudad Naranco CL PEÑA SANTA DE ENOL, Oviedo, Asturias 392.000 € Espectacular Piso de 4 Dormitorios, 3 Baños (2 en suite) y 1 amplia plaza de Garaje en la exclusiva zona de Ciudad Naranco. Ubicada en la calle Peña Santa de Enol, con una ubicación inmejorable, al lado de la Losa y a 3 minutos caminando de la Calle Uría. Vive en un residencial tranquilo, de calidad y con la comodidad de estar a un paso del centro de la ciudad. ¡Esta es la oportunidad que estabas esperando! El piso ubicado en una segunda planta con ascensor consta de un total de 118 m2 construidos, dispone de una buena distribución siendo todas sus estancias amplias y exteriores. Consta de recibidor, amplio salón-comedor, cocina independiente con office y despensa, 4 dormitorios amplios, 3 baños completos ( 2 de ellos en suite) y un balcón tendedero. Este magnífico piso se completa con 1 amplia plaza de ",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
+      "price": 206000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
+      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
+      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
       "valid": true,
       "reject_reasons": [
         "negative_term"
