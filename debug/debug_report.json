@@ -1,9 +1,9 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 94,
+  "scraped_count": 168,
+  "rejected_count": 115,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 30,
+    "negative_term": 51,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7496 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7497 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,44 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
-      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
-      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 225000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2237978",
-      "location": "Venta Oficinas, Venta, Buenavista Fuertes Acevedo, Oviedo, Asturias 225.000 € ¡Excelente oportunidad para emprendedores y centros de formación en Oviedo! Se VENDE local comercial totalmente acondicionado y listo para entrar en la calle Fuer",
-      "description": "Venta Oficinas, Venta, Buenavista Fuertes Acevedo, Oviedo, Asturias 225.000 € ¡Excelente oportunidad para emprendedores y centros de formación en Oviedo! Se VENDE local comercial totalmente acondicionado y listo para entrar en la calle Fuertes Acevedo , una de las zonas con más vida y tránsito de la ciudad, con excelente visibilidad y comunicación. El local cuenta con licencia en vigor para academia de enseñanza , lo que permite iniciar la actividad de forma inmediata sin esperas burocráticas. Es un espacio funcional, luminoso y diseñado para garantizar la comodidad de profesores y alumnos. Características principales: Distribución profesional: El inmueble está dividido en varias estancias independientes (aulas/despachos) mediante tabiquería de calidad y grandes superficies acristaladas que aportan una sensación de amplitud y luminosidad natural en todo el local. Zona de recepción: Dispo",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 120000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2213555",
-      "location": "Venta Pisos, Venta, Llano CL MARIA DOLORES, Gijón, Asturias 120.000 € Venta de vivienda situada en Pumarin, de dos habitaciones, un baño , cocina independiente y sala de estar. Esta vivienda es ideal para vivir o para inversión de alquiler,",
-      "description": "Venta Pisos, Venta, Llano CL MARIA DOLORES, Gijón, Asturias 120.000 € Venta de vivienda situada en Pumarin, de dos habitaciones, un baño , cocina independiente y sala de estar. Esta vivienda es ideal para vivir o para inversión de alquiler, ya que es uno de los barrios con mas demanda actualmente, y con todos los servicios en la zona, colegios , supermercados,  muy bien comunicada . Piso muy soleado y luminoso. Es una oportunidad única, no lo deje pasar . Llámenos. Gastos e impuestos no incluidos en el precio. Honorarios de intermediación inmobiliaria a cargo del vendedor y honorarios de mediación inmobiliaria del 2% más I.V.A. con un mínimo de 2000 euros más I.V.A a cargo del comprador A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la w",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Ca",
+      "price": 354000,
+      "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
+      "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
+      "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -373,28 +342,58 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 98000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2210375",
-      "location": "Venta Pisos, Venta LUGAR DE FRIERES, Frieres, Asturias 98.000 € \"Casa independiente en Frieres: con patio privado, porche\" Si buscas la tranquilidad de una aldea asturiana sin renunciar a la comodidad, esta casa en Frieres (Langreo) es la o",
-      "description": "Venta Pisos, Venta LUGAR DE FRIERES, Frieres, Asturias 98.000 € \"Casa independiente en Frieres: con patio privado, porche\" Si buscas la tranquilidad de una aldea asturiana sin renunciar a la comodidad, esta casa en Frieres (Langreo) es la oportunidad perfecta. Una vivienda acogedora, totalmente exterior y lista para convertirse en tu nuevo hogar o en una excelente inversión de turismo rural. Distribución y Características Principales: La vivienda destaca por su excelente aprovechamiento del espacio y su luminosidad: Dormitorios: 2 habitaciones amplias y luminosas. Baños: 1 baño completo. Cocina: Independiente, ideal para quienes disfrutan de un espacio propio para cocinar. Extras de Almacenamiento: Cuenta con un práctico trastero y un altillo , ofreciendo ese espacio extra tan necesario. Suministros: Calefacción y agua caliente eléctrica para mayor comodidad. Ubicación y Entorno Privileg",
-      "municipality": "Langreo",
-      "distance_km": 15.3,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 198000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2209489",
-      "location": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres",
-      "description": "Venta Pisos, Venta, Pumarín Calle Baleares, Gijón, Asturias 198.000 € ¡Bienvenido al hogar de tus sueños en la zona de la Urgisa en Gijón! Presentamos un magnífico piso en venta . Gran salón comedor con gran ventanal, cocina amueblada ,tres habitaciones amplias ,baño y aseo con posibilidad de hacer dos baños, ya que se puede unir la despensa.,todo ello proporcionan el espacio necesario para convertirlo en el hogar de tus sueños . Uno de los atractivos principales de este piso es su destacado acceso con portal grande y reformado , sin barredas arquitectónicas ,dos ascensores y descansillos muy amplios. Situado en una zona tiendas, colegios, y servicios básicos, que goza de excelente comunicación, cuenta con paradas de autobús cercanas que aseguran una conexión directa con el resto de la ciudad, facilitando los desplazamientos diarios y permitiendo disfrutar de todo lo que Gijón tiene para",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en ",
+      "price": 950000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
+      "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
+      "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
+      "price": 600000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
+      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
+      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
       "municipality": null,
       "distance_km": null,
       "valid": true,
