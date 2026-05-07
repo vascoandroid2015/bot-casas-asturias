@@ -4,7 +4,7 @@
   "notified_count": 0,
   "reject_reasons": {
     "negative_term": 29,
-    "missing_price": 58,
+    "missing_price": 59,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -331,6 +331,22 @@
       "kind": "agency",
       "title": "Alquiler",
       "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248206",
+      "location": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad ",
+      "description": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad y accesibilidad para su máximo confort. Situado en la tercera planta de un edificio moderno, este piso ofrece dos amplias habitaciones que prometen un descanso reparador y un espacio acogedor para toda la familia. El edificio cuenta con un práctico ascensor, facilitando el acceso al inmueble y favoreciendo la comodidad en su día a día. Ideal para quienes valoran la facilidad en la movilidad. La ubicación del piso no podría ser mejor. Laviada es un área muy solicitada en Gijón, conocida por su tranquilad y por estar cerca de todos los servicios necesarios. Con una parada de autobús situada a pocos pasos de la puerta, desplazarse al resto de la ciudad nu",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
       "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
       "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
@@ -382,21 +398,6 @@
       "description": "Venta Venta, Antiguo Máximo y Fromestano, Oviedo, Asturias 250.000 € Activo inmobiliario con alto potencial de rentabilidad en el corazón de Oviedo, a escasos metros de la Plaza del Paraguas, una de las zonas con mayor tránsito turístico y demanda creciente. Se ofrece edificio completo en la calle Máximo y Fromestano, ideal para reposicionamiento como apartamentos turísticos, residencial en alquiler, coliving o uso mixto profesional-residencial . El inmueble, construido en 1880, dispone de 4 plantas sobre rasante (Baja + 2 + ático) y conserva una fachada histórica protegida , elemento diferencial clave para proyectos con valor añadido y posicionamiento premium. Disponemos de la siguiente documentación para su consulta: Proyecto Básico de Rehabilitación y Reestructuración redactado en 1999, con licencia municipal concedida (ejecutado parcialmente). Este proyecto representa una excelente b",
       "municipality": "Oviedo",
       "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 120000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2213555",
-      "location": "Venta Pisos, Venta, Llano CL MARIA DOLORES, Gijón, Asturias 120.000 € Venta de vivienda situada en Pumarin, de dos habitaciones, un baño , cocina independiente y sala de estar. Esta vivienda es ideal para vivir o para inversión de alquiler,",
-      "description": "Venta Pisos, Venta, Llano CL MARIA DOLORES, Gijón, Asturias 120.000 € Venta de vivienda situada en Pumarin, de dos habitaciones, un baño , cocina independiente y sala de estar. Esta vivienda es ideal para vivir o para inversión de alquiler, ya que es uno de los barrios con mas demanda actualmente, y con todos los servicios en la zona, colegios , supermercados,  muy bien comunicada . Piso muy soleado y luminoso. Es una oportunidad única, no lo deje pasar . Llámenos. Gastos e impuestos no incluidos en el precio. Honorarios de intermediación inmobiliaria a cargo del vendedor y honorarios de mediación inmobiliaria del 2% más I.V.A. con un mínimo de 2000 euros más I.V.A a cargo del comprador A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la w",
-      "municipality": null,
-      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
