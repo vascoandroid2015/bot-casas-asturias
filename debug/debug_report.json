@@ -1,9 +1,9 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 91,
+  "scraped_count": 168,
+  "rejected_count": 114,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 27,
+    "negative_term": 50,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 38 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 42 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7521 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7524 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,29 +327,28 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
-      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
-      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
+      "price": 206000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
+      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
+      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 550000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240079",
-      "location": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 550.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este lu",
-      "description": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 550.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este luminoso y señorial piso de 133.33 m2 combina ubicación privilegiada y comodidad, con una agradable terraza perfecta para disfrutar del ambiente costero. Dispone de tres habitaciones con armarios empotrados, dos baños completos con platos de ducha , cocina funcional y un amplio salón con acceso a terraza, ideal para relajarse o compartir momentos únicos. Una oportunidad excepcional para disfrutar del mar, la ciudad y la calidad de vida en un solo lugar. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
+      "price": 260000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
+      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
+      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -358,13 +357,13 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 37800,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2238349",
-      "location": "Venta Casa rural con finca junto al Sella y cerca Picos de Europa Vega de Pervis, Amieva, Asturias 37.800 € Se vende casa independiente para rehabilitación integral en La Vega de Pervís (Amieva), en un entorno natural único, a solo unos min",
-      "description": "Venta Casa rural con finca junto al Sella y cerca Picos de Europa Vega de Pervis, Amieva, Asturias 37.800 € Se vende casa independiente para rehabilitación integral en La Vega de Pervís (Amieva), en un entorno natural único, a solo unos minutos de Cangas de Onís y en plena entrada del Desfiladero de los Beyos. Ubicada a tan solo 250 metros del Río Sella, esta propiedad combina naturaleza, tranquilidad y buen acceso, siendo una opción muy atractiva tanto como vivienda personal como para inversión en turismo rural. La vivienda dispone de aproximadamente 65 m² construidos sobre una parcela de 85 m². Se trata de una construcción tradicional asturiana en piedra que requiere reforma integral, lo que permite diseñarla completamente a medida y aprovechar su alto potencial de revalorización. ✨ Características principales: Casa independiente 65 m² construidos Parcela de 85 m² 1 habitación Sin baño",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -373,30 +372,30 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 225000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2237978",
-      "location": "Venta Oficinas, Venta, Buenavista Fuertes Acevedo, Oviedo, Asturias 225.000 € ¡Excelente oportunidad para emprendedores y centros de formación en Oviedo! Se VENDE local comercial totalmente acondicionado y listo para entrar en la calle Fuer",
-      "description": "Venta Oficinas, Venta, Buenavista Fuertes Acevedo, Oviedo, Asturias 225.000 € ¡Excelente oportunidad para emprendedores y centros de formación en Oviedo! Se VENDE local comercial totalmente acondicionado y listo para entrar en la calle Fuertes Acevedo , una de las zonas con más vida y tránsito de la ciudad, con excelente visibilidad y comunicación. El local cuenta con licencia en vigor para academia de enseñanza , lo que permite iniciar la actividad de forma inmediata sin esperas burocráticas. Es un espacio funcional, luminoso y diseñado para garantizar la comodidad de profesores y alumnos. Características principales: Distribución profesional: El inmueble está dividido en varias estancias independientes (aulas/despachos) mediante tabiquería de calidad y grandes superficies acristaladas que aportan una sensación de amplitud y luminosidad natural en todo el local. Zona de recepción: Dispo",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
       "price": 250000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2213608",
-      "location": "Venta Venta, Antiguo Máximo y Fromestano, Oviedo, Asturias 250.000 € Activo inmobiliario con alto potencial de rentabilidad en el corazón de Oviedo, a escasos metros de la Plaza del Paraguas, una de las zonas con mayor tránsito turístico y ",
-      "description": "Venta Venta, Antiguo Máximo y Fromestano, Oviedo, Asturias 250.000 € Activo inmobiliario con alto potencial de rentabilidad en el corazón de Oviedo, a escasos metros de la Plaza del Paraguas, una de las zonas con mayor tránsito turístico y demanda creciente. Se ofrece edificio completo en la calle Máximo y Fromestano, ideal para reposicionamiento como apartamentos turísticos, residencial en alquiler, coliving o uso mixto profesional-residencial . El inmueble, construido en 1880, dispone de 4 plantas sobre rasante (Baja + 2 + ático) y conserva una fachada histórica protegida , elemento diferencial clave para proyectos con valor añadido y posicionamiento premium. Disponemos de la siguiente documentación para su consulta: Proyecto Básico de Rehabilitación y Reestructuración redactado en 1999, con licencia municipal concedida (ejecutado parcialmente). Este proyecto representa una excelente b",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
