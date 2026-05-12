@@ -1,10 +1,10 @@
 {
-  "scraped_count": 123,
+  "scraped_count": 143,
   "rejected_count": 93,
   "notified_count": 0,
   "reject_reasons": {
     "negative_term": 29,
-    "missing_price": 58,
+    "missing_price": 59,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -111,12 +111,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "503 Service Unavailable",
+      "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 20,
       "notify_count": 0
     },
     {
@@ -329,6 +329,22 @@
     {
       "source": "Fincas Asturias",
       "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2285508",
+      "location": "Alquiler Alquiler vivienda a un paso Plaza Europa Avda. Schulz, Gijon, Asturias 690 € ALQUILER LARGA DURACION Superficie: 38 m² construidos / 33 m² útiles. Habitaciones: 1 dormitorio independiente. Baños: 1 baño completo. Planta: 1ª planta ",
+      "description": "Alquiler Alquiler vivienda a un paso Plaza Europa Avda. Schulz, Gijon, Asturias 690 € ALQUILER LARGA DURACION Superficie: 38 m² construidos / 33 m² útiles. Habitaciones: 1 dormitorio independiente. Baños: 1 baño completo. Planta: 1ª planta con ascensor. Año edificación: 1987 (Reforma integral en 2007). Extras: Trastero incluido, amueblado, electrodomésticos incluidos. Gastos: Bajos costes de mantenimiento. DESCRIPCIÓN Ideal para solteros o parejas Ubicación estratégica a pasos del centro de Gijón. Vivienda lista para entrar a vivir de inmediato. Diseño funcional con excelente optimización del espacio. DISTRIBUCIÓN Y DETALLES INTERIORES Salón-Cocina: Espacio integrado, versátil y completamente equipado. Dormitorio principal: Luminoso, con mobiliario óptimo y actual. Estado: listo para vivir UBICACIÓN Y SERVICIOS Conectividad: Paradas de autobús urbano a pocos metros. Comercios: Supermerca",
+      "municipality": "Grado",
+      "distance_km": 18.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
       "title": "Venta",
       "price": 695000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
@@ -380,21 +396,6 @@
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2238349",
       "location": "Venta Casa rural con finca junto al Sella y cerca Picos de Europa Vega de Pervis, Amieva, Asturias 37.800 € Se vende casa independiente para rehabilitación integral en La Vega de Pervís (Amieva), en un entorno natural único, a solo unos min",
       "description": "Venta Casa rural con finca junto al Sella y cerca Picos de Europa Vega de Pervis, Amieva, Asturias 37.800 € Se vende casa independiente para rehabilitación integral en La Vega de Pervís (Amieva), en un entorno natural único, a solo unos minutos de Cangas de Onís y en plena entrada del Desfiladero de los Beyos. Ubicada a tan solo 250 metros del Río Sella, esta propiedad combina naturaleza, tranquilidad y buen acceso, siendo una opción muy atractiva tanto como vivienda personal como para inversión en turismo rural. La vivienda dispone de aproximadamente 65 m² construidos sobre una parcela de 85 m². Se trata de una construcción tradicional asturiana en piedra que requiere reforma integral, lo que permite diseñarla completamente a medida y aprovechar su alto potencial de revalorización. ✨ Características principales: Casa independiente 65 m² construidos Parcela de 85 m² 1 habitación Sin baño",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 520000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2238347",
-      "location": "Venta Pisos, Venta, Viesques Smara, Gijón, Asturias 520.000 € ¡Descubra su futuro hogar en el corazón de Gijón! 🏡 Amplio piso con terraza, garaje y trastero en Gijón 📐 110 m² útiles 🛏️ 4 habitaciones 🛁 2 baños con ventana 🏢 4ª planta con as",
-      "description": "Venta Pisos, Venta, Viesques Smara, Gijón, Asturias 520.000 € ¡Descubra su futuro hogar en el corazón de Gijón! 🏡 Amplio piso con terraza, garaje y trastero en Gijón 📐 110 m² útiles 🛏️ 4 habitaciones 🛁 2 baños con ventana 🏢 4ª planta con ascensor 🌞 Muy luminoso 🌿 Terraza ideal para disfrutar al aire libre 🍽️ Cocina equipada + vivienda amueblada 🚗 2 Plazas de garaje incluidas 📦 Trastero 🌳 Zona ajardinada 🚍 Excelente comunicación (bus cercano) 🛍️ Todos los servicios a pocos minutos ✨ Listo para entrar a vivir 💼 Ideal para familias Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la web oficial de servicios tributarios del Principado de Asturias https://sede.tributasenasturias.es/sites/sede/defaul",
       "municipality": null,
       "distance_km": null,
       "valid": true,
