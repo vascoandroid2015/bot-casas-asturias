@@ -1,9 +1,9 @@
 {
-  "scraped_count": 148,
-  "rejected_count": 114,
+  "scraped_count": 143,
+  "rejected_count": 93,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 50,
+    "negative_term": 29,
     "missing_price": 58,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -111,12 +111,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "503 Service Unavailable",
+      "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 20,
       "notify_count": 0
     },
     {
@@ -327,13 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa",
-      "price": 420000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-gijon-sur-8e3a2c3f-31c6-11f1-9a8d-060000000057.html",
-      "location": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espac",
-      "description": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espacio, comodidad y la tranquilidad de estar perfectamente conectados con la ciudad sin renunciar absolutamente a nada. Ubicación TOP dentro del núcleo urbano, con supermercado, centro médico y todos los servicios a un paso, además de autobús directo al centro. Porque vivir cómodo también es vivir bien ubicado. La vivienda cuenta con 4 habitaciones, 3 baños, un salón amplio donde realmente apetece estar, garaje y trastero. Todo ello sobre una parcela de 979 m², con 271 m² construidos y 240 m² útiles, ofreciendo espacio de sobra tanto dentro como fuera de casa. Y ahora viene lo interesante Posibilidad de dividirla en dos viviendas. Sí, has leído bien: una p",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 199000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241983",
+      "location": "Venta Pisos, Venta, Natahoyo AV GALICIA, Gijón, Asturias 199.000 € Amplia vivienda exterior situada en el barrio de Natahoyo, a pocos minutos de la Playa del Arbeyal, ideal para quienes buscan comodidad, buena ubicación y calidad de vida ce",
+      "description": "Venta Pisos, Venta, Natahoyo AV GALICIA, Gijón, Asturias 199.000 € Amplia vivienda exterior situada en el barrio de Natahoyo, a pocos minutos de la Playa del Arbeyal, ideal para quienes buscan comodidad, buena ubicación y calidad de vida cerca del mar. Ubicada en una segunda planta de un edificio bien conservado, con ascensor y fachada recientemente rehabilitada, lo que aporta un extra de eficiencia y tranquilidad. La vivienda cuenta con tres habitaciones de buen tamaño y excelente entrada de luz natural, ofreciendo espacios versátiles tanto para familias como para teletrabajo. Su distribución funcional permite aprovechar al máximo cada estancia, creando un ambiente acogedor y práctico. Rodeada de todos los servicios: supermercados, colegios, centros de salud, comercios y zonas verdes. Excelente conexión con transporte público (tren y autobús), facilitando el acceso al centro de Gijón y ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,28 +342,13 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
-      "price": 120000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
-      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
-      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitacione",
-      "price": 900000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-efc23c05-6677-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. C",
-      "description": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 695000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
+      "location": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente co",
+      "description": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente conexión de bus. Una propiedad diseñada para quienes buscan calidad de vida en una ubicación privilegiada. Lo que te enamorará: Espacios de descanso: 4 amplias habitaciones. La suite principal destaca por su elegancia, armarios empotrados y baño privado. Zona social: Gran salón con chimenea que fluye hacia una espectacular terraza acristalada, ideal para disfrutar todo el año. Modernidad: Cocina recientemente reformada con diseño funcional y actual. Comodidad total: 3 baños completos, un aseo de cortesía, zona de lavandería y garaje para 3 coches. Luz natural, amplitud y la brisa marina a la vuelta de la esquina. Una oportunidad única de vivir donde siem",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,13 +357,29 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, ",
-      "price": 155000,
-      "url": "https://casasapo.es/comprar-casa-de-madera-2-habitaciones-illas-18fcfd0b-667b-11e4-aeff-000c2946937b.html",
-      "location": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador,",
-      "description": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador, todo eléctrico. Otro horreo para rehabilitar. Finca de 2.100m2 con árboles frutales. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
+      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
+      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 540000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240079",
+      "location": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este lu",
+      "description": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este luminoso y señorial piso de 133.33 m2 combina ubicación privilegiada y comodidad, con una agradable terraza perfecta para disfrutar del ambiente costero. Dispone de tres habitaciones con armarios empotrados, dos baños completos con platos de ducha , cocina funcional y un amplio salón con acceso a terraza, ideal para relajarse o compartir momentos únicos. Una oportunidad excepcional para disfrutar del mar, la ciudad y la calidad de vida en un solo lugar. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -387,15 +388,15 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
-      "price": 226000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 37800,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2238349",
+      "location": "Venta Casa rural con finca junto al Sella y cerca Picos de Europa Vega de Pervis, Amieva, Asturias 37.800 € Se vende casa independiente para rehabilitación integral en La Vega de Pervís (Amieva), en un entorno natural único, a solo unos min",
+      "description": "Venta Casa rural con finca junto al Sella y cerca Picos de Europa Vega de Pervis, Amieva, Asturias 37.800 € Se vende casa independiente para rehabilitación integral en La Vega de Pervís (Amieva), en un entorno natural único, a solo unos minutos de Cangas de Onís y en plena entrada del Desfiladero de los Beyos. Ubicada a tan solo 250 metros del Río Sella, esta propiedad combina naturaleza, tranquilidad y buen acceso, siendo una opción muy atractiva tanto como vivienda personal como para inversión en turismo rural. La vivienda dispone de aproximadamente 65 m² construidos sobre una parcela de 85 m². Se trata de una construcción tradicional asturiana en piedra que requiere reforma integral, lo que permite diseñarla completamente a medida y aprovechar su alto potencial de revalorización. ✨ Características principales: Casa independiente 65 m² construidos Parcela de 85 m² 1 habitación Sin baño",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
