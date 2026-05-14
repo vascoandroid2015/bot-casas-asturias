@@ -1,9 +1,9 @@
 {
-  "scraped_count": 142,
-  "rejected_count": 91,
+  "scraped_count": 168,
+  "rejected_count": 113,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 28,
+    "negative_term": 50,
     "missing_price": 59,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -62,11 +62,10 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://www.inmobiliariaasturias.es/",
+      "page_title": "Inmobiliaria Asturias: Te ayudamos a comprar casa en Asturias",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.inmobiliariaasturias.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -161,11 +160,10 @@
       "kind": "institutional",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://hunosainmobiliario.es/",
+      "page_title": "Portal Inmobiliario Hunosa",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://hunosainmobiliario.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -214,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7490 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7499 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -247,13 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -330,29 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248206",
-      "location": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad ",
-      "description": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad y accesibilidad para su máximo confort. Situado en la tercera planta de un edificio moderno, este piso ofrece dos amplias habitaciones que prometen un descanso reparador y un espacio acogedor para toda la familia. El edificio cuenta con un práctico ascensor, facilitando el acceso al inmueble y favoreciendo la comodidad en su día a día. Ideal para quienes valoran la facilidad en la movilidad. La ubicación del piso no podría ser mejor. Laviada es un área muy solicitada en Gijón, conocida por su tranquilad y por estar cerca de todos los servicios necesarios. Con una parada de autobús situada a pocos pasos de la puerta, desplazarse al resto de la ciudad nu",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 695000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
-      "location": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente co",
-      "description": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente conexión de bus. Una propiedad diseñada para quienes buscan calidad de vida en una ubicación privilegiada. Lo que te enamorará: Espacios de descanso: 4 amplias habitaciones. La suite principal destaca por su elegancia, armarios empotrados y baño privado. Zona social: Gran salón con chimenea que fluye hacia una espectacular terraza acristalada, ideal para disfrutar todo el año. Modernidad: Cocina recientemente reformada con diseño funcional y actual. Comodidad total: 3 baños completos, un aseo de cortesía, zona de lavandería y garaje para 3 coches. Luz natural, amplitud y la brisa marina a la vuelta de la esquina. Una oportunidad única de vivir donde siem",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -361,29 +342,13 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
-      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
-      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 540000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240079",
-      "location": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este lu",
-      "description": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este luminoso y señorial piso de 133.33 m2 combina ubicación privilegiada y comodidad, con una agradable terraza perfecta para disfrutar del ambiente costero. Dispone de tres habitaciones con armarios empotrados, dos baños completos con platos de ducha , cocina funcional y un amplio salón con acceso a terraza, ideal para relajarse o compartir momentos únicos. Una oportunidad excepcional para disfrutar del mar, la ciudad y la calidad de vida en un solo lugar. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -392,15 +357,45 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 95500,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2239295",
-      "location": "Venta Locales, Venta, Antiguo CL CARTA PUEBLA, Oviedo, Asturias 95.500 € En una de las calles con más personalidad del casco histórico, se presenta este local con carácter, ubicado en la calle Carta Puebla. Tradición, tránsito constante y a",
-      "description": "Venta Locales, Venta, Antiguo CL CARTA PUEBLA, Oviedo, Asturias 95.500 € En una de las calles con más personalidad del casco histórico, se presenta este local con carácter, ubicado en la calle Carta Puebla. Tradición, tránsito constante y atractivo turístico. El espacio cuenta con 68 m² construidos (63 m² útiles), distribuidos de manera funcional, lo que permite adaptarlo con facilidad a distintos conceptos. Actualmente acondicionado como bar de copas, conserva la esencia de su anterior actividad, pero ofrece también la versatilidad necesaria para transformarse en bar, restaurante o proyecto gastronómico contemporáneo. Su ubicación, en pleno centro histórico, asegura una presencia continua de público local y visitante, en un entorno consolidado donde la oferta de ocio y restauración tiene un peso destacado. Un local que no solo ofrece metros, sino contexto: la posibilidad de formar parte",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Ca",
+      "price": 354000,
+      "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
+      "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
+      "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
+      "price": 890000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
+      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
+      "price": 409000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
+      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
       "valid": true,
       "reject_reasons": [
         "negative_term"
