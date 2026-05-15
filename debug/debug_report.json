@@ -4,7 +4,7 @@
   "notified_count": 0,
   "reject_reasons": {
     "negative_term": 29,
-    "missing_price": 59,
+    "missing_price": 58,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -360,22 +360,6 @@
     {
       "source": "Fincas Asturias",
       "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
-      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
-      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
       "title": "Venta",
       "price": 540000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240079",
@@ -396,6 +380,21 @@
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2239295",
       "location": "Venta Locales, Venta, Antiguo CL CARTA PUEBLA, Oviedo, Asturias 95.500 € En una de las calles con más personalidad del casco histórico, se presenta este local con carácter, ubicado en la calle Carta Puebla. Tradición, tránsito constante y a",
       "description": "Venta Locales, Venta, Antiguo CL CARTA PUEBLA, Oviedo, Asturias 95.500 € En una de las calles con más personalidad del casco histórico, se presenta este local con carácter, ubicado en la calle Carta Puebla. Tradición, tránsito constante y atractivo turístico. El espacio cuenta con 68 m² construidos (63 m² útiles), distribuidos de manera funcional, lo que permite adaptarlo con facilidad a distintos conceptos. Actualmente acondicionado como bar de copas, conserva la esencia de su anterior actividad, pero ofrece también la versatilidad necesaria para transformarse en bar, restaurante o proyecto gastronómico contemporáneo. Su ubicación, en pleno centro histórico, asegura una presencia continua de público local y visitante, en un entorno consolidado donde la oferta de ocio y restauración tiene un peso destacado. Un local que no solo ofrece metros, sino contexto: la posibilidad de formar parte",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 64600,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2239274",
+      "location": "Venta Locales, Venta, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 64.600 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer mome",
+      "description": "Venta Locales, Venta, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 64.600 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versatilid",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
