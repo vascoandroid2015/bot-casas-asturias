@@ -1,9 +1,9 @@
 {
-  "scraped_count": 168,
-  "rejected_count": 117,
+  "scraped_count": 143,
+  "rejected_count": 94,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 55,
+    "negative_term": 32,
     "missing_price": 59,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7478 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7480 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,43 +327,60 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
-      "price": 409000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
-      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
+      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 900 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalme",
+      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 900 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño reformado. La cocina y el baño han sido renovados recientemente, ofreciendo un estilo moderno y funcional. Edificio con ascensor y situado en una zona muy bien comunicada, con supermercados, transporte público, colegios y todo tipo de servicios cercanos. Piso muy luminoso, cuidado y con buena distribución, una zona consolidada, con comercio de proximidad, supermercados, cine, centro de salud, equipamientos municipales, centros educativos, transporte público de alta frecuencia que conecta con el centro y cualquier zona de Gijón y alrededores. Alquiler: 900 €/mes y dos meses de fianza. La comunidad esta incluida en el precio. Para más",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248206",
+      "location": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad ",
+      "description": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad y accesibilidad para su máximo confort. Situado en la tercera planta de un edificio moderno, este piso ofrece dos amplias habitaciones que prometen un descanso reparador y un espacio acogedor para toda la familia. El edificio cuenta con un práctico ascensor, facilitando el acceso al inmueble y favoreciendo la comodidad en su día a día. Ideal para quienes valoran la facilidad en la movilidad. La ubicación del piso no podría ser mejor. Laviada es un área muy solicitada en Gijón, conocida por su tranquilad y por estar cerca de todos los servicios necesarios. Con una parada de autobús situada a pocos pasos de la puerta, desplazarse al resto de la ciudad nu",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 119000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2242503",
+      "location": "Venta Casas o chalets, Venta, Ambás AL AMBAS, Villaviciosa, Asturias 119.000 € En San Pedro de Ambás, una tranquila zona rural del concejo de Villaviciosa, se vende esta casa distribuida en dos plantas, con espacios anexos que ofrecen mucha",
+      "description": "Venta Casas o chalets, Venta, Ambás AL AMBAS, Villaviciosa, Asturias 119.000 € En San Pedro de Ambás, una tranquila zona rural del concejo de Villaviciosa, se vende esta casa distribuida en dos plantas, con espacios anexos que ofrecen muchas posibilidades. La vivienda cuenta con dos habitaciones, cocina independiente, salita y baño. Conserva una estética tradicional asturiana, con cocina de leña, carpintería de madera y estancias sencillas, ideal para quien busca una casa de pueblo para actualizar a su gusto. Junto a la vivienda dispone de zona de lagar y cuadra, perfectas como espacio de almacenaje, taller, bodega o para plantear una reforma con más superficie útil. Además, cuenta con garaje y aproximadamente 30 m² de terreno, ideal para una pequeña huerta, zona verde o rincón exterior de disfrute. Una propiedad con carácter, situada en un entorno rural tranquilo, perfecta como segunda ",
+      "municipality": "Aller",
+      "distance_km": 31.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: P",
-      "price": 458000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-la-pola-siero-ae2d737a-dd6a-11ef-9e0e-060000000057.html",
-      "location": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes b",
-      "description": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes buscan tranquilidad sin vivir aislados. A 1,5 km de Pola de Siero, con todos los servicios necesarios. Oviedo: 15 min | Parque Principado: menos de 10 min | Costa: 15-20 min. Cerca del nuevo Amazon Asturias, una ubicación perfecta para familias e inversores. Características del chalet: 147 m² construidos. 3 habitaciones. 2 baños completos. Salón independiente, cocina y un amplio porche. Personalizable a tu gusto: Estamos en el momento ideal para realizar modificaciones en las divisiones interiores y adaptar el chalet a tus necesidades. Precio: 458.000 €. Un hogar único en una zona privilegiada. ¡Llámanos y asegura tu hogar antes de que finalice el proye",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos sa",
-      "price": 247000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-penamellera-baja-5c83ecd6-6674-11e4-aeff-000c2946937b.html",
-      "location": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terren",
-      "description": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terreno de 200 m/2 cruzando carretera. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 695000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
+      "location": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente co",
+      "description": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente conexión de bus. Una propiedad diseñada para quienes buscan calidad de vida en una ubicación privilegiada. Lo que te enamorará: Espacios de descanso: 4 amplias habitaciones. La suite principal destaca por su elegancia, armarios empotrados y baño privado. Zona social: Gran salón con chimenea que fluye hacia una espectacular terraza acristalada, ideal para disfrutar todo el año. Modernidad: Cocina recientemente reformada con diseño funcional y actual. Comodidad total: 3 baños completos, un aseo de cortesía, zona de lavandería y garaje para 3 coches. Luz natural, amplitud y la brisa marina a la vuelta de la esquina. Una oportunidad única de vivir donde siem",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,28 +389,13 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
-      "price": 460000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
-      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
-      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
-      "price": 240000,
-      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
-      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
-      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 540000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240079",
+      "location": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este lu",
+      "description": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este luminoso y señorial piso de 133.33 m2 combina ubicación privilegiada y comodidad, con una agradable terraza perfecta para disfrutar del ambiente costero. Dispone de tres habitaciones con armarios empotrados, dos baños completos con platos de ducha , cocina funcional y un amplio salón con acceso a terraza, ideal para relajarse o compartir momentos únicos. Una oportunidad excepcional para disfrutar del mar, la ciudad y la calidad de vida en un solo lugar. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
