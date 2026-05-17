@@ -1,9 +1,9 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 94,
+  "scraped_count": 168,
+  "rejected_count": 117,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 32,
+    "negative_term": 55,
     "missing_price": 59,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -327,60 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
-      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 900 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalme",
-      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 900 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño reformado. La cocina y el baño han sido renovados recientemente, ofreciendo un estilo moderno y funcional. Edificio con ascensor y situado en una zona muy bien comunicada, con supermercados, transporte público, colegios y todo tipo de servicios cercanos. Piso muy luminoso, cuidado y con buena distribución, una zona consolidada, con comercio de proximidad, supermercados, cine, centro de salud, equipamientos municipales, centros educativos, transporte público de alta frecuencia que conecta con el centro y cualquier zona de Gijón y alrededores. Alquiler: 900 €/mes y dos meses de fianza. La comunidad esta incluida en el precio. Para más",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248206",
-      "location": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad ",
-      "description": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad y accesibilidad para su máximo confort. Situado en la tercera planta de un edificio moderno, este piso ofrece dos amplias habitaciones que prometen un descanso reparador y un espacio acogedor para toda la familia. El edificio cuenta con un práctico ascensor, facilitando el acceso al inmueble y favoreciendo la comodidad en su día a día. Ideal para quienes valoran la facilidad en la movilidad. La ubicación del piso no podría ser mejor. Laviada es un área muy solicitada en Gijón, conocida por su tranquilad y por estar cerca de todos los servicios necesarios. Con una parada de autobús situada a pocos pasos de la puerta, desplazarse al resto de la ciudad nu",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 119000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2242503",
-      "location": "Venta Casas o chalets, Venta, Ambás AL AMBAS, Villaviciosa, Asturias 119.000 € En San Pedro de Ambás, una tranquila zona rural del concejo de Villaviciosa, se vende esta casa distribuida en dos plantas, con espacios anexos que ofrecen mucha",
-      "description": "Venta Casas o chalets, Venta, Ambás AL AMBAS, Villaviciosa, Asturias 119.000 € En San Pedro de Ambás, una tranquila zona rural del concejo de Villaviciosa, se vende esta casa distribuida en dos plantas, con espacios anexos que ofrecen muchas posibilidades. La vivienda cuenta con dos habitaciones, cocina independiente, salita y baño. Conserva una estética tradicional asturiana, con cocina de leña, carpintería de madera y estancias sencillas, ideal para quien busca una casa de pueblo para actualizar a su gusto. Junto a la vivienda dispone de zona de lagar y cuadra, perfectas como espacio de almacenaje, taller, bodega o para plantear una reforma con más superficie útil. Además, cuenta con garaje y aproximadamente 30 m² de terreno, ideal para una pequeña huerta, zona verde o rincón exterior de disfrute. Una propiedad con carácter, situada en un entorno rural tranquilo, perfecta como segunda ",
-      "municipality": "Aller",
-      "distance_km": 31.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 695000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
-      "location": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente co",
-      "description": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente conexión de bus. Una propiedad diseñada para quienes buscan calidad de vida en una ubicación privilegiada. Lo que te enamorará: Espacios de descanso: 4 amplias habitaciones. La suite principal destaca por su elegancia, armarios empotrados y baño privado. Zona social: Gran salón con chimenea que fluye hacia una espectacular terraza acristalada, ideal para disfrutar todo el año. Modernidad: Cocina recientemente reformada con diseño funcional y actual. Comodidad total: 3 baños completos, un aseo de cortesía, zona de lavandería y garaje para 3 coches. Luz natural, amplitud y la brisa marina a la vuelta de la esquina. Una oportunidad única de vivir donde siem",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
+      "price": 260000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
+      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
+      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -389,15 +342,60 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 540000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240079",
-      "location": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este lu",
-      "description": "Venta Venta de piso con terraza en el centro de Gijon CL CORRIDA, Gijón, Asturias 540.000 € Vive donde siempre has soñado: En pleno corazón de Gijón, en la calle principal y a un paso del puerto deportivo y la playa de San Lorenzo . Este luminoso y señorial piso de 133.33 m2 combina ubicación privilegiada y comodidad, con una agradable terraza perfecta para disfrutar del ambiente costero. Dispone de tres habitaciones con armarios empotrados, dos baños completos con platos de ducha , cocina funcional y un amplio salón con acceso a terraza, ideal para relajarse o compartir momentos únicos. Una oportunidad excepcional para disfrutar del mar, la ciudad y la calidad de vida en un solo lugar. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
       "municipality": null,
       "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa",
+      "price": 420000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-gijon-sur-8e3a2c3f-31c6-11f1-9a8d-060000000057.html",
+      "location": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espac",
+      "description": "Casa 4 habitaciones Sur, Gijón, Asturias En buen estado  ·  240m² Con Garaje comprar 420.000 € Hoy te presentamos una propiedad que, sin exagerar, lo tiene TODO. Una casa con terreno en Nuevos Roces, Gijón, pensada para quienes buscan espacio, comodidad y la tranquilidad de estar perfectamente conectados con la ciudad sin renunciar absolutamente a nada. Ubicación TOP dentro del núcleo urbano, con supermercado, centro médico y todos los servicios a un paso, además de autobús directo al centro. Porque vivir cómodo también es vivir bien ubicado. La vivienda cuenta con 4 habitaciones, 3 baños, un salón amplio donde realmente apetece estar, garaje y trastero. Todo ello sobre una parcela de 979 m², con 271 m² construidos y 240 m² útiles, ofreciendo espacio de sobra tanto dentro como fuera de casa. Y ahora viene lo interesante Posibilidad de dividirla en dos viviendas. Sí, has leído bien: una p",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pue",
+      "price": 495000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-siero-parroquias-norte-6d91304a-3990-11f1-9a8d-060000000057.html",
+      "location": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos ",
+      "description": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zona como Amazon, te presentamos este chalet que marca la diferencia. Una vivienda construida con mimo y excelentes calidades, pensada para quienes valoran el espacio, la tranquilidad y una calidad de vida real, sin renunciar a una ubicación estratégica y bien conectada. Aquí no solo compras una casa, sino una forma de vivir. La propiedad se asienta sobre una amplia parcela de 820 m², ofreciendo privacidad, luz y múltiples posibilidades. Sus 307 m² construidos se distribuyen en tres cómodas plantas, con una distribución versátil que se adapta tanto a familias como a quienes buscan amplitud y funcionalidad en su día a día. Cuenta con 5 ",
+      "municipality": "Siero",
+      "distance_km": 15.4,
       "valid": true,
       "reject_reasons": [
         "negative_term"
