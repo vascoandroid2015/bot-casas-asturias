@@ -1,9 +1,9 @@
 {
-  "scraped_count": 168,
-  "rejected_count": 114,
+  "scraped_count": 143,
+  "rejected_count": 93,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 52,
+    "negative_term": 31,
     "missing_price": 59,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 47 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 48 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -327,13 +327,29 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Piedras Blancas, Castrillón, Asturias En buen estado  ·  240m² comprar 465.000 € Chalet individual. Planta Baja: Salón-comedor amplio, cocina, aseo.",
-      "price": 465000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-castrillon-piedras-blancas-d64535b4-68c3-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 4 habitaciones Piedras Blancas, Castrillón, Asturias En buen estado  ·  240m² comprar 465.000 € Chalet individual. Planta Baja: Salón-comedor amplio, cocina, aseo. 1ª Planta: Tres dormitorios, el principal muy amplio y con baño, otro",
-      "description": "Chalet 4 habitaciones Piedras Blancas, Castrillón, Asturias En buen estado  ·  240m² comprar 465.000 € Chalet individual. Planta Baja: Salón-comedor amplio, cocina, aseo. 1ª Planta: Tres dormitorios, el principal muy amplio y con baño, otro baño en planta. 2ª Planta: Bajo cubierta, altura: un dorm. (con dos velux), salón con casetón, baño con velux. Cocina amueblada, ventanas P.V.C, armario empotrado en dorm. principal, calefacción gasoil. Terraza. Adosado tiene garaje con portón. Finca de 1.800 m2 cerrada con leylandis, árboles. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
+      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribui",
+      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño. Piso muy luminoso, cuidado y con buena distribución, una zona consolidada, cerca de la playa, con supermercados, cine, centro de salud, equipamientos municipales, centros educativos, transporte público de alta frecuencia que conecta con el centro y cualquier zona de Gijón y alrededores . Alquiler: 900 €/mes y dos meses de fianza. La comunidad esta incluida en el precio. La renta incluye los gastos ordinarios de comunidad, agua y una cuota fija de calefacción central correspondiente al mínimo comunitario. Cualquier exceso de consumo de calefacción facturado por la comunidad de propietarios",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 210000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248777",
+      "location": "Venta Pisos, Venta, Coto C/ QUEVEDO, Gijón, Asturias 210.000 € Se presenta una oportunidad única en la zona del Coto, en Gijón. Este extraordinario piso en venta, ubicado en la segunda planta del edificio, ofrece una combinación perfecta de",
+      "description": "Venta Pisos, Venta, Coto C/ QUEVEDO, Gijón, Asturias 210.000 € Se presenta una oportunidad única en la zona del Coto, en Gijón. Este extraordinario piso en venta, ubicado en la segunda planta del edificio, ofrece una combinación perfecta de confort, ubicación y potencial. La propiedad destaca por sus generosas dimensiones, contando con 98 metros cuadrados construidos y 75 metros cuadrados útiles, diseñados para maximizar el espacio habitable. El interior del piso se distribuye de manera funcional en tres habitaciones amplias, proporcionando el ambiente ideal para familias o parejas que deseen disfrutar de una vida cómoda y práctica. Las estancias han sido pensadas para ofrecer la máxima comodidad, permitiendo adaptar los espacios según las necesidades personales. Tiene dos baños ambos con ventana. La característica mas importante de esta vivienda es su orientación sur, lo que permite una",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,28 +358,28 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
-      "price": 206000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
-      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
-      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 119000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2242503",
+      "location": "Venta Casas o chalets, Venta, Ambás AL AMBAS, Villaviciosa, Asturias 119.000 € En San Pedro de Ambás, una tranquila zona rural del concejo de Villaviciosa, se vende esta casa distribuida en dos plantas, con espacios anexos que ofrecen mucha",
+      "description": "Venta Casas o chalets, Venta, Ambás AL AMBAS, Villaviciosa, Asturias 119.000 € En San Pedro de Ambás, una tranquila zona rural del concejo de Villaviciosa, se vende esta casa distribuida en dos plantas, con espacios anexos que ofrecen muchas posibilidades. La vivienda cuenta con dos habitaciones, cocina independiente, salita y baño. Conserva una estética tradicional asturiana, con cocina de leña, carpintería de madera y estancias sencillas, ideal para quien busca una casa de pueblo para actualizar a su gusto. Junto a la vivienda dispone de zona de lagar y cuadra, perfectas como espacio de almacenaje, taller, bodega o para plantear una reforma con más superficie útil. Además, cuenta con garaje y aproximadamente 30 m² de terreno, ideal para una pequeña huerta, zona verde o rincón exterior de disfrute. Una propiedad con carácter, situada en un entorno rural tranquilo, perfecta como segunda ",
+      "municipality": "Aller",
+      "distance_km": 31.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 695000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
+      "location": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente co",
+      "description": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente conexión de bus. Una propiedad diseñada para quienes buscan calidad de vida en una ubicación privilegiada. Lo que te enamorará: Espacios de descanso: 4 amplias habitaciones. La suite principal destaca por su elegancia, armarios empotrados y baño privado. Zona social: Gran salón con chimenea que fluye hacia una espectacular terraza acristalada, ideal para disfrutar todo el año. Modernidad: Cocina recientemente reformada con diseño funcional y actual. Comodidad total: 3 baños completos, un aseo de cortesía, zona de lavandería y garaje para 3 coches. Luz natural, amplitud y la brisa marina a la vuelta de la esquina. Una oportunidad única de vivir donde siem",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,33 +388,19 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
-      "municipality": null,
-      "distance_km": null,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
+      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
+      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Ca",
-      "price": 354000,
-      "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
-      "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
-      "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 354.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     }
   ]
