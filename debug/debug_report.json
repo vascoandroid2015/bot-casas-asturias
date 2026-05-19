@@ -1,10 +1,10 @@
 {
   "scraped_count": 143,
-  "rejected_count": 93,
+  "rejected_count": 91,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 31,
-    "missing_price": 59,
+    "negative_term": 29,
+    "missing_price": 60,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7471 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7475 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -346,6 +346,21 @@
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
+      "price": 360000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2239616",
+      "location": "Venta Pisos, Venta, Centro C. Santa Justa, Gijón, Asturias 360.000 € ¡Luz, diseño y exclusividad en el corazón de Gijón! Presentamos este espectacular Ático con Terraza Totalmente Exterior , ubicado a un paso de la Plaza Europa . Reformado ",
+      "description": "Venta Pisos, Venta, Centro C. Santa Justa, Gijón, Asturias 360.000 € ¡Luz, diseño y exclusividad en el corazón de Gijón! Presentamos este espectacular Ático con Terraza Totalmente Exterior , ubicado a un paso de la Plaza Europa . Reformado en 2022 con acabados modernos, este hogar destaca por su excelente orientación , garantizando sol y claridad todo el día. Ubicado en una zona privilegia de Gijón con todos los servicios y conexión total por bus. Ideal como inversión o primera vivienda para quienes buscan \"Entrar a Vivir\" . ¿Buscas una joya exterior en Gijón? Ven a ver tu futuro Hogar con una terraza única. Extras: 5ª planta con ascensor, trastero en edificio tranquilo. Distribución: 3 amplias habitaciones, salón luminoso y baño moderno. Reforma Premium: Cocina Inko equipada con electrodomésticos incluidos, radiadores Israp, baño reformado íntegramente, puertas lacadas blancas. Terraza ",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
       "price": 210000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248777",
       "location": "Venta Pisos, Venta, Coto C/ QUEVEDO, Gijón, Asturias 210.000 € Se presenta una oportunidad única en la zona del Coto, en Gijón. Este extraordinario piso en venta, ubicado en la segunda planta del edificio, ofrece una combinación perfecta de",
@@ -355,6 +370,22 @@
       "valid": true,
       "reject_reasons": [
         "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248206",
+      "location": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad ",
+      "description": "Alquiler Pisos, Alquiler, Laviada C. Pedregales, Gijón, Asturias 790 € ¡Bienvenidos al piso ideal que siempre soñaron en Gijón! Presentamos una excelente oportunidad de alquiler en la encantadora zona de Laviada, donde se combina comodidad y accesibilidad para su máximo confort. Situado en la tercera planta de un edificio moderno, este piso ofrece dos amplias habitaciones que prometen un descanso reparador y un espacio acogedor para toda la familia. El edificio cuenta con un práctico ascensor, facilitando el acceso al inmueble y favoreciendo la comodidad en su día a día. Ideal para quienes valoran la facilidad en la movilidad. La ubicación del piso no podría ser mejor. Laviada es un área muy solicitada en Gijón, conocida por su tranquilad y por estar cerca de todos los servicios necesarios. Con una parada de autobús situada a pocos pasos de la puerta, desplazarse al resto de la ciudad nu",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
       ]
     },
     {
@@ -370,37 +401,6 @@
       "valid": true,
       "reject_reasons": [
         "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 695000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2241704",
-      "location": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente co",
-      "description": "Venta venta de chalet en Gijón CM QUIÑONES, Gijón, Asturias 695.000 € Exclusivo Chalet en Gijón: Tu refugio junto al mar ???? Descubre el equilibrio perfecto entre lujo y comodidad en este chalet único a pasos de la playa y con excelente conexión de bus. Una propiedad diseñada para quienes buscan calidad de vida en una ubicación privilegiada. Lo que te enamorará: Espacios de descanso: 4 amplias habitaciones. La suite principal destaca por su elegancia, armarios empotrados y baño privado. Zona social: Gran salón con chimenea que fluye hacia una espectacular terraza acristalada, ideal para disfrutar todo el año. Modernidad: Cocina recientemente reformada con diseño funcional y actual. Comodidad total: 3 baños completos, un aseo de cortesía, zona de lavandería y garaje para 3 coches. Luz natural, amplitud y la brisa marina a la vuelta de la esquina. Una oportunidad única de vivir donde siem",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2240203",
-      "location": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer m",
-      "description": "Alquiler Locales, Alquiler, Ciudad Naranco CL TORRECERREDO, Oviedo, Asturias 450 € En la calle Torrecerredo, en un entorno urbano consolidado y con vida propia, se encuentra este local que transmite una sensación diferente desde el primer momento. Un espacio con cierto carácter, que invita a detenerse un instante y pensar en todo lo que podría llegar a ser. Dos estancias bien diferenciadas. Cada una de las estancias tiene su propia atmósfera, con detalles que llaman la atención de manera sutil, sin resultar recargados. Elementos que aportan personalidad y que permiten imaginar un proyecto, algo cada vez más valorado en cualquier actividad. La primera sala puede funcionar como zona principal, un espacio de bienvenida o de atención. La segunda se presta a un uso más íntimo o complementario: despacho, zona de trabajo, almacén creativo o incluso un segundo ambiente para clientes. Esa versati",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
       ]
     }
   ]
