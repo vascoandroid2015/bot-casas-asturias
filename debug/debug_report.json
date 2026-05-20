@@ -1,9 +1,9 @@
 {
-  "scraped_count": 143,
-  "rejected_count": 89,
+  "scraped_count": 168,
+  "rejected_count": 111,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 27,
+    "negative_term": 49,
     "missing_price": 59,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "40 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7495 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7503 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,44 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
-      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribui",
-      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño. Ubicado en una de las zonas más cómodas y prácticas de Gijón, este inmueble ofrece la combinación perfecta entre tranquilidad, servicios y buena conexión. A solo catorce minutos caminando de la playa, podrás disfrutar del mar sin renunciar a la comodidad del día a día. En el entorno inmediato encontrarás supermercados a solo un minuto, centros educativos a cuatro, así como centro de salud, equipamientos municipales, cine y una excelente red de transporte público de alta frecuencia que conecta rápidamente con el centro y el resto de la ciudad. Alquiler: 900 €/mes y dos meses de fianza. La ",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 185000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2250160",
-      "location": "Venta Pisos, Venta San Mateo, Oviedo, Asturias 185.000 € ¿Buscas comodidad y tranquilidad en Oviedo? Este magnífico piso exterior de 89m² en la zona de Otero es la oportunidad que esperabas. Ideal para familias o inversión. Lo mejor de la v",
-      "description": "Venta Pisos, Venta San Mateo, Oviedo, Asturias 185.000 € ¿Buscas comodidad y tranquilidad en Oviedo? Este magnífico piso exterior de 89m² en la zona de Otero es la oportunidad que esperabas. Ideal para familias o inversión. Lo mejor de la vivienda: Ubicado en un entorno tranquilo y perfectamente comunicado por bus con el centro. Se entrega amueblado y con electrodomésticos. Una distribución inteligente que maximiza la amplitud en una de las zonas más demandadas por su calidad de vida y servicios. ¡No pierdas esta oportunidad! Contacta y ven a verlo. Extras VIP: Plaza de GARAJE incluida en el precio. Comodidad: Baño completo, aseo adicional y 2 ascensores en el edificio. Funcionalidad: Salón-comedor independiente y gran cocina equipada con acceso a terraza comunitaria. Espacio y Luz: 3 amplias habitaciones amuebladas con calidad, listas para entrar a vivir o teletrabajar. Se ofrece asesor",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 105000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2249585",
-      "location": "Venta Pisos, Venta, Nuevo Gijón CL PEÑA UBIÑA, GIJON, Asturias 105.000 € NUDA PROPIEDAD Precioso piso de 3 habitaciones, salón, cocina y baño. Situado en una de las zonas más solicitadas de Gijón. Rodeado de zonas verdes y con todos los ser",
-      "description": "Venta Pisos, Venta, Nuevo Gijón CL PEÑA UBIÑA, GIJON, Asturias 105.000 € NUDA PROPIEDAD Precioso piso de 3 habitaciones, salón, cocina y baño. Situado en una de las zonas más solicitadas de Gijón. Rodeado de zonas verdes y con todos los servicios en la zona. IDEAL INVERSORES. Piso muy soleado y luminoso. Es una oportunidad única, no lo deje pasar . Llámenos. Gastos e impuestos no incluidos en el precio. Honorarios de intermediación inmobiliaria a cargo del vendedor y honorarios de mediación inmobiliaria del 2% más I.V.A. con un mínimo de 2000 euros más I.V.A a cargo del comprador A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la web oficial de servicios tributarios del Principado de Asturias https://sede.tributasenasturias.es/sites/sede/",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -373,13 +342,13 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 360000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2239616",
-      "location": "Venta Pisos, Venta, Centro C. Santa Justa, Gijón, Asturias 360.000 € ¡Luz, diseño y exclusividad en el corazón de Gijón! Presentamos este espectacular Ático con Terraza Totalmente Exterior , ubicado a un paso de la Plaza Europa . Reformado ",
-      "description": "Venta Pisos, Venta, Centro C. Santa Justa, Gijón, Asturias 360.000 € ¡Luz, diseño y exclusividad en el corazón de Gijón! Presentamos este espectacular Ático con Terraza Totalmente Exterior , ubicado a un paso de la Plaza Europa . Reformado en 2022 con acabados modernos, este hogar destaca por su excelente orientación , garantizando sol y claridad todo el día. Ubicado en una zona privilegia de Gijón con todos los servicios y conexión total por bus. Ideal como inversión o primera vivienda para quienes buscan \"Entrar a Vivir\" . ¿Buscas una joya exterior en Gijón? Ven a ver tu futuro Hogar con una terraza única. Extras: 5ª planta con ascensor, trastero en edificio tranquilo. Distribución: 3 amplias habitaciones, salón luminoso y baño moderno. Reforma Premium: Cocina Inko equipada con electrodomésticos incluidos, radiadores Israp, baño reformado íntegramente, puertas lacadas blancas. Terraza ",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en ",
+      "price": 950000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
+      "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
+      "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -388,13 +357,43 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 210000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2248777",
-      "location": "Venta Pisos, Venta, Coto C/ QUEVEDO, Gijón, Asturias 210.000 € Se presenta una oportunidad única en la zona del Coto, en Gijón. Este extraordinario piso en venta, ubicado en la segunda planta del edificio, ofrece una combinación perfecta de",
-      "description": "Venta Pisos, Venta, Coto C/ QUEVEDO, Gijón, Asturias 210.000 € Se presenta una oportunidad única en la zona del Coto, en Gijón. Este extraordinario piso en venta, ubicado en la segunda planta del edificio, ofrece una combinación perfecta de confort, ubicación y potencial. La propiedad destaca por sus generosas dimensiones, contando con 98 metros cuadrados construidos y 75 metros cuadrados útiles, diseñados para maximizar el espacio habitable. El interior del piso se distribuye de manera funcional en tres habitaciones amplias, proporcionando el ambiente ideal para familias o parejas que deseen disfrutar de una vida cómoda y práctica. Las estancias han sido pensadas para ofrecer la máxima comodidad, permitiendo adaptar los espacios según las necesidades personales. Tiene dos baños ambos con ventana. La característica mas importante de esta vivienda es su orientación sur, lo que permite una",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos sa",
+      "price": 247000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-penamellera-baja-5c83ecd6-6674-11e4-aeff-000c2946937b.html",
+      "location": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terren",
+      "description": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terreno de 200 m/2 cruzando carretera. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
+      "price": 280000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
+      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
