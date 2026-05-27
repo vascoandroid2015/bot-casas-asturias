@@ -1,9 +1,9 @@
 {
-  "scraped_count": 167,
-  "rejected_count": 111,
+  "scraped_count": 142,
+  "rejected_count": 89,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 50,
+    "negative_term": 28,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7523 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7521 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,58 +327,29 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
+      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribui",
+      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño. Ubicado en una de las zonas más cómodas y prácticas de Gijón, este inmueble ofrece la combinación perfecta entre tranquilidad, servicios y buena conexión. A solo catorce minutos caminando de la playa, podrás disfrutar del mar sin renunciar a la comodidad del día a día. En el entorno inmediato encontrarás supermercados a solo un minuto, centros educativos a cuatro, así como centro de salud, equipamientos municipales, cine y una excelente red de transporte público de alta frecuencia que conecta rápidamente con el centro y el resto de la ciudad. Alquiler: 950 €/mes y dos meses de fianza. La ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
-      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche. Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
-      "price": 600000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
-      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
-      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 185000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2250160",
+      "location": "Venta Pisos, Venta San Mateo, Oviedo, Asturias 185.000 € ¿Buscas comodidad y tranquilidad en Oviedo? Este magnífico piso exterior de 89m² en la zona de Otero es la oportunidad que esperabas. Ideal para familias o inversión. Lo mejor de la v",
+      "description": "Venta Pisos, Venta San Mateo, Oviedo, Asturias 185.000 € ¿Buscas comodidad y tranquilidad en Oviedo? Este magnífico piso exterior de 89m² en la zona de Otero es la oportunidad que esperabas. Ideal para familias o inversión. Lo mejor de la vivienda: Ubicado en un entorno tranquilo y perfectamente comunicado por bus con el centro. Se entrega amueblado y con electrodomésticos. Una distribución inteligente que maximiza la amplitud en una de las zonas más demandadas por su calidad de vida y servicios. ¡No pierdas esta oportunidad! Contacta y ven a verlo. Extras VIP: Plaza de GARAJE incluida en el precio. Comodidad: Baño completo, aseo adicional y 2 ascensores en el edificio. Funcionalidad: Salón-comedor independiente y gran cocina equipada con acceso a terraza comunitaria. Espacio y Luz: 3 amplias habitaciones amuebladas con calidad, listas para entrar a vivir o teletrabajar. Se ofrece asesor",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
@@ -387,13 +358,43 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desvá",
-      "price": 195000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-aviles-villalegre-la-luz-corros-1d87deda-55ba-11f1-9aaf-060000000054.html",
-      "location": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Vent",
-      "description": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Ventanas de aluminio doble acristalamiento, suelos de gres. Fachada y tejado reparados. Finca cerrada. OPCIONAL: Parcela de 32 areas con tendejón frente a la casa. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 212000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2250098",
+      "location": "Venta Pisos, Venta, La Calzada CL CAMINO DE RUBIN, Gijón, Asturias 212.000 € VENTA. Ponemos en venta un estupendo  piso duplex  ubicado en el Cerillero en Camino de Rubin. La vivienda es tipo duplex (5º y bajocubierta), se encuentra en ullt",
+      "description": "Venta Pisos, Venta, La Calzada CL CAMINO DE RUBIN, Gijón, Asturias 212.000 € VENTA. Ponemos en venta un estupendo  piso duplex  ubicado en el Cerillero en Camino de Rubin. La vivienda es tipo duplex (5º y bajocubierta), se encuentra en ulltima planta de un edificio en perfecto estado y que dispone de ascensor. Se encuentra  en una zona muy bien comunicada y con todos los servicios,  zonas verdes, colegio, supermercados y parada de autobus justo al pie del edificio. El piso consta  con todos los huecos de gran tamaño ya que dispone con 114 metros cuadrados construidos  lo que da una  gran amplitud a todos sus huecos. Consta de 3 habitaciones y dos baños distribuidos de la siguiente manera : Planta baja: Cocina salón, habitación con baño con ventana  y terraza cerrada. Planta superior : Dos habitaciones una de ellas con vestidor y baño con ventana y bañera de hidromasaje. Cocina y salón ex",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 105000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2249585",
+      "location": "Venta Pisos, Venta, Nuevo Gijón CL PEÑA UBIÑA, GIJON, Asturias 105.000 € NUDA PROPIEDAD Precioso piso de 3 habitaciones, salón, cocina y baño. Situado en una de las zonas más solicitadas de Gijón. Rodeado de zonas verdes y con todos los ser",
+      "description": "Venta Pisos, Venta, Nuevo Gijón CL PEÑA UBIÑA, GIJON, Asturias 105.000 € NUDA PROPIEDAD Precioso piso de 3 habitaciones, salón, cocina y baño. Situado en una de las zonas más solicitadas de Gijón. Rodeado de zonas verdes y con todos los servicios en la zona. IDEAL INVERSORES. Piso muy soleado y luminoso. Es una oportunidad única, no lo deje pasar . Llámenos. Gastos e impuestos no incluidos en el precio. Honorarios de intermediación inmobiliaria a cargo del vendedor y honorarios de mediación inmobiliaria del 2% más I.V.A. con un mínimo de 2000 euros más I.V.A a cargo del comprador A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la web oficial de servicios tributarios del Principado de Asturias https://sede.tributasenasturias.es/sites/sede/",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 360000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2239616",
+      "location": "Venta Pisos, Venta, Centro C. Santa Justa, Gijón, Asturias 360.000 € ¡Luz, diseño y exclusividad en el corazón de Gijón! Presentamos este espectacular Ático con Terraza Totalmente Exterior , ubicado a un paso de la Plaza Europa . Reformado ",
+      "description": "Venta Pisos, Venta, Centro C. Santa Justa, Gijón, Asturias 360.000 € ¡Luz, diseño y exclusividad en el corazón de Gijón! Presentamos este espectacular Ático con Terraza Totalmente Exterior , ubicado a un paso de la Plaza Europa . Reformado en 2022 con acabados modernos, este hogar destaca por su excelente orientación , garantizando sol y claridad todo el día. Ubicado en una zona privilegia de Gijón con todos los servicios y conexión total por bus. Ideal como inversión o primera vivienda para quienes buscan \"Entrar a Vivir\" . ¿Buscas una joya exterior en Gijón? Ven a ver tu futuro Hogar con una terraza única. Extras: 5ª planta con ascensor, trastero en edificio tranquilo. Distribución: 3 amplias habitaciones, salón luminoso y baño moderno. Reforma Premium: Cocina Inko equipada con electrodomésticos incluidos, radiadores Israp, baño reformado íntegramente, puertas lacadas blancas. Terraza ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
