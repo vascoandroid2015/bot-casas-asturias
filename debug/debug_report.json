@@ -1,9 +1,9 @@
 {
   "scraped_count": 142,
-  "rejected_count": 90,
+  "rejected_count": 92,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 29,
+    "negative_term": 31,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7602 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7588 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
