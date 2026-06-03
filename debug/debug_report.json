@@ -1,9 +1,9 @@
 {
-  "scraped_count": 167,
-  "rejected_count": 117,
+  "scraped_count": 142,
+  "rejected_count": 90,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 56,
+    "negative_term": 29,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 53 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 55 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -327,43 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pue",
-      "price": 495000,
-      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-siero-parroquias-norte-6d91304a-3990-11f1-9a8d-060000000057.html",
-      "location": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos ",
-      "description": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zona como Amazon, te presentamos este chalet que marca la diferencia. Una vivienda construida con mimo y excelentes calidades, pensada para quienes valoran el espacio, la tranquilidad y una calidad de vida real, sin renunciar a una ubicación estratégica y bien conectada. Aquí no solo compras una casa, sino una forma de vivir. La propiedad se asienta sobre una amplia parcela de 820 m², ofreciendo privacidad, luz y múltiples posibilidades. Sus 307 m² construidos se distribuyen en tres cómodas plantas, con una distribución versátil que se adapta tanto a familias como a quienes buscan amplitud y funcionalidad en su día a día. Cuenta con 5 ",
-      "municipality": "Siero",
-      "distance_km": 15.4,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en",
-      "price": 650000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-cudillero-4b97e4e3-667e-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2",
-      "description": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2 construidos, distribuidos en dos plantas, con materiales nobles de piedra y madera. Alberga una gran cocina-comedor, salón amueblado y suelo de iroco, tres habitaciones amplias con camas dobles y dos baños. Un prado enorme rodea la casa, en la que se eleva un hórreo centenario perfectamente conservado. Rn el exterior tiene pozo, barbacoa y horno. Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": 1100,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
+      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
+      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,28 +342,59 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
-      "price": 350000,
-      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
-      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
-      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox Contacto",
-      "municipality": "Aller",
-      "distance_km": 31.9,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": null,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
+      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribui",
+      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño. Ubicado en una de las zonas más cómodas y prácticas de Gijón, este inmueble ofrece la combinación perfecta entre tranquilidad, servicios y buena conexión. A solo catorce minutos caminando de la playa, podrás disfrutar del mar sin renunciar a la comodidad del día a día. En el entorno inmediato encontrarás supermercados a solo un minuto, centros educativos a cuatro, así como centro de salud, equipamientos municipales, cine y una excelente red de transporte público de alta frecuencia que conecta rápidamente con el centro y el resto de la ciudad. Alquiler: 950 €/mes y dos meses de fianza. La ",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 307000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286164",
+      "location": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta ",
+      "description": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta magnífica vivienda de 127 m² construidos situada en la calle Alonso de Ojeda, esquina con Juan Alvargonzález, en una de las zonas más cómodas y bien comunicadas de Gijón. Ubicada en la cuarta planta del edificio, la vivienda destaca por su luminosidad y excelente distribución. Salvo uno de los dormitorios, todas las estancias son exteriores, lo que aporta una gran sensación de amplitud y luz natural durante todo el día. La propiedad se distribuye en salón-comedor, cocina independiente, cuatro dormitorios, 2 baños y una amplia plaza de garaje, situada a escasos metros del portal del inmueble. La vivienda se encuentra en muy buen estado de conservación y",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Piedras Blancas, Castrillón, Asturias En buen estado  ·  240m² comprar 465.000 € Chalet individual. Planta Baja: Salón-comedor amplio, cocina, aseo.",
-      "price": 465000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-castrillon-piedras-blancas-d64535b4-68c3-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 4 habitaciones Piedras Blancas, Castrillón, Asturias En buen estado  ·  240m² comprar 465.000 € Chalet individual. Planta Baja: Salón-comedor amplio, cocina, aseo. 1ª Planta: Tres dormitorios, el principal muy amplio y con baño, otro",
-      "description": "Chalet 4 habitaciones Piedras Blancas, Castrillón, Asturias En buen estado  ·  240m² comprar 465.000 € Chalet individual. Planta Baja: Salón-comedor amplio, cocina, aseo. 1ª Planta: Tres dormitorios, el principal muy amplio y con baño, otro baño en planta. 2ª Planta: Bajo cubierta, altura: un dorm. (con dos velux), salón con casetón, baño con velux. Cocina amueblada, ventanas P.V.C, armario empotrado en dorm. principal, calefacción gasoil. Terraza. Adosado tiene garaje con portón. Finca de 1.800 m2 cerrada con leylandis, árboles. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 14900,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286066",
+      "location": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuse",
+      "description": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuses de Oviedo ha disparado la demanda de aparcamiento en toda la zona, mientras la oferta de plazas disponibles sigue siendo mínima. Por eso, esta PLAZA DE GARAJE en Teodoro Cuesta representa una oportunidad cada vez más difícil de encontrar: una ubicación estratégica, alta demanda permanente y un precio muy competitivo dentro del mercado actual. A pocos minutos caminando de las estaciones y del centro de Oviedo Amplia Ideal para residentes, trabajadores y viajeros frecuentes Zona con fuerte presión de aparcamiento durante todo el día Excelente opción de inversión por su facilidad de alquiler Acceso cómodo y maniobrabilidad sencilla Mientras el número de",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 269000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2285546",
+      "location": "Venta Pisos, Venta, Pumarín Avenida Constitucion, Gijón, Asturias 269.000 € Presentamos una excelente oportunidad para aquellos que buscan un nuevo hogar. Este espacioso piso ofrece todo lo que su familia necesita para disfrutar de una vida",
+      "description": "Venta Pisos, Venta, Pumarín Avenida Constitucion, Gijón, Asturias 269.000 € Presentamos una excelente oportunidad para aquellos que buscan un nuevo hogar. Este espacioso piso ofrece todo lo que su familia necesita para disfrutar de una vida confortable y acogedora. La propiedad se encuentra en la primera planta de un edificio moderno que incluye  dos ascensores recién reformados , asegurando un fácil acceso para todos los miembros de la familia. Este piso cuenta con muy buena distribución. Ofrecemos un inmueble con tres amplias habitaciones y dos baños con ducha. Un generoso salón y una gran cocina que destaca por su estilo moderno y práctico, El piso dispone de garaje totalmente remodelado, trastero incluido y zona común para motos y bicicletas. La localización es simplemente inmejorable. Situado en una zona bien comunicada, el piso dispone de paradas de autobuses cercanas, lo que facil",
       "municipality": null,
       "distance_km": null,
       "valid": true,
