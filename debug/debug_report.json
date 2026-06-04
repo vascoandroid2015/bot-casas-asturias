@@ -1,10 +1,10 @@
 {
-  "scraped_count": 141,
+  "scraped_count": 142,
   "rejected_count": 89,
   "notified_count": 0,
   "reject_reasons": {
     "negative_term": 28,
-    "missing_price": 57,
+    "missing_price": 56,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -245,13 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -330,22 +329,6 @@
     {
       "source": "Fincas Asturias",
       "kind": "agency",
-      "title": "Alquiler",
-      "price": null,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289282",
-      "location": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribui",
-      "description": "Alquiler Pisos, Alquiler, La Calzada CL MARGARITA XIRGU, GIJON, Asturias 950 € Se alquila amplio piso en La Calzada, Gijón, listo para entrar a vivir. Se admiten mascotas. Edificio con ascensor. La vivienda cuenta con 79 m² útiles distribuidos en 3 habitaciones, salón, cocina totalmente equipada y baño. Ubicado en una de las zonas más cómodas y prácticas de Gijón, este inmueble ofrece la combinación perfecta entre tranquilidad, servicios y buena conexión. A solo catorce minutos caminando de la playa, podrás disfrutar del mar sin renunciar a la comodidad del día a día. En el entorno inmediato encontrarás supermercados a solo un minuto, centros educativos a cuatro, así como centro de salud, equipamientos municipales, cine y una excelente red de transporte público de alta frecuencia que conecta rápidamente con el centro y el resto de la ciudad. Alquiler: 950 €/mes y dos meses de fianza. La ",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
       "title": "Venta",
       "price": 307000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286164",
@@ -396,6 +379,21 @@
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2285539",
       "location": "Venta VENTA PISO 3 DORMI CON GARAJE PLAYA PONIENTE GIJON 299.950€ Calle Mariano Pola, Gijon, Asturias 299.950 € Presentamos esta exclusiva vivienda junto a la playa de Poniente, situada en Calle Mariano Pola nº 45, segunda planta, en una de",
       "description": "Venta VENTA PISO 3 DORMI CON GARAJE PLAYA PONIENTE GIJON 299.950€ Calle Mariano Pola, Gijon, Asturias 299.950 € Presentamos esta exclusiva vivienda junto a la playa de Poniente, situada en Calle Mariano Pola nº 45, segunda planta, en una de las ubicaciones con mayor proyección y atractivo de Gijón. Con una superficie construida de 95 m², esta propiedad destaca por su excelente distribución, luminosidad y privilegiada situacion. Sus espacios ofrecen amplitud y confort, distribuyéndose en salón, cocina independiente, tres dormitorios y dos baños completos. La vivienda incluye una plaza de garaje en el precio, situada a escasos metros del portal, un valor añadido imprescindible en una zona cada vez más demandada. El edificio ofrece una imagen cuidada, al igual que el portal, ascensor amplio, reflejando en su conjunto un excelente estado. Situada a pocos metros de la Playa de Poniente, te pe",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 135000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2283973",
+      "location": "Venta Pisos, Venta PEÑA CHAGO, Lena, Asturias 135.000 € Situado en el corazón de Campomanes, se encuentra este impecable piso de 81 metros útiles, una vivienda que destaca de inmediato por su extraordinaria luminosidad y un estado de conser",
+      "description": "Venta Pisos, Venta PEÑA CHAGO, Lena, Asturias 135.000 € Situado en el corazón de Campomanes, se encuentra este impecable piso de 81 metros útiles, una vivienda que destaca de inmediato por su extraordinaria luminosidad y un estado de conservación que permite entrar a vivir hoy mismo. Nada más entrar, la sensación de hogar es total gracias a una portería de alta calidad y una cuidada selección de materiales que marcan la diferencia.  Las habitaciones y el pasillo lucen un elegante suelo de parquet, mientras que las zonas de agua han sido revestidas con cerámica de alta calidad, garantizando durabilidad y una estética impecable. El salón, amplio y acogedor, cuenta con su propia chimenea, creando un ambiente cálido y único para las tardes de invierno. Al ser una vivienda totalmente exterior, regala vistas despejadas al paisaje asturiano y luz natural durante todo el día, algo que se disfrut",
       "municipality": null,
       "distance_km": null,
       "valid": true,
