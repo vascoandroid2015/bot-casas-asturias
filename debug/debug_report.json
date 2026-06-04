@@ -1,9 +1,9 @@
 {
-  "scraped_count": 142,
-  "rejected_count": 89,
+  "scraped_count": 167,
+  "rejected_count": 113,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 28,
+    "negative_term": 52,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 55 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 54 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7599 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7594 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,13 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 307000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286164",
-      "location": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta ",
-      "description": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta magnífica vivienda de 127 m² construidos situada en la calle Alonso de Ojeda, esquina con Juan Alvargonzález, en una de las zonas más cómodas y bien comunicadas de Gijón. Ubicada en la cuarta planta del edificio, la vivienda destaca por su luminosidad y excelente distribución. Salvo uno de los dormitorios, todas las estancias son exteriores, lo que aporta una gran sensación de amplitud y luz natural durante todo el día. La propiedad se distribuye en salón-comedor, cocina independiente, cuatro dormitorios, 2 baños y una amplia plaza de garaje, situada a escasos metros del portal del inmueble. La vivienda se encuentra en muy buen estado de conservación y",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 apr",
+      "price": 315000,
+      "url": "https://casasapo.es/comprar-casa-aviles-centro-casco-antiguo-de836c4f-c45d-11e5-90f4-000c2940f215.html",
+      "location": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despen",
+      "description": "Casa Casco Antiguo, Centro, Avilés, Asturias En buen estado  ·  220m² comprar 315.000 € Casa de dos planta y bajo cubierta. Bajo comercial de 50 m2 con patio de 14 m2 aprox. Casa de 120 m2 útiles: 1ª Planta: Salón-comedor, cocina con despensa, baño (plato ducha). 2ª Planta: Dos dormitorios, baño (bañera hidromasaje), despensa. Bajo cubierta: Espacio diáfano y un baño (plato ducha). Ventanas de velux. Cocina amueblada, suelos de gres, ventanas de aluminio doble acristalamiento y de aluminio-madera, escaleras de mármol y metálica de caracol a bajo cubierta, calefacción acumuladores, termo eléctrico. Totalmente reformada, con estructura de hormigón. Plaza de garaje en edificio próximo, opcional. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,28 +342,13 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 14900,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286066",
-      "location": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuse",
-      "description": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuses de Oviedo ha disparado la demanda de aparcamiento en toda la zona, mientras la oferta de plazas disponibles sigue siendo mínima. Por eso, esta PLAZA DE GARAJE en Teodoro Cuesta representa una oportunidad cada vez más difícil de encontrar: una ubicación estratégica, alta demanda permanente y un precio muy competitivo dentro del mercado actual. A pocos minutos caminando de las estaciones y del centro de Oviedo Amplia Ideal para residentes, trabajadores y viajeros frecuentes Zona con fuerte presión de aparcamiento durante todo el día Excelente opción de inversión por su facilidad de alquiler Acceso cómodo y maniobrabilidad sencilla Mientras el número de",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 269000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2285546",
-      "location": "Venta Pisos, Venta, Pumarín Avenida Constitucion, Gijón, Asturias 269.000 € Presentamos una excelente oportunidad para aquellos que buscan un nuevo hogar. Este espacioso piso ofrece todo lo que su familia necesita para disfrutar de una vida",
-      "description": "Venta Pisos, Venta, Pumarín Avenida Constitucion, Gijón, Asturias 269.000 € Presentamos una excelente oportunidad para aquellos que buscan un nuevo hogar. Este espacioso piso ofrece todo lo que su familia necesita para disfrutar de una vida confortable y acogedora. La propiedad se encuentra en la primera planta de un edificio moderno que incluye  dos ascensores recién reformados , asegurando un fácil acceso para todos los miembros de la familia. Este piso cuenta con muy buena distribución. Ofrecemos un inmueble con tres amplias habitaciones y dos baños con ducha. Un generoso salón y una gran cocina que destaca por su estilo moderno y práctico, El piso dispone de garaje totalmente remodelado, trastero incluido y zona común para motos y bicicletas. La localización es simplemente inmejorable. Situado en una zona bien comunicada, el piso dispone de paradas de autobuses cercanas, lo que facil",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,13 +357,28 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 299950,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2285539",
-      "location": "Venta VENTA PISO 3 DORMI CON GARAJE PLAYA PONIENTE GIJON 299.950€ Calle Mariano Pola, Gijon, Asturias 299.950 € Presentamos esta exclusiva vivienda junto a la playa de Poniente, situada en Calle Mariano Pola nº 45, segunda planta, en una de",
-      "description": "Venta VENTA PISO 3 DORMI CON GARAJE PLAYA PONIENTE GIJON 299.950€ Calle Mariano Pola, Gijon, Asturias 299.950 € Presentamos esta exclusiva vivienda junto a la playa de Poniente, situada en Calle Mariano Pola nº 45, segunda planta, en una de las ubicaciones con mayor proyección y atractivo de Gijón. Con una superficie construida de 95 m², esta propiedad destaca por su excelente distribución, luminosidad y privilegiada situacion. Sus espacios ofrecen amplitud y confort, distribuyéndose en salón, cocina independiente, tres dormitorios y dos baños completos. La vivienda incluye una plaza de garaje en el precio, situada a escasos metros del portal, un valor añadido imprescindible en una zona cada vez más demandada. El edificio ofrece una imagen cuidada, al igual que el portal, ascensor amplio, reflejando en su conjunto un excelente estado. Situada a pocos metros de la Playa de Poniente, te pe",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desvá",
+      "price": 195000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-aviles-villalegre-la-luz-corros-1d87deda-55ba-11f1-9aaf-060000000054.html",
+      "location": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Vent",
+      "description": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Ventanas de aluminio doble acristalamiento, suelos de gres. Fachada y tejado reparados. Finca cerrada. Saneamiento. Pozo de Agua. OPCIONAL: Parcela de 2.100 m2 aprox. con tendejón frente a la casa. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -387,15 +387,15 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 135000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2283973",
-      "location": "Venta Pisos, Venta PEÑA CHAGO, Lena, Asturias 135.000 € Situado en el corazón de Campomanes, se encuentra este impecable piso de 81 metros útiles, una vivienda que destaca de inmediato por su extraordinaria luminosidad y un estado de conser",
-      "description": "Venta Pisos, Venta PEÑA CHAGO, Lena, Asturias 135.000 € Situado en el corazón de Campomanes, se encuentra este impecable piso de 81 metros útiles, una vivienda que destaca de inmediato por su extraordinaria luminosidad y un estado de conservación que permite entrar a vivir hoy mismo. Nada más entrar, la sensación de hogar es total gracias a una portería de alta calidad y una cuidada selección de materiales que marcan la diferencia.  Las habitaciones y el pasillo lucen un elegante suelo de parquet, mientras que las zonas de agua han sido revestidas con cerámica de alta calidad, garantizando durabilidad y una estética impecable. El salón, amplio y acogedor, cuenta con su propia chimenea, creando un ambiente cálido y único para las tardes de invierno. Al ser una vivienda totalmente exterior, regala vistas despejadas al paisaje asturiano y luz natural durante todo el día, algo que se disfrut",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en",
+      "price": 650000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-cudillero-4b97e4e3-667e-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2",
+      "description": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2 construidos, distribuidos en dos plantas, con materiales nobles de piedra y madera. Alberga una gran cocina-comedor, salón amueblado y suelo de iroco, tres habitaciones amplias con camas dobles y dos baños. Un prado enorme rodea la casa, en la que se eleva un hórreo centenario perfectamente conservado. Rn el exterior tiene pozo, barbacoa y horno. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
