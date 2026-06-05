@@ -1,9 +1,9 @@
 {
-  "scraped_count": 142,
-  "rejected_count": 92,
+  "scraped_count": 167,
+  "rejected_count": 115,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 31,
+    "negative_term": 54,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7470 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7474 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,13 +327,28 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Alquiler",
-      "price": 1100,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
-      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
-      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
+      "price": 120000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
+      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
+      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
+      "price": 425000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
+      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,43 +357,28 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 175000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289213",
-      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 175.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con ",
-      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 175.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baño equipado con inodoro Roca con cisterna empotrada Grohe, plato de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nuevo apartamento? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios de intermediación inmobiliaria a c",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
+      "price": 280000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
+      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
       "valid": true,
       "reject_reasons": [
         "negative_term"
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 285000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286415",
-      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 285.000 € Oportunidad única. Piso a estrenar en un edificio del año 1997 con más de 100 m2 útiles con 3 dormitorios, salón-cocina, 2 baños y trastero dentro de la viv",
-      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 285.000 € Oportunidad única. Piso a estrenar en un edificio del año 1997 con más de 100 m2 útiles con 3 dormitorios, salón-cocina, 2 baños y trastero dentro de la vivienda. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baños equipados con inodoro Roca con cisterna empotrada Grohe, platos de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nueva casa? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios d",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 307000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286164",
-      "location": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta ",
-      "description": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta magnífica vivienda de 127 m² construidos situada en la calle Alonso de Ojeda, esquina con Juan Alvargonzález, en una de las zonas más cómodas y bien comunicadas de Gijón. Ubicada en la cuarta planta del edificio, la vivienda destaca por su luminosidad y excelente distribución. Salvo uno de los dormitorios, todas las estancias son exteriores, lo que aporta una gran sensación de amplitud y luz natural durante todo el día. La propiedad se distribuye en salón-comedor, cocina independiente, cuatro dormitorios, 2 baños y una amplia plaza de garaje, situada a escasos metros del portal del inmueble. La vivienda se encuentra en muy buen estado de conservación y",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
+      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
+      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -387,15 +387,15 @@
       ]
     },
     {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
-      "price": 14900,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286066",
-      "location": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuse",
-      "description": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuses de Oviedo ha disparado la demanda de aparcamiento en toda la zona, mientras la oferta de plazas disponibles sigue siendo mínima. Por eso, esta PLAZA DE GARAJE en Teodoro Cuesta representa una oportunidad cada vez más difícil de encontrar: una ubicación estratégica, alta demanda permanente y un precio muy competitivo dentro del mercado actual. A pocos minutos caminando de las estaciones y del centro de Oviedo Amplia Ideal para residentes, trabajadores y viajeros frecuentes Zona con fuerte presión de aparcamiento durante todo el día Excelente opción de inversión por su facilidad de alquiler Acceso cómodo y maniobrabilidad sencilla Mientras el número de",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas Contacto",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
