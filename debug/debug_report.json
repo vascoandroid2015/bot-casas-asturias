@@ -1,9 +1,9 @@
 {
-  "scraped_count": 167,
-  "rejected_count": 117,
+  "scraped_count": 142,
+  "rejected_count": 93,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 56,
+    "negative_term": 32,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7488 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7486 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -327,28 +327,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
-      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
-      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
-      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": 1100,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
+      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
+      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -357,13 +342,43 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 175000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289213",
+      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 175.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con ",
+      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 175.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baño equipado con inodoro Roca con cisterna empotrada Grohe, plato de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nuevo apartamento? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios de intermediación inmobiliaria a c",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 285000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286415",
+      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 285.000 € Oportunidad única. Piso a estrenar en un edificio del año 1997 con más de 100 m2 útiles con 3 dormitorios, salón-cocina, 2 baños y trastero dentro de la viv",
+      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 285.000 € Oportunidad única. Piso a estrenar en un edificio del año 1997 con más de 100 m2 útiles con 3 dormitorios, salón-cocina, 2 baños y trastero dentro de la vivienda. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baños equipados con inodoro Roca con cisterna empotrada Grohe, platos de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nueva casa? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios d",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 307000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286164",
+      "location": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta ",
+      "description": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta magnífica vivienda de 127 m² construidos situada en la calle Alonso de Ojeda, esquina con Juan Alvargonzález, en una de las zonas más cómodas y bien comunicadas de Gijón. Ubicada en la cuarta planta del edificio, la vivienda destaca por su luminosidad y excelente distribución. Salvo uno de los dormitorios, todas las estancias son exteriores, lo que aporta una gran sensación de amplitud y luz natural durante todo el día. La propiedad se distribuye en salón-comedor, cocina independiente, cuatro dormitorios, 2 baños y una amplia plaza de garaje, situada a escasos metros del portal del inmueble. La vivienda se encuentra en muy buen estado de conservación y",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,30 +387,15 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
-      "price": 206000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
-      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
-      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 14900,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286066",
+      "location": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuse",
+      "description": "Venta Garajes, Venta, Ciudad Naranco Teodoro Cuesta 19. Oviedo, Oviedo, Asturias 14.900 € En Ciudad Naranco, tener garaje ya no es un extra: es una necesidad. La proximidad a las estaciones de tren (RENFE y FEVE) y a la estación de autobuses de Oviedo ha disparado la demanda de aparcamiento en toda la zona, mientras la oferta de plazas disponibles sigue siendo mínima. Por eso, esta PLAZA DE GARAJE en Teodoro Cuesta representa una oportunidad cada vez más difícil de encontrar: una ubicación estratégica, alta demanda permanente y un precio muy competitivo dentro del mercado actual. A pocos minutos caminando de las estaciones y del centro de Oviedo Amplia Ideal para residentes, trabajadores y viajeros frecuentes Zona con fuerte presión de aparcamiento durante todo el día Excelente opción de inversión por su facilidad de alquiler Acceso cómodo y maniobrabilidad sencilla Mientras el número de",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
         "negative_term"
