@@ -1,5 +1,5 @@
 {
-  "scraped_count": 142,
+  "scraped_count": 122,
   "rejected_count": 93,
   "notified_count": 0,
   "reject_reasons": {
@@ -111,12 +111,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "Venta de Casa en provincia Asturias - Remax",
+      "page_title": "508 Resource Limit Is Reached",
       "block_signals": [],
-      "valid_count": 20,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
