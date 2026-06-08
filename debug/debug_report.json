@@ -1,9 +1,9 @@
 {
-  "scraped_count": 166,
-  "rejected_count": 113,
+  "scraped_count": 141,
+  "rejected_count": 93,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 52,
+    "negative_term": 32,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 48 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 40 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7516 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7514 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -234,10 +234,11 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://www.sellmi.es/inmuebles-venta/",
-      "page_title": "Inmuebles en Venta en Asturias - Sellmi Inmobiliaria",
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.sellmi.es/inmuebles-venta/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -327,13 +328,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
-      "price": 178000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
-      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
-      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": 1100,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
+      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
+      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,43 +343,13 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 6 habitaciones Cudillero, Asturias En buen estado  ·  220m² comprar 525.000 € La propiedad se sitúa sobre una parcela de 2.000 m² y cuenta con 220 m² construidos apr",
-      "price": 525000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-cudillero-6a5ef038-fd00-11f0-b3d3-060000000057.html",
-      "location": "Casa 6 habitaciones Cudillero, Asturias En buen estado  ·  220m² comprar 525.000 € La propiedad se sitúa sobre una parcela de 2.000 m² y cuenta con 220 m² construidos aprox., distribuidos en 6 habitaciones, 2 baños, cocina y salón. Completa",
-      "description": "Casa 6 habitaciones Cudillero, Asturias En buen estado  ·  220m² comprar 525.000 € La propiedad se sitúa sobre una parcela de 2.000 m² y cuenta con 220 m² construidos aprox., distribuidos en 6 habitaciones, 2 baños, cocina y salón. Completa el conjunto un hórreo tradicional y casa de aperos, que aportan carácter y autenticidad a la finca. Ubicada en un entorno natural privilegiado, muy cerca de Cudillero y Luarca, y a pocos minutos de playas tan reconocidas como la Playa del Silencio. Novellana, distinguida como Pueblo Ejemplar de Asturias, ofrece tranquilidad, belleza y una alta calidad de vida. Una propiedad ideal como vivienda familiar, retiro personal o proyecto turístico, con el valor añadido de su cercanía al Camino de Santiago. Oportunidades así son poco habituales en esta zona. Precio: 525.000 € Si buscas una casa especial en un entorno único, ¡contacta con nosotros y descubre to",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en",
-      "price": 650000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-cudillero-4b97e4e3-667e-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2",
-      "description": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2 construidos, distribuidos en dos plantas, con materiales nobles de piedra y madera. Alberga una gran cocina-comedor, salón amueblado y suelo de iroco, tres habitaciones amplias con camas dobles y dos baños. Un prado enorme rodea la casa, en la que se eleva un hórreo centenario perfectamente conservado. Rn el exterior tiene pozo, barbacoa y horno. Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
-      "price": 460000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
-      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
-      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 295000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290026",
+      "location": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con asce",
+      "description": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con ascensor, se encuentra lista para convertirse en su próximo hogar. Distribuido en tres  dormitorios,  este piso está pensado para quienes buscan espacio y comodidad. Las habitaciones están llenas de luz natural y ofrecen un ambiente acogedor, ideal para el descanso y la vida diaria. La cocina, equipada con todos los electrodomésticos necesarios, es práctica y funcional. Un salón comedor amueblado con estilo atemporal,  es el lugar perfecto para recibir a sus invitados o relajarse tras una jornada laboral. Amplias ventanas permiten la entrada de luz, creando una atmósfera cálida y acogedora para disfrutar cada instante. De igual forma,. ambos  baños,, equip",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -387,15 +358,45 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
-      "price": 226000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 175000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289213",
+      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 175.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con ",
+      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 175.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baño equipado con inodoro Roca con cisterna empotrada Grohe, plato de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nuevo apartamento? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios de intermediación inmobiliaria a c",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 285000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286415",
+      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 285.000 € Oportunidad única. Piso a estrenar en un edificio del año 1997 con más de 100 m2 útiles con 3 dormitorios, salón-cocina, 2 baños y trastero dentro de la viv",
+      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 285.000 € Oportunidad única. Piso a estrenar en un edificio del año 1997 con más de 100 m2 útiles con 3 dormitorios, salón-cocina, 2 baños y trastero dentro de la vivienda. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baños equipados con inodoro Roca con cisterna empotrada Grohe, platos de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nueva casa? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios d",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 307000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2286164",
+      "location": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta ",
+      "description": "Venta VENTA VIVIENDA 4 DORM, GARAJE, LLANO, GIJON 307.000 € Calle Alonso de Ojeda, Gijon, Asturias 307.000 € OPORTUNIDAD, VENTA DE AMPLIA VIVIENDA DE CUATRO DORMITORIOS CON GARAJE EN CALLE ALONSO DE OJEDA Nº 21 DE GIJÓN Te presentamos esta magnífica vivienda de 127 m² construidos situada en la calle Alonso de Ojeda, esquina con Juan Alvargonzález, en una de las zonas más cómodas y bien comunicadas de Gijón. Ubicada en la cuarta planta del edificio, la vivienda destaca por su luminosidad y excelente distribución. Salvo uno de los dormitorios, todas las estancias son exteriores, lo que aporta una gran sensación de amplitud y luz natural durante todo el día. La propiedad se distribuye en salón-comedor, cocina independiente, cuatro dormitorios, 2 baños y una amplia plaza de garaje, situada a escasos metros del portal del inmueble. La vivienda se encuentra en muy buen estado de conservación y",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
