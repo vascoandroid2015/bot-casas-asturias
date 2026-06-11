@@ -1,9 +1,9 @@
 {
-  "scraped_count": 166,
-  "rejected_count": 115,
+  "scraped_count": 141,
+  "rejected_count": 92,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 54,
+    "negative_term": 31,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -246,10 +246,11 @@
       "kind": "portal",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://asturiasproperty.com/",
+      "error_count": 1,
+      "final_url": "about:blank",
       "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -327,13 +328,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
-      "price": 460000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
-      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
-      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": 1100,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
+      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
+      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -342,13 +343,43 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, ",
-      "price": 155000,
-      "url": "https://casasapo.es/comprar-casa-de-madera-2-habitaciones-illas-18fcfd0b-667b-11e4-aeff-000c2946937b.html",
-      "location": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador,",
-      "description": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador, todo eléctrico. Otro horreo para rehabilitar. Finca de 2.100m2 con árboles frutales. Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 22000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290644",
+      "location": "Venta VENTA DE PLAZA DE GARAJE EN LAS MESTAS Carretera de Villaviciosa, Gijon, Asturias 22.000 € Plaza de garaje en venta en Carretera de Villaviciosa, en edificio moderno y con excelente acceso. Dispone de aproximadamente 13 m², con unas m",
+      "description": "Venta VENTA DE PLAZA DE GARAJE EN LAS MESTAS Carretera de Villaviciosa, Gijon, Asturias 22.000 € Plaza de garaje en venta en Carretera de Villaviciosa, en edificio moderno y con excelente acceso. Dispone de aproximadamente 13 m², con unas medidas de 5,88 metros de largo por 2,20 metros de ancho, ofreciendo un espacio cómodo para estacionar y maniobrar con facilidad. Ubicada en un garaje de fácil circulación, con acceso mediante portal automático y entrada amplia, ideal para el día a día. Una opción práctica para quienes buscan comodidad y evitar los problemas de aparcamiento en la zona. También resulta una interesante oportunidad de inversión gracias a su buena ubicación y funcionalidad. No dudes en consultarnos para más información o para concertar una visita. El precio de venta no incluye el Impuesto de Transmisiones Patrimoniales (ITP), gastos de notaría, registro de la propiedad y de",
+      "municipality": "Villaviciosa",
+      "distance_km": 36.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 67000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290492",
+      "location": "Venta Pisos, Venta AV FRANCISCO CABRERA, Aller, Asturias 67.000 € En venta encantador piso situado en el apacible municipio de Aller, ideal para aquellos que buscan un hogar acogedor y bien conectado. Esta propiedad, ubicada en la segunda p",
+      "description": "Venta Pisos, Venta AV FRANCISCO CABRERA, Aller, Asturias 67.000 € En venta encantador piso situado en el apacible municipio de Aller, ideal para aquellos que buscan un hogar acogedor y bien conectado. Esta propiedad, ubicada en la segunda planta de un edificio bien mantenido, construido en 1983, ofrece el equilibrio perfecto entre comodidad y conveniencia. Al entrar en los 87.6 metros cuadrados útiles del inmueble, quedará impresionado por la funcionalidad y distribución del espacio. Con un total de 110 metros cuadrados construidos, este piso cuenta con tres amplias y luminosas habitaciones, ideales para descansar y disfrutar de una relajante atmósfera. El aseo, moderno y funcional, completa los espacios dedicados al confort personal de la vivienda. Una de las grandes ventajas de esta propiedad es su excelente ubicación. Se halla en una zona tranquila pero bien conectada, con una parada ",
+      "municipality": "Aller",
+      "distance_km": 31.9,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 295000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290026",
+      "location": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con asce",
+      "description": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con ascensor, se encuentra lista para convertirse en su próximo hogar. Distribuido en tres  dormitorios,  este piso está pensado para quienes buscan espacio y comodidad. Las habitaciones están llenas de luz natural y ofrecen un ambiente acogedor, ideal para el descanso y la vida diaria. La cocina, equipada con todos los electrodomésticos necesarios, es práctica y funcional. Un salón comedor amueblado con estilo atemporal,  es el lugar perfecto para recibir a sus invitados o relajarse tras una jornada laboral. Amplias ventanas permiten la entrada de luz, creando una atmósfera cálida y acogedora para disfrutar cada instante. De igual forma,. ambos  baños,, equip",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -357,43 +388,13 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
-      "price": 120000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
-      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
-      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico. Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
-      "price": 409000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
-      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 520000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289646",
+      "location": "Venta Pisos, Venta, Viesques CL CONCEJO DE ONIS, Gijón, Asturias 520.000 € ✨ Urbanización privada con piscina y zonas ajardinadas 🛏️ 4 dormitorios 👗 Vestidor en suite 🛋️ Amplio salón 🍽️ Cocina independiente 🚿 2 baños completos 🚗 2 plazas de",
+      "description": "Venta Pisos, Venta, Viesques CL CONCEJO DE ONIS, Gijón, Asturias 520.000 € ✨ Urbanización privada con piscina y zonas ajardinadas 🛏️ 4 dormitorios 👗 Vestidor en suite 🛋️ Amplio salón 🍽️ Cocina independiente 🚿 2 baños completos 🚗 2 plazas de garaje incluidas 📦 Trastero 🔥 Servicios centralizados 📍 Ubicado en pleno centro de Viesques, una de las zonas más exclusivas y demandadas de Gijón, con todos los servicios cerca. 💡 Ideal para familias que buscan amplitud, comodidad y tranquilidad. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la web oficial de servicios tributarios del Principado de Asturias https://sede.tributasenasturias.es/sites/sede/default/es_ES/Que-quieres-hacer/Transmisiones-Patrim",
       "municipality": null,
       "distance_km": null,
       "valid": true,
