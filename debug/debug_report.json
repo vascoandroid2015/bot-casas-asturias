@@ -1,9 +1,9 @@
 {
-  "scraped_count": 140,
-  "rejected_count": 90,
+  "scraped_count": 141,
+  "rejected_count": 91,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 29,
+    "negative_term": 30,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -62,11 +62,10 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://www.inmobiliariaasturias.es/",
+      "page_title": "Inmobiliaria Asturias: Te ayudamos a comprar casa en Asturias",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.inmobiliariaasturias.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -161,11 +160,10 @@
       "kind": "institutional",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://hunosainmobiliario.es/",
+      "page_title": "Portal Inmobiliario Hunosa",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://hunosainmobiliario.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -247,12 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
