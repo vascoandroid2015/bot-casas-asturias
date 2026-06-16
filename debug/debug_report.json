@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7559 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7554 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -360,21 +360,6 @@
       "source": "Fincas Asturias",
       "kind": "agency",
       "title": "Venta",
-      "price": 67000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290492",
-      "location": "Venta Pisos, Venta AV FRANCISCO CABRERA, Aller, Asturias 67.000 € En venta encantador piso situado en el apacible municipio de Aller, ideal para aquellos que buscan un hogar acogedor y bien conectado. Esta propiedad, ubicada en la segunda p",
-      "description": "Venta Pisos, Venta AV FRANCISCO CABRERA, Aller, Asturias 67.000 € En venta encantador piso situado en el apacible municipio de Aller, ideal para aquellos que buscan un hogar acogedor y bien conectado. Esta propiedad, ubicada en la segunda planta de un edificio bien mantenido, construido en 1983, ofrece el equilibrio perfecto entre comodidad y conveniencia. Al entrar en los 87.6 metros cuadrados útiles del inmueble, quedará impresionado por la funcionalidad y distribución del espacio. Con un total de 110 metros cuadrados construidos, este piso cuenta con tres amplias y luminosas habitaciones, ideales para descansar y disfrutar de una relajante atmósfera. El aseo, moderno y funcional, completa los espacios dedicados al confort personal de la vivienda. Una de las grandes ventajas de esta propiedad es su excelente ubicación. Se halla en una zona tranquila pero bien conectada, con una parada ",
-      "municipality": "Aller",
-      "distance_km": 31.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "Fincas Asturias",
-      "kind": "agency",
-      "title": "Venta",
       "price": 295000,
       "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290026",
       "location": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con asce",
@@ -396,6 +381,21 @@
       "description": "Venta Pisos, Venta, Viesques CL CONCEJO DE ONIS, Gijón, Asturias 505.000 € ✨ Urbanización privada con piscina y zonas ajardinadas 🛏️ 4 dormitorios 👗 Vestidor en suite 🛋️ Amplio salón 🍽️ Cocina independiente 🚿 2 baños completos 🚗 2 plazas de garaje incluidas 📦 Trastero 🔥 Servicios centralizados 📍 Ubicado en pleno centro de Viesques, una de las zonas más exclusivas y demandadas de Gijón, con todos los servicios cerca. 💡 Ideal para familias que buscan amplitud, comodidad y tranquilidad. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la web oficial de servicios tributarios del Principado de Asturias https://sede.tributasenasturias.es/sites/sede/default/es_ES/Que-quieres-hacer/Transmisiones-Patrim",
       "municipality": null,
       "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 165000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289213",
+      "location": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 165.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con ",
+      "description": "Venta Pisos, Venta, Tenderina-Fozaneldi CL LOPE DE VEGA, Oviedo, Asturias 165.000 € Oportunidad única. Apartamento a estrenar en un edificio del año 1997 con 42 m2 útiles con 1 dormitorio, salón-cocina y baño. Calefacción de gas ciudad con caldera Baxi Neodens. Ventanas de aluminio con persiana motorizada en el ventanal del salón. Tarima flotante AC5. Portería blanca con manillas en acero. Cocina amueblada y equipada con placa de inducción, horno multifunción y campana extractora. Baño equipado con inodoro Roca con cisterna empotrada Grohe, plato de ducha en resina con carga mineral, mueble de baño con espejo retroiluminado LED. ¿Quieres estrenar tu nuevo apartamento? ¿Invertir para rentabilizar un alquiler? ¿Buscas una segunda residencia y no quieres tener que hacer obras en muchos años? ¡Esta es tu oportunidad, no la dejes pasar y llámanos! Honorarios de intermediación inmobiliaria a c",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
         "negative_term"
