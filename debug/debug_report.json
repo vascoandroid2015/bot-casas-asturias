@@ -1,9 +1,9 @@
 {
-  "scraped_count": 166,
-  "rejected_count": 111,
+  "scraped_count": 165,
+  "rejected_count": 109,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 50,
+    "negative_term": 48,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 48 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 49 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7550 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7549 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -245,12 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -329,21 +329,6 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos sa",
-      "price": 247000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-penamellera-baja-5c83ecd6-6674-11e4-aeff-000c2946937b.html",
-      "location": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terren",
-      "description": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terreno de 200 m/2 cruzando carretera. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
       "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
       "price": 480000,
       "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
@@ -359,43 +344,58 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
-      "price": 240000,
-      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
-      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
-      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en ",
-      "price": 950000,
-      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
-      "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
-      "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
-      "price": 280000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
-      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
       "municipality": "Soto Del Barco",
       "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
+      "price": 890000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
+      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
+      "price": 800000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
+      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
+      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
