@@ -1,9 +1,9 @@
 {
-  "scraped_count": 165,
-  "rejected_count": 109,
+  "scraped_count": 140,
+  "rejected_count": 90,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 48,
+    "negative_term": 29,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7549 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7496 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -246,10 +246,11 @@
       "kind": "portal",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://asturiasproperty.com/",
+      "error_count": 1,
+      "final_url": "about:blank",
       "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -327,43 +328,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
-      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
-      "price": 890000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
-      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Alquiler",
+      "price": 1100,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
+      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
+      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -372,13 +343,28 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 22000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290644",
+      "location": "Venta VENTA DE PLAZA DE GARAJE EN LAS MESTAS Carretera de Villaviciosa, Gijon, Asturias 22.000 € Plaza de garaje en venta en Carretera de Villaviciosa, en edificio moderno y con excelente acceso. Dispone de aproximadamente 13 m², con unas m",
+      "description": "Venta VENTA DE PLAZA DE GARAJE EN LAS MESTAS Carretera de Villaviciosa, Gijon, Asturias 22.000 € Plaza de garaje en venta en Carretera de Villaviciosa, en edificio moderno y con excelente acceso. Dispone de aproximadamente 13 m², con unas medidas de 5,88 metros de largo por 2,20 metros de ancho, ofreciendo un espacio cómodo para estacionar y maniobrar con facilidad. Ubicada en un garaje de fácil circulación, con acceso mediante portal automático y entrada amplia, ideal para el día a día. Una opción práctica para quienes buscan comodidad y evitar los problemas de aparcamiento en la zona. También resulta una interesante oportunidad de inversión gracias a su buena ubicación y funcionalidad. No dudes en consultarnos para más información o para concertar una visita. El precio de venta no incluye el Impuesto de Transmisiones Patrimoniales (ITP), gastos de notaría, registro de la propiedad y de",
+      "municipality": "Villaviciosa",
+      "distance_km": 36.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 195000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290260",
+      "location": "Venta Pisos, Venta, Llano Calle San Matias, Gijon, Asturias 195.000 € Piso acogedor y bien distribuido en la calle San Matías, en el barrio del Llano. La vivienda cuenta con dos habitaciones, un baño, un salón agradable y una cocina indepen",
+      "description": "Venta Pisos, Venta, Llano Calle San Matias, Gijon, Asturias 195.000 € Piso acogedor y bien distribuido en la calle San Matías, en el barrio del Llano. La vivienda cuenta con dos habitaciones, un baño, un salón agradable y una cocina independiente con despensa, ideal para mantener todo organizado sin perder espacio. Al ser exterior, disfruta de buena luz natural durante el día, lo que aporta un ambiente cálido y agradable. Además, incluye trastero y plaza de garaje, dos extras que suman comodidad en el día a día. Una opción práctica y completa, en una zona tranquila y bien comunicada, perfecta tanto para vivir como para invertir. Se informa a los interesados que el precio de venta indicado no comprende el Impuesto de Transmisiones Patrimoniales (ITP) , los gastos asociados a la compraventa (notaría, registro de la propiedad y otros) ni los honorarios de la agencia inmobiliaria a cargo del",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -387,13 +373,28 @@
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 295000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290026",
+      "location": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con asce",
+      "description": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijon, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con ascensor, se encuentra lista para convertirse en su próximo hogar. Distribuido en tres  dormitorios,  este piso está pensado para quienes buscan espacio y comodidad. Las habitaciones están llenas de luz natural y ofrecen un ambiente acogedor, ideal para el descanso y la vida diaria. La cocina, equipada con todos los electrodomésticos necesarios, es práctica y funcional. Un salón comedor amueblado con estilo atemporal,  es el lugar perfecto para recibir a sus invitados o relajarse tras una jornada laboral. Amplias ventanas permiten la entrada de luz, creando una atmósfera cálida y acogedora para disfrutar cada instante. De igual forma,. ambos  baños,, equip",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "Fincas Asturias",
+      "kind": "agency",
+      "title": "Venta",
+      "price": 505000,
+      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2289646",
+      "location": "Venta Pisos, Venta, Viesques CL CONCEJO DE ONIS, Gijón, Asturias 505.000 € ✨ Urbanización privada con piscina y zonas ajardinadas 🛏️ 4 dormitorios 👗 Vestidor en suite 🛋️ Amplio salón 🍽️ Cocina independiente 🚿 2 baños completos 🚗 2 plazas de",
+      "description": "Venta Pisos, Venta, Viesques CL CONCEJO DE ONIS, Gijón, Asturias 505.000 € ✨ Urbanización privada con piscina y zonas ajardinadas 🛏️ 4 dormitorios 👗 Vestidor en suite 🛋️ Amplio salón 🍽️ Cocina independiente 🚿 2 baños completos 🚗 2 plazas de garaje incluidas 📦 Trastero 🔥 Servicios centralizados 📍 Ubicado en pleno centro de Viesques, una de las zonas más exclusivas y demandadas de Gijón, con todos los servicios cerca. 💡 Ideal para familias que buscan amplitud, comodidad y tranquilidad. Gastos e impuestos no incluidos en el precio. A título orientativo, en segundas transmisiones, el comprador abonará el Impuesto sobre Transmisiones Patrimoniales (ITP). Para consultar los porcentajes del ITP en Asturias puede hacerlo a través de la web oficial de servicios tributarios del Principado de Asturias https://sede.tributasenasturias.es/sites/sede/default/es_ES/Que-quieres-hacer/Transmisiones-Patrim",
       "municipality": null,
       "distance_km": null,
       "valid": true,
