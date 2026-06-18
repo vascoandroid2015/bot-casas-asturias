@@ -1,9 +1,9 @@
 {
-  "scraped_count": 154,
-  "rejected_count": 107,
+  "scraped_count": 165,
+  "rejected_count": 108,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 46,
+    "negative_term": 47,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -37,12 +37,12 @@
       "name": "Fincas Asturias",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 12,
       "error_count": 0,
       "final_url": "https://www.fincasasasturias.com/search-form-top.php?pagina=1",
       "page_title": "Buscando",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 12,
       "notify_count": 0
     },
     {
@@ -200,7 +200,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 53 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 54 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -212,7 +212,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7507 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7542 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -245,12 +245,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -329,56 +329,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
-      "price": 206000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
-      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
-      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
-      "price": 600000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
-      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
-      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
-      "price": 409000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
-      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "title": "Chalet 6 habitaciones Somió - Cabueñes, Gijón, Asturias En buen estado  ·  500m² Con Garaje comprar 1.790.000 € Hay propiedades que se visitan. Y hay propiedades que se v",
+      "price": 1790000,
+      "url": "https://casasapo.es/comprar-chalet-6-habitaciones-o-mas-gijon-somio-cabuenes-003bf759-632d-11f1-9a8d-060000000057.html",
+      "location": "Chalet 6 habitaciones Somió - Cabueñes, Gijón, Asturias En buen estado  ·  500m² Con Garaje comprar 1.790.000 € Hay propiedades que se visitan. Y hay propiedades que se viven incluso antes de cruzar la puerta. Esta es una de ellas. Ubicada ",
+      "description": "Chalet 6 habitaciones Somió - Cabueñes, Gijón, Asturias En buen estado  ·  500m² Con Garaje comprar 1.790.000 € Hay propiedades que se visitan. Y hay propiedades que se viven incluso antes de cruzar la puerta. Esta es una de ellas. Ubicada en una de las zonas residenciales más exclusivas de Gijón, esta espectacular vivienda combina arquitectura, comodidad, privacidad y una calidad de vida difícil de encontrar en una sola propiedad. Rodeada por una magnífica parcela ajardinada, diseñada mediante un cuidado proyecto de paisajismo, la finca ofrece un entorno lleno de armonía, vegetación y rincones pensados para disfrutar cada momento del día. Su elegante fachada, donde la piedra natural y los acabados tipo madera se combinan a la perfección, consigue una imagen atemporal que une el carácter de las grandes viviendas clásicas con la comodidad y funcionalidad de la arquitectura moderna. Desde ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -389,11 +344,56 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "title": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos sa",
+      "price": 247000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-penamellera-baja-5c83ecd6-6674-11e4-aeff-000c2946937b.html",
+      "location": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terren",
+      "description": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terreno de 200 m/2 cruzando carretera. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
+      "price": 425000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
+      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
+      "price": 350000,
+      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
+      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
+      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox. Contacto",
+      "municipality": "Aller",
+      "distance_km": 31.9,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
