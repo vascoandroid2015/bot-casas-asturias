@@ -1,10 +1,10 @@
 {
-  "scraped_count": 129,
-  "rejected_count": 83,
+  "scraped_count": 114,
+  "rejected_count": 68,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 56,
-    "negative_term": 22,
+    "negative_term": 20,
+    "missing_price": 42,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -50,12 +50,13 @@
       "name": "CASAL Inmobiliaria",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 14,
-      "error_count": 0,
+      "raw_count": 0,
+      "error_count": 1,
       "final_url": "https://www.inmocasal.es/",
-      "page_title": "CASAL Inmobiliaria: La mayor Inmobiliaria de Asturias",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 14,
+      "exception": "Page.screenshot: Timeout 45000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n",
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -63,10 +64,11 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://www.inmobiliariaasturias.es/",
-      "page_title": "Inmobiliaria Asturias: Te ayudamos a comprar casa en Asturias",
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.inmobiliariaasturias.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -161,10 +163,11 @@
       "kind": "institutional",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://hunosainmobiliario.es/",
-      "page_title": "Portal Inmobiliario Hunosa",
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://hunosainmobiliario.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -213,7 +216,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7537 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7540 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -246,12 +249,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -328,80 +331,79 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASAL Inmobiliaria",
+      "source": "Inmobiliaria María",
       "kind": "agency",
-      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "title": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principale",
       "price": null,
-      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
-      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
-      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
+      "url": "https://inmobiliariamaria.es/property/finca-edificable-en-a-pontenova-lugo-2/",
+      "location": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todas las ubicaciones principales ",
+      "description": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todas las ubicaciones principales Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todos los Estados Alquiler DESTACADO OPORTUNIDAD Próximamente REBAJADO Reservado Vendido Venta Todos los Estados Todos los Estados Alquiler DESTACADO OPORTUNIDAD Próximamente REBAJADO Reservado Vendido Venta Todos los tipos Locales comerciales - Naves industriales - Oficinas - Tiendas Propiedades - Apartamentos - Casas de pueblo - Edificios de apartamentos - Fincas - Pisos Todos los tipos Todos los tipos Locales comerciales - Naves industriales - Oficinas - Tiendas Propiedades - Apartamentos - Casas de pueblo - Edificios de apartamentos - Fincas - Pisos Rango de precios Desde 12,000€ A",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
+        "negative_term",
         "missing_price"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
+      "source": "Grupo Duarte",
       "kind": "agency",
-      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
-      "price": null,
-      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
-      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
-      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "title": "154.000€",
+      "price": 100000,
+      "url": "https://www.grupoduarte.es/propiedad/casa-o-chalet-independiente-asturias-ref111640302-111640302/",
+      "location": "Inmuebles Propiedades en Venta en Asturias Asturias Lugo Toledo Población Asturias Lugo Toledo Asturias Lugo Toledo Zona Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Tipo Casa o Chalet independiente",
+      "description": "Inmuebles Propiedades en Venta en Asturias Asturias Lugo Toledo Población Asturias Lugo Toledo Asturias Lugo Toledo Zona Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Tipo Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Precio 0 – 100.000€ 100.000€ – 200.000€ 200.000€ – 300.000€ 300.000€ – 400.000€ 400.000€ – 500.000€ 500.000€ – 700.000€ 700.000€ – 900.000€ 900.000€ – 1.200.000€ 1.200.000€ – 1.500.000€ 1.500.000€ – 2.000.000€ 2.000.000€ – 2.500.000€ 2.500.000€ – 5.000.000€ > 5.000.000€ Precio Precio 0 – 100.000€ 100.000€ – 200.000€ 200.000€ – 300.000€ 300.000€ – 400.000€ 400.000€ – 500.000€ 500.000€ – 700.000€ 700.000€ – 900.000€ 900.000€ – 1.200.000€ 1.200.000€ – 1.500.000€ 1.500.000€ – 2.000.000€ 2.000.000€ – 2.500.000€ 2",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
-      "price": null,
-      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
-      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
-      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
+      "source": "e-viviendas",
+      "kind": "portal",
+      "title": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€",
+      "price": 864125000,
+      "url": "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38676",
+      "location": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€ Reines AvilÃ©s",
+      "description": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€ Reines AvilÃ©s",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "price_out_of_range"
+      ]
+    },
+    {
+      "source": "e-viviendas",
+      "kind": "portal",
+      "title": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€",
+      "price": 518350000,
+      "url": "https://www.e-viviendas.es/venta-chalets-individuales-asturias-oviedo/38518",
+      "location": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€ Tel: 984-295-275",
+      "description": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€ Tel: 984-295-275",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
+        "price_out_of_range"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Oficinas Centrales",
-      "price": null,
-      "url": "https://www.inmocasal.es/central/",
-      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
-      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "source": "e-viviendas",
+      "kind": "portal",
+      "title": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable",
+      "price": 408130000,
+      "url": "https://www.e-viviendas.es/venta-pisos-asturias-lena/38408",
+      "location": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable Tel: 658-719-251",
+      "description": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable Tel: 658-719-251",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "CASAL Inmobiliaria La Felguera",
-      "price": null,
-      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
-      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "municipality": "Langreo",
-      "distance_km": 15.3,
-      "valid": true,
-      "reject_reasons": [
-        "missing_price"
+        "price_out_of_range"
       ]
     }
   ]
