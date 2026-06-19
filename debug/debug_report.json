@@ -1,10 +1,10 @@
 {
-  "scraped_count": 141,
-  "rejected_count": 88,
+  "scraped_count": 128,
+  "rejected_count": 82,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 27,
     "missing_price": 56,
+    "negative_term": 21,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -37,12 +37,13 @@
       "name": "Fincas Asturias",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 12,
-      "error_count": 0,
-      "final_url": "https://www.fincasasasturias.com/search-form-top.php?pagina=1",
-      "page_title": "Buscando",
+      "raw_count": 0,
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 12,
+      "exception": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.fincasasasturias.com/search-form-top.php?pagina=1\nCall log:\n  - navigating to \"https://www.fincasasasturias.com/search-form-top.php?pagina=1\", waiting until \"domcontentloaded\"\n",
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -245,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -259,8 +260,8 @@
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.indomio.es/en/venta-casas/asturias-provincia/",
-      "page_title": "indomio.es",
+      "final_url": "https://www.indomio.es/en/venta-casas/asturias-provincia/?mapCenter=46.751153%2C-6.124878&zoom=7",
+      "page_title": "Homes for sale in the province of Asturias - Indomio",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -327,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Fincas Asturias",
+      "source": "CASAL Inmobiliaria",
       "kind": "agency",
-      "title": "Alquiler",
-      "price": 1100,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2319320",
-      "location": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 met",
-      "description": "Alquiler Pisos, Alquiler, Centro CL CASIMIRO VELASCO, Gijón, Asturias 1.100 € Le presentamos una propiedad verdaderamente única en el mercado de alquiler . Ubicado en la codiciada zona del Paseo de Begoña , este espectacular piso de 123 metros cuadrados construidos, combina de forma magistral el encanto majestuoso de la arquitectura de mediados del siglo XX con una reforma integral de corte moderno y funcional. Situada en la cuarta planta de un edificio de corte clásico construido en 1946, protegido por su valor arquitectónico, esta vivienda es un refugio de distinción para quienes buscan una experiencia residencial superior y con personalidad propia en el centro de la ciudad. Al cruzar el umbral, la sensación de amplitud es inmediata gracias a sus techos altos y a una distribución optimizada para maximizar la entrada de luz natural: Salón Señorial: Un espacio noble y excepcionalmente lu",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "Fincas Asturias",
+      "source": "CASAL Inmobiliaria",
       "kind": "agency",
-      "title": "Venta",
-      "price": 150000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2314564",
-      "location": "Venta Pisos, Venta, La Calzada Felipe II, Gijón, Asturias 150.000 € Ático con gran terraza de 25 metros, orientada al oeste se presenta una oportunidad única para adquirir un magnífico ático en venta que reúne todas las características dese",
-      "description": "Venta Pisos, Venta, La Calzada Felipe II, Gijón, Asturias 150.000 € Ático con gran terraza de 25 metros, orientada al oeste se presenta una oportunidad única para adquirir un magnífico ático en venta que reúne todas las características deseables para quienes buscan confort, ubicación y calidad de vida. El inmueble ofrece dos amplias habitaciones que reciben abundante luz natural, proporcionando espacios acogedores y serenos para el descanso. La distribución del piso ha sido optimizada para aprovechar al máximo cada metro cuadrado, ofreciendo a sus nuevos propietarios una sensación de amplitud y luminosidad que difícilmente se encuentra en otros inmuebles de la misma categoría. También se destaca la tranquilidad predominante en este nivel, al tratarse de un ático, lo que convierte al hogar en un refugio apartado del bullicio diario. Para aquellos que buscan una vivienda con carácter, esta",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "Fincas Asturias",
+      "source": "CASAL Inmobiliaria",
       "kind": "agency",
-      "title": "Venta",
-      "price": 22000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290644",
-      "location": "Venta VENTA DE PLAZA DE GARAJE EN LAS MESTAS Carretera de Villaviciosa, Gijon, Asturias 22.000 € Plaza de garaje en venta en Carretera de Villaviciosa, en edificio moderno y con excelente acceso. Dispone de aproximadamente 13 m², con unas m",
-      "description": "Venta VENTA DE PLAZA DE GARAJE EN LAS MESTAS Carretera de Villaviciosa, Gijon, Asturias 22.000 € Plaza de garaje en venta en Carretera de Villaviciosa, en edificio moderno y con excelente acceso. Dispone de aproximadamente 13 m², con unas medidas de 5,88 metros de largo por 2,20 metros de ancho, ofreciendo un espacio cómodo para estacionar y maniobrar con facilidad. Ubicada en un garaje de fácil circulación, con acceso mediante portal automático y entrada amplia, ideal para el día a día. Una opción práctica para quienes buscan comodidad y evitar los problemas de aparcamiento en la zona. También resulta una interesante oportunidad de inversión gracias a su buena ubicación y funcionalidad. No dudes en consultarnos para más información o para concertar una visita. El precio de venta no incluye el Impuesto de Transmisiones Patrimoniales (ITP), gastos de notaría, registro de la propiedad y de",
-      "municipality": "Villaviciosa",
-      "distance_km": 36.0,
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "Fincas Asturias",
+      "source": "CASAL Inmobiliaria",
       "kind": "agency",
-      "title": "Venta",
-      "price": 195000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290260",
-      "location": "Venta Pisos, Venta, Llano Calle San Matias, Gijon, Asturias 195.000 € Piso acogedor y bien distribuido en la calle San Matías, en el barrio del Llano. La vivienda cuenta con dos habitaciones, un baño, un salón agradable y una cocina indepen",
-      "description": "Venta Pisos, Venta, Llano Calle San Matias, Gijon, Asturias 195.000 € Piso acogedor y bien distribuido en la calle San Matías, en el barrio del Llano. La vivienda cuenta con dos habitaciones, un baño, un salón agradable y una cocina independiente con despensa, ideal para mantener todo organizado sin perder espacio. Al ser exterior, disfruta de buena luz natural durante el día, lo que aporta un ambiente cálido y agradable. Además, incluye trastero y plaza de garaje, dos extras que suman comodidad en el día a día. Una opción práctica y completa, en una zona tranquila y bien comunicada, perfecta tanto para vivir como para invertir. Se informa a los interesados que el precio de venta indicado no comprende el Impuesto de Transmisiones Patrimoniales (ITP) , los gastos asociados a la compraventa (notaría, registro de la propiedad y otros) ni los honorarios de la agencia inmobiliaria a cargo del",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "Fincas Asturias",
+      "source": "CASAL Inmobiliaria",
       "kind": "agency",
-      "title": "Venta",
-      "price": 295000,
-      "url": "https://www.fincasasasturias.com/ficha-inmueble.php?cod_inmueble=2290026",
-      "location": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijón, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con asce",
-      "description": "Venta Pisos, Venta, Coto Calle Ramon y Cajal, Gijón, Asturias 295.000 € Magnífica oportunidad para adquirir un acogedor piso en una de las áreas más prometedoras de Gijón. Esta propiedad, ubicada en la primera planta de un edificio con ascensor, se encuentra lista para convertirse en su próximo hogar. Distribuido en tres  dormitorios,  este piso está pensado para quienes buscan espacio y comodidad. Las habitaciones están llenas de luz natural y ofrecen un ambiente acogedor, ideal para el descanso y la vida diaria. La cocina, equipada con todos los electrodomésticos necesarios, es práctica y funcional. Un salón comedor amueblado con estilo atemporal,  es el lugar perfecto para recibir a sus invitados o relajarse tras una jornada laboral. Amplias ventanas permiten la entrada de luz, creando una atmósfera cálida y acogedora para disfrutar cada instante. De igual forma,. ambos  baños,, equip",
-      "municipality": null,
-      "distance_km": null,
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
