@@ -1,10 +1,10 @@
 {
-  "scraped_count": 114,
-  "rejected_count": 68,
+  "scraped_count": 154,
+  "rejected_count": 107,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 20,
-    "missing_price": 42,
+    "negative_term": 47,
+    "missing_price": 56,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -50,13 +50,12 @@
       "name": "CASAL Inmobiliaria",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
+      "raw_count": 14,
+      "error_count": 0,
       "final_url": "https://www.inmocasal.es/",
-      "page_title": "",
+      "page_title": "CASAL Inmobiliaria: La mayor Inmobiliaria de Asturias",
       "block_signals": [],
-      "exception": "Page.screenshot: Timeout 45000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n",
-      "valid_count": 0,
+      "valid_count": 14,
       "notify_count": 0
     },
     {
@@ -64,11 +63,10 @@
       "kind": "agency",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://www.inmobiliariaasturias.es/",
+      "page_title": "Inmobiliaria Asturias: Te ayudamos a comprar casa en Asturias",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.inmobiliariaasturias.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -163,11 +161,10 @@
       "kind": "institutional",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "error_count": 0,
+      "final_url": "https://hunosainmobiliario.es/",
+      "page_title": "Portal Inmobiliario Hunosa",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://hunosainmobiliario.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -249,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -331,29 +328,13 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "Inmobiliaria María",
-      "kind": "agency",
-      "title": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principale",
-      "price": null,
-      "url": "https://inmobiliariamaria.es/property/finca-edificable-en-a-pontenova-lugo-2/",
-      "location": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todas las ubicaciones principales ",
-      "description": "Inmobiliaria en el Occidente de Asturias y A Mariña Lucense Especialistas en venta de casas, fincas y propiedades rurales desde El Franco Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todas las ubicaciones principales Todas las ubicaciones principales Asturias - Vegadeo Galicia - Lugo Todos los Estados Alquiler DESTACADO OPORTUNIDAD Próximamente REBAJADO Reservado Vendido Venta Todos los Estados Todos los Estados Alquiler DESTACADO OPORTUNIDAD Próximamente REBAJADO Reservado Vendido Venta Todos los tipos Locales comerciales - Naves industriales - Oficinas - Tiendas Propiedades - Apartamentos - Casas de pueblo - Edificios de apartamentos - Fincas - Pisos Todos los tipos Todos los tipos Locales comerciales - Naves industriales - Oficinas - Tiendas Propiedades - Apartamentos - Casas de pueblo - Edificios de apartamentos - Fincas - Pisos Rango de precios Desde 12,000€ A",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "Grupo Duarte",
-      "kind": "agency",
-      "title": "154.000€",
-      "price": 100000,
-      "url": "https://www.grupoduarte.es/propiedad/casa-o-chalet-independiente-asturias-ref111640302-111640302/",
-      "location": "Inmuebles Propiedades en Venta en Asturias Asturias Lugo Toledo Población Asturias Lugo Toledo Asturias Lugo Toledo Zona Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Tipo Casa o Chalet independiente",
-      "description": "Inmuebles Propiedades en Venta en Asturias Asturias Lugo Toledo Población Asturias Lugo Toledo Asturias Lugo Toledo Zona Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Tipo Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Casa o Chalet independiente Casas de pueblo Estudio Locales comerciales Pisos Terrenos Precio 0 – 100.000€ 100.000€ – 200.000€ 200.000€ – 300.000€ 300.000€ – 400.000€ 400.000€ – 500.000€ 500.000€ – 700.000€ 700.000€ – 900.000€ 900.000€ – 1.200.000€ 1.200.000€ – 1.500.000€ 1.500.000€ – 2.000.000€ 2.000.000€ – 2.500.000€ 2.500.000€ – 5.000.000€ > 5.000.000€ Precio Precio 0 – 100.000€ 100.000€ – 200.000€ 200.000€ – 300.000€ 300.000€ – 400.000€ 400.000€ – 500.000€ 500.000€ – 700.000€ 700.000€ – 900.000€ 900.000€ – 1.200.000€ 1.200.000€ – 1.500.000€ 1.500.000€ – 2.000.000€ 2.000.000€ – 2.500.000€ 2",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
+      "price": 425000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
+      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -362,48 +343,63 @@
       ]
     },
     {
-      "source": "e-viviendas",
+      "source": "CASASAPO",
       "kind": "portal",
-      "title": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€",
-      "price": 864125000,
-      "url": "https://www.e-viviendas.es/venta-pisos-asturias-aviles/38676",
-      "location": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€ Reines AvilÃ©s",
-      "description": "Piso en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Avilés - Asturias Anuncio N°: 38676 Inmo: es30864 125.000€ Reines AvilÃ©s",
+      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
+      "price": 240000,
+      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
+      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
+      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "price_out_of_range"
+        "negative_term"
       ]
     },
     {
-      "source": "e-viviendas",
+      "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€",
-      "price": 518350000,
-      "url": "https://www.e-viviendas.es/venta-chalets-individuales-asturias-oviedo/38518",
-      "location": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€ Tel: 984-295-275",
-      "description": "Chalets individuales en Venta Actualizado: 10/02/2022 4 Hab. - 2 Baños Oviedo - Asturias Anuncio N°: 38518 350.000€ Tel: 984-295-275",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "price_out_of_range"
-      ]
-    },
-    {
-      "source": "e-viviendas",
-      "kind": "portal",
-      "title": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable",
-      "price": 408130000,
-      "url": "https://www.e-viviendas.es/venta-pisos-asturias-lena/38408",
-      "location": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable Tel: 658-719-251",
-      "description": "Piso en Venta Actualizado: 05/11/2021 2 Hab. - 1 Baños Lena - Asturias Anuncio N°: 38408 130.000€ Negociable Tel: 658-719-251",
+      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
+      "price": 800000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
+      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
+      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "price_out_of_range"
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
+      "price": 409000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
+      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en",
+      "price": 650000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-cudillero-4b97e4e3-667e-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2",
+      "description": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2 construidos, distribuidos en dos plantas, con materiales nobles de piedra y madera. Alberga una gran cocina-comedor, salón amueblado y suelo de iroco, tres habitaciones amplias con camas dobles y dos baños. Un prado enorme rodea la casa, en la que se eleva un hórreo centenario perfectamente conservado. Rn el exterior tiene pozo, barbacoa y horno. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
       ]
     }
   ]
