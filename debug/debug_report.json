@@ -1,10 +1,10 @@
 {
-  "scraped_count": 128,
-  "rejected_count": 82,
+  "scraped_count": 96,
+  "rejected_count": 67,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 22,
+    "negative_term": 7,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -148,12 +148,12 @@
       "name": "Arxus Inmobiliaria",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 12,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://arxus.es/casas-en-venta-en-asturias/",
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
-      "valid_count": 12,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -210,12 +210,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7585 Propiedades en venta en Asturias | Properstar",
+      "final_url": "https://www.properstar.es/spain/asturias/buy?c=es-ES&afd_azwaf_tok=eyJraWQiOiIxNkY3M0JFMkNDMjZDOUM1ODBGMzM4NjAzN0I1ODRCQTc4REQ1ODcwQUFFRkJGNEZDRUJFOUZEQkNGMENGMTNEIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5lcyIsImV4cCI6MTc4MjM4NzY1OCwiaWF0IjoxNzgyMzg3NjQ4LCJpc3MiOiJ0aWVyMS02Nzk5NjY2Yjg3LWp6OWhrIiwic3ViIjoiNTIuMTczLjIxOS4xNTIiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MDYyNVQxMTQwNDhaLTE2Nzk5NjY2Yjg3ano5aGtoQzFNU1BxbXVuMDAwMDAwMHM1ZzAwMDAwMDAwNWF2YiIsImIiOiJMUTFmSVNXSFMyVkhSUTY3eHpOcUFDSFRYOVJMd1BDdlVHVHdrR2FFaGhjIiwiaCI6IjUwcFBVajBtTEJXa2hUcHVDTjJXMTQxVXN5eHdqR0NPM2M3VE02SjBzQjgifX0.T4T3J0Nwg5zQOvV524O9_y_LPdCTKcDAJVb_d2evroDLVGrdhN5claUDFldhP5JW7z7Ou58WjGxoJSEfKdO9eMeMco3Hp1tfRCNsmxaMG5WUmuLnLsUPBHiWyCzyh9PsaafxdhoiYOI3QYJGn0rpZ9bPyZMCBDzPzz8mEv6XlD_beerBEnVvNuVqAzZGMjVLjGJHbi-xUNaybo7QKgmZot0VIGoye8Les2ugTR1Lmc2hpAiYE4PLDxqpBRcEnd-cZ--GG4RdL3_bKEL9kccAFJesEOXppruZhmnW7SQC4tnIce_0X1RuHMTeixGGcau_OZsaRSiZfzBeQDwqGFl6Kw.WF3obl2IDtqgvMFRqVdYkD5s",
+      "page_title": "Properstar",
       "block_signals": [],
-      "valid_count": 20,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
