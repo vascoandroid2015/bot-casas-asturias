@@ -1,10 +1,10 @@
 {
-  "scraped_count": 108,
-  "rejected_count": 81,
+  "scraped_count": 129,
+  "rejected_count": 82,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 21,
+    "negative_term": 22,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -112,12 +112,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "508 Resource Limit Is Reached",
+      "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 20,
       "notify_count": 0
     },
     {
@@ -246,13 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 1,
+      "error_count": 0,
+      "final_url": "https://asturiasproperty.com/",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://asturiasproperty.com/\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
