@@ -1,10 +1,10 @@
 {
-  "scraped_count": 128,
-  "rejected_count": 85,
+  "scraped_count": 154,
+  "rejected_count": 108,
   "notified_count": 0,
   "reject_reasons": {
+    "negative_term": 48,
     "missing_price": 56,
-    "negative_term": 25,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "38 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -328,80 +328,78 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
-      "price": null,
-      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
-      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
-      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desvá",
+      "price": 195000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-aviles-villalegre-la-luz-corros-1d87deda-55ba-11f1-9aaf-060000000054.html",
+      "location": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Vent",
+      "description": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 195.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Ventanas de aluminio doble acristalamiento, suelos de gres. Fachada y tejado reparados. Finca cerrada. Saneamiento. Pozo de Agua. OPCIONAL: Parcela de 2.100 m2 aprox. con tendejón frente a la casa. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
-      "price": null,
-      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
-      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
-      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
+      "price": 800000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
+      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
+      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
-      "price": null,
-      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
-      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
-      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Oficinas Centrales",
-      "price": null,
-      "url": "https://www.inmocasal.es/central/",
-      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
-      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
+      "price": 469000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
+      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
+      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "CASAL Inmobiliaria La Felguera",
-      "price": null,
-      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
-      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "municipality": "Langreo",
-      "distance_km": 15.3,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
+      "price": 425000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
+      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 425.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     }
   ]
