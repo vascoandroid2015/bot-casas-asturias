@@ -3,8 +3,8 @@
   "rejected_count": 83,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 56,
-    "negative_term": 23,
+    "missing_price": 58,
+    "negative_term": 21,
     "price_out_of_range": 10
   },
   "changes": {},
