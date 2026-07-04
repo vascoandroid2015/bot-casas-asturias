@@ -1,10 +1,11 @@
 {
-  "scraped_count": 110,
-  "rejected_count": 72,
+  "scraped_count": 128,
+  "rejected_count": 82,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 58,
-    "negative_term": 21
+    "negative_term": 21,
+    "price_out_of_range": 10
   },
   "changes": {},
   "sources": [
@@ -135,13 +136,12 @@
       "name": "e-viviendas",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 18,
+      "error_count": 0,
+      "final_url": "https://www.e-viviendas.es/inmuebles/venta_asturias",
+      "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.e-viviendas.es/inmuebles/venta_asturias\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 18,
       "notify_count": 0
     },
     {
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7138 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7136 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
