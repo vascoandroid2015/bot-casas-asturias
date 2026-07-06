@@ -1,10 +1,10 @@
 {
   "scraped_count": 128,
-  "rejected_count": 84,
+  "rejected_count": 83,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 56,
-    "negative_term": 25,
+    "missing_price": 58,
+    "negative_term": 22,
     "price_out_of_range": 10
   },
   "changes": {},
