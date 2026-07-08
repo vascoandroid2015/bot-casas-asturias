@@ -1,10 +1,10 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 106,
+  "scraped_count": 128,
+  "rejected_count": 82,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 47,
     "missing_price": 56,
+    "negative_term": 23,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -328,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500",
-      "price": 520000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-aviles-llaranes-58529278-839d-11e8-8d5a-00155d644641.html",
-      "location": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy ampli",
-      "description": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy amplia amueblada, baño, aseo, despensa, zona de lavado. Porche cerrado, acristalado, con chimenea. Porche abierto de entrada a la casa. 1ª Planta: Tres dormitorios, salón abierto al hall de planta baja, dos baños. Armarios empotrados, suelos y escalera de madera, calefacción. Nave adyacente Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
-      "price": 240000,
-      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
-      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
-      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
-      "price": 226000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Ca",
-      "price": 300000,
-      "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
-      "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
-      "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
