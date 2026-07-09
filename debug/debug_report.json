@@ -1,10 +1,10 @@
 {
-  "scraped_count": 109,
-  "rejected_count": 79,
+  "scraped_count": 129,
+  "rejected_count": 80,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 20,
+    "negative_term": 21,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -112,13 +112,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
-      "error_count": 1,
-      "final_url": "about:blank",
-      "page_title": "",
+      "raw_count": 20,
+      "error_count": 0,
+      "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
+      "page_title": "Venta de Casa en provincia Asturias - Remax",
       "block_signals": [],
-      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/\", waiting until \"domcontentloaded\"\n",
-      "valid_count": 0,
+      "valid_count": 20,
       "notify_count": 0
     },
     {
@@ -214,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7142 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7167 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
