@@ -1,10 +1,10 @@
 {
-  "scraped_count": 116,
-  "rejected_count": 75,
+  "scraped_count": 128,
+  "rejected_count": 79,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 16,
+    "negative_term": 20,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -148,12 +148,12 @@
       "name": "Arxus Inmobiliaria",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 12,
       "error_count": 0,
       "final_url": "https://arxus.es/casas-en-venta-en-asturias/",
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 12,
       "notify_count": 0
     },
     {
