@@ -1,10 +1,10 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 101,
+  "scraped_count": 128,
+  "rejected_count": 78,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 43,
     "missing_price": 56,
+    "negative_term": 20,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7265 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7259 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -328,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, ",
-      "price": 155000,
-      "url": "https://casasapo.es/comprar-casa-de-madera-2-habitaciones-illas-18fcfd0b-667b-11e4-aeff-000c2946937b.html",
-      "location": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador,",
-      "description": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador, todo eléctrico. Otro horreo para rehabilitar. Finca de 2.100m2 con árboles frutales. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: P",
-      "price": 458000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-la-pola-siero-ae2d737a-dd6a-11ef-9e0e-060000000057.html",
-      "location": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes b",
-      "description": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes buscan tranquilidad sin vivir aislados. A 1,5 km de Pola de Siero, con todos los servicios necesarios. Oviedo: 15 min | Parque Principado: menos de 10 min | Costa: 15-20 min. Cerca del nuevo Amazon Asturias, una ubicación perfecta para familias e inversores. Características del chalet: 147 m² construidos. 3 habitaciones. 2 baños completos. Salón independiente, cocina y un amplio porche. Personalizable a tu gusto: Estamos en el momento ideal para realizar modificaciones en las divisiones interiores y adaptar el chalet a tus necesidades. Precio: 458.000 €. Un hogar único en una zona privilegiada. ¡Llámanos y asegura tu hogar antes de que finalice el proye",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
-      "price": 178000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
-      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
-      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
-      "price": 206000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
-      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
-      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
