@@ -1,9 +1,9 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 101,
+  "scraped_count": 154,
+  "rejected_count": 102,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 43,
+    "negative_term": 44,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -28,7 +28,7 @@
       "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "41 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
       "valid_count": 25,
       "notify_count": 0
@@ -175,7 +175,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
-      "page_title": "solvia.es | 522: Connection timed out",
+      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7257 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7255 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -330,28 +330,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500",
-      "price": 520000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-aviles-llaranes-58529278-839d-11e8-8d5a-00155d644641.html",
-      "location": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy ampli",
-      "description": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy amplia amueblada, baño, aseo, despensa, zona de lavado. Porche cerrado, acristalado, con chimenea. Porche abierto de entrada a la casa. 1ª Planta: Tres dormitorios, salón abierto al hall de planta baja, dos baños. Armarios empotrados, suelos y escalera de madera, calefacción. Nave adyacente Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
-      "municipality": null,
-      "distance_km": null,
+      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
+      "price": 120000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
+      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
+      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -375,11 +360,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
-      "price": 890000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
-      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "title": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500",
+      "price": 520000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-aviles-llaranes-58529278-839d-11e8-8d5a-00155d644641.html",
+      "location": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy ampli",
+      "description": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy amplia amueblada, baño, aseo, despensa, zona de lavado. Porche cerrado, acristalado, con chimenea. Porche abierto de entrada a la casa. 1ª Planta: Tres dormitorios, salón abierto al hall de planta baja, dos baños. Armarios empotrados, suelos y escalera de madera, calefacción. Nave adyacente Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -390,13 +375,28 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
-      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
+      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
+      "price": 260000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
+      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
+      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
+      "price": 800000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
+      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
+      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
