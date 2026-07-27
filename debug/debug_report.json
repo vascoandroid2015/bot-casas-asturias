@@ -1,10 +1,10 @@
 {
-  "scraped_count": 109,
-  "rejected_count": 73,
+  "scraped_count": 128,
+  "rejected_count": 78,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 15,
+    "negative_term": 20,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -210,14 +210,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 20,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy?c=es-ES",
-      "page_title": "Azure WAF",
-      "block_signals": [
-        "enable javascript"
-      ],
-      "valid_count": 0,
+      "final_url": "https://www.properstar.es/spain/asturias/buy",
+      "page_title": "7259 Propiedades en venta en Asturias | Properstar",
+      "block_signals": [],
+      "valid_count": 20,
       "notify_count": 0
     },
     {
@@ -248,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -262,8 +260,8 @@
       "enabled": true,
       "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.indomio.es/en/venta-casas/asturias-provincia/",
-      "page_title": "indomio.es",
+      "final_url": "https://www.indomio.es/en/venta-casas/asturias-provincia/?mapCenter=46.751153%2C-6.124878&zoom=7",
+      "page_title": "Homes for sale in the province of Asturias - Indomio",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
