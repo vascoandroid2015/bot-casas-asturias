@@ -1,10 +1,10 @@
 {
-  "scraped_count": 129,
-  "rejected_count": 79,
+  "scraped_count": 127,
+  "rejected_count": 77,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 56,
-    "negative_term": 21,
+    "missing_price": 55,
+    "negative_term": 20,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -86,12 +86,12 @@
       "name": "Inmobiliaria María",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://inmobiliariamaria.es/",
-      "page_title": "Inmobiliaria María | Inmobiliaria en el occidente de Asturias",
+      "page_title": "Database Error",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -175,7 +175,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
-      "page_title": "solvia.es | 502: Bad gateway",
+      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7227 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7233 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
