@@ -1,10 +1,10 @@
 {
-  "scraped_count": 128,
-  "rejected_count": 78,
+  "scraped_count": 129,
+  "rejected_count": 79,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 20,
+    "negative_term": 21,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -175,7 +175,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
-      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
+      "page_title": "solvia.es | 502: Bad gateway",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
