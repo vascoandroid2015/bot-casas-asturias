@@ -1,10 +1,10 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 106,
+  "scraped_count": 128,
+  "rejected_count": 82,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 48,
     "missing_price": 56,
+    "negative_term": 24,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -328,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
-      "price": 800000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
-      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
-      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
-      "price": 280000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
-      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
-      "price": 178000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
-      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
-      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
-      "price": 120000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
-      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
-      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico. Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
