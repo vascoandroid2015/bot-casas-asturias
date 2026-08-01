@@ -1,10 +1,10 @@
 {
-  "scraped_count": 154,
-  "rejected_count": 106,
+  "scraped_count": 129,
+  "rejected_count": 83,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 49,
     "missing_price": 56,
+    "negative_term": 26,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "42 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -175,7 +175,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.solvia.es/es/comprar/viviendas/asturias",
-      "page_title": "solvia.es | 502: Bad gateway",
+      "page_title": "Viviendas en venta en Asturias Provincia | Solvia Inmobiliaria",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
@@ -328,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
-      "price": 890000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
-      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN P",
-      "price": 600000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-oviedo-fozaneldi-tenderina-ventanielles-colloto-5609c28d-cc80-11f0-9e61-060000000056.html",
-      "location": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGU",
-      "description": "Casa 10 habitaciones Colloto, Fozaneldi - Tenderina - Ventanielles, Oviedo, Asturias En buen estado  ·  490m² comprar 600.000 € CASA CON FINCA EN VENTA EN COLLOTO, A UN PASO DE OVIEDO MUY BIEN COMUNICADA. SE TRATA DE UNA PROPIEDAD MUY SINGULAR, ENCLAVADA EN UNA FINCA DE 1.560M2. LA CASA ESTA DISTRIBUIDA A SU VEZ EN 4 VIVIENDAS. LA PLANTA BAJA ESTA DISTRIBUIDA EN 2 VIVIENDAS: - UN APARTAMENTO CON SALON-COCINA, UN DORMITORIO DOBLE Y UN BAÑO. - UNA VIVIENDA DE 3 DORMITORIOS, SALÓN CON ACCESO A UN PORCHE Y A LA PARCELA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA PRIMERA SE ENCUENTRA LA VIVIENDA DE MAYOR TAMAÑO, 4 DORMITORIOS (3 DOBLES), AMPLIO SALON CON CHIMENEA Y SALIDA A UNA TERRAZA, COCINA INDEPENDIENTE Y 2 BAÑOS. EN LA PLANTA SEGUNDA TENEMOS OTRA VIVIENDA DE 2 DORMITORIOS, SALON, COCINA Y 2 BAÑOS. LA PLANTA DE SOTANO ESTA DISTRIBUIDA EN UN AMPLIO GARAJE PARA 5-6 VEHICULOS, CUARTO DE CA",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
-      "price": 206000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
-      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
-      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
-      "municipality": "Pravia",
-      "distance_km": 25.6,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
