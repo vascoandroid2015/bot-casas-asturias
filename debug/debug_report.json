@@ -1,9 +1,9 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 104,
+  "scraped_count": 154,
+  "rejected_count": 106,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 47,
+    "negative_term": 49,
     "missing_price": 56,
     "price_out_of_range": 10
   },
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "",
+      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -330,13 +330,28 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
-      "price": 280000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
-      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas. Contacto",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, s",
+      "price": 178000,
+      "url": "https://casasapo.es/comprar-casa-4-habitaciones-llanes-pria-nueva-hontoria-naves-035c5a08-b9a2-11f0-b3d3-060000000057.html",
+      "location": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Ma",
+      "description": "Casa 4 habitaciones Pría - Nueva-Hontoria - Naves, Llanes, Asturias A reformar  ·  116m² comprar 178.000 € Hay lugares que enamoran al primer paso y Nueva de Llanes es, sin duda, uno de ellos. A solo 2 km de la mágica playa de Cuevas del Mar, te espera una casa llena de posibilidades: reformar, rediseñar y vivirla completamente a tu manera. ·Superficie construida: 116 m². ·Terreno: 45 m². Distribución: ·Planta baja: salón, cocina y aseo. ·Primera planta: cuatro dormitorios y aseo. Una vivienda con todo el encanto de los pueblos costeros asturianos, rodeada de naturaleza y mar, ideal para quienes buscan tranquilidad, autenticidad y un proyecto con alma. Ubicación top, rodeado de Naturaleza. Proyecto para transformar. Precio: 185.000 € Si estabas esperando una señal es esta. ¡Hablemos y la hacemos realidad! Contacto",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -360,28 +375,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en ",
-      "price": 950000,
-      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-gozon-luanco-aramar-antromero-2c1cae2e-e254-11f0-8add-060000000054.html",
-      "location": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda",
-      "description": "Chalet 5 habitaciones Luanco - Aramar - Antromero, Gozón, Asturias En buen estado  ·  261m² Con Garaje comprar 950.000 € Chalet independiente de planta baja y primera en Luanco. Tiene una parcela cerrada de 950 metros cuadrados. La vivienda está distribuida en: Planta baja: Tres dormitorios, salón-comedor con chimenea, cocina, dos baños, garaje y porche con vistas al mar. Primera planta: Dos amplios dormitorios y un baño con plato de ducha. Calefacción individual de gas, suelos de parquet y gres. Muy soleado. MARAVILLOSAS VISTAS AL MAR. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
+      "price": 120000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
+      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
+      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
