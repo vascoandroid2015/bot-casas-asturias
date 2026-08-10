@@ -1,10 +1,10 @@
 {
-  "scraped_count": 128,
-  "rejected_count": 82,
+  "scraped_count": 153,
+  "rejected_count": 104,
   "notified_count": 0,
   "reject_reasons": {
+    "negative_term": 47,
     "missing_price": 56,
-    "negative_term": 25,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "36 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -328,80 +328,78 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
-      "price": null,
-      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
-      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
-      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Ca",
+      "price": 300000,
+      "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
+      "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
+      "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
-      "price": null,
-      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
-      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
-      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 189.000 € 195.000 € -3,08% ZONA LA MAGDALENA. Casa adosada de pl",
+      "price": 189000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-aviles-villalegre-la-luz-corros-1d87deda-55ba-11f1-9aaf-060000000054.html",
+      "location": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 189.000 € 195.000 € -3,08% ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, ba",
+      "description": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 189.000 € 195.000 € -3,08% ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Ventanas de aluminio doble acristalamiento, suelos de gres. Fachada y tejado reparados. Finca cerrada. Saneamiento. Pozo de Agua. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
-      "price": null,
-      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
-      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
-      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
-      "municipality": "Oviedo",
-      "distance_km": 0.0,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term",
-        "missing_price"
-      ]
-    },
-    {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Oficinas Centrales",
-      "price": null,
-      "url": "https://www.inmocasal.es/central/",
-      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
-      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, ",
+      "price": 155000,
+      "url": "https://casasapo.es/comprar-casa-de-madera-2-habitaciones-illas-18fcfd0b-667b-11e4-aeff-000c2946937b.html",
+      "location": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador,",
+      "description": "Casa de madera 2 habitaciones Illas, Asturias Rehabilitado  ·  50m² comprar 155.000 € Panera rehabilitada como vivienda de 50m2 útiles con corredor. Tiene 2 dormitorios, salón, cocina y baño. Es de castaño, amueblada con vitro y calentador, todo eléctrico. Otro horreo para rehabilitar. Finca de 2.100m2 con árboles frutales. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "CASAL Inmobiliaria La Felguera",
-      "price": null,
-      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
-      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "municipality": "Langreo",
-      "distance_km": 15.3,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un",
+      "price": 120000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-cudillero-0feb110b-3e3f-11f1-9aaf-060000000054.html",
+      "location": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos bal",
+      "description": "Casa 3 habitaciones Cudillero, Asturias A reformar  ·  150m² comprar 120.000 € Casa para reformar. Planta baja: Entrada a portal y a estudio independiente compuesto de un espacio con cocina y baño (30 m2 aprox.) 1ª Planta: Salón con dos balcones, cuarto pequeño, cocina. 2ª Planta: Dos dormitorios (desde uno se accede al PATIO), cuarto pequeño y baño. Dos balcones. Buhardilla: no transitable. Suelos y escalera de madera de castaño, termo eléctrico. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
       ]
     }
   ]
