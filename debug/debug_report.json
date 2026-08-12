@@ -1,10 +1,10 @@
 {
-  "scraped_count": 154,
-  "rejected_count": 109,
+  "scraped_count": 153,
+  "rejected_count": 107,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 52,
-    "missing_price": 56,
+    "negative_term": 49,
+    "missing_price": 57,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7635 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7633 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -330,11 +330,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos sa",
-      "price": 247000,
-      "url": "https://casasapo.es/comprar-casa-4-habitaciones-penamellera-baja-5c83ecd6-6674-11e4-aeff-000c2946937b.html",
-      "location": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terren",
-      "description": "Casa 4 habitaciones Peñamellera Baja, Asturias Rehabilitado  ·  192m² comprar 247.000 € Casa rural, totalmente reformada. Tiene cuatro dormitorios, cocina-comedor, dos salones, dos baños; cocina amueblada, chimenea, amueblada. Patio. Terreno de 200 m/2 cruzando carretera. Contacto",
+      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
+      "price": 890000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
+      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -345,13 +345,28 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
-      "price": 460000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
-      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
-      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas. Contacto",
-      "municipality": null,
-      "distance_km": null,
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
+      "price": 480000,
+      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
+      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
+      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -375,26 +390,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500",
-      "price": 520000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-aviles-llaranes-58529278-839d-11e8-8d5a-00155d644641.html",
-      "location": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy ampli",
-      "description": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy amplia amueblada, baño, aseo, despensa, zona de lavado. Porche cerrado, acristalado, con chimenea. Porche abierto de entrada a la casa. 1ª Planta: Tres dormitorios, salón abierto al hall de planta baja, dos baños. Armarios empotrados, suelos y escalera de madera, calefacción. Nave adyacente Contacto",
+      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
+      "price": 460000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
+      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
+      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
