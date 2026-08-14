@@ -1,10 +1,10 @@
 {
-  "scraped_count": 154,
-  "rejected_count": 108,
+  "scraped_count": 128,
+  "rejected_count": 84,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 51,
     "missing_price": 56,
+    "negative_term": 27,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "36 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -201,7 +201,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 62 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 64 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -246,12 +246,12 @@
       "name": "Asturias Property",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://asturiasproperty.com/",
-      "page_title": "Property for Sale in Asturias, Spain | Asturias Property",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -328,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: P",
-      "price": 458000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-la-pola-siero-ae2d737a-dd6a-11ef-9e0e-060000000057.html",
-      "location": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes b",
-      "description": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes buscan tranquilidad sin vivir aislados. A 1,5 km de Pola de Siero, con todos los servicios necesarios. Oviedo: 15 min | Parque Principado: menos de 10 min | Costa: 15-20 min. Cerca del nuevo Amazon Asturias, una ubicación perfecta para familias e inversores. Características del chalet: 147 m² construidos. 3 habitaciones. 2 baños completos. Salón independiente, cocina y un amplio porche. Personalizable a tu gusto: Estamos en el momento ideal para realizar modificaciones en las divisiones interiores y adaptar el chalet a tus necesidades. Precio: 458.000 €. Un hogar único en una zona privilegiada. ¡Llámanos y asegura tu hogar antes de que finalice el proye",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorio",
-      "price": 280000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-soto-del-barco-b189ce75-68c1-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitori",
-      "description": "Casa con parcela 7 habitaciones Soto del Barco, Asturias En buen estado  ·  370m² comprar 280.000 € Casa de dos plantas, desván y semisótano. Planta baja: Tres dormitorios, salón-comedor, salita, cocina, baño. Planta primera: Seis dormitorios, dos baños, vestidor. Galería. Suelos de madera. Lavadero. Tiene 135 m/2 por planta. Cuadra de 100 m2. Parcela de 400 m2. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje. Contacto",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
