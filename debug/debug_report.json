@@ -1,10 +1,10 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 108,
+  "scraped_count": 128,
+  "rejected_count": 85,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 50,
     "missing_price": 56,
+    "negative_term": 27,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "35 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -201,7 +201,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 64 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 63 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
@@ -328,78 +328,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
-      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
-      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Nara",
-      "price": 595000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-oviedo-parroquias-norte-naranco-e8131199-8518-11f1-90a1-060000000056.html",
-      "location": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por",
-      "description": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por su proximidad a la ciudad, exclusivas vistas y excelente orientación . El chalet se distribuye en una única planta, destacando un amplio salón-comedor con acceso directo a una terraza con jardín, ideal para disfrutar de momentos de relax al aire libre. La cocina independiente, los 2 aseos con ducha, y los tres dormitorios dobles, uno de ellos suite, completan una vivienda pensada para el bienestar familiar. Entre sus características más destacadas, se incluyen una despensa/tendedero que ofrecen un práctico espacio de almacenamiento donde se encuentra también la sala de caldera que garantiza el suministro de agua caliente y calefacción individual y la ",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
-      "price": 250000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
-      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
-      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
-      "municipality": "Soto Del Barco",
-      "distance_km": 26.1,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en",
-      "price": 650000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-cudillero-4b97e4e3-667e-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2",
-      "description": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2 construidos, distribuidos en dos plantas, con materiales nobles de piedra y madera. Alberga una gran cocina-comedor, salón amueblado y suelo de iroco, tres habitaciones amplias con camas dobles y dos baños. Un prado enorme rodea la casa, en la que se eleva un hórreo centenario perfectamente conservado. Rn el exterior tiene pozo, barbacoa y horno. Contacto",
-      "municipality": "Cudillero",
-      "distance_km": 32.9,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el t",
-      "price": 469000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-llanes-vidiago-pendueles-tresgrandas-bd7d0719-cf8e-11f0-a463-060000000052.html",
-      "location": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora",
-      "description": "Chalet 4 habitaciones Vidiago - Pendueles - Tresgrandas, Llanes, Asturias En buen estado  ·  274m² comprar 469.000 € Imagina despertar cada mañana en un rincón donde el tiempo parece detenerse, en una casa rural que abraza el alma y enamora a primera vista. En Tresgrandas, uno de los pueblos más codiciados del oriente asturiano, se alza esta joya rústica con 4 dormitorios y 4 baños, un hogar que huele a madera antigua y acoge como un abrazo cálido. En total, la propiedad cuenta con 298 m² construidos, de los cuales 198 m² pertenecen a la vivienda principal y 100 m² al garaje adosado de dos plantas, un espacio lleno de posibilidades. La casa mira siempre al sur, buscando el sol con orgullo, y lo hace desde un corredor asturiano tradicional que parece creado expresamente para contemplar las montañas que se despliegan como un escenario natural. El terreno, de unos 1.000 metros aterrazados, ",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
       ]
     }
   ]
