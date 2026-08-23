@@ -1,10 +1,10 @@
 {
   "scraped_count": 141,
-  "rejected_count": 100,
+  "rejected_count": 101,
   "notified_count": 0,
   "reject_reasons": {
     "negative_term": 42,
-    "missing_price": 56,
+    "missing_price": 57,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -330,11 +330,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con c",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-corvera-de-asturias-082b26b9-6691-11e4-aeff-000c2946937b.html",
-      "location": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Só",
-      "description": "Chalet 3 habitaciones Corvera de Asturias 258m² Con Garaje comprar 480.000 € LOS BALAGARES. CHALET INDIVIDUAL. ESQUINA. Abajo: Un dormitorio con baño, salón-comedor con chimenea, cocina, aseo. Arriba: Dos dormitorios, dos baños. Terraza. Sótano: Garaje, bodega, aseo. Cocina amueblada, suelos tarima bambú y gres, armarios empotrados, ventanas P.V.C, calefacción gas ciudad. Parcela amplia. Porche Contacto",
+      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
+      "price": 409000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
+      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
       "municipality": "Corvera",
       "distance_km": 18.7,
       "valid": true,
@@ -345,13 +345,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, ",
-      "price": 260000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-aviles-el-carbayedo-el-quirinal-8f8382e6-4a5e-11ea-a663-060000000054.html",
-      "location": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios,",
-      "description": "Casa con parcela El Carbayedo - El Quirinal, Avilés, Asturias comprar 260.000 € Casa de planta baja y bajo cubierta, con finca de 1.250 m2 Planta baja: Tres dormitorios, sala, cocina, baño. Necesita reformar. Bajo cubierta: Dos dormitorios, baño (con plato ducha); ventanas velux, suelos tarima y gres. Esta planta está reformada. Caseta de aperos. Garaje. Contacto",
-      "municipality": null,
-      "distance_km": null,
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -360,13 +360,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
-      "price": 375000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
-      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
-      "municipality": null,
-      "distance_km": null,
+      "title": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pue",
+      "price": 495000,
+      "url": "https://casasapo.es/comprar-chalet-5-habitaciones-siero-parroquias-norte-6d91304a-3990-11f1-9a8d-060000000057.html",
+      "location": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos ",
+      "description": "Chalet 5 habitaciones Parroquias Norte, Siero, Asturias En buen estado  ·  307m² Con Garaje comprar 495.000 € En pleno corazón de Asturias, en el tranquilo y acogedor pueblo de Balbona, y a escasos minutos de uno de los principales núcleos logísticos de la zona como Amazon, te presentamos este chalet que marca la diferencia. Una vivienda construida con mimo y excelentes calidades, pensada para quienes valoran el espacio, la tranquilidad y una calidad de vida real, sin renunciar a una ubicación estratégica y bien conectada. Aquí no solo compras una casa, sino una forma de vivir. La propiedad se asienta sobre una amplia parcela de 820 m², ofreciendo privacidad, luz y múltiples posibilidades. Sus 307 m² construidos se distribuyen en tres cómodas plantas, con una distribución versátil que se adapta tanto a familias como a quienes buscan amplitud y funcionalidad en su día a día. Cuenta con 5 ",
+      "municipality": "Siero",
+      "distance_km": 15.4,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -375,28 +375,28 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: P",
-      "price": 458000,
-      "url": "https://casasapo.es/comprar-chalet-3-habitaciones-la-pola-siero-ae2d737a-dd6a-11ef-9e0e-060000000057.html",
-      "location": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes b",
-      "description": "Chalet 3 habitaciones La Pola Siero, Asturias En proyecto  ·  147m² comprar 458.000 € Chalet en Próxima Construcción en La Cuesta - Pola de Siero Ubicación estratégica: Parcela de 1.415 m², colindante con otros chalets: ideal para quienes buscan tranquilidad sin vivir aislados. A 1,5 km de Pola de Siero, con todos los servicios necesarios. Oviedo: 15 min | Parque Principado: menos de 10 min | Costa: 15-20 min. Cerca del nuevo Amazon Asturias, una ubicación perfecta para familias e inversores. Características del chalet: 147 m² construidos. 3 habitaciones. 2 baños completos. Salón independiente, cocina y un amplio porche. Personalizable a tu gusto: Estamos en el momento ideal para realizar modificaciones en las divisiones interiores y adaptar el chalet a tus necesidades. Precio: 458.000 €. Un hogar único en una zona privilegiada. ¡Llámanos y asegura tu hogar antes de que finalice el proye",
+      "title": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Nara",
+      "price": 595000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-oviedo-parroquias-norte-naranco-e8131199-8518-11f1-90a1-060000000056.html",
+      "location": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por",
+      "description": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por su proximidad a la ciudad, exclusivas vistas y excelente orientación . El chalet se distribuye en una única planta, destacando un amplio salón-comedor con acceso directo a una terraza con jardín, ideal para disfrutar de momentos de relax al aire libre. La cocina independiente, los 2 aseos con ducha, y los tres dormitorios dobles, uno de ellos suite, completan una vivienda pensada para el bienestar familiar. Entre sus características más destacadas, se incluyen una despensa/tendedero que ofrecen un práctico espacio de almacenamiento donde se encuentra también la sala de caldera que garantiza el suministro de agua caliente y calefacción individual y la ",
       "municipality": "Oviedo",
       "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
+      "price": 890000,
+      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
+      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
+      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
         "negative_term"
