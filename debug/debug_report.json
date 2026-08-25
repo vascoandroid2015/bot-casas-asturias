@@ -1,9 +1,9 @@
 {
-  "scraped_count": 141,
-  "rejected_count": 100,
+  "scraped_count": 136,
+  "rejected_count": 96,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 41,
+    "negative_term": 37,
     "missing_price": 57,
     "price_out_of_range": 10
   },
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 20,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
       "page_title": "34 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 20,
       "notify_count": 0
     },
     {
@@ -331,58 +331,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tr",
-      "price": 460000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-6-habitaciones-o-mas-castrillon-santa-maria-del-mar-el-puerto-09075dae-d2fe-11ed-adb9-060000000054.html",
-      "location": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista e",
-      "description": "Casa con parcela 6 habitaciones Santa María del Mar - El Puerto, Castrillón, Asturias En buen estado  ·  300m² comprar 460.000 € SANTIAGO DEL MONTE. Casa de piedra con tres plantas. Próxima a playas y aeropuerto, con acceso a la autopista en dos minutos. Planta principal: cuatro dormitorios, dos salones, cocina, dos baños, despensa. Galería. 1ª Planta: dos dormitorios, baño, trastero. Planta semisótano: un amplio salón, habitación, aseo, bodega, sala de caldera. Garaje. Calefacción gasoil. Casa con servicios auxiliares, como salón-cocina con barbacoa, un dormitorio, cuarto de aperos. Parcela de 6.200 m2 con árboles centenarios, totalmente cerrada, con varias entradas y portones. En la finca, aparte de la casa, se puede edificar cuatro viviendas unifamiliares mas. Contacto",
+      "title": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Ca",
+      "price": 300000,
+      "url": "https://casasapo.es/comprar-vivienda-adosada-3-habitaciones-gijon-oeste-b4acd6f3-1703-11f1-b3d3-060000000057.html",
+      "location": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena ex",
+      "description": "Vivienda adosada 3 habitaciones Oeste, Gijón, Asturias En buen estado  ·  167m² comprar 300.000 € Te presento este magnífico chalet adosado en la zona de Tremañes - La Calzada, un entorno residencial tranquilo, bien comunicado y en plena expansión. Ubicación estratégica con rápidas salidas de la ciudad y conexión ágil con cualquier punto de Gijón. Aquí tienes absolutamente todo sin necesidad de coche: centro comercial y cines, parada de tren, taxis, farmacias, piscinas, pistas deportivas, supermercados y todo tipo de servicios para el día a día. Superficies 198 m² construidos 167,33 m² útiles Distribución inteligente y funcional Planta baja: Espacio polivalente perfecto como gimnasio, zona de ocio, despacho o ’choco’. Además, cuenta con un aseo. (ideal también cuando recibes visitas). Primera planta: Cocina con acceso a terraza, perfecta para desayunos al sol o cenas de verano. Amplio sa",
       "municipality": null,
       "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitacione",
-      "price": 900000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-efc23c05-6677-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. C",
-      "description": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. Contacto",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dor",
-      "price": 409000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidrom",
-      "description": "Casa con parcela 5 habitaciones Corvera de Asturias A estrenar  ·  300m² comprar 409.000 € Casa de piedra rehabilitada. Parcela de 1400 m2 con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
-      "price": 350000,
-      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
-      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
-      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox. Contacto",
-      "municipality": "Aller",
-      "distance_km": 31.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -398,6 +353,51 @@
       "description": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por su proximidad a la ciudad, exclusivas vistas y excelente orientación . El chalet se distribuye en una única planta, destacando un amplio salón-comedor con acceso directo a una terraza con jardín, ideal para disfrutar de momentos de relax al aire libre. La cocina independiente, los 2 aseos con ducha, y los tres dormitorios dobles, uno de ellos suite, completan una vivienda pensada para el bienestar familiar. Entre sus características más destacadas, se incluyen una despensa/tendedero que ofrecen un práctico espacio de almacenamiento donde se encuentra también la sala de caldera que garantiza el suministro de agua caliente y calefacción individual y la ",
       "municipality": "Oviedo",
       "distance_km": 0.0,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 do",
+      "price": 206000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-salas-73805ad1-6679-11e4-aeff-000c2946937b.html",
+      "location": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un d",
+      "description": "Casa 3 habitaciones Salas, Asturias Rehabilitado  ·  260m² comprar 206.000 € A 12 Km de Pravia y a 12 Km de Salas. Planta Baja: Salón, cocina y baño. Primera Planta: 2 dormitorios muy amplios. Tiene una panera encima con cocina, baño y un dormitorio. Otra casa : Planta Primera: 3 dormitorios, salón, cocina, baño. calefacción calor azul y estufa de leña. Contacto",
+      "municipality": "Pravia",
+      "distance_km": 25.6,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
+      "price": 226000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
+      "municipality": "Corvera",
+      "distance_km": 18.7,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en",
+      "price": 650000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-cudillero-4b97e4e3-667e-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2",
+      "description": "Casa con parcela 3 habitaciones Cudillero, Asturias Rehabilitado  ·  200m² comprar 650.000 € Impresionante casona asturiana en perfecto estado de conservación, situada en San Martín de Luiña, en el concejo de Cudillero. La casa tiene 198 m2 construidos, distribuidos en dos plantas, con materiales nobles de piedra y madera. Alberga una gran cocina-comedor, salón amueblado y suelo de iroco, tres habitaciones amplias con camas dobles y dos baños. Un prado enorme rodea la casa, en la que se eleva un hórreo centenario perfectamente conservado. Rn el exterior tiene pozo, barbacoa y horno. Contacto",
+      "municipality": "Cudillero",
+      "distance_km": 32.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
