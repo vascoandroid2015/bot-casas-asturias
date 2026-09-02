@@ -1,10 +1,10 @@
 {
-  "scraped_count": 153,
-  "rejected_count": 108,
+  "scraped_count": 128,
+  "rejected_count": 85,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 48,
-    "missing_price": 57,
+    "missing_price": 58,
+    "negative_term": 24,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "38 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7459 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7479 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -329,78 +329,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
-      "price": 98000,
-      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
-      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
-      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 189.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desvá",
-      "price": 189000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-aviles-villalegre-la-luz-corros-1d87deda-55ba-11f1-9aaf-060000000054.html",
-      "location": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 189.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Vent",
-      "description": "Casa con parcela 3 habitaciones Corros, Villalegre - La Luz, Avilés, Asturias A reformar  ·  60m² comprar 189.000 € ZONA LA MAGDALENA. Casa adosada de planta baja y desván. Tiene tres dormitorios, sala, cocina amueblada, baño completo. Ventanas de aluminio doble acristalamiento, suelos de gres. Fachada y tejado reparados. Finca cerrada. Saneamiento. Pozo de Agua. Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 9 habitaciones Vibaña - Ardisana - Caldueño, Llanes, Asturias En buen estado  ·  300m² comprar 295.000 € Si buscas un refugio donde respirar paz sin renunciar a una ",
-      "price": 295000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-llanes-vibana-ardisana-caldueno-8f60aa30-9fa1-11f1-b6e5-060000000058.html",
-      "location": "Casa 9 habitaciones Vibaña - Ardisana - Caldueño, Llanes, Asturias En buen estado  ·  300m² comprar 295.000 € Si buscas un refugio donde respirar paz sin renunciar a una oportunidad estratégica, esta propiedad es sencillamente excepcional. ",
-      "description": "Casa 9 habitaciones Vibaña - Ardisana - Caldueño, Llanes, Asturias En buen estado  ·  300m² comprar 295.000 € Si buscas un refugio donde respirar paz sin renunciar a una oportunidad estratégica, esta propiedad es sencillamente excepcional. Ubicada en la pintoresca y apacible localidad de Riocaliente a tan solo 15 minutos de las espectaculares playas de Llanes, la vivienda se sitúa en un enclave natural privilegiado, punto emblemático y final de la famosa ruta del Camín Encantáu, un itinerario que enamora a miles de visitantes cada año. El edificio, de gran carácter, se compone de dos casas comunicadas interiormente pero registradas de forma independiente, lo que brinda una versatilidad enorme. Distribución y posibilidades: Planta Baja: Alberga un espacio comercial en pleno funcionamiento (con licencia actualizada e instalación eléctrica renovada), conservación de auténticos suelos de mos",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
+      "municipality": "Oviedo",
+      "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500",
-      "price": 520000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-aviles-llaranes-58529278-839d-11e8-8d5a-00155d644641.html",
-      "location": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy ampli",
-      "description": "Casa con parcela 4 habitaciones Llaranes, Avilés, Asturias En buen estado  ·  312m² comprar 520.000 € Casa de planta baja y primera, con finca totalmente cerrada de 2.500 m2. Planta baja: Hall, un dormitorio, salón-comedor, cocina muy amplia amueblada, baño, aseo, despensa, zona de lavado. Porche cerrado, acristalado, con chimenea. Porche abierto de entrada a la casa. 1ª Planta: Tres dormitorios, salón abierto al hall de planta baja, dos baños. Armarios empotrados, suelos y escalera de madera, calefacción. Nave adyacente Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
-      "price": 890000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
-      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
-      "municipality": null,
-      "distance_km": null,
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     }
   ]
