@@ -1,10 +1,10 @@
 {
   "scraped_count": 153,
-  "rejected_count": 108,
+  "rejected_count": 109,
   "notified_count": 0,
   "reject_reasons": {
     "negative_term": 48,
-    "missing_price": 57,
+    "missing_price": 58,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -161,10 +161,11 @@
       "kind": "institutional",
       "enabled": true,
       "raw_count": 0,
-      "error_count": 0,
-      "final_url": "https://hunosainmobiliario.es/",
-      "page_title": "Portal Inmobiliario Hunosa",
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
+      "exception": "Page.goto: net::ERR_CONNECTION_CLOSED at https://hunosainmobiliario.es/\nCall log:\n  - navigating to \"https://hunosainmobiliario.es/\", waiting until \"domcontentloaded\"\n",
       "valid_count": 0,
       "notify_count": 0
     },
@@ -213,7 +214,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7467 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7468 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
@@ -331,13 +332,28 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
-      "price": 375000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
-      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
+      "title": "Villa 10 habitaciones Colunga, Asturias En buen estado  ·  750m² Con Garaje comprar 5.895.000 € Joya Histórica y Exclusividad en la Costa Asturiana: Palacio de Bueño Busc",
+      "price": 5895000,
+      "url": "https://casasapo.es/comprar-villa-6-habitaciones-o-mas-colunga-a35c3ee8-9fa1-11f1-b6e5-060000000058.html",
+      "location": "Villa 10 habitaciones Colunga, Asturias En buen estado  ·  750m² Con Garaje comprar 5.895.000 € Joya Histórica y Exclusividad en la Costa Asturiana: Palacio de Bueño Buscas una inversión inmobiliaria única o un negocio rural en pleno funcio",
+      "description": "Villa 10 habitaciones Colunga, Asturias En buen estado  ·  750m² Con Garaje comprar 5.895.000 € Joya Histórica y Exclusividad en la Costa Asturiana: Palacio de Bueño Buscas una inversión inmobiliaria única o un negocio rural en pleno funcionamiento con un encanto inigualable? - Te presentamos el ’Palacio de Bueño’, un impresionante conjunto residencial y turístico del siglo XV, rehabilitado por completo recientemente, situado en la codiciada localidad costera de La Isla (Colunga). Ubicado en una majestuosa finca de más de 5 hectáreas de naturaleza en estado puro, este complejo combina a la perfección el peso de la historia, la arquitectura tradicional asturiana y el confort moderno. El palacio tiene: 2 salones, 1 comedor, 2 cocinas, 10 habitaciones y 7 baños. Un remanso de paz y sosiego rodeado de praderías, con vistas panorámicas espectaculares a la Cordillera del Sueve y al mar Cantábr",
       "municipality": null,
       "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con ch",
+      "price": 250000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-soto-del-barco-ad4248bd-9394-11e5-ad09-000c2946937b.html",
+      "location": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un",
+      "description": "Casa con parcela Soto del Barco, Asturias Reformado comprar 250.000 € Casa de dos plantas y desván, con huerta y parcela al lado de 600 m2. Planta Baja: Hall, sala con chimenea (puede ser dormitorio), cocina con comedor, baño. 1ª Planta: Un dormitorio, baño con plato ducha. Desván sin hacer. Cocina amueblada, suelos de madera y gres, armarios empotrados, calefacción gasoil. Finca de 1.000 m2 con edificaciones, en la que se está haciendo un apartamento. Tiene leñero, garaje independiente, hórreo muy reparado. Contacto",
+      "municipality": "Soto Del Barco",
+      "distance_km": 26.1,
       "valid": true,
       "reject_reasons": [
         "negative_term"
@@ -361,11 +377,11 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrad",
-      "price": 240000,
-      "url": "https://casasapo.es/comprar-villa-3-habitaciones-carreno-b81d0260-f592-11ee-bc4b-060000000057.html",
-      "location": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La ca",
-      "description": "Villa 3 habitaciones Carreño, Asturias En buen estado  ·  170m² comprar 240.000 € Carreño, Zona Albandi-Perlora, bonita casa panera independiente en bonita parcela cerrada y con mucha intimidad, excelente ubicación, muy cerca del mar. La casa tiene 2 plantas, en la planta baja dispone de un salón comedor, cocina amueblada, baño con plato de ducha y una habitaciones. En la planta alta dispone de 2 habitaciones, y una sala. También tiene en la planta baja de un porche cerrado con cocina de carbón. Es una edificación con mucho encanto, en buen estado, y tiene una bonita parcela de 5.000 metros. soleada, con buen acceso y buenas vistas. Visítela, se la enseñamos sin compromiso. En el precio publicitado no se incluyen el Impuesto de Transmisiones Patrimoniales, ni los gastos de Notaría y Registro. #ref:99549791 Contacto",
+      "title": "Casa con parcela 3 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  154m² Con Garaje comprar 360.000 € Casa con parcela independiente compuesta por sótano y",
+      "price": 360000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-3-habitaciones-castrillon-pillarno-e751f24a-877a-11f1-9aaf-060000000054.html",
+      "location": "Casa con parcela 3 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  154m² Con Garaje comprar 360.000 € Casa con parcela independiente compuesta por sótano y planta principal. En el sótano tiene zona de garaje con portón motori",
+      "description": "Casa con parcela 3 habitaciones Pillarno, Castrillón, Asturias En buen estado  ·  154m² Con Garaje comprar 360.000 € Casa con parcela independiente compuesta por sótano y planta principal. En el sótano tiene zona de garaje con portón motorizado y un amplio comedor-cocina. La planta principal está distribuida en tres dormitorios, salón-comedor con chimenea, cocina con despensa, baño reformado, aseo y porche cubierto. Ventanas de aluminio de doble acristalamiento, calefacción gasoil, armarios empotrados, suelos de parquet y de gres, fachada de ladrillo visto. La parcela es llana, muy soleada y cuenta con dos casetas de aperos y pozo de agua. Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
@@ -376,28 +392,13 @@
     {
       "source": "CASASAPO",
       "kind": "portal",
-      "title": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no desta",
-      "price": 890000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-gijon-somio-cabuenes-eda2b8c1-2935-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abier",
-      "description": "Chalet 4 habitaciónes, Duplex Somió - Cabueñes, Gijón, Asturias En buen estado  ·  200m² Con Garaje comprar 890.000 € Este chalet, sobre una parcela de 1.200 m², no destaca solo por lo que tiene, sino por lo que transmite: unas vistas abiertas sobre Gijón que no se explican, se viven. Luz, privacidad y esa sensación de amplitud que te hace desconectar desde el primer momento. Con 230 m² construidos (200 m² útiles), distribuidos en dos plantas, la vivienda ofrece 4 habitaciones y 3 baños, pensados para disfrutar sin renunciar a comodidad ni espacio. La orientación sur y este hace que cada estancia tenga vida propia durante todo el día. En la segunda planta, un auténtico guiño al carácter asturiano: un corredor tradicional que no solo aporta encanto, sino también un espacio perfecto para disfrutar de las vistas y del entorno con calma. Terraza, balcón, garaje y la tranquilidad de una urban",
+      "title": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitacione",
+      "price": 900000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-efc23c05-6677-11e4-aeff-000c2946937b.html",
+      "location": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. C",
+      "description": "Casa con parcela Carreño, Asturias A reformar comprar 900.000 € Casa con capilla y panera. Con finca de 10.000m2. Calificada para hotel, aprovechamiento de 30 habitaciones. Tiene 400m2 por planta. Cubierta nueva. Forjados y drenaje hecho. Contacto",
       "municipality": null,
       "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, ",
-      "price": 350000,
-      "url": "https://casasapo.es/comprar-casa-2-habitaciones-castrillon-salinas-83a30ba4-06a3-11ee-adb9-060000000054.html",
-      "location": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormi",
-      "description": "Casa 2 habitaciones Salinas, Castrillón, Asturias Rehabilitado  ·  109m² comprar 350.000 € Casa totalmente reformada en el centro de Salinas. Distribuida en planta baja, un dormitorio, salón, cocina y un baño; planta bajo cubierta, un dormitorio (diáfano) Cocina amueblada, baño con plato ducha, suelos tarima y gres, ventanas doble acristalamiento, armario empotrado, portería en blanco, escaleras de madera, calefacción individual calor azul, radiador toallero en baño, paneles solares. Dos terrazas de 25 y 10 m2 aprox. Contacto",
-      "municipality": "Aller",
-      "distance_km": 31.9,
       "valid": true,
       "reject_reasons": [
         "negative_term"
