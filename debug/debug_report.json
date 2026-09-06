@@ -1,10 +1,10 @@
 {
-  "scraped_count": 116,
-  "rejected_count": 80,
+  "scraped_count": 153,
+  "rejected_count": 110,
   "notified_count": 0,
   "reject_reasons": {
+    "negative_term": 50,
     "missing_price": 57,
-    "negative_term": 20,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 25,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "Site Offline",
+      "page_title": "37 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 25,
       "notify_count": 0
     },
     {
@@ -148,12 +148,12 @@
       "name": "Arxus Inmobiliaria",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 12,
       "error_count": 0,
       "final_url": "https://arxus.es/casas-en-venta-en-asturias/",
       "page_title": "Casas en venta en Asturias | Arxus Inmobiliaria",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 12,
       "notify_count": 0
     },
     {
@@ -329,80 +329,78 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
-      "price": null,
-      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
-      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
-      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño),",
+      "price": 800000,
+      "url": "https://casasapo.es/comprar-casa-con-parcela-carreno-50d84007-ee2e-11e6-9d7e-00155d644625.html",
+      "location": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos d",
+      "description": "Casa con parcela Carreño, Asturias 600m² comprar 800.000 € Dos casas dedicadas a turismo. Casa principal dividida en cinco estudios de 30 m2 ( habitación, cocina y baño), apartamento de 60 m2 (dos habitaciones, salón, cocina y baño) y dos dormitorios con baño. Anexo a la casa hay dos locales de 100 m2 (uno de ellos instalado como bar). Casa secundaria dividida en dos estudios de 30 m2 (habitación, cocina y baño), dos apartamentos de 50 m2 (dos habitaciones, salón, cocina y baño). Parcela de 4.000 m2. NEGOCIABLE Contacto",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
-      "price": null,
-      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
-      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
-      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
-      "municipality": null,
-      "distance_km": null,
-      "valid": true,
-      "reject_reasons": [
-        "missing_price"
-      ]
-    },
-    {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
-      "price": null,
-      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
-      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
-      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Nara",
+      "price": 595000,
+      "url": "https://casasapo.es/comprar-casa-3-habitaciones-oviedo-parroquias-norte-naranco-e8131199-8518-11f1-90a1-060000000056.html",
+      "location": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por",
+      "description": "Casa 3 habitaciones Parroquias Norte - Naranco, Oviedo, Asturias En buen estado  ·  115m² Con Piscina comprar 595.000 € A la venta este fantástico chalet en Fitoria (Naranco-Oviedo), una de las zonas más demandas en vivienda unifamiliar por su proximidad a la ciudad, exclusivas vistas y excelente orientación . El chalet se distribuye en una única planta, destacando un amplio salón-comedor con acceso directo a una terraza con jardín, ideal para disfrutar de momentos de relax al aire libre. La cocina independiente, los 2 aseos con ducha, y los tres dormitorios dobles, uno de ellos suite, completan una vivienda pensada para el bienestar familiar. Entre sus características más destacadas, se incluyen una despensa/tendedero que ofrecen un práctico espacio de almacenamiento donde se encuentra también la sala de caldera que garantiza el suministro de agua caliente y calefacción individual y la ",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "Oficinas Centrales",
-      "price": null,
-      "url": "https://www.inmocasal.es/central/",
-      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
-      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Casa 9 habitaciones Vibaña - Ardisana - Caldueño, Llanes, Asturias En buen estado  ·  300m² comprar 295.000 € Si buscas un refugio donde respirar paz sin renunciar a una ",
+      "price": 295000,
+      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-llanes-vibana-ardisana-caldueno-8f60aa30-9fa1-11f1-b6e5-060000000058.html",
+      "location": "Casa 9 habitaciones Vibaña - Ardisana - Caldueño, Llanes, Asturias En buen estado  ·  300m² comprar 295.000 € Si buscas un refugio donde respirar paz sin renunciar a una oportunidad estratégica, esta propiedad es sencillamente excepcional. ",
+      "description": "Casa 9 habitaciones Vibaña - Ardisana - Caldueño, Llanes, Asturias En buen estado  ·  300m² comprar 295.000 € Si buscas un refugio donde respirar paz sin renunciar a una oportunidad estratégica, esta propiedad es sencillamente excepcional. Ubicada en la pintoresca y apacible localidad de Riocaliente a tan solo 15 minutos de las espectaculares playas de Llanes, la vivienda se sitúa en un enclave natural privilegiado, punto emblemático y final de la famosa ruta del Camín Encantáu, un itinerario que enamora a miles de visitantes cada año. El edificio, de gran carácter, se compone de dos casas comunicadas interiormente pero registradas de forma independiente, lo que brinda una versatilidad enorme. Distribución y posibilidades: Planta Baja: Alberga un espacio comercial en pleno funcionamiento (con licencia actualizada e instalación eléctrica renovada), conservación de auténticos suelos de mos",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term",
-        "missing_price"
+        "negative_term"
       ]
     },
     {
-      "source": "CASAL Inmobiliaria",
-      "kind": "agency",
-      "title": "CASAL Inmobiliaria La Felguera",
-      "price": null,
-      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
-      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
-      "municipality": "Langreo",
-      "distance_km": 15.3,
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Ave",
+      "price": 98000,
+      "url": "https://casasapo.es/comprar-vivienda-3-habitaciones-gijon-llano-24252c4b-219e-11ef-b7c3-060000000057.html",
+      "location": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados úti",
+      "description": "Vivienda 3 habitaciones Llano, Gijón, Asturias En buen estado  ·  74m² comprar 98.000 € Magnifico piso en la mejor zona del Llano, primero sin ascensor, al lado de la Avenida Schultz, la vivienda es exterior, de unos 75 metros cuadrados útiles, en buen estado de conservación, cuenta con tres dormitorios, sala, un baño. Podrá disfrutar de una pequeña terraza propia, orientada al sur. Por ello el piso es muy luminoso. La calefacción y el agua caliente es de gas ciudad. Cercano a todo tipo de servicios, restauración, colegios, comercio, líneas de autobús. No dude en visitarlo, es una buena oportunidad, excelente como inversión. Contacto",
+      "municipality": null,
+      "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "missing_price"
+        "negative_term"
+      ]
+    },
+    {
+      "source": "CASASAPO",
+      "kind": "portal",
+      "title": "Vivienda adosada 4 habitaciones Cué - San Roque - Andrín, Llanes, Asturias En buen estado  ·  111m² Con Garaje comprar 299.000 € Ponemos a la venta esta maravillosa casa ",
+      "price": 299000,
+      "url": "https://casasapo.es/comprar-vivienda-adosada-4-habitaciones-llanes-cue-san-roque-andrin-b5984091-9fa1-11f1-b6e5-060000000058.html",
+      "location": "Vivienda adosada 4 habitaciones Cué - San Roque - Andrín, Llanes, Asturias En buen estado  ·  111m² Con Garaje comprar 299.000 € Ponemos a la venta esta maravillosa casa independiente que destaca por su carácter, solera y una ubicación envi",
+      "description": "Vivienda adosada 4 habitaciones Cué - San Roque - Andrín, Llanes, Asturias En buen estado  ·  111m² Con Garaje comprar 299.000 € Ponemos a la venta esta maravillosa casa independiente que destaca por su carácter, solera y una ubicación envidiable. Situada en el apacible entorno rural de San Roque de Acebal, le permitirá disfrutar de la máxima tranquilidad sin renunciar a la comodidad de tener todas las playas y servicios del concejo de Llanes a un paso. La propiedad, con una sólida construcción original que data de 1870 y se reformó en su totalidad en 2021 conservándose en excelente estado y lista para convertirse en su próximo hogar o en una inversión altamente rentable para alojamiento vacacional, ya que actualmente cuenta con licencia de Vivienda de Uso Turístico (VUT) en vigor. Con 111 m² construidos con una distribución muy funcional, la vivienda ofrece espacios cómodos y acogedores",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "negative_term"
       ]
     }
   ]
