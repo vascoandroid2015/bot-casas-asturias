@@ -1,10 +1,10 @@
 {
-  "scraped_count": 107,
-  "rejected_count": 73,
+  "scraped_count": 108,
+  "rejected_count": 83,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 56,
-    "negative_term": 12,
+    "missing_price": 57,
+    "negative_term": 22,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -86,12 +86,12 @@
       "name": "Inmobiliaria María",
       "kind": "agency",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 1,
       "error_count": 0,
       "final_url": "https://inmobiliariamaria.es/",
-      "page_title": "WordPress › Error",
+      "page_title": "Inmobiliaria María | Inmobiliaria en el occidente de Asturias",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 1,
       "notify_count": 0
     },
     {
@@ -112,12 +112,12 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "Venta de Casa en provincia Asturias - Remax",
+      "page_title": "508 Resource Limit Is Reached",
       "block_signals": [],
-      "valid_count": 20,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -210,12 +210,12 @@
       "name": "Properstar",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 0,
+      "raw_count": 20,
       "error_count": 0,
-      "final_url": "https://www.properstar.es/spain/asturias/buy?c=es-ES&afd_azwaf_tok=eyJraWQiOiJBQTFBOUFGMTM1QUU0NDI0RDgyN0I1M0MwOUYyRDA4N0JCRTQxMjRENDE4MDNFMzY5NkYwMUYwQjk2NUU4RTUzIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJ3d3cucHJvcGVyc3Rhci5lcyIsImV4cCI6MTc5MDIzNzI2NSwiaWF0IjoxNzkwMjM3MjU1LCJpc3MiOiJ0aWVyMS01OGM1NmM1ODU2LXhycDI3Iiwic3ViIjoiMjAuMTE4LjIzMC4xNTIiLCJkYXRhIjp7InR5cGUiOiJpc3N1ZWQiLCJyZWYiOiIyMDI2MDkyNFQwODA3MzVaLTE1OGM1NmM1ODU2eHJwMjdoQzFETTFuazdjMDAwMDAwMG05MDAwMDAwMDAwMno0NCIsImIiOiI5MWZiMUJzZFJ2VGVEN3dPc1lRcFJWcGpXdFdaZVJZR2NTaUdpN3ZrR0NJIiwiaCI6IjVlVkU1M3hrNzBtWFd3cndNeTRNUmpPVmRuTTN0akpxQ0luVDhTMkViMTAifX0.g39tCWzzSeYXPPjfollQ0JCI0YjyT8BC0q4Ga4KQgMH03C6rshO3Cg-64yCC0uMjJZt17nNMrdMeuE77e-amlfQH1-y6Tzl-ZnD2cIleLjU22_CGQZ5hSd_bv16IxXgxktOQW3obB9RaI70yl8_TNx78XkWtDQ_g25XvlkdPzgvs2raZAiW5q8PDpt25xmBIFdI96Ofv_aKCYNX71s6n1gtjM0djSGVFt7cwP5Bxy0NsTh3yMdaPovWomH3aUVokKSScD9uhQdPSX5GsCXvX93syT8EQcfpIQSfKPkc_SnnLH7ijxlrQ9vB14mtVLShNYlZL672ACJ15urPRjTo9-w.WF3obl2IDtqgvMFRqVdYkD5s",
-      "page_title": "504 Gateway Time-out",
+      "final_url": "https://www.properstar.es/spain/asturias/buy",
+      "page_title": "7344 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
-      "valid_count": 0,
+      "valid_count": 20,
       "notify_count": 0
     },
     {
