@@ -1,9 +1,9 @@
 {
   "scraped_count": 128,
-  "rejected_count": 83,
+  "rejected_count": 84,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 56,
+    "missing_price": 57,
     "negative_term": 23,
     "price_out_of_range": 10
   },
@@ -201,7 +201,7 @@
       "raw_count": 1,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 39 exclusive apartments and houses to buy",
+      "page_title": "Property for sale Asturias: 38 exclusive apartments and houses to buy",
       "block_signals": [],
       "valid_count": 1,
       "notify_count": 0
