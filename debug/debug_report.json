@@ -1,10 +1,10 @@
 {
-  "scraped_count": 128,
-  "rejected_count": 85,
+  "scraped_count": 127,
+  "rejected_count": 83,
   "notified_count": 0,
   "reject_reasons": {
-    "missing_price": 57,
-    "negative_term": 24,
+    "missing_price": 56,
+    "negative_term": 23,
     "price_out_of_range": 10
   },
   "changes": {},
@@ -198,12 +198,12 @@
       "name": "Green-Acres",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 1,
+      "raw_count": 0,
       "error_count": 0,
-      "final_url": "https://www.green-acres.es/property-for-sale/asturias-province",
-      "page_title": "Property for sale Asturias: 38 exclusive apartments and houses to buy",
+      "final_url": "https://www.green-acres.es/es",
+      "page_title": "Casas España : 57.055 casas y apartamentos en venta",
       "block_signals": [],
-      "valid_count": 1,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7755 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7309 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
