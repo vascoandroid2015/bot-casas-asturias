@@ -1,5 +1,5 @@
 {
-  "scraped_count": 123,
+  "scraped_count": 122,
   "rejected_count": 80,
   "notified_count": 0,
   "reject_reasons": {
@@ -136,12 +136,12 @@
       "name": "e-viviendas",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 14,
+      "raw_count": 13,
       "error_count": 0,
       "final_url": "https://www.e-viviendas.es/inmuebles/venta_asturias",
       "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
       "block_signals": [],
-      "valid_count": 14,
+      "valid_count": 13,
       "notify_count": 0
     },
     {
@@ -213,7 +213,7 @@
       "raw_count": 20,
       "error_count": 0,
       "final_url": "https://www.properstar.es/spain/asturias/buy",
-      "page_title": "7060 Propiedades en venta en Asturias | Properstar",
+      "page_title": "7061 Propiedades en venta en Asturias | Properstar",
       "block_signals": [],
       "valid_count": 20,
       "notify_count": 0
