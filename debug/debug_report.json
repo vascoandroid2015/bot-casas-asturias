@@ -1,11 +1,11 @@
 {
-  "scraped_count": 122,
-  "rejected_count": 79,
+  "scraped_count": 121,
+  "rejected_count": 78,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
     "negative_term": 22,
-    "price_out_of_range": 7
+    "price_out_of_range": 6
   },
   "changes": {},
   "sources": [
@@ -136,12 +136,12 @@
       "name": "e-viviendas",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 13,
+      "raw_count": 12,
       "error_count": 0,
       "final_url": "https://www.e-viviendas.es/inmuebles/venta_asturias",
       "page_title": "venta de inmuebles asturias | Portal inmobiliario e-viviendas",
       "block_signals": [],
-      "valid_count": 13,
+      "valid_count": 12,
       "notify_count": 0
     },
     {
