@@ -1,10 +1,10 @@
 {
-  "scraped_count": 146,
-  "rejected_count": 106,
+  "scraped_count": 101,
+  "rejected_count": 82,
   "notified_count": 0,
   "reject_reasons": {
-    "negative_term": 50,
     "missing_price": 56,
+    "negative_term": 26,
     "price_out_of_range": 6
   },
   "changes": {},
@@ -25,12 +25,12 @@
       "name": "CASASAPO",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 25,
+      "raw_count": 0,
       "error_count": 0,
       "final_url": "https://casasapo.es/comprar-viviendas-casas/distrito.asturias/",
-      "page_title": "34 Inmuebles en Venta, Viviendas/ Casas en Asturias - CASASAPO.es - Portal inmobiliario para comprar o vender fincas",
+      "page_title": "Site Offline",
       "block_signals": [],
-      "valid_count": 25,
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -112,12 +112,13 @@
       "name": "REMAX Asturias",
       "kind": "portal",
       "enabled": true,
-      "raw_count": 20,
-      "error_count": 0,
-      "final_url": "https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/",
-      "page_title": "Venta de Casa en provincia Asturias - Remax",
+      "raw_count": 0,
+      "error_count": 1,
+      "final_url": "about:blank",
+      "page_title": "",
       "block_signals": [],
-      "valid_count": 20,
+      "exception": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.remax.es/buscador-de-inmuebles/venta/casa/asturias/\", waiting until \"domcontentloaded\"\n",
+      "valid_count": 0,
       "notify_count": 0
     },
     {
@@ -329,78 +330,80 @@
   "examples_to_notify": [],
   "examples_rejected": [
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, ",
-      "price": 226000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-4-habitaciones-corvera-de-asturias-8284085c-68c2-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "description": "Casa con parcela 4 habitaciones Corvera de Asturias A reformar comprar 226.000 € Casa de dos plantas, con cuatro dormitorios, salón, cocina, baño. Cuadra grande, tenada, nave-garaje. Hórreo. Finca de 15.040 m2 Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa con parcela 5 habitaciones Corvera de Asturias En buen estado  ·  300m² comprar 394.000 € 409.000 € -3,67% Casa de piedra rehabilitada. Parcela de 1100 m2 aprox. con",
-      "price": 394000,
-      "url": "https://casasapo.es/comprar-casa-con-parcela-5-habitaciones-corvera-de-asturias-086bfdc5-6680-11e4-aeff-000c2946937b.html",
-      "location": "Casa con parcela 5 habitaciones Corvera de Asturias En buen estado  ·  300m² comprar 394.000 € 409.000 € -3,67% Casa de piedra rehabilitada. Parcela de 1100 m2 aprox. con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocin",
-      "description": "Casa con parcela 5 habitaciones Corvera de Asturias En buen estado  ·  300m² comprar 394.000 € 409.000 € -3,67% Casa de piedra rehabilitada. Parcela de 1100 m2 aprox. con hórreo. Planta Baja: Un dormitorio, salón-comedor con chimenea, cocina, baño con cabina de hidromasaje. Porche. Planta Primera: Cuatro dormitorios, dos baños (uno con bañera y otro con cabina de hidromasaje). Galería. Sótano: Garaje. Desván en el bajo cubierta. Cocina amueblada, ventanas PVC doble acristalamiento, armarios empotrados, suelos de tarima y gres. Calefacción gasoil, termo eléctrico y placas solares Contacto",
-      "municipality": "Corvera",
-      "distance_km": 18.7,
-      "valid": true,
-      "reject_reasons": [
-        "negative_term"
-      ]
-    },
-    {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despert",
-      "price": 375000,
-      "url": "https://casasapo.es/comprar-chalet-4-habitaciones-navia-f6b21537-4274-11f1-9a8d-060000000057.html",
-      "location": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrar",
-      "description": "Chalet 4 habitaciones Navia, Asturias En buen estado  ·  171m² Con Garaje comprar 375.000 € Hay viviendas y luego están las que simplemente no se repiten. Imagina despertar cada mañana con el sonido de las olas, abrir la ventana y encontrarte con el horizonte infinito, respirar aire puro y sentir esa calma que solo el mar y la naturaleza saben dar. Eso es lo que ofrece esta vivienda: una experiencia diaria que va mucho más allá de lo material. La casa, distribuida en una sola planta, ha sido cuidada con mimo y está lista para entrar a disfrutar desde el primer minuto. Sus espacios transmiten luz, armonía y una energía especial que se percibe nada más cruzar la puerta. Cuenta con 171 m² construidos sobre una parcela de 628 m², perfectamente aprovechados para ofrecer comodidad y amplitud: * 4 habitaciones * 2 baños (uno completo y un aseo) * Salón y estancias llenas de luz natural * Calefa",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una",
+      "price": null,
+      "url": "https://www.inmocasal.es/costes-ocultos-comprar-casa/",
+      "location": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de",
+      "description": "Asturias Costes ocultos al comprar una casa: notaría, impuestos, reformas… 💡 Costes ocultos al comprar una casa: notaría, impuestos, reformas… Comprar una vivienda es una de las decisiones más importantes Leer más » CASAL Inmobiliaria 18 de junio de 2025",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 3 habitaciones Laviana, Asturias A reformar  ·  86m² comprar 75.000 € Hoy te traigo esta oportunidad única en Puente de Arco, Pola de Laviana. A solo 50 metros del r",
-      "price": 75000,
-      "url": "https://casasapo.es/comprar-casa-3-habitaciones-laviana-480b6069-62f0-11f0-b3d3-060000000057.html",
-      "location": "Casa 3 habitaciones Laviana, Asturias A reformar  ·  86m² comprar 75.000 € Hoy te traigo esta oportunidad única en Puente de Arco, Pola de Laviana. A solo 50 metros del río, con su pequeña playa fluvial donde la gente disfruta del baño cada",
-      "description": "Casa 3 habitaciones Laviana, Asturias A reformar  ·  86m² comprar 75.000 € Hoy te traigo esta oportunidad única en Puente de Arco, Pola de Laviana. A solo 50 metros del río, con su pequeña playa fluvial donde la gente disfruta del baño cada verano y a las puertas del Parque Natural de Redes, la auténtica Asturias de montaña. Pero ojo, ¡a solo 40 minutos de la playa y muy cerca de Oviedo, La Felguera y todos los servicios en Pola de Laviana! La casa la está en obra (60% hecha), con forjados y parte de la instalación adelantada. Contamos con empresa para acabarla según tu gusto. Si quieres invertir en un lugar de ensueño o tener tu segunda residencia en Asturias, este es tu sitio. Oportunidades así no aparecen todos los días... ¡y menos a este precio! ¡Llámanos y ven a conocerla! Contacto",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu viv",
+      "price": null,
+      "url": "https://www.inmocasal.es/reformar-o-vender-tal-cual/",
+      "location": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "description": "Compraventa Reforma o vender tal cual: ¿Qué conviene más al propietario? 🔧 Reforma o vender tal cual: ¿Qué conviene más al propietario? Si estás pensando en vender tu vivienda en Asturias, Leer más » CASAL Inmobiliaria 11 de junio de 2025",
+      "municipality": null,
+      "distance_km": null,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pen",
+      "price": null,
+      "url": "https://www.inmocasal.es/oficinas-casal-inmobiliaria-oviedo/",
+      "location": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria ",
+      "description": "Compraventa CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo 🏢 CASAL Inmobiliaria en Oviedo: Dos oficinas, un mismo compromiso contigo Si estás pensando en comprar, vender o alquilar una Leer más » CASAL Inmobiliaria 4 de junio de 2025",
       "municipality": "Oviedo",
       "distance_km": 0.0,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
       ]
     },
     {
-      "source": "CASASAPO",
-      "kind": "portal",
-      "title": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAY",
-      "price": 480000,
-      "url": "https://casasapo.es/comprar-casa-6-habitaciones-o-mas-san-tirso-de-abres-49108dc7-aff3-11f0-9379-060000000058.html",
-      "location": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA E",
-      "description": "Casa 16 habitaciones San Tirso de Abres, Asturias En buen estado  ·  634m² Con Garaje comprar 480.000 € SAN TIRSO DE ABRES, ASTURIAS, a 20km de RIBADEO, y 32km de la PLAYA DE LAS CATEDRALES, GALICIA. Ven a descubrir el Paraíso! ESTA FINCA ES ESPECIAL PORQUE Está rodeada de mas de 4000mts de parcela con su muro de piedra, en el típico marco inigualable que nos ofrece el norte de España. También es especial porque ya ha tenido licencia de Turismo para su explotación, de fácil renovación, y esta en pleno Camino de Santiago. Separada en dos estancias, una con 6 apartamentos independientes, de dos dormitorios (cada uno de ellos con lavabo) baño, salón y cocina, Unidas las estancias por un cálido porche, en la segunda estancia encontramos en planta baja un gran despacho/administración, amplia cocina (25mts cuadrados) junto a un amplio comedor (40mts) y salón (60mts). En la primera planta hay o",
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "Oficinas Centrales",
+      "price": null,
+      "url": "https://www.inmocasal.es/central/",
+      "location": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
+      "description": "Oficinas Centrales C/ Norte, 1, 1º, 33930 La Felguera - Asturias 984 28 00 88",
       "municipality": null,
       "distance_km": null,
       "valid": true,
       "reject_reasons": [
-        "negative_term"
+        "negative_term",
+        "missing_price"
+      ]
+    },
+    {
+      "source": "CASAL Inmobiliaria",
+      "kind": "agency",
+      "title": "CASAL Inmobiliaria La Felguera",
+      "price": null,
+      "url": "https://www.inmocasal.es/inmobiliaria-la-felguera/",
+      "location": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "description": "CASAL Inmobiliaria La Felguera C/Santa Eulalia, 10, bajo, 33930 Langreo – Asturias 985 67 62 66",
+      "municipality": "Langreo",
+      "distance_km": 15.3,
+      "valid": true,
+      "reject_reasons": [
+        "missing_price"
       ]
     }
   ]
