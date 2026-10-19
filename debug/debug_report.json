@@ -1,10 +1,10 @@
 {
   "scraped_count": 121,
-  "rejected_count": 82,
+  "rejected_count": 81,
   "notified_count": 0,
   "reject_reasons": {
     "missing_price": 56,
-    "negative_term": 26,
+    "negative_term": 25,
     "price_out_of_range": 6
   },
   "changes": {},
@@ -201,7 +201,7 @@
       "raw_count": 0,
       "error_count": 0,
       "final_url": "https://www.green-acres.es/es",
-      "page_title": "Casas España : 53.574 casas y apartamentos en venta",
+      "page_title": "Casas España : 53.508 casas y apartamentos en venta",
       "block_signals": [],
       "valid_count": 0,
       "notify_count": 0
